@@ -4,6 +4,7 @@ import com.baktiyar.android.jardamberem.model.*
 import okhttp3.RequestBody
 import okhttp3.ResponseBody
 import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.http.*
 
 interface ApiService {
@@ -76,4 +77,15 @@ interface ApiService {
 
     @POST("forum/")
     fun sendForum(@Body forum: Forum): Call<ResponseBody>
+
+    @GET("/api/cities/{cities}/categories/{categories}/announcements/")
+    fun getSearch(@Path("cities") cityId: Int,
+                  @Path("categories") categoryId: Int,
+
+                  @Query("categories") categories: Int,
+                  @Query("cities") cities: Int,
+                  @Query("format") format: String,
+                   @Query("isNeeded") isNeeded: Int,
+                  @Query("title") title: String): Call<ArrayList<Announcements>>
+
 }

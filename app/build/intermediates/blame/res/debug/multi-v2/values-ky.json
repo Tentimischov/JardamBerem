@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jeenbek/Desktop/JardamBerem-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
+            "outputFile": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
             "map": [
                 {
-                    "source": "/Users/jeenbek/Desktop/JardamBerem-master/app/src/main/res/values-ky/strings.xml",
+                    "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/values-ky/strings.xml",
                     "from": {
                         "startLines": "62,32,28,9,7,18,17,60,2,50,48,11,47,4,34,21,38,20,31,33,3,40,55,57,13,39,15,16,14,51,35,6,44,46,30,37,58,27,42,36,5,29,19,43,41,53,45,24,26,56,25,54,23,49,12,52,22,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

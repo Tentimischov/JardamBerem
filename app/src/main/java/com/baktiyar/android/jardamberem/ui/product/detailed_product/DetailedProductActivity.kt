@@ -12,11 +12,10 @@ import android.provider.Settings.Secure
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import com.baktiyar.android.jardamberem.ApplicationClass
-import com.baktiyar.android.jardamberem.MyContextWrapper
+import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
 import com.baktiyar.android.jardamberem.ui.main.MainActivity

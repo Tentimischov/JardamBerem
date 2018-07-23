@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jeenbek/Desktop/JardamBerem-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/values-pt-rPT/values-pt-rPT.xml",

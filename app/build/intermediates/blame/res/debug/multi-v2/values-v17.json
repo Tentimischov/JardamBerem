@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jeenbek/Desktop/JardamBerem-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
+            "outputFile": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
-                {
-                    "source": "/Users/jeenbek/Desktop/JardamBerem-master/app/src/main/res/values-v17/styles.xml",
-                    "from": {
-                        "startLines": "2,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,627",
-                        "endLines": "10,19",
-                        "endColumns": "12,12",
-                        "endOffsets": "622,1190"
-                    },
-                    "to": {
-                        "startLines": "2,59",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,3498",
-                        "endLines": "10,67",
-                        "endColumns": "12,12",
-                        "endOffsets": "622,4061"
-                    }
-                },
                 {
                     "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/values-v17/values-v17.xml",
                     "from": {
@@ -39,6 +20,25 @@
                         "endLines": "13,17,20,23,26,30,34,37,40,43,47,50,54,58",
                         "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
                         "endOffsets": "795,1023,1181,1331,1503,1731,1973,2144,2318,2487,2760,2960,3164,3493"
+                    }
+                },
+                {
+                    "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/values-v17/styles.xml",
+                    "from": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,627",
+                        "endLines": "10,19",
+                        "endColumns": "12,12",
+                        "endOffsets": "622,1190"
+                    },
+                    "to": {
+                        "startLines": "2,59",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,3498",
+                        "endLines": "10,67",
+                        "endColumns": "12,12",
+                        "endOffsets": "622,4061"
                     }
                 }
             ]

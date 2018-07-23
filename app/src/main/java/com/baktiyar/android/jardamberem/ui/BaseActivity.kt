@@ -17,7 +17,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.Toast
-import com.baktiyar.android.jardamberem.MyContextWrapper
+import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.ui.action.ActionActivity
 import com.baktiyar.android.jardamberem.ui.appInfo.AppInfoActivity

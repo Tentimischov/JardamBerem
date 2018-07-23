@@ -5,7 +5,6 @@ import android.animation.ObjectAnimator
 import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
-import android.content.res.Configuration
 import android.graphics.PorterDuff
 import android.net.ConnectivityManager
 import android.os.Build
@@ -24,15 +23,14 @@ import android.view.View
 import android.view.animation.LinearInterpolator
 import android.view.animation.OvershootInterpolator
 import android.widget.ArrayAdapter
-import com.baktiyar.android.jardamberem.MyContextWrapper
+import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.AllCategory
 import com.baktiyar.android.jardamberem.model.Announcements
-import com.baktiyar.android.jardamberem.model.AnnouncementsPaginated
 import com.baktiyar.android.jardamberem.model.Urgent
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.ConstantsJava
-import com.baktiyar.android.jardamberem.ui.SearchResultsActivity
+import com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity
 import com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity
 import com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity
 import com.baktiyar.android.jardamberem.ui.main.adapter.*
@@ -59,10 +57,12 @@ class MainActivity : BaseActivity(), MainContract.View,
         SearchView.OnQueryTextListener, AnnounAdapterNoPaginated.OnAnnounClickNoPage {
     override fun onAnnounIsNeeded(data: ArrayList<Announcements>) {
         announAdapterS?.setAnData(data)
+        pro_bar.visibility = View.GONE
     }
 
     override fun onAnnounFirstSuccesss(data: ArrayList<Announcements>) {
         announAdapterS?.setAnData(data)
+        pro_bar.visibility = View.GONE
     }
 
 
@@ -134,30 +134,6 @@ class MainActivity : BaseActivity(), MainContract.View,
 
     }
 
-    fun getDataForAdapters() {
-        categoryData = ArrayList()
-
-        categoryData?.add(AllCategory(1, getString(R.string.all), "http://s1.picswalls.com/wallpapers/2014/06/08/world-cup-2014-background_012630250_41.jpg", 1))
-        categoryData?.add(AllCategory(2, "Еда", "http://s1.picswalls.com/wallpapers/2014/06/08/world-cup-2014-background_012630250_41.jpg", 1))
-        categoryData?.add(AllCategory(3, "Работа", "http://s1.picswalls.com/wallpapers/2014/06/08/world-cup-2014-background_012630250_41.jpg", 1))
-        categoryData?.add(AllCategory(4, "Одежда", "http://s1.picswalls.com/wallpapers/2014/06/08/world-cup-2014-background_012630250_41.jpg", 1))
-
-        caAdapter?.setCategoryData(categoryData!!)
-
-        allUrgent = ArrayList()
-
-        allUrgent?.add(Urgent(1, "Mountains", "description", "18", "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170407220907-01-iconic-mountains-k2-restricted.jpg"))
-        allUrgent?.add(Urgent(2, "Mountains", "description", "18", "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170407220907-01-iconic-mountains-k2-restricted.jpg"))
-        allUrgent?.add(Urgent(3, "Mountains", "description", "18", "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170407220907-01-iconic-mountains-k2-restricted.jpg"))
-        allUrgent?.add(Urgent(4, "Mountains", "description", "18", "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170407220907-01-iconic-mountains-k2-restricted.jpg"))
-        allUrgent?.add(Urgent(5, "Mountains", "description", "18", "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170407220907-01-iconic-mountains-k2-restricted.jpg"))
-        allUrgent?.add(Urgent(6, "Mountains", "description", "18", "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170407220907-01-iconic-mountains-k2-restricted.jpg"))
-
-        urgAdapter?.setUrgData(allUrgent!!)
-
-
-    }
-
     private fun initAnn() {
 
         announAdapterS = AnnounAdapterNoPaginated(ArrayList(), this)
@@ -199,11 +175,23 @@ class MainActivity : BaseActivity(), MainContract.View,
         val search = menu?.findItem(R.id.search)
         val searchVIew = menu?.findItem(R.id.search)?.actionView as SearchView
 
+
+        val searchManager =
+                getSystemService(Context.SEARCH_SERVICE) as (SearchManager)
+        val searchView =
+                menu.findItem(R.id.search).actionView as (SearchView)
+        searchView.setSearchableInfo(
+                searchManager.getSearchableInfo(componentName))
+
+
+
         searchVIew.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 search?.collapseActionView()
                 hideKeyboard(this@MainActivity)
-                startActivity(Intent(this@MainActivity, SearchResultsActivity::class.java))
+                val intent = Intent(this@MainActivity, SearchResultsActivity::class.java)
+                intent.putExtra("SEARCH_QUERY", query)
+                startActivity(intent)
                 return true
             }
 
@@ -441,7 +429,6 @@ class MainActivity : BaseActivity(), MainContract.View,
             stringBuilder.append(data[data.size - 1].category_name)
 
         Settings.setCategory(this, stringBuilder.toString())
-
 
 
     }

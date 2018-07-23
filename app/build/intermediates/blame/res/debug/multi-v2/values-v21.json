@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jeenbek/Desktop/JardamBerem-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/294ab58f778dc7634a20a49be9b2c776/res/values-v21/values-v21.xml",
@@ -80,7 +80,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeenbek/Desktop/JardamBerem-master/app/src/main/res/values-v21/styles.xml",
+                    "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/values-v21/styles.xml",
                     "from": {
                         "startLines": "3,15,19",
                         "startColumns": "4,4,4",

@@ -1,17 +1,14 @@
 package com.baktiyar.android.jardamberem.ui.action
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import com.baktiyar.android.jardamberem.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.ActionData
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.action_det.ActionDetailed
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_DETAILED
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
-import com.baktiyar.android.jardamberem.utils.Settings
 import kotlinx.android.synthetic.main.activity_action.*
 
 @Suppress("UNUSED_PARAMETER")

@@ -10,11 +10,10 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.Settings.Secure
 import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
 import com.baktiyar.android.jardamberem.ApplicationClass
-import com.baktiyar.android.jardamberem.MyContextWrapper
+import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.PostProduct
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
