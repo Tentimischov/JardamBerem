@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group>
+        <item
+            android:id="@+id/main_menu"
+            android:icon="@drawable/ic_category"
+            android:title="@string/titleCategories" />
+
+        <item
+            android:id="@+id/action_activity"
+            android:icon="@drawable/ic_action"
+            android:title="@string/action" />
+
+
+        <item
+            android:id="@+id/info"
+            android:icon="@drawable/info"
+            android:title="@string/helpful_info" />
+
+        <item
+            android:id="@+id/forum"
+            android:icon="@drawable/time"
+            android:title="@string/forum" />
+        <item
+            android:id="@+id/lang"
+            android:icon="@drawable/ic_language"
+            android:title="@string/language" />
+
+        <item
+            android:id="@+id/region"
+            android:icon="@drawable/placeholder"
+            android:title="@string/region" />
+        <item
+            android:id="@+id/navItemFeedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/feedbacks" />
+        <item
+            android:id="@+id/navItemAppInfo"
+            android:icon="@drawable/ic_info"
+            android:title="@string/about_app" />
+    </group>
+</menu>

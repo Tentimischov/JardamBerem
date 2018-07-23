@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Жардам берем</string>
+    <string name="foodCategory">Тамак-Аш</string>
+    <string name="closeCategory">Кийим</string>
+    <string name="othersCategory">Башкалар</string>
+    <string name="jobCategory">Жумуш</string>
+    <string name="addProductAction">Кошуу</string>
+
+    <string name="add">Кошуу</string>
+
+    <string name="city">Регионду тандоо</string>
+    <string name="titleCategories">Башкы меню</string>
+    <string name="goodName">Сувенир</string>
+    <string name="hintProductName">Аталышы</string>
+    <string name="hintGoodDescription">Сиздин товар</string>
+    <string name="hintGoodPhoneNumber">Телефон номери</string>
+    <string name="add_product">Товар кошуу</string>
+    <string name="add_feedback">Пикир кошуу</string>
+    <string name="products">Товарлар</string>
+    <string name="error_sending_data">Маалымат жөнөтүлгөн жок</string>
+    <string name="delete_product">Жокко чыгаруу</string>
+    <string name="update_product">Жаңылоо</string>
+    <string name="success_add">Кошулду</string>
+    <string name="search_product">Издөө</string>
+    <string name="show_number">Номерди көрсөтүү</string>
+    <string name="send">Жөнөтүү</string>
+    <string name="news">Жынылыктар</string>
+    <string name="action">Акциялар</string>
+    <string name="partners">Партнерлор</string>
+    <string name="language">Тил</string>
+    <string name="feedbacks">Пикирлер</string>
+    <string name="about_app">Биз жөнүндө</string>
+    <string name="food">Тамак-Аш</string>
+    <string name="clothing">Кийим</string>
+    <string name="job">Жумуш</string>
+    <string name="other">Башкалар</string>
+    <string name="naming">Аталышы</string>
+    <string name="description">Товар жөнүндө</string>
+    <string name="helpful_info">Пайдалуу маалымат</string>
+    <string name="forum">Форум</string>
+    <string name="region">Регион</string>
+    <string name="no_internet">Интернетке байланыш жок</string>
+    <string name="ready">Даяр</string>
+    <string name="ky_lang">Кыргызча</string>
+    <string name="ru_lang">Русский</string>
+    <string name="lang_choosen">Тил тандалды</string>
+    <string name="city_choosen">Регион тандалды</string>
+    <string name="choose_category">Категорияны танда</string>
+    <string name="success_sent">Ийгилуктүү жөнөтүлдү</string>
+    <string name="category_spinner">категория</string>
+    <string name="info">Маалымат</string>
+    <string name="transition_name">unique transition name</string>
+    <string name="retry">Интернетке кошул</string>
+    <string name="success">Даяр</string>
+    <string name="forum_hint">Телефон номерин же атыңызды калтырыңыз</string>
+    <string name="sent">Жиберилди</string>
+    <string name="give_help">Берүү</string>
+    <string name="need_help">Алуу</string>
+    <string name="urgent_help">Тез жардам</string>
+    <string name="all">Баары</string>
+
+    <string-array name="main_menu_spinner">
+        <item>@string/give_help</item>
+        <item>@string/need_help</item>
+    </string-array>
+
+</resources>

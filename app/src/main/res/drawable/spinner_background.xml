@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/spinner_ab_disabled" android:state_enabled="false" />
+
+    <item android:drawable="@drawable/spinner_ab_unfocused" android:state_pressed="true" />
+
+    <item android:drawable="@drawable/spinner_ab_focused" android:state_focused="true" android:state_pressed="false" />
+    <item android:right="1dp">
+
+        <bitmap android:gravity="center_vertical|right"  android:src="@drawable/drop_down"  />
+
+    </item>
+
+    <item android:drawable="@drawable/spinner_ab_unfocused" />
+</selector>

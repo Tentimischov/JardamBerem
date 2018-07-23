@@ -1,0 +1,171 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/darkGray</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+    </style>
+
+
+    <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="RelativeLayoutStyle">
+        <item name="android:background">@drawable/rounded_corners</item>
+        <item name="android:padding">@dimen/four_dp_padding</item>
+        <item name="android:layout_margin">@dimen/text_sz</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="TextViewCard">
+        <item name="android:textSize">@dimen/sixteen_dp_text_size</item>
+        <item name="android:paddingRight">@dimen/size_3</item>
+        <item name="android:paddingLeft">@dimen/size_3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+
+    <style name="CustomizedButton" parent="Base.TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/mainText</item>
+        <item name="android:padding">@dimen/eight_dp_padding</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NavigationTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="Picker">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:divider">@color/darkGray</item>
+        <item name="android:inputType">date</item>
+    </style>
+
+
+    <style name="CollapsingToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_24dp</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textColorHint">@color/mainText</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="android:Theme.Holo">
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_24dp</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="GenButton" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/size_30</item>
+        <item name="android:layout_marginLeft">@dimen/size_30</item>
+        <item name="android:layout_marginRight">@dimen/size_30</item>
+        <item name="cardBackgroundColor">@color/addButton</item>
+        <item name="cardCornerRadius">@dimen/gen_button_5</item>
+        <item name="elevation">@dimen/gen_b_elevation</item>
+        <item name="layout_anchorGravity">top|end</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="GEnBText" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextInpSend" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="MyAppTheme.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextViewTitle" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/action_text_back</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="ForumTextView" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:layout_marginLeft">@dimen/size_5</item>
+        <item name="android:layout_marginRight">@dimen/size_5</item>
+        <item name="android:layout_marginBottom">@dimen/size_5</item>
+        <item name="android:padding">@dimen/size_8</item>
+        <item name="android:color">@color/mainText</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:lineSpacingExtra">@dimen/size_3</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+
+    </style>
+
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:padding">@dimen/margin_0dp</item>
+        <item name="android:popupBackground">@drawable/popup_spinner_background</item>
+    </style>
+
+
+    <style name="LoadingButton" >
+        <item name="android:background">@color/addButton</item>
+    </style>
+
+</resources>

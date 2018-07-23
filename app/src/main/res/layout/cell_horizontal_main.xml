@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cell_hor"
+    style="@style/CardView"
+    android:layout_width="150dp"
+    android:layout_height="125dp"
+    android:layout_marginLeft="5dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/cardCorner"
+    app:cardElevation="3dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/image"
+            android:paddingBottom="@dimen/size_12"
+            app:sriv_left_top_corner_radius="@dimen/size_3"
+            app:sriv_right_top_corner_radius="@dimen/size_3"
+            app:sriv_right_bottom_corner_radius="@dimen/size_3"
+            app:sriv_left_bottom_corner_radius="@dimen/size_3"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_icon" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/pad_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:background="@drawable/down_roun_background"
+            android:fontFamily="@font/montserrat"
+            android:gravity="left"
+            android:textSize="13sp"
+            android:padding="6dp"
+            tools:text="Еда" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginTop="@dimen/pad_10"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="left"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:text="sldfjnvlsjkdfv"
+            android:textColor="@color/darkGray"
+            android:textSize="15sp"
+            tools:text="Еда" />
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
