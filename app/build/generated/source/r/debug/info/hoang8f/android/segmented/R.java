@@ -23,8 +23,8 @@ public final class R {
     }
     public static final class drawable {
         public static final int button_text_color = 0x7f08005e;
-        public static final int radio_checked = 0x7f0800a1;
-        public static final int radio_unchecked = 0x7f0800a2;
+        public static final int radio_checked = 0x7f0800a2;
+        public static final int radio_unchecked = 0x7f0800a3;
     }
     public static final class string {
         public static final int app_name = 0x7f100025;
