@@ -48,12 +48,9 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
         initView()
         initPresenter()
         initPics()
-
     }
 
-    override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(MyContextWrapper.wrap(newBase, "ky"))
-    }
+
 
     private fun initPics() {
 
@@ -90,7 +87,8 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
         val cities = Settings.getCityNameArray(this).split(",")
         city.text = cities[mProduct?.city!! - 1]
         val categories = Settings.getCategory(this).split(",")
-        category.text = categories[mProduct?.category!!]
+        if (categories.size > mProduct?.category!!)
+            category.text = categories[mProduct?.category!!]
         if (mProduct!!.userImeiCode == getAndroidId()) {
             isMyProduct = true
             button_content_text.text = getString(R.string.delete_product)

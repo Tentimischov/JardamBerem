@@ -6,14 +6,14 @@ import com.baktiyar.android.jardamberem.model.ForumPaginated
 interface ForumContract {
 
     interface View {
-        fun onForumFirstSuccess(data: ArrayList<Forum>)
-       // fun onForumNextSuccess(data: ForumPaginated)
+        fun onForumFirstSuccess(data: ForumPaginated)
+        fun onForumNextSuccess(data: ForumPaginated)
         fun onError(message: String)
         fun onSendSuccess()
     }
     interface Presenter {
         fun getForumFirst(limit: Int, offset: Int)
-      //  fun getForumNext(limit: Int, offset: Int)
+        fun getForumNext(limit: Int, offset: Int)
         fun sendFroum(data: Forum)
     }
 

@@ -41,7 +41,13 @@ interface ApiService {
             Call<AnnouncementsPaginated>
 
 
-    @GET("allannouncements/IsNeeded")
+   /*
+   ------------------------------
+   * request without pagination *
+   ------------------------------
+
+
+   @GET("allannouncements/IsNeeded")
     fun getAnnouncementss(@Query("limit") limit: Int,
                           @Query("offset") offset: Int):
             Call<ArrayList<Announcements>>
@@ -49,43 +55,37 @@ interface ApiService {
     @GET("allannouncements/IsNeededFalse")
     fun getAnnouncementsIsNeededFalses(@Query("limit") limit: Int,
                                        @Query("offset") offset: Int):
-            Call<ArrayList<Announcements>>
+            Call<ArrayList<Announcements>>*/
 
 
     @GET("api/cities/{id_of_city}/categories/")
-    fun getCategory(@Path("id_of_city") id: Int): Call<ArrayList<AllCategory>>
+    fun getCategory(@Path("id_of_city") id: Int): Call<CategoryPaginated>
 
     @GET("api/cities")
-    fun getCities(): Call<ArrayList<City>>
+    fun getCities(): Call<CityPaginated>
 
     @GET("charity_event")
-    fun getActionData(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<ArrayList<ActionData>>
+    fun getActionData(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<ActionDataPaginated>
 
     @GET("info")
-    fun getInfo(@Query("limit") limit: Int?, @Query("offset") offset: Int?): Call<ArrayList<Info>>
+    fun getInfo(@Query("limit") limit: Int?, @Query("offset") offset: Int?): Call<InfoPaginated>
 
     @GET("history")
-    fun getUrgent(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<ArrayList<Urgent>>
+    fun getUrgent(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<UrgentPaginated>
 
     @GET("api/cities/{id_of_city}/categories/{id_of_category}/announcements")
     fun getAnnounByCategory(@Path("id_of_city") cityId: Int,
                             @Path("id_of_category") categoryId: Int,
-                            @Query("limit") limit: Int, @Query("offset") offset: Int): Call<ArrayList<Announcements>>
+                            @Query("limit") limit: Int, @Query("offset") offset: Int): Call<AnnouncementsPaginated>
 
     @GET("forum")
-    fun getForum(): Call<ArrayList<Forum>>
+    fun getForum(): Call<ForumPaginated>
 
     @POST("forum/")
     fun sendForum(@Body forum: Forum): Call<ResponseBody>
 
-    @GET("/api/cities/{cities}/categories/{categories}/announcements/")
-    fun getSearch(@Path("cities") cityId: Int,
-                  @Path("categories") categoryId: Int,
-
-                  @Query("categories") categories: Int,
-                  @Query("cities") cities: Int,
-                  @Query("format") format: String,
-                   @Query("isNeeded") isNeeded: Int,
-                  @Query("title") title: String): Call<ArrayList<Announcements>>
+    @GET("allannouncements/")
+    fun getSearch(@Query("??city") city: Int,
+                  @Query("title") title: String): Call<AnnouncementsPaginated>
 
 }

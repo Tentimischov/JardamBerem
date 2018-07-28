@@ -3,8 +3,10 @@ package com.baktiyar.android.jardamberem.ui.action
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.view.View
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.ActionData
+import com.baktiyar.android.jardamberem.model.ActionDataPaginated
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.action_det.ActionDetailed
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_DETAILED
@@ -12,18 +14,15 @@ import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
 import kotlinx.android.synthetic.main.activity_action.*
 
 @Suppress("UNUSED_PARAMETER")
-class ActionActivity : BaseActivity(), ActionAdapterNoPag.OnItemClickListener, ActionContract.View {
+class ActionActivity : BaseActivity(), ActionAdapter.OnItemClickListener, ActionContract.View {
+
     var adapter: ActionAdapter? = null
-
-
     private val TOTAL_PAGES: Int = 10
-
     private var issLoading = false
     private var issLastPage = false
     private var limitPage = 10
     private val PAGE_START = 1
     private var currentPage = PAGE_START
-    private var actionAdapter: ActionAdapterNoPag? = null
     private var presenter: ActionPresenter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,29 +34,18 @@ class ActionActivity : BaseActivity(), ActionAdapterNoPag.OnItemClickListener, A
     }
 
 
-
-    override fun onItemClickListener(actionData: ActionData) {
-        val intent = Intent(this, ActionDetailed::class.java)
-        intent.putExtra(ACTIVITY_ID, ACTION_DETAILED)
-        intent.putExtra(ACTION_DETAILED, actionData)
-        startActivity(intent)
-    }
-
     fun init() {
         presenter = ActionPresenter(this)
-        actionAdapter = ActionAdapterNoPag(ArrayList(), this)
+        adapter = ActionAdapter(ArrayList(), this)
         val layoutManager = LinearLayoutManager(this)
         action_recycler.layoutManager = layoutManager
-        action_recycler.adapter = actionAdapter
-        presenter?.getActionDataFirst(100, 0)
-       // addScrollAdapter(layoutManager)
-       // loadFirstPage()
-    }
-    override fun onSuccessFirst(data: ArrayList<ActionData>?) {
-        actionAdapter?.setActionData(data!!)
+        action_recycler.adapter = adapter
+        //presenter?.getActionDataFirst(100, 0)
+        addScrollAdapter(layoutManager)
+        loadFirstPage()
     }
 
-  /*  private fun addScrollAdapter(layoutManager: LinearLayoutManager) {
+    private fun addScrollAdapter(layoutManager: LinearLayoutManager) {
         action_recycler.addOnScrollListener(object : PaginationScrollListenerAction(layoutManager) {
             override fun loadMoreItems() {
                 issLoading = true
@@ -77,12 +65,13 @@ class ActionActivity : BaseActivity(), ActionAdapterNoPag.OnItemClickListener, A
 
         })
     }
+
     private fun loadFirstPage() {
         presenter?.getActionDataFirst(limitPage, 0)
     }
 
     private fun loadNextPage() {
-        presenter?.getActionDataFirst(limitPage, currentPage * limitPage)
+        presenter?.getActionData(limitPage, currentPage * limitPage)
     }
 
 
@@ -113,11 +102,13 @@ class ActionActivity : BaseActivity(), ActionAdapterNoPag.OnItemClickListener, A
 
     private fun fetchResults(response: ActionDataPaginated?): List<ActionData> {    //3
         return response?.results!!
-    }*/
+    }
 
-   /* override fun onAnnounClick(main: ActionData, position: Int) {
-        startActivity(Intent(this, ActionDetailed::class.java))
-
-    }*/
+    override fun onActionCLick(actionData: ActionData, position: Int) {
+        val intent = Intent(this, ActionDetailed::class.java)
+        intent.putExtra(ACTIVITY_ID, ACTION_DETAILED)
+        intent.putExtra(ACTION_DETAILED, actionData)
+        startActivity(intent)
+    }
 
 }

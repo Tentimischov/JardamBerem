@@ -1868,6 +1868,10 @@
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/294ab58f778dc7634a20a49be9b2c776/res/drawable/notification_bg_low.xml"
     },
     {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable_place_holder_image.jpg.flat",
+        "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/drawable/place_holder_image.jpg"
+    },
+    {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
@@ -2358,10 +2362,6 @@
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_app_icon_rounded.xml.flat",
         "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/mipmap-anydpi-v26/app_icon_rounded.xml"
-    },
-    {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/layout_activity_info_d.xml.flat",
-        "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/layout/activity_info_d.xml"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_complain.png.flat",

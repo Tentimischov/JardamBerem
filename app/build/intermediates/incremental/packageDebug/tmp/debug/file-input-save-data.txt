@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Mon Jul 23 20:10:25 KGT 2018
+#Sat Jul 28 14:01:01 KGT 2018
 0.baseType=DIRECTORY
-0.base=/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/transforms/dexMerger/debug/0
+0.base=/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/transforms/dexMerger/debug/51
 0.path=classes.dex
 0.set=DEX
 count=1

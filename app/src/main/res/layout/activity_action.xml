@@ -15,16 +15,32 @@
         <include layout="@layout/toolbar" />
 
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/action_recycler"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/cell_action" />
+            android:layout_height="wrap_content">
 
-        <ProgressBar
-            android:id="@+id/pro_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/action_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/cell_action" />
+
+            <ProgressBar
+                android:id="@+id/pro_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:indeterminate="true"
+                android:indeterminateTint="#1a09d6" />
+
+            <TextView
+                style="@style/TextViewCard"
+                android:visibility="gone"
+                android:id="@+id/empty"
+                android:gravity="center"
+                android:text="@string/not_found" />
+        </FrameLayout>
     </LinearLayout>
 
     <include layout="@layout/navigation_view" />

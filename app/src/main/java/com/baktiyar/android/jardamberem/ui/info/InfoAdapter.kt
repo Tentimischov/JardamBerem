@@ -55,7 +55,7 @@ class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?
                 holder.itemView.info_title.text = model.title
                 holder.itemView.info_des.text = model.description
                 holder.itemView.setOnClickListener {
-                    mListener?.onAnnounClick(data[position], position)
+                    mListener?.onInfoClick(data[position])
                 }
             }
             LOADING -> {
@@ -68,7 +68,7 @@ class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?
 
 
     interface OnItemClickListener {
-        fun onAnnounClick(main: Info, position: Int)
+        fun onInfoClick(main: Info)
     }
 
 

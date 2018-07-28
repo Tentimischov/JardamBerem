@@ -5,50 +5,55 @@
     android:minWidth="40000dp"
     android:minHeight="@dimen/size_16"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_2"
+    app:layout_goneMarginTop="@dimen/size_2"
+    android:layout_marginBottom="@dimen/size_3"
+    app:layout_goneMarginBottom="@dimen/size_3">
 
-
-    <TextView
-        android:id="@+id/forum_body"
-        style="@style/ForumTextView"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
-        android:includeFontPadding="false"
-        android:lineSpacingExtra="@dimen/margin_0dp"
-        android:paddingTop="@dimen/margin_0dp"
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Бездомных в Москве в лучшем случае не замечают. А здесь они в чистой футбольной форме, готовые к спортивной борьбе. Организатор – православная служба помощи «Милосердие»." />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/forum_user"
-        style="@style/ForumTextView"
-        android:layout_height="38dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="2dp"
-        android:background="@color/transparent"
-        android:gravity="end"
-        android:includeFontPadding="false"
-        android:paddingBottom="@dimen/margin_0dp"
-        android:paddingEnd="@dimen/size_8"
-        android:paddingLeft="@dimen/size_8"
-        android:paddingRight="@dimen/size_8"
-        android:paddingStart="@dimen/size_8"
-        android:textAlignment="textEnd"
-        android:textAllCaps="false"
-        android:textColor="#6A6A6A"
-        android:textSize="@dimen/size_16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forum_body"
-        tools:text="Эркин" />
+        <TextView
+            android:id="@+id/forum_body"
+            style="@style/ForumTextView"
+            android:layout_marginBottom="@dimen/size_35"
+            android:lineSpacingExtra="@dimen/margin_0dp"
+            android:paddingTop="@dimen/margin_0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Бездомных в Москве в лучшем случае не замечают. А здесь они в чистой футбольной форме, готовые к спортивной борьбе. Организатор – православная служба помощи «Милосердие»." />
+
+        <TextView
+            android:id="@+id/forum_user"
+            style="@style/ForumTextView"
+            android:background="@color/transparent"
+            android:gravity="end"
+            android:layout_gravity="bottom"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/margin_0dp"
+            android:paddingEnd="@dimen/size_8"
+            android:paddingLeft="@dimen/size_8"
+            android:paddingRight="@dimen/size_8"
+            android:paddingStart="@dimen/size_8"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textColor="#6A6A6A"
+            android:textSize="@dimen/size_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forum_body"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Эркин" />
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

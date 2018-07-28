@@ -13,13 +13,13 @@ import retrofit2.Response
 class AnnounCategoryPresenter(var v: AnnounCategoryContract.View, var context: Context) : AnnounCategoryContract.Presenter {
     override fun getDataFirst(limit: Int, offset: Int) {
         Log.e("__________", Settings.getCityId(context).toString())
-        ApplicationClass.INSTANCE?.service?.getAnnounByCategory(Settings.getCityId(context), Settings.getCategoryId(context), limit, offset)?.enqueue(object : Callback<ArrayList<Announcements>> {
-            override fun onFailure(call: Call<ArrayList<Announcements>>?, t: Throwable?) {
+        ApplicationClass.INSTANCE?.service?.getAnnounByCategory(Settings.getCityId(context), Settings.getCategoryId(context), limit, offset)?.enqueue(object : Callback<AnnouncementsPaginated> {
+            override fun onFailure(call: Call<AnnouncementsPaginated>?, t: Throwable?) {
                 v.onError(t?.message!!)
             }
 
-            override fun onResponse(call: Call<ArrayList<Announcements>>?, response: Response<ArrayList<Announcements>>?) {
-                if (response?.isSuccessful!!) v.onSuccessFirst(response.body()!!)
+            override fun onResponse(call: Call<AnnouncementsPaginated>?, response: Response<AnnouncementsPaginated>?) {
+                if (response?.isSuccessful!!) v.onSuccessFirst(response.body()!!.results)
                 else v.onError(response.message())
             }
 

@@ -176,6 +176,7 @@
     <string name="success">Успех</string>
     <string name="forum_hint">Оставьте имя или номер телефона</string>
     <string name="sent">Отправлено</string>
+    <string name="not_found">Не найдено</string>
 
 
 </resources>

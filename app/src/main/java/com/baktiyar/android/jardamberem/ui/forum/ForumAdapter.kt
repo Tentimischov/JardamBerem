@@ -4,10 +4,15 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Forum
 import com.baktiyar.android.jardamberem.utils.RoundedImageView
 import kotlinx.android.synthetic.main.cell_forum.view.*
+import android.widget.LinearLayout
+import android.widget.TextView
+
+
 
 class ForumAdapter(var data: ArrayList<Forum>) :
         RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -56,10 +61,6 @@ class ForumAdapter(var data: ArrayList<Forum>) :
             ITEM -> {
                 holder.itemView.forum_user.text = model.nickName
                 holder.itemView.forum_body.text = model.comment
-
-                val l = RoundedImageView(holder.itemView.context, null)
-                // l.loadImage(model.imgPath, holder.itemView.im)
-
             }
             LOADING -> {
                 return

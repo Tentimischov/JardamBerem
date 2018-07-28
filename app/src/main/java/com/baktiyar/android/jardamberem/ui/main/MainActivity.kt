@@ -7,7 +7,6 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.net.ConnectivityManager
-import android.os.Build
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v4.widget.NestedScrollView
@@ -23,19 +22,19 @@ import android.view.View
 import android.view.animation.LinearInterpolator
 import android.view.animation.OvershootInterpolator
 import android.widget.ArrayAdapter
-import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.AllCategory
 import com.baktiyar.android.jardamberem.model.Announcements
+import com.baktiyar.android.jardamberem.model.AnnouncementsPaginated
 import com.baktiyar.android.jardamberem.model.Urgent
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.ConstantsJava
-import com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity
 import com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity
 import com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity
 import com.baktiyar.android.jardamberem.ui.main.adapter.*
 import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
 import com.baktiyar.android.jardamberem.ui.product.post_product.NewProductActivity
+import com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity
 import com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailed
 import com.baktiyar.android.jardamberem.utils.Const
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_URGENT
@@ -54,16 +53,7 @@ import kotlin.collections.ArrayList
 class MainActivity : BaseActivity(), MainContract.View,
         View.OnClickListener, CategoryAdapter.OnItemClickListener,
         UrgentAdapter.OnUrgClickListener,
-        SearchView.OnQueryTextListener, AnnounAdapterNoPaginated.OnAnnounClickNoPage {
-    override fun onAnnounIsNeeded(data: ArrayList<Announcements>) {
-        announAdapterS?.setAnData(data)
-        pro_bar.visibility = View.GONE
-    }
-
-    override fun onAnnounFirstSuccesss(data: ArrayList<Announcements>) {
-        announAdapterS?.setAnData(data)
-        pro_bar.visibility = View.GONE
-    }
+        SearchView.OnQueryTextListener, AnnounAdapter.OnItemClickListener {
 
 
     private val TOTAL_PAGES: Int = 10
@@ -72,7 +62,7 @@ class MainActivity : BaseActivity(), MainContract.View,
     private var limitPage = 10
     private val PAGE_START = 1
     private var currentPage = PAGE_START
-    //  private var announAdapter: AnnounAdapter? = null
+    private var announAdapter: AnnounAdapter? = null
     private var caAdapter: CategoryAdapter? = null
     private var urgAdapter: UrgentAdapter? = null
     private var visibleCard: Boolean = true
@@ -81,7 +71,7 @@ class MainActivity : BaseActivity(), MainContract.View,
     private var isNeeded: Int? = 0
     private var allUrgent: ArrayList<Urgent>? = null
     private var categoryFilterId: Int? = null
-    private var announAdapterS: AnnounAdapterNoPaginated? = null
+    // private var announAdapterS: AnnounAdapterNoPaginated? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         ConstantsJava.setLocale(baseContext, Locale(Settings.getLanguage(baseContext)))
@@ -119,11 +109,9 @@ class MainActivity : BaseActivity(), MainContract.View,
 
         mPresenter?.getCategory(Settings.getCityId(this))
 
-        mPresenter?.getUrgent(100, 0)
-        if (Settings.getSpinnerItemPosition(this) == 0)
-            mPresenter?.getAnnounFirstIsNeededFalses(10000, 0)
-        else
-            mPresenter?.getAnnounFirst(100, 0)
+        mPresenter?.getUrgent(1000, 0)
+
+
         appBar?.addOnOffsetChangedListener { appBarLayout, verticalOffset ->
             //if(Math.abs(verticalOffset) == appBarLayout.totalScrollRange)
             //showKeyBoard()
@@ -136,16 +124,15 @@ class MainActivity : BaseActivity(), MainContract.View,
 
     private fun initAnn() {
 
-        announAdapterS = AnnounAdapterNoPaginated(ArrayList(), this)
-        // announAdapter = AnnounAdapter(ArrayList(), this)
+        //announAdapterS = AnnounAdapter(ArrayList(), this)
+        announAdapter = AnnounAdapter(ArrayList(), this)
         val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         announ_recyclerview.layoutManager = staggeredGridLayoutManager
         announ_recyclerview.isNestedScrollingEnabled = false
         announ_recyclerview.itemAnimator = DefaultItemAnimator()
-        announ_recyclerview.adapter = announAdapterS
-        /*addScrollAdapter(staggeredGridLayoutManager)
-
-        loadFirstPage()*/
+        announ_recyclerview.adapter = announAdapter
+        addScrollAdapter(staggeredGridLayoutManager)
+        loadFirstPage()
     }
 
 
@@ -160,16 +147,6 @@ class MainActivity : BaseActivity(), MainContract.View,
         super.onCreateOptionsMenu(menu)
         val menuInflater = menuInflater
         menuInflater.inflate(R.menu.main_menu, menu)
-
-
-        /* val spinner = menu!!.findItem(R.id.spinner).actionView as Spinner
-         val adapter = ArrayAdapter.createFromResource(this,
-                 R.array.main_menu_spinner,
-                 android.R.layout.simple_spinner_item)
-         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-         spinner.adapter = adapter
-         spinner.setSelection(Settings.getSpinnerItemPosition(this))
-         spinner.onItemSelectedListener = Const.Companion.SpinnerActivity(this, this@MainActivity)*/
 
 
         val search = menu?.findItem(R.id.search)
@@ -219,7 +196,7 @@ class MainActivity : BaseActivity(), MainContract.View,
         return true
     }
 
-    /*private fun addScrollAdapter(staggeredGridLayoutManager: StaggeredGridLayoutManager) {
+    private fun addScrollAdapter(staggeredGridLayoutManager: StaggeredGridLayoutManager) {
         announ_recyclerview.addOnScrollListener(object : PaginationScrollListener(staggeredGridLayoutManager) {
             override fun loadMoreItems() {
                 issLoading = true
@@ -245,7 +222,7 @@ class MainActivity : BaseActivity(), MainContract.View,
         if (Settings.getSpinnerItemPosition(this) == 1) {
             mPresenter?.getAnnounFirst(limitPage, 0)
         } else {
-            mPresenter?.getAnnounFirstIsNeededFalses(limitPage, 0)
+            mPresenter?.getAnnounFirstIsNeededFalse(limitPage, 0)
         }
     }
 
@@ -254,9 +231,9 @@ class MainActivity : BaseActivity(), MainContract.View,
         if (Settings.getSpinnerItemPosition(this) == 1) {
             mPresenter?.getAnnounNext(limitPage, currentPage * limitPage)
         } else {
-            mPresenter?.getAnnounNextIsNeededFalses(limitPage, currentPage * limitPage)
+            mPresenter?.getAnnounNextIsNeededFalse(limitPage, currentPage * limitPage)
         }
-    }*/
+    }
 
     override fun onClick(v: View?) {
         if (v?.id == R.id.addCardView) {
@@ -272,19 +249,19 @@ class MainActivity : BaseActivity(), MainContract.View,
     fun initClick() {
         addCardView.setOnClickListener(this)
         all.setOnClickListener(this)
-    }/*
+    }
 
     override fun onAnnounFirstSuccess(data: AnnouncementsPaginated) {
         val model: List<Announcements> = fetchResults(data)
         pro_bar.visibility = View.GONE
-        val id = Settings.getCategoryId(this)
-        val filteredList = model.filter { it.category == id }
-        announAdapter?.addAll(filteredList)
+        announAdapter?.addAll(model)
 
         if (data.next != null) {
             announAdapter?.addLoadingFooter()
-        } else
+        } else {
             issLastPage = true
+            pro_bar.visibility = View.GONE
+        }
     }
 
     override fun onAnnounNextSuccess(data: AnnouncementsPaginated) {
@@ -293,17 +270,16 @@ class MainActivity : BaseActivity(), MainContract.View,
         pro_bar.visibility = View.GONE
 
         val model: List<Announcements> = fetchResults(data)
-        val id = Settings.getCategoryId(this)
-        val filteredList = model.filter { it.category == id }
-        announAdapter?.addAll(filteredList)
+        announAdapter?.addAll(model)
         if (data.next == null) {
             issLastPage = true
+            pro_bar.visibility = View.GONE
         } else {
             announAdapter?.addLoadingFooter()
         }
     }
 
-    private fun fetchResults(response: AnnouncementsPaginated): List<Announcements> {    //3
+    private fun fetchResults(response: AnnouncementsPaginated): List<Announcements> {
         return response.results
     }
 
@@ -315,7 +291,7 @@ class MainActivity : BaseActivity(), MainContract.View,
 
 
     }
-*/
+
 
     private fun initCardBut() {
 
@@ -390,12 +366,6 @@ class MainActivity : BaseActivity(), MainContract.View,
     }
 
 
-    override fun onAnClick(data: Announcements) {
-        val intent = Intent(this, DetailedProductActivity::class.java)
-        intent.putExtra(GOODS, data)
-        startActivity(intent)
-    }
-
     override fun onUrgClick(main: Urgent) {
         val intent = Intent(this, UrgentDetailed::class.java)
         intent.putExtra(ACTION_URGENT, main)
@@ -444,13 +414,16 @@ class MainActivity : BaseActivity(), MainContract.View,
         pro_bar.visibility = View.GONE
     }
 
-    override fun attachBaseContext(newBase: Context) {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N_MR1) {
-            super.attachBaseContext(MyContextWrapper.wrap(newBase, "ky"))
-        } else {
-            super.attachBaseContext(newBase)
-        }
+    override fun onAnnounClick(data: Announcements) {
+        val intent = Intent(this, DetailedProductActivity::class.java)
+        intent.putExtra(GOODS, data)
+        startActivity(intent)
     }
+
+    /*override fun onAnnounIsNeeded(data: ArrayList<Announcements>) {
+        announAdapterS?.setAnData(data)
+        pro_bar.visibility = View.GONE
+    }*/
 
 
 }

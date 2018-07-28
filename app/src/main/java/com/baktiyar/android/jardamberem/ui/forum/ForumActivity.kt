@@ -4,7 +4,9 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.support.design.widget.BottomSheetBehavior
+import android.support.v4.content.ContextCompat
 import android.support.v4.widget.NestedScrollView
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
@@ -13,18 +15,23 @@ import android.view.animation.OvershootInterpolator
 import android.widget.FrameLayout
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Forum
+import com.baktiyar.android.jardamberem.model.ForumPaginated
 import com.baktiyar.android.jardamberem.ui.BaseActivity
+import com.baktiyar.android.jardamberem.ui.action.PaginationScrollListenerAction
 import com.baktiyar.android.jardamberem.ui.feedback.FeedbackActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
+import com.dd.morphingbutton.MorphingButton
+import kotlinx.android.synthetic.main.activity_feedback.*
 import kotlinx.android.synthetic.main.activity_forum.*
+import org.jetbrains.anko.dimen
 import org.jetbrains.anko.toast
 
 
 class ForumActivity : BaseActivity(), ForumContract.View {
-    private var adapter: ForumAdapterNoPag? = null
+    private var adapter: ForumAdapter? = null
 
     private var presenter: ForumPresenter? = null
-
+    private val mHandler = Handler()
     private var visibleCard: Boolean = true
     private val TOTAL_PAGES: Int = 10
     private var issLoading = false
@@ -41,12 +48,11 @@ class ForumActivity : BaseActivity(), ForumContract.View {
 
         init()
 
-        addCardView.setOnClickListener {
+        addForum.setOnClickListener {
             val intent = Intent(this, FeedbackActivity::class.java)
             intent.putExtra(ACTIVITY_ID, 2)
             startActivity(intent)
         }
-
     }
 
     fun init() {
@@ -55,7 +61,6 @@ class ForumActivity : BaseActivity(), ForumContract.View {
         initAdapter()
         presenter?.getForumFirst(100, 0)
     }
-
 
     override fun onSendSuccess() {
         toast(getString(R.string.sent))
@@ -68,13 +73,13 @@ class ForumActivity : BaseActivity(), ForumContract.View {
         scroll.setOnScrollChangeListener { _: NestedScrollView?, _: Int, scrollY: Int, _: Int, oldScrollY: Int ->
             if (scrollY >= oldScrollY && visibleCard) {
                 hideFabWithObjectAnimator()
-                addCardView.isClickable = false
+                addForum.isClickable = false
                 //addCardView.visibility = View.GONE
                 visibleCard = !visibleCard
             } else if (!visibleCard && scrollY <= oldScrollY) {
                 visibleCard = !visibleCard
                 showFabWithObjectAnimator()
-                addCardView.isClickable = true
+                addForum.isClickable = true
             }
         }
 
@@ -84,8 +89,8 @@ class ForumActivity : BaseActivity(), ForumContract.View {
     fun hideFabWithObjectAnimator() {
         val scaleSet = AnimatorSet()
 
-        val xScaleAnimator = ObjectAnimator.ofFloat(addCardView, View.SCALE_X, 0f)
-        val yScaleAnimator = ObjectAnimator.ofFloat(addCardView, View.SCALE_Y, 0f)
+        val xScaleAnimator = ObjectAnimator.ofFloat(addForum, View.SCALE_X, 0f)
+        val yScaleAnimator = ObjectAnimator.ofFloat(addForum, View.SCALE_Y, 0f)
 
         scaleSet.duration = 200
         scaleSet.interpolator = LinearInterpolator()
@@ -97,8 +102,8 @@ class ForumActivity : BaseActivity(), ForumContract.View {
     fun showFabWithObjectAnimator() {
         val scaleSet = AnimatorSet()
 
-        val xScaleAnimator = ObjectAnimator.ofFloat(addCardView, View.SCALE_X, 1f)
-        val yScaleAnimator = ObjectAnimator.ofFloat(addCardView, View.SCALE_Y, 1f)
+        val xScaleAnimator = ObjectAnimator.ofFloat(addForum, View.SCALE_X, 1f)
+        val yScaleAnimator = ObjectAnimator.ofFloat(addForum, View.SCALE_Y, 1f)
 
         scaleSet.duration = 400
         scaleSet.interpolator = OvershootInterpolator()
@@ -107,26 +112,20 @@ class ForumActivity : BaseActivity(), ForumContract.View {
         scaleSet.start()
     }
 
-    override fun onForumFirstSuccess(data: ArrayList<Forum>) {
-        adapter?.setForumData(data)
-        pro_bar.visibility = View.GONE
-    }
-
     override fun onError(message: String) {
         pro_bar.visibility = View.GONE
     }
 
 
     fun initAdapter() {
-        adapter = ForumAdapterNoPag(ArrayList())
+        adapter = ForumAdapter(ArrayList())
         val layoutManager = LinearLayoutManager(this)
         forum_rec.layoutManager = layoutManager
         forum_rec.adapter = adapter
         forum_rec.isNestedScrollingEnabled = false
-        //addScrollAdapter(layoutManager)
-        //loadFirstPage()
+        addScrollAdapter(layoutManager)
+        loadFirstPage()
     }
-/*
 
     override fun onForumFirstSuccess(data: ForumPaginated) {
         val model: List<Forum> = fetchResults(data)
@@ -135,12 +134,13 @@ class ForumActivity : BaseActivity(), ForumContract.View {
 
         if (data?.next != null) {
             adapter?.addLoadingFooter()
-        } else
+        } else {
             issLastPage = true
+            pro_bar.visibility = View.GONE
+        }
     }
 
-   */
-/* override fun onForumNextSuccess(data: ForumPaginated) {
+ override fun onForumNextSuccess(data: ForumPaginated) {
         adapter?.removeLoadingFooter()
         issLoading = false
         pro_bar.visibility = View.GONE
@@ -149,11 +149,12 @@ class ForumActivity : BaseActivity(), ForumContract.View {
         adapter?.addAll(model)
         if (data?.next == null) {
             issLastPage = true
+            pro_bar.visibility = View.GONE
         } else {
             adapter?.addLoadingFooter()
         }
     }
-*//*
+
 
     private fun addScrollAdapter(layoutManager: LinearLayoutManager) {
         forum_rec.addOnScrollListener(object : PaginationScrollListenerAction(layoutManager) {
@@ -184,14 +185,9 @@ class ForumActivity : BaseActivity(), ForumContract.View {
         presenter?.getForumNext(limitPage, currentPage * limitPage)
     }
 
-    override fun onSendSuccess() {
-        toast(getString(R.string.success))
-    }
-
 
     private fun fetchResults(response: ForumPaginated?): List<Forum> {    //3
         return response?.results!!
     }
-*/
 
 }

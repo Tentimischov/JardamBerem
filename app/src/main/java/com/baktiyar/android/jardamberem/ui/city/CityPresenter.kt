@@ -11,15 +11,15 @@ class CityPresenter(var v: CityContact.View) : CityContact.Presenter {
 
     override fun getCity() {
         v.showProgress()
-        ApplicationClass.INSTANCE?.service?.getCities()?.enqueue(object : Callback<ArrayList<City>> {
-            override fun onFailure(call: Call<ArrayList<City>>?, t: Throwable?) {
+        ApplicationClass.INSTANCE?.service?.getCities()?.enqueue(object : Callback<CityPaginated> {
+            override fun onFailure(call: Call<CityPaginated>?, t: Throwable?) {
                 v.onError(t.toString())
                 v.hideProgress()
             }
 
-            override fun onResponse(call: Call<ArrayList<City>>?, response: Response<ArrayList<City>>) {
+            override fun onResponse(call: Call<CityPaginated>?, response: Response<CityPaginated>) {
                 if (response.isSuccessful) {
-                    v.onSuccess(response.body()!!)
+                    v.onSuccess(response.body()!!.results)
                 } else {
                     v.onError(response.errorBody().toString())
 

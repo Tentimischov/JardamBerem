@@ -6,12 +6,13 @@ import com.baktiyar.android.jardamberem.model.ActionDataPaginated
 interface ActionContract {
 
     interface View {
-       // fun onSuccessNext(data: ActionDataPaginated?)
-        fun onSuccessFirst(data: ArrayList<ActionData>?)
+        fun onSuccessNext(data: ActionDataPaginated?)
+        fun onSuccessFirst(data: ActionDataPaginated?)
         fun onError(message: String)
     }
+
     interface Presenter {
-      //  fun getActionData(limit: Int, offset: Int)
+        fun getActionData(limit: Int, offset: Int)
         fun getActionDataFirst(limit: Int, offset: Int)
     }
 

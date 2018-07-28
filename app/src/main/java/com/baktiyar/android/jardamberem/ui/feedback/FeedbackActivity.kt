@@ -59,7 +59,6 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
 
             initFeedBack()
             sendData(mFeedback!!)
-
         }
     }
 
@@ -71,9 +70,9 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
     fun successLoadingButton() {
         val circle = MorphingButton.Params.create()
                 .duration(500)
-                .cornerRadius(dimen(R.dimen.size_45)) // 56 dp
-                .width(dimen(R.dimen.size_45)) // 56 dp
-                .height(dimen(R.dimen.size_45)) // 56 dp
+                .cornerRadius(dimen(R.dimen.size_45))
+                .width(dimen(R.dimen.size_45))
+                .height(dimen(R.dimen.size_45))
                 .color(ContextCompat.getColor(this, android.R.color.holo_green_light)) // normal state color
                 .colorPressed(ContextCompat.getColor(this, android.R.color.holo_green_light)) // pressed state color
                 .icon(R.drawable.done_loading)
@@ -110,6 +109,7 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
     fun initUi() {
         if (actvityId == 2) {
             etFeedbackEmail.hint = getString(R.string.forum_hint)
+
         }
     }
 

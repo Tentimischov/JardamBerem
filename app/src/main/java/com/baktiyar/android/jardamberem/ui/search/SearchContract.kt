@@ -9,7 +9,7 @@ interface SearchContract {
     }
 
     interface Presenter {
-        fun getSearch(cityId: Int?, categoryId: Int?, cities: Int?, categories: Int?, isNeeded: Int?, title: String?)
+        fun getSearch(cityId: Int?, title: String?)
     }
 
 }

@@ -16,7 +16,7 @@ import com.baktiyar.android.jardamberem.utils.Const.Companion.INFO_ACTIVITY
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INFO_DETAILED
 import kotlinx.android.synthetic.main.activity_action.*
 
-class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapterNoPag.OnItemClickListener {
+class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapter.OnItemClickListener {
     override fun onInfoClick(info: Info) {
         val intent = Intent(this, ActionDetailed::class.java)
         intent.putExtra(ACTIVITY_ID, INFO_ACTIVITY)
@@ -24,13 +24,9 @@ class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapterNoPag.OnItemC
         startActivity(intent)
     }
 
-    override fun onSuccessFirst(data: ArrayList<Info>) {
-        adapter?.setInfo(data)
-    }
-
 
     var presenter: InfoPresenter? = null
-    var adapter: InfoAdapterNoPag? = null
+    var adapter: InfoAdapter? = null
     private val TOTAL_PAGES: Int = 10
     private var issLoading = false
     private var issLastPage = false
@@ -51,16 +47,15 @@ class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapterNoPag.OnItemC
 
     fun init() {
         presenter = InfoPresenter(this)
-        adapter = InfoAdapterNoPag(ArrayList(), this)
+        adapter = InfoAdapter(ArrayList(), this)
         val layoutManager = LinearLayoutManager(this)
         action_recycler.layoutManager = layoutManager
         action_recycler.adapter = adapter
-        presenter?.getInfoFirst(100, 0)
-       // addScrollAdapter(layoutManager)
-      //  loadFirstPage()
+        addScrollAdapter(layoutManager)
+        loadFirstPage()
     }
 
-    /*private fun addScrollAdapter(layoutManager: LinearLayoutManager) {
+    private fun addScrollAdapter(layoutManager: LinearLayoutManager) {
         action_recycler.addOnScrollListener(object : PaginationScrollListenerAction(layoutManager) {
             override fun loadMoreItems() {
                 issLoading = true
@@ -118,8 +113,5 @@ class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapterNoPag.OnItemC
         return response?.results!!
     }
 
-    /*override fun onAnnounClick(main: Info, position: Int) {
 
-    }*/
-*/
 }

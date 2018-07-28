@@ -61,7 +61,6 @@ class ActionAdapter(var data: ArrayList<ActionData>, var mListener: OnItemClickL
                 if (model.imgPath != null) {
                     ok = false
                     Picasso.get().load(model.imgPath).into(holder.itemView.action_image)
-                    Log.e("___________", model.imgPath)
                 } else if (model.imgPath2 != null && ok) {
                     ok = false
                     Picasso.get().load(model.imgPath2).into(holder.itemView.action_image)
@@ -70,7 +69,7 @@ class ActionAdapter(var data: ArrayList<ActionData>, var mListener: OnItemClickL
                 }
 
                 holder.itemView.setOnClickListener {
-                    mListener?.onAnnounClick(data[position], position)
+                    mListener?.onActionCLick(data[position], position)
                 }
             }
             LOADING -> {
@@ -83,12 +82,12 @@ class ActionAdapter(var data: ArrayList<ActionData>, var mListener: OnItemClickL
 
 
     interface OnItemClickListener {
-        fun onAnnounClick(main: ActionData, position: Int)
+        fun onActionCLick(main: ActionData, position: Int)
     }
 
 
     override fun getItemViewType(position: Int): Int {
-        return if (position == data.size - 1 && isLoadingAdded) LOADING else ITEM;
+        return if (position == data.size - 1 && isLoadingAdded) LOADING else ITEM
     }
 
     fun add(mc: ActionData) {
@@ -99,14 +98,6 @@ class ActionAdapter(var data: ArrayList<ActionData>, var mListener: OnItemClickL
     fun addAll(mcList: List<ActionData>) {
         for (mc in mcList) {
             add(mc)
-        }
-    }
-
-    fun remove(city: ActionData) {
-        val position = data.indexOf(city)
-        if (position > -1) {
-            data.removeAt(position)
-            notifyItemRemoved(position)
         }
     }
 

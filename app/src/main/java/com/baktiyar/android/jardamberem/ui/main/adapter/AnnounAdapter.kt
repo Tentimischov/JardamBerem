@@ -8,6 +8,7 @@ import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
 import com.baktiyar.android.jardamberem.utils.RoundedImageView
 import com.bumptech.glide.Glide
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_vertical_main.view.*
 
 class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemClickListener?) :
@@ -19,7 +20,7 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
 
 
     override fun getItemCount(): Int {
-        return if (data.size == null) 0 else data.size
+        return data.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -39,9 +40,7 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
     protected inner class LoadingVH(itemView: View) : RecyclerView.ViewHolder(itemView)
 
 
-    class MViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-    }
+    class MViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     private fun getViewHolder(parent: ViewGroup, inflater: LayoutInflater): RecyclerView.ViewHolder {
         val viewHolder: RecyclerView.ViewHolder
@@ -56,12 +55,10 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
         when (getItemViewType(position)) {
             ITEM -> {
                 holder.itemView.title.text = model.title
-                Glide.with(holder.itemView.context).load(model.imgPath).into(holder.itemView.im)
-                val l = RoundedImageView(holder.itemView.context, null)
-               // l.loadImage(model.imgPath, holder.itemView.im)
+                Picasso.get().load(model.imgPath).into(holder.itemView.im)
 
                 holder.itemView.setOnClickListener {
-                    mListener?.onAnnounClick(data[position], position)
+                    mListener?.onAnnounClick(data[position])
                 }
             }
             LOADING -> {
@@ -74,12 +71,12 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
 
 
     interface OnItemClickListener {
-        fun onAnnounClick(main: Announcements, position: Int)
+        fun onAnnounClick(main: Announcements)
     }
 
 
     override fun getItemViewType(position: Int): Int {
-        return if (position == data.size - 1 && isLoadingAdded) LOADING else ITEM;
+        return if (position == data.size - 1 && isLoadingAdded) LOADING else ITEM
     }
 
     fun add(mc: Announcements) {
