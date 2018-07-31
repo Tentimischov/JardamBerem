@@ -12,6 +12,7 @@ import android.provider.Settings.Secure
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import com.baktiyar.android.jardamberem.ApplicationClass
@@ -39,6 +40,7 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dp)
         mProduct = intent.getParcelableExtra(GOODS)
+
         title = getString(R.string.info)
         init()
     }

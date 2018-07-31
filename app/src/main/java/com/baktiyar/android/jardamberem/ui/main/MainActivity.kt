@@ -55,11 +55,10 @@ class MainActivity : BaseActivity(), MainContract.View,
         UrgentAdapter.OnUrgClickListener,
         SearchView.OnQueryTextListener, AnnounAdapter.OnItemClickListener {
 
-
-    private val TOTAL_PAGES: Int = 10
+    private val TOTAL_PAGES: Int = 100
     private var issLoading = false
     private var issLastPage = false
-    private var limitPage = 10
+    private var limitPage = 100
     private val PAGE_START = 1
     private var currentPage = PAGE_START
     private var announAdapter: AnnounAdapter? = null
@@ -68,10 +67,7 @@ class MainActivity : BaseActivity(), MainContract.View,
     private var visibleCard: Boolean = true
     private var mPresenter: MainPresenter? = null
     private var categoryData: ArrayList<AllCategory>? = null
-    private var isNeeded: Int? = 0
     private var allUrgent: ArrayList<Urgent>? = null
-    private var categoryFilterId: Int? = null
-    // private var announAdapterS: AnnounAdapterNoPaginated? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         ConstantsJava.setLocale(baseContext, Locale(Settings.getLanguage(baseContext)))
@@ -252,30 +248,23 @@ class MainActivity : BaseActivity(), MainContract.View,
     }
 
     override fun onAnnounFirstSuccess(data: AnnouncementsPaginated) {
-        val model: List<Announcements> = fetchResults(data)
         pro_bar.visibility = View.GONE
-        announAdapter?.addAll(model)
-
+        announAdapter?.addAll(fetchResults(data))
         if (data.next != null) {
             announAdapter?.addLoadingFooter()
         } else {
             issLastPage = true
-            pro_bar.visibility = View.GONE
         }
     }
 
     override fun onAnnounNextSuccess(data: AnnouncementsPaginated) {
         announAdapter?.removeLoadingFooter()
         issLoading = false
-        pro_bar.visibility = View.GONE
-
-        val model: List<Announcements> = fetchResults(data)
-        announAdapter?.addAll(model)
-        if (data.next == null) {
-            issLastPage = true
-            pro_bar.visibility = View.GONE
-        } else {
+        announAdapter?.addAll(fetchResults(data))
+        if (data.next != null) {
             announAdapter?.addLoadingFooter()
+        } else {
+            issLastPage = true
         }
     }
 
@@ -374,16 +363,12 @@ class MainActivity : BaseActivity(), MainContract.View,
 
     override fun onCaClick(data: AllCategory, position: Int) {
         Settings.setCategoryId(this, data.id)
-        val intent = Intent(this, AnnounByCategoryActivity::class.java)
-        intent.putExtra(CATEGORY_ID, position)
-        intent.putExtra(CATEGORY_NAME, data.category_name)
-        startActivity(intent)
-        /* caAdapter?.setSelectedCard()
-         currentPage = 0
-         announAdapter?.clearList()
-         loadFirstPage()*/
-
-
+        if (data.category_name != getString(R.string.all)) {
+            val intent = Intent(this, AnnounByCategoryActivity::class.java)
+            intent.putExtra(CATEGORY_ID, position)
+            intent.putExtra(CATEGORY_NAME, data.category_name)
+            startActivity(intent)
+        }
     }
 
     override fun onCategorySuccess(data: ArrayList<AllCategory>) {
@@ -412,6 +397,7 @@ class MainActivity : BaseActivity(), MainContract.View,
 
     override fun onError(message: String) {
         pro_bar.visibility = View.GONE
+        issLastPage = true
     }
 
     override fun onAnnounClick(data: Announcements) {
@@ -419,11 +405,6 @@ class MainActivity : BaseActivity(), MainContract.View,
         intent.putExtra(GOODS, data)
         startActivity(intent)
     }
-
-    /*override fun onAnnounIsNeeded(data: ArrayList<Announcements>) {
-        announAdapterS?.setAnData(data)
-        pro_bar.visibility = View.GONE
-    }*/
 
 
 }

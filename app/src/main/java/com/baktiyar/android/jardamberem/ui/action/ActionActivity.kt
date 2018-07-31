@@ -111,4 +111,9 @@ class ActionActivity : BaseActivity(), ActionAdapter.OnItemClickListener, Action
         startActivity(intent)
     }
 
+    override fun onError(message: String) {
+        pro_bar.visibility = View.GONE
+        super.onError(message)
+    }
+
 }

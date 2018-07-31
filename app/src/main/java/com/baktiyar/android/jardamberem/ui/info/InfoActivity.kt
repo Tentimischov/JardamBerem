@@ -113,5 +113,10 @@ class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapter.OnItemClickL
         return response?.results!!
     }
 
+    override fun onError(message: String) {
+        pro_bar.visibility = View.GONE
+        super.onError(message)
+    }
+
 
 }

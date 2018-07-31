@@ -90,14 +90,6 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
         }
     }
 
-    fun remove(city: Announcements) {
-        val position = data.indexOf(city)
-        if (position > -1) {
-            data.removeAt(position)
-            notifyItemRemoved(position)
-        }
-    }
-
 
     fun addLoadingFooter() {
         isLoadingAdded = true

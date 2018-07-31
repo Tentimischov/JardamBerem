@@ -33,13 +33,12 @@ class ForumActivity : BaseActivity(), ForumContract.View {
     private var presenter: ForumPresenter? = null
     private val mHandler = Handler()
     private var visibleCard: Boolean = true
-    private val TOTAL_PAGES: Int = 10
+    private val TOTAL_PAGES: Int = 100
     private var issLoading = false
     private var issLastPage = false
-    private var limitPage = 10
+    private var limitPage = 100
     private val PAGE_START = 1
     private var currentPage = PAGE_START
-    private var btmSheetBehavior: BottomSheetBehavior<FrameLayout>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -114,6 +113,7 @@ class ForumActivity : BaseActivity(), ForumContract.View {
 
     override fun onError(message: String) {
         pro_bar.visibility = View.GONE
+        issLastPage = true
     }
 
 

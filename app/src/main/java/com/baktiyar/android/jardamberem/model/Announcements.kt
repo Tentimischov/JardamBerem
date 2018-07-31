@@ -47,13 +47,13 @@ class Announcements(var id: Int?, var city: Int?,
         parcel.writeString(userImeiCode)
         parcel.writeString(imgPath)
         parcel.writeString(imgPath_height)
-        parcel.writeString(imgPath_height2)
-        parcel.writeString(imgPath_height3)
         parcel.writeString(imgPath_width)
-        parcel.writeString(imgPath_width2)
-        parcel.writeString(imgPath_width3)
         parcel.writeString(imgPath2)
+        parcel.writeString(imgPath_height2)
+        parcel.writeString(imgPath_width2)
         parcel.writeString(imgPath3)
+        parcel.writeString(imgPath_height3)
+        parcel.writeString(imgPath_width3)
         parcel.writeString(date)
     }
 

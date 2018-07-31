@@ -20,7 +20,7 @@ public final class R {
         public static final int shimmer_color = 0x7f06007d;
     }
     public static final class string {
-        public static final int app_name = 0x7f100025;
+        public static final int app_name = 0x7f100026;
     }
     public static final class styleable {
         public static final int[] ShimmerLayout = { 0x7f04015a, 0x7f04015b, 0x7f04015c, 0x7f04015d, 0x7f04015e, 0x7f04015f, 0x7f040160 };
