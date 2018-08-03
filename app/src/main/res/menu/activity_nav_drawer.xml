@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <group>
+    <group >
         <item
             android:id="@+id/main_menu"
             android:icon="@drawable/ic_category"
@@ -27,7 +27,6 @@
             android:id="@+id/lang"
             android:icon="@drawable/ic_language"
             android:title="@string/language" />
-
         <item
             android:id="@+id/region"
             android:icon="@drawable/placeholder"

@@ -1,6 +1,8 @@
 package com.baktiyar.android.jardamberem.utils
 
 import com.baktiyar.android.jardamberem.model.*
+import io.reactivex.Observable
+import io.reactivex.Single
 import okhttp3.RequestBody
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -58,14 +60,14 @@ interface ApiService {
             Call<ArrayList<Announcements>>*/
 
 
-    @GET("api/cities/{id_of_city}/categories/")
-    fun getCategory(@Path("id_of_city") id: Int): Call<CategoryPaginated>
+    @GET("api/categories/")
+    fun getCategory(): Call<CategoryPaginated>
 
     @GET("api/cities")
     fun getCities(): Call<CityPaginated>
 
     @GET("charity_event")
-    fun getActionData(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<ActionDataPaginated>
+    fun getActionData(@Query("limit") limit: Int, @Query("offset") offset: Int): Single<ActionDataPaginated>
 
     @GET("info")
     fun getInfo(@Query("limit") limit: Int?, @Query("offset") offset: Int?): Call<InfoPaginated>
@@ -73,13 +75,13 @@ interface ApiService {
     @GET("history")
     fun getUrgent(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<UrgentPaginated>
 
-    @GET("api/cities/{id_of_city}/categories/{id_of_category}/announcements")
-    fun getAnnounByCategory(@Path("id_of_city") cityId: Int,
-                            @Path("id_of_category") categoryId: Int,
+    @GET("api/categories/{id_of_category}/announcements")
+    fun getAnnounByCategory(@Path("id_of_category") categoryId: Int,
                             @Query("limit") limit: Int, @Query("offset") offset: Int): Call<AnnouncementsPaginated>
 
     @GET("forum")
-    fun getForum(): Call<ForumPaginated>
+    fun getForum(@Query("limit") limit: Int,
+                 @Query("offset") offset: Int): Observable<ForumPaginated>
 
     @POST("forum/")
     fun sendForum(@Body forum: Forum): Call<ResponseBody>

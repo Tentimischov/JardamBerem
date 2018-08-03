@@ -16,12 +16,12 @@
         "source": "/Users/jeenbek/Desktop/JardamBerem/app/build/generated/res/pngs/debug/drawable-hdpi/ic_call_24dp.png"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_arrow_24dp.png.flat",
@@ -44,12 +44,12 @@
         "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/layout/item_product.xml"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-v21/abc_action_bar_item_background_material.xml"
-    },
-    {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -68,20 +68,16 @@
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1734d5f7cb8f1cc0af6728ec9357bfaf/res/color/design_error.xml"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/layout_cell_horizontal_main.xml.flat",
         "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/layout/cell_horizontal_main.xml"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/layout_activity_new_product.xml.flat",
-        "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/layout/activity_new_product.xml"
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_arrow_24dp.png.flat",
@@ -100,12 +96,12 @@
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/color_abc_tint_spinner.xml.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/color/abc_tint_spinner.xml"
-    },
-    {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/bfd4ad1412f83bf8848d8677721ffc1e/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/color_abc_tint_spinner.xml.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/color/abc_tint_spinner.xml"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-v21_avd_show_password.xml.flat",
@@ -120,28 +116,28 @@
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1734d5f7cb8f1cc0af6728ec9357bfaf/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/color_design_tint_password_toggle.xml.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1734d5f7cb8f1cc0af6728ec9357bfaf/res/color/design_tint_password_toggle.xml"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_add_photo.png.flat",
         "source": "/Users/jeenbek/Desktop/JardamBerem/app/build/generated/res/pngs/debug/drawable-hdpi/ic_add_photo.png"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/color_design_tint_password_toggle.xml.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1734d5f7cb8f1cc0af6728ec9357bfaf/res/color/design_tint_password_toggle.xml"
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1734d5f7cb8f1cc0af6728ec9357bfaf/res/anim-v21/design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -242,6 +238,10 @@
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/raw_imgview_diamond.svg.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/9d0a35cfd5a5eb0eb406039c9ff390ed/res/raw/imgview_diamond.svg"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxhdpi_announcment_no_photo.png.flat",
+        "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/drawable-xxhdpi/announcment_no_photo.png"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_app_icon_rounded_round.xml.flat",
@@ -490,6 +490,10 @@
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/layout_activity_info_detailed.xml.flat",
+        "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/layout/activity_info_detailed.xml"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1388,12 +1392,12 @@
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable_place_holder_plus.png.flat",
         "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/drawable/place_holder_plus.png"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_search_24dp.png.flat",
@@ -2022,6 +2026,10 @@
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable_rounded_selecter.xml.flat",
+        "source": "/Users/jeenbek/Desktop/JardamBerem/app/src/main/res/drawable/rounded_selecter.xml"
     },
     {
         "merged": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",

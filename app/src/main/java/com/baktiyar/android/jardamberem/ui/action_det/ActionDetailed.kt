@@ -32,12 +32,11 @@ class ActionDetailed : AppCompatActivity() {
 
     private fun setData() {
         if (intent.extras != null) {
-            if (actionData?.imgPath != null)
-                Picasso.get().load(actionData?.imgPath).into(image)
-            else if (actionData?.imgPath2 != null)
-                Picasso.get().load(actionData?.imgPath2).into(image)
-            else
-                Picasso.get().load(actionData?.imgPath3).into(image)
+            when {
+                actionData?.imgPath != null -> Picasso.get().load(actionData?.imgPath).into(image)
+                actionData?.imgPath2 != null -> Picasso.get().load(actionData?.imgPath2).into(image)
+                else -> Picasso.get().load(actionData?.imgPath3).into(image)
+            }
             title_d.text = actionData?.title
             body.text = actionData?.description
         }

@@ -10,6 +10,10 @@ import com.baktiyar.android.jardamberem.utils.RoundedImageView
 import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_vertical_main.view.*
+import android.util.DisplayMetrics
+import android.util.Log
+import android.widget.LinearLayout
+
 
 class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemClickListener?) :
         RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -55,7 +59,18 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
         when (getItemViewType(position)) {
             ITEM -> {
                 holder.itemView.title.text = model.title
-                Picasso.get().load(model.imgPath).into(holder.itemView.im)
+                val wid = holder.itemView.context.resources.displayMetrics.widthPixels / 2
+
+                if (model.imgPath != null) {
+                    Picasso.get().load(model.imgPath).into(holder.itemView.im)
+                    if (model.imgPath_height?.toInt()!! > model.imgPath_width?.toInt()!!) {
+                        holder.itemView.im.layoutParams.height = (wid + Math.abs(model.imgPath_height?.toInt()!! - model.imgPath_width?.toInt()!!)) / 2
+                    } else {
+                        holder.itemView.im.layoutParams.height = 200 * (model.imgPath_width?.toInt()!! / model.imgPath_height?.toInt()!!)
+                    }
+                } else {
+                    holder.itemView.im.layoutParams.height = (holder.itemView.context.resources.displayMetrics.widthPixels / 3)
+                }
 
                 holder.itemView.setOnClickListener {
                     mListener?.onAnnounClick(data[position])

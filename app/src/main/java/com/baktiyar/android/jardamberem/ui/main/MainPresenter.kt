@@ -86,7 +86,7 @@ class MainPresenter(var v: MainContract.View) : MainContract.Presenter {
     }
 
     override fun getCategory(id: Int) {
-        ApplicationClass.INSTANCE?.service?.getCategory(id)?.enqueue(object : Callback<CategoryPaginated> {
+        ApplicationClass.INSTANCE?.service?.getCategory()?.enqueue(object : Callback<CategoryPaginated> {
             override fun onFailure(call: Call<CategoryPaginated>?, t: Throwable?) {
                 v.onError(ApplicationClass.INSTANCE!!.getString(R.string.fail))
             }

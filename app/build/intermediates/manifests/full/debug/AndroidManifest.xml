@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.baktiyar.android.jardamberem"
-    android:versionCode="3"
+    android:versionCode="4"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -92,6 +92,7 @@
         <activity android:name="com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailed" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.forum.ForumActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity" />
+        <activity android:name="com.baktiyar.android.jardamberem.ui.info_d.InfoDetailed" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

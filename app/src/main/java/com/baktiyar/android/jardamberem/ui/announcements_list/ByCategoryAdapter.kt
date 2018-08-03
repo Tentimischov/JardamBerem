@@ -1,6 +1,7 @@
 package com.baktiyar.android.jardamberem.ui.announcements_list
 
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,7 +21,17 @@ class ByCategoryAdapter(var data: ArrayList<Announcements>, var mListener: OnIte
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.itemView.title.text = data[position].title
-        Picasso.get().load(data[position].imgPath).into(holder.itemView.im)
+        val wid = holder.itemView.context.resources.displayMetrics.widthPixels / 2
+        if (data[position].imgPath != null) {
+            Picasso.get().load(data[position].imgPath).into(holder.itemView.im)
+            if (data[position].imgPath_height?.toInt()!! > data[position].imgPath_width?.toInt()!!) {
+                holder.itemView.im.layoutParams.height = (wid + Math.abs(data[position].imgPath_height?.toInt()!! - data[position].imgPath_width?.toInt()!!)) / 2
+            } else {
+                holder.itemView.im.layoutParams.height = 200 * (data[position].imgPath_width?.toInt()!! / data[position].imgPath_height?.toInt()!!)
+            }
+        } else {
+            holder.itemView.im.layoutParams.height = (holder.itemView.context.resources.displayMetrics.widthPixels / 3)
+        }
        // holder.itemView.im.width = data[position].imgPath_width?.toInt()!!
         holder.itemView.setOnClickListener{
             mListener.onItemClick(data[position])

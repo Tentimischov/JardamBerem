@@ -4,7 +4,7 @@ import android.os.Parcel
 import android.os.Parcelable
 
 class Announcements(var id: Int?, var city: Int?,
-                    var category: Int?, var isNeeded: Int?,
+                    var category: Int?, var isNeeded: Boolean?,
                     var title: String?, var description: String?,
                     var number: String?, var userImeiCode: String?,
                     var imgPath: String?,
@@ -13,12 +13,12 @@ class Announcements(var id: Int?, var city: Int?,
                     var imgPath_height2: String?, var imgPath_width2: String?,
                     var imgPath3: String?,
                     var imgPath_height3: String?, var imgPath_width3: String?,
-                    var date: String?) : Parcelable {
+                    var date: String?) : Parcelable{
     constructor(parcel: Parcel) : this(
-            parcel.readInt(),
-            parcel.readInt(),
-            parcel.readInt(),
-            parcel.readInt(),
+            parcel.readValue(Int::class.java.classLoader) as? Int,
+            parcel.readValue(Int::class.java.classLoader) as? Int,
+            parcel.readValue(Int::class.java.classLoader) as? Int,
+            parcel.readValue(Boolean::class.java.classLoader) as? Boolean,
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
@@ -35,12 +35,11 @@ class Announcements(var id: Int?, var city: Int?,
             parcel.readString()) {
     }
 
-
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeInt(id!!)
-        parcel.writeInt(city!!)
-        parcel.writeInt(category!!)
-        parcel.writeInt(isNeeded!!)
+        parcel.writeValue(id)
+        parcel.writeValue(city)
+        parcel.writeValue(category)
+        parcel.writeValue(isNeeded)
         parcel.writeString(title)
         parcel.writeString(description)
         parcel.writeString(number)

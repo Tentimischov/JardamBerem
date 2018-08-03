@@ -15,7 +15,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -25,14 +25,14 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
-                android:layout_height="221dp"
-                android:src="@drawable/mountains"
+                android:layout_height="220dp"
                 android:scaleType="centerCrop"
+                android:src="@drawable/mountains"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -61,11 +61,11 @@
                 android:id="@+id/body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="17dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginRight="17dp"
                 android:layout_marginStart="17dp"
-                android:layout_marginTop="8dp"
                 android:fontFamily="@font/open_sans_semibold"
                 android:text="Указанная категория граждан, поступающих в вузы за счет средств федерального бюджета в пределах установленной квоты при успешном преодолении вступительных испытаний, исключена из правила о подаче документов только в один вуз (ч. 3 ст. 71 Федерального закона от 29 декабря 2012 г. № 273-ФЗ «Об образовании в Российской Федерации«).
 
@@ -78,7 +78,9 @@
 Источник: ГАРАНТ.РУ"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/size_16"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title_d" />
         </android.support.constraint.ConstraintLayout>

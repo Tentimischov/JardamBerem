@@ -11,10 +11,10 @@ INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xm
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:60:13-67
 manifest
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
+ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
+INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
+INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
+INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
 MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1734d5f7cb8f1cc0af6728ec9357bfaf/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/c918cc2fb3f02388852a20c70ddca053/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/AndroidManifest.xml:17:1-22:12
@@ -32,6 +32,7 @@ MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.g
 MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/be4ca8121ddf913a8060324468d0a23f/AndroidManifest.xml:2:1-11:12
 MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/bf07b304db149f5018656c61fef4437b/AndroidManifest.xml:2:1-12:12
 MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/9cd59f222c343d05c7222ab1124361f4/AndroidManifest.xml:2:1-14:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/845055babc4ce586d4c375a3383dbc86/AndroidManifest.xml:15:1-21:12
 MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c7208a6879b168a3a7006619abf73b2b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0c392fa1abbdc736468765646e917865/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/b23c6e59a7ccbe6e28fbe62583c242b2/AndroidManifest.xml:2:1-11:12
@@ -46,20 +47,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/afe62855ccff69d9e1ab4db618c15423/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8717036953454a61aab47cc97755fc45/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/9bf8ce297c8eebb09146a2c2ed0dd80f/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
+INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
+INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
 	package
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:3:5-47
 		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
+		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
 		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-89:12
+		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-90:12
 		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:11-69
@@ -92,7 +93,7 @@ ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:1
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:11:22-65
 application
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:13:5-87:19
+ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:13:5-88:19
 MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/c918cc2fb3f02388852a20c70ddca053/AndroidManifest.xml:12:5-20
 MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/c918cc2fb3f02388852a20c70ddca053/AndroidManifest.xml:12:5-20
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b0bb2f53a316f31cad0e739351238d4c/AndroidManifest.xml:7:5-12:19
@@ -248,9 +249,13 @@ ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:8
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:85:19-57
 activity#com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:86:9-83
+ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:86:9-84
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:86:19-81
+activity#com.baktiyar.android.jardamberem.ui.info_d.InfoDetailed
+ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:87:9-69
+	android:name
+		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:87:19-57
 uses-sdk
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
@@ -289,6 +294,8 @@ MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transfor
 MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/bf07b304db149f5018656c61fef4437b/AndroidManifest.xml:8:5-10:41
 MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/9cd59f222c343d05c7222ab1124361f4/AndroidManifest.xml:8:5-10:41
 MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/9cd59f222c343d05c7222ab1124361f4/AndroidManifest.xml:8:5-10:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/845055babc4ce586d4c375a3383dbc86/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/845055babc4ce586d4c375a3383dbc86/AndroidManifest.xml:19:5-43
 MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c7208a6879b168a3a7006619abf73b2b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c7208a6879b168a3a7006619abf73b2b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0c392fa1abbdc736468765646e917865/AndroidManifest.xml:20:5-44

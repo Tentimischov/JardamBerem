@@ -4,7 +4,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5E5E5">
+    android:background="#F9F9F9">
 
     <FrameLayout
         android:id="@+id/content_frame"
@@ -74,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fillViewport="true"
-                android:background="#E5E5E5"
+                android:background="#F9F9F9"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
                 <LinearLayout
@@ -187,7 +187,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:clipToPadding="false"
-                        android:paddingTop="@dimen/pad_10" />
+                        android:layout_marginRight="@dimen/size_3"
+                        android:paddingTop="@dimen/pad_10"
+                        android:layout_marginEnd="@dimen/size_3" />
 
                     <ProgressBar
                         android:id="@+id/pro_bar"

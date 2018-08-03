@@ -1,6 +1,7 @@
 package com.baktiyar.android.jardamberem.ui.info
 
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -52,8 +53,12 @@ class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?
         val model = data[position]
         when (getItemViewType(position)) {
             ITEM -> {
+
+                val  mimeType: String = "text/html"
+                val  encoding: String = "UTF-8"
+
                 holder.itemView.info_title.text = model.title
-                holder.itemView.info_des.text = model.description
+               // holder.itemView.info_des.loadDataWithBaseURL("", model.description, mimeType, encoding, "")
                 holder.itemView.setOnClickListener {
                     mListener?.onInfoClick(data[position])
                 }

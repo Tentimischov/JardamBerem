@@ -12,7 +12,7 @@
 
         <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -21,10 +21,14 @@
                 android:paddingTop="@dimen/size_3"
                 android:textColor="@color/black" />
 
-            <TextView
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/info_des"/>
+            <!--<TextView
                 android:id="@+id/info_des"
                 style="@style/TextViewCard"
-                android:textSize="@dimen/size_16" />
+                android:textSize="@dimen/size_16" />-->
 
             <TextView
                 android:id="@+id/info_date"

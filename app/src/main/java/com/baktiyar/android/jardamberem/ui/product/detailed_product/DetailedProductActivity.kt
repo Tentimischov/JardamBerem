@@ -26,6 +26,7 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_dp.*
 import kotlinx.android.synthetic.main.toolbar.*
 import org.jetbrains.anko.toast
+import java.text.DateFormat
 
 
 class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, DetailedProductContract.View {
@@ -113,7 +114,7 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
 
         tvTitleDetailedProduct.text = mProduct!!.title
         tvDescriptionDetailedProduct.text = mProduct!!.description
-        tvDateDetailedProduct.text = mProduct!!.date
+        tvDateDetailedProduct.text = mProduct!!.date?.substring(0, 10)
     }
 
     override fun onClick(v: View?) {

@@ -83,7 +83,8 @@
         <activity android:name=".ui.action_det.ActionDetailed" />
         <activity android:name=".ui.urgent_detailed.UrgentDetailed" />
         <activity android:name=".ui.forum.ForumActivity" />
-        <activity android:name=".ui.announcements_list.AnnounByCategoryActivity"/>
+        <activity android:name=".ui.announcements_list.AnnounByCategoryActivity" />
+        <activity android:name=".ui.info_d.InfoDetailed"></activity>
     </application>
 
 </manifest>

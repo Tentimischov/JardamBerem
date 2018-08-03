@@ -5,7 +5,8 @@
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="3dp"
     app:cardPreventCornerOverlap="false"
     app:cardCornerRadius="@dimen/size_3"
     card_view:cardCornerRadius="@dimen/size_3">
@@ -25,7 +26,7 @@
             android:scaleType="centerCrop"
             app:sriv_right_top_corner_radius="@dimen/size_3"
             app:sriv_left_top_corner_radius="@dimen/size_3"
-            android:src="@drawable/mountain" />
+            android:src="@drawable/announcment_no_photo" />
 
        <!-- <ImageView
             android:id="@+id/im"
@@ -39,6 +40,7 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:singleLine="true"
             android:layout_weight="0.2"
             android:layout_margin="5dp"
             android:fontFamily="@font/open_sans_semibold"
