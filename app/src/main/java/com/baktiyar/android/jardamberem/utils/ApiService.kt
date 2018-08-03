@@ -15,8 +15,8 @@ interface ApiService {
     fun getProductByCategory(@Path("categoryId") id: Int): Call<List<Product>>
 
 
-    @POST("api/cities/{id_of_city}/categories/{id_of_category}/announcements/")
-    fun sendProduct(@Path("id_of_city") city: Int, @Path("id_of_category") id: Int,
+    @POST("allannouncements/")
+    fun sendProduct(
                     @Body file: RequestBody): Call<ResponseBody>
 
     @DELETE("api/categories/{id_of_category}/announcements/{id_of_product}/")
@@ -63,7 +63,7 @@ interface ApiService {
     @GET("api/categories/")
     fun getCategory(): Call<CategoryPaginated>
 
-    @GET("api/cities")
+    @GET("city/")
     fun getCities(): Call<CityPaginated>
 
     @GET("charity_event")

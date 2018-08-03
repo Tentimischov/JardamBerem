@@ -63,7 +63,7 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
 
     private fun sendData() {
         var ok = true
-        val isNeeded = if (one.isChecked) 0 else 1
+        val isNeeded = (one.isChecked)
         val title: String = etTitleNewProduct.text.toString()
         val description: String = etDescriptionNewProduct.text.toString()
         val phoneNumber: String = etPhoneNumberNewProduct.text.toString()

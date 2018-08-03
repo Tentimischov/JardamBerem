@@ -1,4 +1,4 @@
-#Fri Aug 03 18:33:16 KGT 2018
-base.0=/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/transforms/dexMerger/debug/0
+#Fri Aug 03 19:49:30 ALMT 2018
+base.0=C\:\\Users\\khydyr_u\\Desktop\\JardamBerem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

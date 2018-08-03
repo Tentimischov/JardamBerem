@@ -56,7 +56,7 @@ class NewProductPresenter(var context: Context,
 
         val requestBody = bodyBuilder.build()
 
-        mService!!.sendProduct(item.city, item.category, requestBody).enqueue(
+        mService!!.sendProduct(requestBody).enqueue(
                 object : Callback<ResponseBody> {
                     override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
                         mView!!.onFail(t!!.message.toString())
