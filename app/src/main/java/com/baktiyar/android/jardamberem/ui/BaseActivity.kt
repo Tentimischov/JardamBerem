@@ -40,7 +40,7 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     lateinit var toolbar: Toolbar
     lateinit var drawer_layout: DrawerLayout
     lateinit var nav_view: NavigationView
-
+    lateinit var toggle: ActionBarDrawerToggle
 
     override fun setContentView(layoutResID: Int) {
         ConstantsJava.setLocale1(baseContext, Locale(Settings.getLanguage(baseContext)))
@@ -61,7 +61,7 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         val id = intent.getIntExtra("id", R.id.main_menu)
 
 
-        val toggle = object : ActionBarDrawerToggle(this, drawer_layout, toolbar, R.string.app_name, R.string.app_name) {
+        toggle = object : ActionBarDrawerToggle(this, drawer_layout, toolbar, R.string.app_name, R.string.app_name) {
 
             override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
                 hideKeyboard(this@BaseActivity)

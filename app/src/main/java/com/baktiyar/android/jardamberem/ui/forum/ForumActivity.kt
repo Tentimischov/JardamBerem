@@ -58,7 +58,6 @@ class ForumActivity : BaseActivity(), ForumContract.View {
         initCardBut()
         presenter = ForumPresenter(this)
         initAdapter()
-        presenter?.getForumFirst(100, 0)
     }
 
     override fun onSendSuccess() {

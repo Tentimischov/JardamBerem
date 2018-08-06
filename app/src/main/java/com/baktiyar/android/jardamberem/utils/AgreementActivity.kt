@@ -1,20 +1,18 @@
 package com.baktiyar.android.jardamberem.utils
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import com.baktiyar.android.jardamberem.R
+import com.baktiyar.android.jardamberem.ui.lang.LanguageActivity
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
+import com.baktiyar.android.jardamberem.utils.Const.Companion.HIDE_DRAWER
 import kotlinx.android.synthetic.main.activity_agreement.*
 
 class AgreementActivity : AppCompatActivity() {
 
-    val PREFS_FILENAME = "com.baktiyar.android.jardamberem.ui"
-    val AGREEMENT_CHEEKING = "agreement_checking"
     var isAgreed: Boolean? = false
-    var prefs: SharedPreferences? = null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,8 +22,7 @@ class AgreementActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
 
 
-        prefs = this.getSharedPreferences(PREFS_FILENAME, 0)
-        isAgreed = prefs!!.getBoolean(AGREEMENT_CHEEKING, false)
+        isAgreed = Settings.getAgreement(this)
 
 
         if (isAgreed as Boolean) {
@@ -34,10 +31,12 @@ class AgreementActivity : AppCompatActivity() {
 
         agreementRadioButton.setOnClickListener {
             isAgreed = true
-            val editor = prefs!!.edit()
-            editor.putBoolean(AGREEMENT_CHEEKING, isAgreed!!)
-            editor.apply()
-            startActivity(intent)
+
+            Settings.setAgreement(this, isAgreed)
+            val toLanguage = Intent(this, LanguageActivity::class.java)
+            toLanguage.putExtra(HIDE_DRAWER, false)
+            startActivity(toLanguage)
+            finish()
         }
 
 

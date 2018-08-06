@@ -12,6 +12,7 @@ import com.baktiyar.android.jardamberem.model.Announcements
 import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
 import com.baktiyar.android.jardamberem.utils.Const
 import com.baktiyar.android.jardamberem.utils.Const.Companion.CATEGORY_NAME
+import com.baktiyar.android.jardamberem.utils.Settings
 import kotlinx.android.synthetic.main.activity_announ_list.*
 import kotlinx.android.synthetic.main.toolbar.*
 
@@ -33,6 +34,17 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
         setContentView(R.layout.activity_announ_list)
 
         init()
+        if (Settings.getSpinnerItemPosition(this) == 1)
+            two.isChecked = true
+
+        one.setOnClickListener {
+            Settings.setSpinnerItemPosition(this, 0)
+            recreate()
+        }
+        two.setOnClickListener {
+            Settings.setSpinnerItemPosition(this, 1)
+            recreate()
+        }
 
     }
 

@@ -89,10 +89,10 @@
         <activity android:name="com.baktiyar.android.jardamberem.ui.info.InfoActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.action_det.ActionDetailed" />
-        <activity android:name="com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailed" />
+        <activity android:name="com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailedActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.forum.ForumActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity" />
-        <activity android:name="com.baktiyar.android.jardamberem.ui.info_d.InfoDetailed" />
+        <activity android:name="com.baktiyar.android.jardamberem.ui.info_d.DetailedInfoActivity" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

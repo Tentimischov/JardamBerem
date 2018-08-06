@@ -2,6 +2,7 @@ package com.baktiyar.android.jardamberem.ui.product.post_product
 
 
 import com.baktiyar.android.jardamberem.model.PostProduct
+import com.baktiyar.android.jardamberem.model.PostUrgentProduct
 import com.baktiyar.android.jardamberem.utils.IProgressBar
 
 
@@ -15,5 +16,7 @@ interface NewProductContract{
     }
     interface Presenter{
         fun sendProduct(categoryId: Int, city: Int, item: PostProduct, paths: ArrayList<String>?)
+        fun sendUrgentProduct(item: PostUrgentProduct, paths: ArrayList<String>?)
+
     }
 }

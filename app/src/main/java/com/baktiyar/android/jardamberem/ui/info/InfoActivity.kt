@@ -9,17 +9,13 @@ import com.baktiyar.android.jardamberem.model.Info
 import com.baktiyar.android.jardamberem.model.InfoPaginated
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.action.PaginationScrollListenerAction
-import com.baktiyar.android.jardamberem.ui.action_det.ActionDetailed
-import com.baktiyar.android.jardamberem.ui.info_d.InfoDetailed
-import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_DETAILED
-import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
-import com.baktiyar.android.jardamberem.utils.Const.Companion.INFO_ACTIVITY
+import com.baktiyar.android.jardamberem.ui.info_d.DetailedInfoActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INFO_DETAILED
 import kotlinx.android.synthetic.main.activity_action.*
 
 class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapter.OnItemClickListener {
     override fun onInfoClick(info: Info) {
-        val intent = Intent(this, InfoDetailed::class.java)
+        val intent = Intent(this, DetailedInfoActivity::class.java)
         intent.putExtra(INFO_DETAILED, info)
         startActivity(intent)
     }

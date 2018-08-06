@@ -13,15 +13,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/segmented_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4"
+        app:sc_border_width="1dp"
+        app:sc_corner_radius="5dp"
+        app:sc_tint_color="@color/lightGreen">
+
+        <RadioButton
+            android:id="@+id/one"
+            style="@style/RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:checked="true"
+            android:text="@string/give_help" />
+
+        <RadioButton
+            android:id="@+id/two"
+            style="@style/RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/need_help" />
+
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recview"
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include4"
+        app:layout_constraintTop_toBottomOf="@+id/segmented_group"
         app:layout_constraintVertical_bias="0.0" />
 
     <ProgressBar

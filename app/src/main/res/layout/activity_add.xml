@@ -4,7 +4,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5E5E5">
+    android:background="@color/white">
 
 
     <ScrollView
@@ -89,7 +89,7 @@
                 segmentedgroup:sc_tint_color="@color/segmented_tint">
 
                 <RadioButton
-                    android:id="@+id/two"
+                    android:id="@+id/one"
                     style="@style/RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                     android:text="@string/give_help" />
 
                 <RadioButton
-                    android:id="@+id/one"
+                    android:id="@+id/two"
                     style="@style/RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

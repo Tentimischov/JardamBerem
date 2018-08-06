@@ -6,9 +6,9 @@
 
     <color name="secondaryText">#828282</color>
     <color name="mainText">#6A6A6A</color>
-    <color name="white">#E5E5E5</color>
+    <color name="white">#F9F9F9</color>
 
-    <color name="lightGreen">#01b696</color>
+    <color name="lightGreen">#70CFBE</color>
     <color name="lightGray">#E0E0E0</color>
 
     <color name="addButton">#FFAEA9</color>

@@ -7,13 +7,12 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Urgent
-import com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailed
+import com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailedActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_URGENT
 import com.baktiyar.android.jardamberem.utils.Const.Companion.URGENTS
 import kotlinx.android.synthetic.main.activity_all_urgent.*
 import kotlinx.android.synthetic.main.toolbar.*
 import android.support.v4.app.ActivityOptionsCompat
-import android.view.View
 import android.support.v4.app.ActivityCompat
 
 
@@ -41,7 +40,7 @@ class AllUrgentsActivity : AppCompatActivity(), AllUrgentsAdapter.OnItemClickLis
     }
 
     override fun onUrgentDetClick(main: Urgent, position: Int) {
-        /*val intent = Intent(this, UrgentDetailed::class.java)
+        /*val intent = Intent(this, UrgentDetailedActivity::class.java)
         intent.putExtra(ACTION_URGENT, main)
         startActivity(intent)*/
         animateIntent(main)
@@ -60,7 +59,7 @@ class AllUrgentsActivity : AppCompatActivity(), AllUrgentsAdapter.OnItemClickLis
     fun animateIntent(main: Urgent) {
 
         // Ordinary Intent for launching a new activity
-        val intent = Intent(this, UrgentDetailed::class.java)
+        val intent = Intent(this, UrgentDetailedActivity::class.java)
         intent.putExtra(ACTION_URGENT, main)
         // Get the transition name from the string
         val transitionName = getString(R.string.transition_name)

@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.ConnectivityManager
 import android.os.Bundle
+import android.support.v4.widget.DrawerLayout
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +13,8 @@ import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.City
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
+import com.baktiyar.android.jardamberem.utils.Const
+import com.baktiyar.android.jardamberem.utils.Const.Companion.HIDE_DRAWER
 import com.baktiyar.android.jardamberem.utils.Settings
 import kotlinx.android.synthetic.main.activity_choose_city.*
 import org.jetbrains.anko.toast
@@ -24,10 +27,13 @@ class ChooseCityActivity : BaseActivity(), CityContact.View {
     private var cityId: Array<String>? = null
     private var mdata: ArrayList<String>? = null
     private var isError: Boolean? = false
+    private var hideNav: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_city)
+        hideNav = intent.getBooleanExtra(HIDE_DRAWER, true)
+        setDrawerState(hideNav)
         title = resources.getString(R.string.city)
 
         init()
@@ -38,7 +44,27 @@ class ChooseCityActivity : BaseActivity(), CityContact.View {
             } else {
                 Settings.setCityId(applicationContext, cityModel!![picker.value].id)
                 toast(getString(R.string.city_choosen))
+                if (!hideNav) {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
+                }
             }
+        }
+    }
+
+
+    fun setDrawerState(hide: Boolean) {
+        if (hide) {
+            super.drawer_layout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
+            super.toggle.onDrawerStateChanged(DrawerLayout.LOCK_MODE_UNLOCKED)
+            super.toggle.isDrawerIndicatorEnabled = true
+            super.toggle.syncState()
+
+        } else {
+            super.drawer_layout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+            super.toggle.onDrawerStateChanged(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+            super.toggle.isDrawerIndicatorEnabled = false
+            super.toggle.syncState()
         }
     }
 

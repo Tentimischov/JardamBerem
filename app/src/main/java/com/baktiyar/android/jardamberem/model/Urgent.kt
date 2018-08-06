@@ -3,7 +3,7 @@ package com.baktiyar.android.jardamberem.model
 import android.os.Parcel
 import android.os.Parcelable
 
-class Urgent (var id: Int, var title: String, var description: String, var date: String, var imgPath: String) : Parcelable {
+class Urgent (var id: Int, var title: String, var description: String, var date: String, var imgPath: String?) : Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readInt(),
             parcel.readString(),

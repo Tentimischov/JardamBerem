@@ -15,13 +15,17 @@ interface ApiService {
     fun getProductByCategory(@Path("categoryId") id: Int): Call<List<Product>>
 
 
-    @POST("api/cities/{id_of_city}/categories/{id_of_category}/announcements/")
-    fun sendProduct(@Path("id_of_city") city: Int, @Path("id_of_category") id: Int,
+    @POST("api/categories/{id_of_category}/announcements/")
+    fun sendProduct(@Path("id_of_category") id: Int,
                     @Body file: RequestBody): Call<ResponseBody>
 
-    @DELETE("api/categories/{id_of_category}/announcements/{id_of_product}/")
-    fun deleteProductById(@Path("id_of_category") categoryId: String,
-                          @Path("id_of_product") productId: String): Call<ResponseBody>
+    @POST("history/")
+    fun sendUrgentProduct(@Body file: RequestBody) : Call<ResponseBody>
+
+
+    @DELETE("allannouncements/{id_of_announcement}")
+    fun deleteProductById(@Path("id_of_announcement") categoryId: String): Call<ResponseBody>
+
 
     @DELETE("allannouncements/{id_of_announcement}/")
     fun deleteAnnouncement(@Path("id_of_announcement") id: Int): Call<ResponseBody>
@@ -63,7 +67,7 @@ interface ApiService {
     @GET("api/categories/")
     fun getCategory(): Call<CategoryPaginated>
 
-    @GET("api/cities")
+    @GET("city")
     fun getCities(): Call<CityPaginated>
 
     @GET("charity_event")
@@ -75,9 +79,9 @@ interface ApiService {
     @GET("history")
     fun getUrgent(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<UrgentPaginated>
 
-    @GET("api/categories/{id_of_category}/announcements")
+    @GET("api/categories/{id_of_category}/announcements/?")
     fun getAnnounByCategory(@Path("id_of_category") categoryId: Int,
-                            @Query("limit") limit: Int, @Query("offset") offset: Int): Call<AnnouncementsPaginated>
+                            @Query("limit") limit: Int, @Query("offset") offset: Int, @Query("isNeeded") isNeeded : Boolean): Call<AnnouncementsPaginated>
 
     @GET("forum")
     fun getForum(@Query("limit") limit: Int,

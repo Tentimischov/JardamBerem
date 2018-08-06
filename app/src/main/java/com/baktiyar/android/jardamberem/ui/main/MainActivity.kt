@@ -35,7 +35,7 @@ import com.baktiyar.android.jardamberem.ui.main.adapter.*
 import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
 import com.baktiyar.android.jardamberem.ui.product.post_product.NewProductActivity
 import com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity
-import com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailed
+import com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailedActivity
 import com.baktiyar.android.jardamberem.utils.Const
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_URGENT
 import com.baktiyar.android.jardamberem.utils.Const.Companion.CATEGORY_ID
@@ -356,7 +356,7 @@ class MainActivity : BaseActivity(), MainContract.View,
 
 
     override fun onUrgClick(main: Urgent) {
-        val intent = Intent(this, UrgentDetailed::class.java)
+        val intent = Intent(this, UrgentDetailedActivity::class.java)
         intent.putExtra(ACTION_URGENT, main)
         startActivity(intent)
     }

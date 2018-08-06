@@ -1,13 +1,17 @@
 package com.baktiyar.android.jardamberem.ui.info
 
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Info
+import com.baktiyar.android.jardamberem.utils.Settings
 import kotlinx.android.synthetic.main.cell_info.view.*
+import java.text.SimpleDateFormat
+import java.util.*
+
+
 
 
 class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?) :
@@ -56,8 +60,23 @@ class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?
 
                 val  mimeType: String = "text/html"
                 val  encoding: String = "UTF-8"
+                val stringDate =  model.date?.substring(0, 10)
+
+                val inputFormatter1 = SimpleDateFormat("yyyy-MM-dd", Locale(Settings.getLanguage(holder.itemView.context)))
+                val date1 = inputFormatter1.parse(stringDate)
+
+                val outputFormatter1 = SimpleDateFormat("d MMMM, yyyy",  Locale(Settings.getLanguage(holder.itemView.context)))
+                val output1 = outputFormatter1.format(date1)
+/*
+
+                val dateFormat = SimpleDateFormat("yyyy/MM/dd")
+                val date =  dateFormat.format(stringDate)
+                val outputDate = SimpleDateFormat("dd/MMM/yyyy")
+*/
+
 
                 holder.itemView.info_title.text = model.title
+                holder.itemView.info_date.text = output1
                // holder.itemView.info_des.loadDataWithBaseURL("", model.description, mimeType, encoding, "")
                 holder.itemView.setOnClickListener {
                     mListener?.onInfoClick(data[position])

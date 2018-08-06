@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings.Secure
+import android.support.v4.content.ContextCompat
 import android.text.TextUtils
 import android.view.View
 import android.widget.ArrayAdapter
@@ -16,6 +17,7 @@ import com.baktiyar.android.jardamberem.ApplicationClass
 import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.PostProduct
+import com.baktiyar.android.jardamberem.model.PostUrgentProduct
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
 import com.baktiyar.android.jardamberem.ui.product.post_product.adapter.ImageAdapter
 import com.baktiyar.android.jardamberem.utils.Settings
@@ -32,7 +34,7 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
     private var mPresenter: NewProductPresenter? = null
     private var mImagePaths: ArrayList<String>? = null
     private var cityData: List<String>? = null
-    private var categoryData: List<String>? = null
+    private var categoryData: MutableList<String>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,18 +60,20 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
 
     private fun getDataFromSettings() {
         cityData = Settings.getCityNameArray(this).split(",")
-        categoryData = Settings.getCategory(this).split(",")
+        categoryData = Settings.getCategory(this).split(",").toMutableList()
+        categoryData?.add(getString(R.string.urgent_help))
     }
 
     private fun sendData() {
         var ok = true
-        val isNeeded = if (one.isChecked) 0 else 1
+        val isNeeded = if (one.isChecked) 1 else 0
         val title: String = etTitleNewProduct.text.toString()
         val description: String = etDescriptionNewProduct.text.toString()
         val phoneNumber: String = etPhoneNumberNewProduct.text.toString()
         val idCategory: Int = spinnerCategory.selectedItemPosition
         val idCity: Int = spinnerCity.selectedItemPosition.inc()
         val imeiUserCode: String = getAndroidId()
+
 
 
         if (idCategory == 0) {
@@ -88,9 +92,11 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
             etPhoneNumberNewProduct.error = getString(R.string.error_empty)
             ok = false
         }
-
-
-        if (ok) {
+        if (ok && categoryData!![idCategory] == getString(R.string.urgent_help)) {
+            val mProduct = PostUrgentProduct(title, description, phoneNumber, imeiUserCode,null, null, null)
+            mPresenter?.sendUrgentProduct(mProduct, mImagePaths)
+        }
+        else if (ok) {
             val mProduct = PostProduct(idCity, idCategory, isNeeded, title, description, phoneNumber, imeiUserCode, null, null, null)
             mPresenter!!.sendProduct(idCategory, idCity, mProduct, mImagePaths)
         }

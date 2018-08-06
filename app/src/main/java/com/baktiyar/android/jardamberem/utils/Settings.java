@@ -28,9 +28,13 @@ public class Settings {
     private static final String CATEGORY_ID = "CATEGORY_ID";
     private static final String CATEGORY_DEF = "Все";
     private static final String SPINNER_ITEM = "SPINNER_ITEM";
+    private static final String AGREEMENT = "AGREEMENT";
 
     public static int getInt(Context context, String key, int defValue) {
         return getPrefs(context).getInt(key, defValue);
+    }
+    public static boolean getBoolean(Context context, String key, boolean defValue) {
+        return getPrefs(context).getBoolean(key, defValue);
     }
 
     public static long getLong(Context context, String key, long defValue) {
@@ -61,6 +65,18 @@ public class Settings {
     public static String getCityIdArray(Context context) {
         return getString(context, CITY_ID_ARRAY, "0");
     }
+    /*
+     * agreement
+     */
+
+    public static void setAgreement(Context context, Boolean b) {
+        getEditor(context).putBoolean(AGREEMENT, b).commit();
+    }
+
+    public static boolean getAgreement(Context context) {
+        return getBoolean(context, AGREEMENT, false);
+    }
+
 
     /*
      * Language
@@ -99,7 +115,7 @@ public class Settings {
         getEditor(context).putInt(SPINNER_ITEM, id).commit();
     }
     public static int getSpinnerItemPosition(Context context) {
-        return getInt(context, SPINNER_ITEM, 1);
+        return getInt(context, SPINNER_ITEM, 0);
     }
 
     /*
@@ -149,6 +165,8 @@ public class Settings {
         config.locale = locale;
         context.getResources().updateConfiguration(config, context.getResources().getDisplayMetrics());
     }
+
+
 
 
 
