@@ -4,7 +4,7 @@ import android.content.Context
 import com.baktiyar.android.jardamberem.ApplicationClass
 import com.baktiyar.android.jardamberem.model.Feedback
 import com.baktiyar.android.jardamberem.model.Forum
-import com.baktiyar.android.jardamberem.utils.ApiService
+import com.baktiyar.android.jardamberem.utils.ForumService
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -13,7 +13,7 @@ import retrofit2.Response
 /**
  * Created by admin on 16.03.2018.
  */
-class FeedbackPresenter(var context: Context, var service: ApiService, var mView: FeedbackContract.View) : FeedbackContract.Presenter {
+class FeedbackPresenter(var context: Context, var service: ForumService, var mView: FeedbackContract.View) : FeedbackContract.Presenter {
     override fun sendForum(data: Forum) {
         ApplicationClass.INSTANCE?.service?.sendForum(data)?.enqueue(object : Callback<ResponseBody> {
             override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {

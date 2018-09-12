@@ -27,7 +27,19 @@ import org.jetbrains.anko.dimen
 import org.jetbrains.anko.toast
 
 
-class ForumActivity : BaseActivity(), ForumContract.View {
+class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickListener {
+    override fun onDeleteSuccess(message: String, position: Int) {
+        adapter?.deleteForum(position)
+    }
+
+    override fun onDeleteError(message: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onForumDelete(id: Int, position: Int) {
+        presenter?.deleteForum(id, position)
+    }
+
     private var adapter: ForumAdapter? = null
 
     private var presenter: ForumPresenter? = null
@@ -117,7 +129,7 @@ class ForumActivity : BaseActivity(), ForumContract.View {
 
 
     fun initAdapter() {
-        adapter = ForumAdapter(ArrayList())
+        adapter = ForumAdapter(ArrayList(), this)
         val layoutManager = LinearLayoutManager(this)
         forum_rec.layoutManager = layoutManager
         forum_rec.adapter = adapter

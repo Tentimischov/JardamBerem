@@ -66,7 +66,7 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
 
     private fun sendData() {
         var ok = true
-        val isNeeded = if (one.isChecked) 1 else 0
+        val isNeeded = !one.isChecked
         val title: String = etTitleNewProduct.text.toString()
         val description: String = etDescriptionNewProduct.text.toString()
         val phoneNumber: String = etPhoneNumberNewProduct.text.toString()
@@ -74,6 +74,10 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
         val idCity: Int = spinnerCity.selectedItemPosition.inc()
         val imeiUserCode: String = getAndroidId()
 
+        if (phoneNumber.length != 10) {
+            ok = false
+            etPhoneNumberNewProduct.error = getString(R.string.wrong_number_format)
+        }
 
 
         if (idCategory == 0) {

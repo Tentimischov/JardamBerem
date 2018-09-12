@@ -5,17 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_gravity="center"
-        android:background="@color/white"
-        android:gravity="center"
-        android:minHeight="0dp"
-        android:textAlignment="center"
-        android:theme="@style/ToolbarTheme"
-        app:titleTextColor="@color/darkGray">
-    </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:textAlignment="center"
+            android:theme="@style/ToolbarTheme"
+            app:titleTextColor="@color/darkGray"/>
+
+
 
 </FrameLayout>

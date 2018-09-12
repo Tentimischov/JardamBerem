@@ -25,13 +25,16 @@
                 android:id="@+id/appBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="-3dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginBottom="@dimen/size_5"
                 android:background="@null">
 
 
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
                     android:layout_gravity="center"
                     android:background="@android:color/transparent"
                     android:gravity="center"
@@ -74,7 +77,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fillViewport="true"
-                android:background="#F9F9F9"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
                 <LinearLayout
@@ -82,12 +84,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"/>
-
-                    <include layout="@layout/raw_line" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -101,7 +97,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="3dp"
+                            android:layout_marginTop="5dp"
                             android:orientation="horizontal">
 
                             <TextView
@@ -164,6 +160,7 @@
                         android:id="@+id/urg_recyclerview"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:minHeight="@dimen/size_125"
                         android:clipToPadding="false"
                         android:paddingBottom="@dimen/pad_10" />
 
@@ -177,7 +174,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="4dp"
                         android:fontFamily="@font/open_sans_semibold"
-                        android:text="Недавнее"
+                        android:text="@string/recent"
                         android:textColor="@color/darkGray"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -187,6 +184,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:clipToPadding="false"
+                        android:layout_marginBottom="@dimen/size_3"
                         android:layout_marginRight="@dimen/size_3"
                         android:paddingTop="@dimen/pad_10"
                         android:layout_marginEnd="@dimen/size_3" />

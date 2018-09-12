@@ -1,5 +1,8 @@
 package com.baktiyar.android.jardamberem.ui.forum
 
+import android.annotation.SuppressLint
+import android.content.Context
+import android.provider.Settings
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +17,7 @@ import android.widget.TextView
 
 
 
-class ForumAdapter(var data: ArrayList<Forum>) :
+class ForumAdapter(var data: ArrayList<Forum>, var listener: MClickListener) :
         RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val ITEM = 0
@@ -43,9 +46,7 @@ class ForumAdapter(var data: ArrayList<Forum>) :
     protected inner class LoadingVH(itemView: View) : RecyclerView.ViewHolder(itemView)
 
 
-    class MViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-    }
+    class MViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     private fun getViewHolder(parent: ViewGroup, inflater: LayoutInflater): RecyclerView.ViewHolder {
         val viewHolder: RecyclerView.ViewHolder
@@ -61,6 +62,13 @@ class ForumAdapter(var data: ArrayList<Forum>) :
             ITEM -> {
                 holder.itemView.forum_user.text = model.nickName
                 holder.itemView.forum_body.text = model.comment
+                if (getAndroidId(holder.itemView.context) == model.userImeiCode) {
+                    holder.itemView.delete.visibility = View.VISIBLE
+                }
+
+                holder.itemView.delete.setOnClickListener {
+                    listener.onForumDelete(model.id!!, holder.adapterPosition)
+                }
             }
             LOADING -> {
                 return
@@ -68,6 +76,20 @@ class ForumAdapter(var data: ArrayList<Forum>) :
         }
 
 
+    }
+
+    fun deleteForum(position: Int) {
+        data.removeAt(position)
+        notifyItemRemoved(position)
+    }
+
+    @SuppressLint("HardwareIds")
+    private fun getAndroidId(content: Context): String {
+        return Settings.Secure.getString(content.contentResolver, Settings.Secure.ANDROID_ID)
+    }
+
+    interface MClickListener {
+        fun onForumDelete(id: Int, position: Int)
     }
 
 
@@ -98,7 +120,7 @@ class ForumAdapter(var data: ArrayList<Forum>) :
 
     fun addLoadingFooter() {
         isLoadingAdded = true
-        add(Forum(null, null, null, null))
+        add(Forum(null, null, null, null, null, null))
     }
 
     fun removeLoadingFooter() {

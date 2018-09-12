@@ -3,7 +3,13 @@ package com.baktiyar.android.jardamberem.model
 import android.os.Parcel
 import android.os.Parcelable
 
-class ActionData(var id: Int?, var title: String?, var description: String?, var date: String?, var imgPath: String?, var imgPath2: String?, var imgPath3: String?) : Parcelable {
+class ActionData(var id: Int?,
+                 var title: String?,
+                 var description: String?,
+                 var date: String?,
+                 var imgPath: String?,
+                 var imgPath2: String?,
+                 var imgPath3: String?) : Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readValue(Int::class.java.classLoader) as? Int,
             parcel.readString(),

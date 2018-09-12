@@ -57,9 +57,6 @@ class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?
         val model = data[position]
         when (getItemViewType(position)) {
             ITEM -> {
-
-                val  mimeType: String = "text/html"
-                val  encoding: String = "UTF-8"
                 val stringDate =  model.date?.substring(0, 10)
 
                 val inputFormatter1 = SimpleDateFormat("yyyy-MM-dd", Locale(Settings.getLanguage(holder.itemView.context)))
@@ -67,17 +64,10 @@ class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?
 
                 val outputFormatter1 = SimpleDateFormat("d MMMM, yyyy",  Locale(Settings.getLanguage(holder.itemView.context)))
                 val output1 = outputFormatter1.format(date1)
-/*
-
-                val dateFormat = SimpleDateFormat("yyyy/MM/dd")
-                val date =  dateFormat.format(stringDate)
-                val outputDate = SimpleDateFormat("dd/MMM/yyyy")
-*/
 
 
                 holder.itemView.info_title.text = model.title
                 holder.itemView.info_date.text = output1
-               // holder.itemView.info_des.loadDataWithBaseURL("", model.description, mimeType, encoding, "")
                 holder.itemView.setOnClickListener {
                     mListener?.onInfoClick(data[position])
                 }

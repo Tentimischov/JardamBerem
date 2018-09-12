@@ -1,24 +1,40 @@
 package com.baktiyar.android.jardamberem.ui.action
 
 import com.baktiyar.android.jardamberem.ApplicationClass
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.schedulers.Schedulers
+import com.baktiyar.android.jardamberem.model.ActionDataPaginated
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class ActionPresenter(var v: ActionContract.View) : ActionContract.Presenter {
-    private var mCompositeDisposable: CompositeDisposable? = CompositeDisposable()
     override fun getActionDataFirst(limit: Int, offset: Int) {
-        mCompositeDisposable?.add(ApplicationClass.INSTANCE?.service?.getActionData(limit, offset)
-                ?.observeOn(AndroidSchedulers.mainThread())
-                ?.subscribeOn(Schedulers.io())
-                ?.subscribe({myData -> v.onSuccessFirst(myData)}, {throwable -> v.onError(throwable.message!!)})!!)
+        ApplicationClass.INSTANCE?.service?.getActionData(limit, offset)?.enqueue(object : Callback<ActionDataPaginated> {
+            override fun onFailure(call: Call<ActionDataPaginated>?, t: Throwable?) {
+                v.onError(t?.message!!)
+            }
+
+            override fun onResponse(call: Call<ActionDataPaginated>?, response: Response<ActionDataPaginated>?) {
+                if (response?.isSuccessful!!) {
+                    v.onSuccessFirst(response.body())
+                }
+            }
+
+        })
     }
 
     override fun getActionData(limit: Int, offset: Int) {
-        mCompositeDisposable?.add(ApplicationClass.INSTANCE?.service?.getActionData(limit, offset)
-                ?.observeOn(AndroidSchedulers.mainThread())
-                ?.subscribeOn(Schedulers.io())
-                ?.subscribe({myData -> v.onSuccessNext(myData)}, {throwable -> v.onError(throwable.message!!)})!!)
+        ApplicationClass.INSTANCE?.service?.getActionData(limit, offset)?.enqueue(object : Callback<ActionDataPaginated> {
+            override fun onFailure(call: Call<ActionDataPaginated>?, t: Throwable?) {
+                v.onError(t?.message!!)
+            }
+
+            override fun onResponse(call: Call<ActionDataPaginated>?, response: Response<ActionDataPaginated>?) {
+                if (response?.isSuccessful!!) {
+                    v.onSuccessNext(response.body())
+                }
+            }
+
+        })
     }
 
 

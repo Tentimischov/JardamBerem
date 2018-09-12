@@ -45,7 +45,6 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     override fun setContentView(layoutResID: Int) {
         ConstantsJava.setLocale1(baseContext, Locale(Settings.getLanguage(baseContext)))
         super.setContentView(layoutResID)
-        //loadLocale()
         drawer_layout = findViewById(R.id.drawer_layout)
         nav_view = findViewById(R.id.nav_view)
         rel = findViewById(R.id.content_frame)
@@ -61,7 +60,8 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         val id = intent.getIntExtra("id", R.id.main_menu)
 
 
-        toggle = object : ActionBarDrawerToggle(this, drawer_layout, toolbar, R.string.app_name, R.string.app_name) {
+        toggle = object : ActionBarDrawerToggle(this,
+                drawer_layout, toolbar, R.string.app_name, R.string.app_name) {
 
             override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
                 hideKeyboard(this@BaseActivity)
@@ -140,19 +140,6 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         if (mProgressBar != null && mProgressBar!!.isShowing) mProgressBar!!.dismiss()
         mProgressBar = null
     }
-
-    /*fun setLocaleN(lang: String) {
-        val locale = Locale(lang)
-        Locale.setDefault(locale)
-        val config = Configuration()
-        config.locale = locale
-        baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
-        Settings.setLanguage(this, "ky")
-    }
-
-    fun loadLocale() {
-        setLocaleN(Settings.getLanguage(this))
-    }*/
 
     override fun attachBaseContext(newBase: Context) {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N_MR1) {

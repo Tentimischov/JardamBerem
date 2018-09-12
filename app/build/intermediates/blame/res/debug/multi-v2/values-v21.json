@@ -4,7 +4,7 @@
             "outputFile": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/294ab58f778dc7634a20a49be9b2c776/res/values-v21/values-v21.xml",
+                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/45c5e382f98e078072be97cddf2fa6ad/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,26 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/bfd4ad1412f83bf8848d8677721ffc1e/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "283,286,290,294",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "20663,20831,21120,21416",
-                        "endLines": "285,288,292,296",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "20826,20989,21283,21578"
-                    }
-                },
-                {
-                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e6fc737146b5949226e7d87885971706/res/values-v21/values-v21.xml",
+                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6cbbc0adb084763f5eba34871e2b1959/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -61,22 +42,22 @@
                     }
                 },
                 {
-                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1734d5f7cb8f1cc0af6728ec9357bfaf/res/values-v21/values-v21.xml",
+                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/515309d08fd2c6883e340b49372b75a4/res/values-v21/values-v21.xml",
                     "from": {
-                        "startLines": "2,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,266",
-                        "endLines": "4,5",
-                        "endColumns": "12,96",
-                        "endOffsets": "261,358"
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
                     },
                     "to": {
-                        "startLines": "175,239",
-                        "startColumns": "4,4",
-                        "startOffsets": "13288,17838",
-                        "endLines": "177,239",
-                        "endColumns": "12,96",
-                        "endOffsets": "13494,17930"
+                        "startLines": "283,286,290,294",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "20663,20831,21120,21416",
+                        "endLines": "285,288,292,296",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "20826,20989,21283,21578"
                     }
                 },
                 {
@@ -96,6 +77,25 @@
                         "endLines": "16,242,313",
                         "endColumns": "12,12,12",
                         "endOffsets": "1063,18067,22656"
+                    }
+                },
+                {
+                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/06e9e4699ed4a585a11c360cefd79f9f/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,266",
+                        "endLines": "4,5",
+                        "endColumns": "12,96",
+                        "endOffsets": "261,358"
+                    },
+                    "to": {
+                        "startLines": "175,239",
+                        "startColumns": "4,4",
+                        "startOffsets": "13288,17838",
+                        "endLines": "177,239",
+                        "endColumns": "12,96",
+                        "endOffsets": "13494,17930"
                     }
                 }
             ]

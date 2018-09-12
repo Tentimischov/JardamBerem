@@ -10,6 +10,19 @@
         <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
     </style>
 
+    <style name="AppThemeToolbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/darkGray</item>
+        <item name="toolbarStyle">@style/TransparentToolbar</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+    </style>
+    <style name="TransparentToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
 
     <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="android:textColor">@color/black</item>
@@ -121,7 +134,7 @@
     </style>
 
     <style name="MyAppTheme.TextInputLayout" parent="@android:style/TextAppearance">
-        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
         <item name="android:textSize">12sp</item>
     </style>
 
@@ -141,10 +154,7 @@
         <item name="android:textSize">@dimen/size_16</item>
         <item name="android:layout_marginLeft">@dimen/size_5</item>
         <item name="android:layout_marginRight">@dimen/size_5</item>
-        <item name="android:layout_marginBottom">@dimen/size_5</item>
-        <item name="android:padding">@dimen/size_8</item>
         <item name="android:color">@color/mainText</item>
-        <item name="android:background">@drawable/border</item>
         <item name="android:lineSpacingExtra">@dimen/size_3</item>
         <item name="android:fontFamily">@font/open_sans_semibold</item>
     </style>

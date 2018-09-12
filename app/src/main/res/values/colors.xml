@@ -9,7 +9,7 @@
     <color name="white">#F9F9F9</color>
 
     <color name="lightGreen">#70CFBE</color>
-    <color name="lightGray">#E0E0E0</color>
+    <color name="lightGray">#c8ededed</color>
 
     <color name="addButton">#FFAEA9</color>
     <color name="addButtonPressed">#fc9089</color>
@@ -25,4 +25,5 @@
     <color name="shadow">#861f20</color>
     <color name="red">#ffff0000</color>
     <color name="action_text_back">#70CFBE</color>
+    <color name="tintPlaceholder">#83828282</color>
 </resources>

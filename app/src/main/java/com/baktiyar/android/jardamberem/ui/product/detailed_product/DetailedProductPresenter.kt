@@ -1,8 +1,6 @@
 package com.baktiyar.android.jardamberem.ui.product.detailed_product
 
-import android.content.Context
 import com.baktiyar.android.jardamberem.ApplicationClass
-import com.baktiyar.android.jardamberem.utils.ApiService
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback

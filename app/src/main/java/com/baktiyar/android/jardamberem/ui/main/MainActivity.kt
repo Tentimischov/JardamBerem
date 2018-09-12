@@ -10,10 +10,7 @@ import android.net.ConnectivityManager
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v4.widget.NestedScrollView
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.SearchView
-import android.support.v7.widget.StaggeredGridLayoutManager
+import android.support.v7.widget.*
 import android.util.Log
 import android.view.Gravity
 import android.view.Menu
@@ -45,6 +42,8 @@ import com.baktiyar.android.jardamberem.utils.Const.Companion.URGENTS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.hideKeyboard
 import com.baktiyar.android.jardamberem.utils.Const.Companion.setVisiblityMenuItem
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.crashlytics.android.Crashlytics
+import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.collections.ArrayList
@@ -69,30 +68,17 @@ class MainActivity : BaseActivity(), MainContract.View,
     private var categoryData: ArrayList<AllCategory>? = null
     private var allUrgent: ArrayList<Urgent>? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         ConstantsJava.setLocale(baseContext, Locale(Settings.getLanguage(baseContext)))
         super.onCreate(savedInstanceState)
+        Fabric.with(this, Crashlytics());
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         init()
         initSpin()
-    }
-
-    fun initSpin() {
-
-        val adapter = ArrayAdapter.createFromResource(this,
-                R.array.main_menu_spinner,
-                android.R.layout.simple_spinner_item)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        action_spinner.adapter = adapter
-        action_spinner.background.setColorFilter(ContextCompat.getColor(this, R.color.red), PorterDuff.Mode.SRC_ATOP);
-        action_spinner.gravity = Gravity.CENTER
-        action_spinner.setPopupBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.border))
-        action_spinner.setSelection(Settings.getSpinnerItemPosition(this))
-        action_spinner.onItemSelectedListener = Const.Companion.SpinnerActivity(this, this@MainActivity)
 
     }
-
 
     fun init() {
         mPresenter = MainPresenter(this)
@@ -118,9 +104,23 @@ class MainActivity : BaseActivity(), MainContract.View,
 
     }
 
-    private fun initAnn() {
 
-        //announAdapterS = AnnounAdapter(ArrayList(), this)
+    fun initSpin() {
+
+        val adapter = ArrayAdapter.createFromResource(this,
+                R.array.main_menu_spinner,
+                android.R.layout.simple_spinner_item)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        action_spinner.adapter = adapter
+        action_spinner.background.setColorFilter(ContextCompat.getColor(this, R.color.red), PorterDuff.Mode.SRC_ATOP);
+        action_spinner.gravity = Gravity.CENTER
+        action_spinner.setPopupBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.border))
+        action_spinner.setSelection(Settings.getSpinnerItemPosition(this))
+        action_spinner.onItemSelectedListener = Const.Companion.SpinnerActivity(this, this@MainActivity)
+
+    }
+
+    private fun initAnn() {
         announAdapter = AnnounAdapter(ArrayList(), this)
         val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         announ_recyclerview.layoutManager = staggeredGridLayoutManager
@@ -129,14 +129,10 @@ class MainActivity : BaseActivity(), MainContract.View,
         announ_recyclerview.adapter = announAdapter
         addScrollAdapter(staggeredGridLayoutManager)
         loadFirstPage()
-    }
 
 
-    private fun isNetworkAvailable(): Boolean {
-        val connectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-        val activeNetworkInfo = connectivityManager.activeNetworkInfo
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected
     }
+
 
     //Menu Toolbar Items
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -230,6 +226,7 @@ class MainActivity : BaseActivity(), MainContract.View,
             mPresenter?.getAnnounNextIsNeededFalse(limitPage, currentPage * limitPage)
         }
     }
+
 
     override fun onClick(v: View?) {
         if (v?.id == R.id.addCardView) {
@@ -384,7 +381,6 @@ class MainActivity : BaseActivity(), MainContract.View,
             stringBuilder.append(data[data.size - 1].category_name)
 
         Settings.setCategory(this, stringBuilder.toString())
-
 
     }
 

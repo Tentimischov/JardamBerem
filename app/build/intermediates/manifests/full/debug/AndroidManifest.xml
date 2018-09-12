@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.baktiyar.android.jardamberem"
-    android:versionCode="4"
+    android:versionCode="6"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -88,16 +88,27 @@
         <activity android:name="com.baktiyar.android.jardamberem.ui.action.ActionActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.info.InfoActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity" />
-        <activity android:name="com.baktiyar.android.jardamberem.ui.action_det.ActionDetailed" />
+        <activity android:name="com.baktiyar.android.jardamberem.ui.action_det.ActionDetailedActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailedActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.forum.ForumActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.info_d.DetailedInfoActivity" />
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e55d1d67d0e32a8fd269ebae707473006e105f23" />
+
+        <activity android:name="com.baktiyar.android.jardamberem.ui.full_photo.FullPhotoActivity" />
+
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
             android:authorities="com.baktiyar.android.jardamberem.com.squareup.picasso"
             android:exported="false" />
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="com.baktiyar.android.jardamberem.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
     </application>
 
 </manifest>

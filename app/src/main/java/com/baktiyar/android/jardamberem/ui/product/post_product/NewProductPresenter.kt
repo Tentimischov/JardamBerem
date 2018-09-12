@@ -5,7 +5,7 @@ import android.content.Context
 import android.util.Log
 import okhttp3.ResponseBody
 import retrofit2.Call
-import com.baktiyar.android.jardamberem.utils.ApiService
+import com.baktiyar.android.jardamberem.utils.ForumService
 import retrofit2.Callback
 import retrofit2.Response
 import com.baktiyar.android.jardamberem.model.PostProduct
@@ -20,7 +20,7 @@ import java.io.File
  * Created by admin on 09.03.2018.
  */
 class NewProductPresenter(var context: Context,
-                          var mService: ApiService?,
+                          var mService: ForumService?,
                           var mView: NewProductContract.View?) : NewProductContract.Presenter {
     override fun sendUrgentProduct(item: PostUrgentProduct, paths: ArrayList<String>?) {
         mView!!.showProgress()

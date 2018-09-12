@@ -2,7 +2,6 @@ package com.baktiyar.android.jardamberem.ui.product.detailed_product
 
 import android.annotation.SuppressLint
 import android.app.ProgressDialog
-import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
@@ -15,18 +14,19 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
 import com.baktiyar.android.jardamberem.ApplicationClass
-import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
+import com.baktiyar.android.jardamberem.ui.full_photo.FullPhotoActivity
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.GOODS
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.github.chrisbanes.photoview.PhotoViewAttacher
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_dp.*
 import kotlinx.android.synthetic.main.toolbar.*
 import org.jetbrains.anko.toast
-import java.text.DateFormat
 
 
 class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, DetailedProductContract.View {
@@ -48,24 +48,26 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
 
     private fun init() {
         initToolbar()
-        initView()
+        initUi()
         initPresenter()
         initPics()
     }
-
 
 
     private fun initPics() {
 
         if (mProduct?.imgPath != null) {
             Picasso.get().load(mProduct?.imgPath).fit().centerCrop().into(f_im)
+            f_im.setOnClickListener(this)
         }
-        if (mProduct?.imgPath2 != null)
+        if (mProduct?.imgPath2 != null) {
             Picasso.get().load(mProduct?.imgPath2).fit().centerCrop().into(s_im)
-        if (mProduct?.imgPath3 != null)
+            s_im.setOnClickListener(this)
+        }
+        if (mProduct?.imgPath3 != null) {
+            t_im.setOnClickListener(this)
             Picasso.get().load(mProduct?.imgPath3).fit().centerCrop().into(t_im)
-
-
+        }
     }
 
     private fun initToolbar() {
@@ -85,7 +87,7 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
         return getString(R.string.all)
     }
 
-    private fun initView() {
+    private fun initUi() {
 
         val cities = Settings.getCityNameArray(this).split(",")
         city.text = cities[mProduct?.city!! - 1]
@@ -122,7 +124,6 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
             btDeleteProduct -> {
                 if (isMyProduct as Boolean) showDeleteProductDialog()
                 else {
-
                     tvPhoneNumberDetailedProduct.text = mProduct!!.number
                     // tvPhoneNumberDetailedProduct.visibility = View.VISIBLE
                     // btShowNumberProduct.visibility = View.GONE
@@ -136,7 +137,24 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
                 }
             }
             tvPhoneNumberDetailedProduct -> phoneIntent()
+
+            f_im -> {
+                    goToFullImageActivity(mProduct?.imgPath.toString())
+            }
+            s_im -> {
+                    goToFullImageActivity(mProduct?.imgPath2.toString())
+            }
+
+            t_im -> {
+                    goToFullImageActivity(mProduct?.imgPath3.toString())
+            }
         }
+    }
+
+    private fun goToFullImageActivity(url: String) {
+        val intent = Intent(this@DetailedProductActivity, FullPhotoActivity::class.java)
+        intent.putExtra("im", url)
+        startActivity(intent)
     }
 
 

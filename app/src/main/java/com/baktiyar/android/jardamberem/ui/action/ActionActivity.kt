@@ -8,7 +8,7 @@ import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.ActionData
 import com.baktiyar.android.jardamberem.model.ActionDataPaginated
 import com.baktiyar.android.jardamberem.ui.BaseActivity
-import com.baktiyar.android.jardamberem.ui.action_det.ActionDetailed
+import com.baktiyar.android.jardamberem.ui.action_det.ActionDetailedActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_DETAILED
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
 import kotlinx.android.synthetic.main.activity_action.*
@@ -105,8 +105,7 @@ class ActionActivity : BaseActivity(), ActionAdapter.OnItemClickListener, Action
     }
 
     override fun onActionCLick(actionData: ActionData, position: Int) {
-        val intent = Intent(this, ActionDetailed::class.java)
-        intent.putExtra(ACTIVITY_ID, ACTION_DETAILED)
+        val intent = Intent(this, ActionDetailedActivity::class.java)
         intent.putExtra(ACTION_DETAILED, actionData)
         startActivity(intent)
     }

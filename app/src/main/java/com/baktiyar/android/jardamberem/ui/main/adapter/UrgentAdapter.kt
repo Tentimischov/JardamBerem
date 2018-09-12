@@ -26,6 +26,7 @@ class UrgentAdapter(var data: ArrayList<Urgent>, var mClickListener: OnUrgClickL
 
     fun setUrgData(data: ArrayList<Urgent>) {
         this.data = data
+        notifyDataSetChanged()
     }
 
 

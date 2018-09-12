@@ -138,7 +138,7 @@
                             android:layout_marginTop="13dp"
                             android:fontFamily="@font/open_sans_semibold"
                             android:textColor="@color/secondaryText"
-                            android:textSize="@dimen/size_18"
+                            android:textSize="@dimen/size_15"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/category"
@@ -219,18 +219,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_gravity="bottom"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintVertical_bias="1.0">
+                android:layout_gravity="bottom">
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/addCardView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="24dp"
                     android:layout_marginEnd="64dp"
                     android:layout_marginLeft="64dp"
                     android:layout_marginRight="64dp"

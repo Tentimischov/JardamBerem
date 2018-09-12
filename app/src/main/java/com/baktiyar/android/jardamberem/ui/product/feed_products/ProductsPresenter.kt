@@ -3,7 +3,7 @@ package com.baktiyar.android.jardamberem.ui.product.feed_products
 import android.content.Context
 import android.util.Log
 import com.baktiyar.android.jardamberem.model.Product
-import com.baktiyar.android.jardamberem.utils.ApiService
+import com.baktiyar.android.jardamberem.utils.ForumService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -11,7 +11,7 @@ import retrofit2.Response
 /**
  * Created by admin on 06.03.2018.
  */
-class ProductsPresenter(val mService: ApiService, val context: Context, val mView: ProductsContract.View) : ProductsContract.Presenter {
+class ProductsPresenter(val mService: ForumService, val context: Context, val mView: ProductsContract.View) : ProductsContract.Presenter {
     val TAG = "ProductsPresenter"
 
     override fun loadProducts(id: Int) {

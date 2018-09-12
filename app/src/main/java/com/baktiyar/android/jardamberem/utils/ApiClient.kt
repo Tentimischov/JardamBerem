@@ -1,13 +1,10 @@
 package com.baktiyar.android.jardamberem.utils
 
 import android.content.Context
-import com.baktiyar.android.jardamberem.utils.ApiService
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
@@ -16,13 +13,12 @@ import java.util.concurrent.TimeUnit
 object ApiClient {
     val REQUEST_TIME = 60L
 
-    fun initRetrofit(url: String, context: Context): ApiService {
+    fun initRetrofit(url: String, context: Context): ForumService {
         return Retrofit.Builder()
                 .baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create(initGson()))
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(getClient(context)).build()
-                .create(ApiService::class.java)
+                .create(ForumService::class.java)
     }
 
     private fun initGson(): Gson {

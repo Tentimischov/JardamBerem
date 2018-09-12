@@ -19,7 +19,7 @@ class InfoAdapterNoPag(var data: ArrayList<Info>, var mListener: OnItemClickList
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         holder.itemView.info_title.text = data[position].title
-        holder.itemView.info_des.loadUrl(data[position].description)
+      //  holder.itemView.info_des.loadUrl(data[position].description)
         holder.itemView.info_date.text = data[position].date
     }
 

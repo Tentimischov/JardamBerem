@@ -1,9 +1,12 @@
 package com.baktiyar.android.jardamberem.ui.feedback
 
+import android.annotation.SuppressLint
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.provider.Settings
 import android.support.v4.content.ContextCompat
 import android.text.TextUtils
 import android.view.View
@@ -43,6 +46,11 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
         initUi()
         initPresenter()
         btAddFeedBack.setOnClickListener(this)
+    }
+
+    @SuppressLint("HardwareIds")
+    private fun getAndroidId(): String {
+        return Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)
     }
 
     fun initLoading() {
@@ -142,7 +150,7 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
     }
 
     fun initForum(): Forum {
-        return Forum(etFeedbackEmail.text.toString(), etFeedbackEmail.text.toString(), etFeedbackReview.text.toString(), null)
+        return Forum(null, etFeedbackEmail.text.toString(), etFeedbackEmail.text.toString(), etFeedbackReview.text.toString(), getAndroidId(), null)
     }
 
     private fun checkFields(): Boolean {

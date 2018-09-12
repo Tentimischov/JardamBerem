@@ -2,13 +2,16 @@ package com.baktiyar.android.jardamberem.utils
 
 import android.app.Activity
 import android.content.Context
+import android.content.DialogInterface
 import android.os.Build
+import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.AdapterView
+import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
 import java.util.*
 
@@ -36,6 +39,7 @@ class Const {
         const val INFO_DETAILED: String="INFO_DETAILED"
         const val DETAILED_ACTIVITY: String="DETAILED_ACTIVITY"
         const val INFO_ACTIVITY: String = "INFO_ACTIVITY"
+        const val HIDE_DRAWER: String = "HIDE_DRAWER"
         fun hideKeyboard(activity: Activity) {
             val view: View? = activity.window.currentFocus
             val inputMethodManager = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
@@ -78,6 +82,27 @@ class Const {
                 config.locale = locale
             config.locale = locale
             context.resources.updateConfiguration(config, context.resources.displayMetrics)
+        }
+
+        fun showDeleteProductDialog(context: Context, title: String) : Boolean {
+            var ok: Boolean = false
+            val dialogClickListener = DialogInterface.OnClickListener { dialog, which ->
+                when (which) {
+                    DialogInterface.BUTTON_POSITIVE -> {
+                        ok = true
+                    }
+
+                    DialogInterface.BUTTON_NEGATIVE -> {
+
+                    }
+                }
+            }
+            val builder = AlertDialog.Builder(context)
+            builder.setMessage(context.getString(R.string.check_to_delete, title))
+                    .setPositiveButton(context.getString(R.string.yes), dialogClickListener)
+                    .setNegativeButton(context.getString(R.string.no), dialogClickListener).show()
+
+            return ok
         }
 
     }

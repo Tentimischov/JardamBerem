@@ -80,11 +80,17 @@
         <activity android:name=".ui.action.ActionActivity" />
         <activity android:name=".ui.info.InfoActivity" />
         <activity android:name=".ui.all_urgents.AllUrgentsActivity" />
-        <activity android:name=".ui.action_det.ActionDetailed" />
-        <activity android:name=".ui.urgent_detailed.UrgentDetailed" />
+        <activity android:name=".ui.action_det.ActionDetailedActivity" />
+        <activity android:name=".ui.urgent_detailed.UrgentDetailedActivity" />
         <activity android:name=".ui.forum.ForumActivity" />
         <activity android:name=".ui.announcements_list.AnnounByCategoryActivity" />
-        <activity android:name=".ui.info_d.InfoDetailed"></activity>
+        <activity android:name=".ui.info_d.DetailedInfoActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e55d1d67d0e32a8fd269ebae707473006e105f23" />
+
+        <activity android:name=".ui.full_photo.FullPhotoActivity"></activity>
     </application>
 
 </manifest>

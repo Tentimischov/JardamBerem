@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_margin="@dimen/size_5">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:elevation="@dimen/size_5"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        card_view:elevation="@dimen/size_5">
 
         <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -21,10 +22,10 @@
                 android:paddingTop="@dimen/size_3"
                 android:textColor="@color/black" />
 
-            <WebView
+           <!-- <WebView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/info_des"/>
+                android:id="@+id/info_des"/>-->
             <!--<TextView
                 android:id="@+id/info_des"
                 style="@style/TextViewCard"
@@ -38,5 +39,4 @@
 
         </android.support.v7.widget.LinearLayoutCompat>
     </android.support.v7.widget.CardView>
-
 </android.support.constraint.ConstraintLayout>

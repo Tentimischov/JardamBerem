@@ -20,18 +20,24 @@ class ByCategoryAdapter(var data: ArrayList<Announcements>, var mListener: OnIte
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val model = data[position]
         holder.itemView.title.text = data[position].title
+
+        holder.itemView.title.text = model.title
         val wid = holder.itemView.context.resources.displayMetrics.widthPixels / 2
-        if (data[position].imgPath != null) {
-            Picasso.get().load(data[position].imgPath).into(holder.itemView.im)
-            if (data[position].imgPath_height?.toInt()!! > data[position].imgPath_width?.toInt()!!) {
-                holder.itemView.im.layoutParams.height = (wid + Math.abs(data[position].imgPath_height?.toInt()!! - data[position].imgPath_width?.toInt()!!)) / 2
+
+        if (model.imgPath != null) {
+            Picasso.get().load(model.imgPath).into(holder.itemView.im)
+            if (model.imgPath_height?.toInt()!! > model.imgPath_width?.toInt()!!) {
+                holder.itemView.im.layoutParams.height = (wid + Math.abs(model.imgPath_height?.toInt()!! - model.imgPath_width?.toInt()!!)) / 2
             } else {
-                holder.itemView.im.layoutParams.height = 200 * (data[position].imgPath_width?.toInt()!! / data[position].imgPath_height?.toInt()!!)
+                holder.itemView.im.layoutParams.height = 200 * (model.imgPath_width?.toInt()!! / model.imgPath_height?.toInt()!!)
             }
         } else {
             holder.itemView.im.layoutParams.height = (holder.itemView.context.resources.displayMetrics.widthPixels / 3)
         }
+
+
        // holder.itemView.im.width = data[position].imgPath_width?.toInt()!!
         holder.itemView.setOnClickListener{
             mListener.onItemClick(data[position])
