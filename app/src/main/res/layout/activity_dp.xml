@@ -199,6 +199,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="right"
+                                android:paddingTop="@dimen/size_2"
                                 android:layout_margin="@dimen/text_sz"
                                 android:background="@null"
                                 android:fontFamily="@font/open_sans_semibold"
@@ -206,7 +207,7 @@
                                 android:textAlignment="textEnd"
                                 android:textColor="@color/mainText"
                                 android:textSelectHandleRight="@dimen/text_sz"
-                                android:textSize="@dimen/size_18"
+                                android:textSize="@dimen/size_15"
                                 tools:text="@string/testProductDate" />
                         </FrameLayout>
                     </LinearLayout>

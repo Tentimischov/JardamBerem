@@ -4,7 +4,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F9F9F9">
+    android:background="#fffefe">
 
     <FrameLayout
         android:id="@+id/content_frame"
@@ -163,6 +163,7 @@
                         android:minHeight="@dimen/size_125"
                         android:clipToPadding="false"
                         android:paddingBottom="@dimen/pad_10" />
+
 
 
                     <include layout="@layout/raw_line" />

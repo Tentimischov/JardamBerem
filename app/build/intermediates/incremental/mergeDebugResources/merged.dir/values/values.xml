@@ -1006,7 +1006,7 @@
     <string name="city_choosen">Регион выбран</string>
     <string name="closeCategory">Одежда</string>
     <string name="clothing">Одежда</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">2208ed19-46c8-4495-9201-193e19be2edf</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">a4d46f57-9967-40c0-ab3e-d12f43d574f0</string>
     <string name="complain">Пожаловаться</string>
     <string name="delete_product">Удалить</string>
     <string name="description">Описание вашего товара</string>
@@ -2733,7 +2733,7 @@
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
     <style name="ToolbarTheme" parent="android:Theme.Holo">
-        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_24dp</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_menu</item>
         <item name="android:textColorPrimary">@color/colorPrimary</item>
         <item name="android:textColorSecondary">@color/colorPrimary</item>
         <item name="actionMenuTextColor">@color/colorPrimary</item>

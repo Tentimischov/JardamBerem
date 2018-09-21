@@ -30,6 +30,7 @@ public class Settings {
     private static final String SPINNER_ITEM = "SPINNER_ITEM";
     private static final String AGREEMENT = "AGREEMENT";
 
+
     public static int getInt(Context context, String key, int defValue) {
         return getPrefs(context).getInt(key, defValue);
     }

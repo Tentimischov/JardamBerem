@@ -16,7 +16,10 @@ import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Urgent
 import com.baktiyar.android.jardamberem.ui.delete_fragment_dialog.FragDialog
 import com.baktiyar.android.jardamberem.ui.full_photo.FullPhotoActivity
+import com.baktiyar.android.jardamberem.utils.Const
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_URGENT
+import com.baktiyar.android.jardamberem.utils.Const.Companion.ALL_PHOTO_URLS
+import com.baktiyar.android.jardamberem.utils.Const.Companion.INDEX
 import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_dp.*
@@ -28,8 +31,11 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
 
         return super.onTouchEvent(event)
     }
-    var data: Urgent? = null
-    var isMyProduct: Boolean = false
+    private var data: Urgent? = null
+    private var isMyProduct: Boolean = false
+
+    private var photoListData: ArrayList<String>? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dp)
@@ -77,22 +83,23 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
         tvDescriptionDetailedProduct.text = data?.description
         tvDateDetailedProduct.text = data?.date?.substring(0, 10)
 
-        /* * * * *  *
-         * initPics *
-         * * * * *  */
+        /** * * * *  *
+         * initPics  *
+         * * * * *  **/
 
         if (data?.imgPath != null) {
             Picasso.get().load(data?.imgPath).fit().centerCrop().into(f_im)
+            photoListData!!.add(data?.imgPath.toString())
             f_im.setOnClickListener(this)
         }
         if (data?.imgPath2 != null) {
             Picasso.get().load(data?.imgPath2).fit().centerCrop().into(s_im)
-
+            photoListData!!.add(data?.imgPath2.toString())
             s_im.setOnClickListener(this)
         }
         if (data?.imgPath3 != null) {
             Picasso.get().load(data?.imgPath3).fit().centerCrop().into(t_im)
-
+            photoListData!!.add(data?.imgPath3.toString())
             t_im.setOnClickListener(this)
         }
 
@@ -119,22 +126,23 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
             tvPhoneNumberDetailedProduct -> phoneIntent()
 
             f_im -> {
-                goToFullImageActivity(data?.imgPath.toString())
+                goToFullImageActivity(0)
             }
             s_im -> {
-                goToFullImageActivity(data?.imgPath2.toString())
+                goToFullImageActivity(1)
             }
 
             t_im -> {
-                goToFullImageActivity(data?.imgPath3.toString())
+                goToFullImageActivity(2)
             }
 
         }
     }
 
-    private fun goToFullImageActivity(url: String) {
+    private fun goToFullImageActivity(index: Int) {
         val intent = Intent(this@UrgentDetailedActivity, FullPhotoActivity::class.java)
-        intent.putExtra("im", url)
+        intent.putExtra(INDEX, index)
+        intent.putExtra(ALL_PHOTO_URLS, photoListData)
         startActivity(intent)
     }
 
@@ -146,6 +154,7 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun initData() {
+        photoListData = ArrayList()
         data = intent.getParcelableExtra(ACTION_URGENT)
     }
 

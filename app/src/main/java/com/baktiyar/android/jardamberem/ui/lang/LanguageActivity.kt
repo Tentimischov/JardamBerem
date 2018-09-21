@@ -69,11 +69,19 @@ class LanguageActivity : BaseActivity() {
                 finish()
             }
             if (restart) {
-                recreate()
+                recreateScreen()
             }
         }
 
+        }
+    fun recreateScreen() {
+        finish()
+        overridePendingTransition( 0, 0);
+        startActivity(intent)
+        overridePendingTransition( 0, 0);
     }
+
+
 
     fun setDrawerState(hide: Boolean) {
         if (hide) {

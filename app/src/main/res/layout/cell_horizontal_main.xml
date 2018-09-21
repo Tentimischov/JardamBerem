@@ -5,12 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cell_hor"
     style="@style/CardView"
-    android:layout_width="@dimen/size_150"
-    android:layout_height="@dimen/size_125"
-    android:layout_marginLeft="5dp"
+    android:layout_width="140dp"
+    android:layout_height="115dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginStart="@dimen/size_3"
     android:orientation="horizontal"
     app:cardCornerRadius="@dimen/cardCorner"
-    app:cardElevation="3dp"
+    app:cardElevation="@dimen/cardCorner"
     card_view:cardPreventCornerOverlap="false">
 
     <FrameLayout
@@ -42,9 +43,9 @@
             android:layout_gravity="bottom|start"
             android:background="@drawable/down_roun_background"
             android:fontFamily="@font/montserrat"
-            android:gravity="left"
+            android:gravity="start"
             android:textSize="13sp"
-            android:padding="6dp"
+            android:padding="3dp"
             tools:text="Еда" />
 
         <TextView
@@ -56,7 +57,7 @@
             android:fontFamily="@font/open_sans_semibold"
             android:gravity="left"
             android:maxLines="1"
-            android:padding="6dp"
+            android:padding="4dp"
             android:text="sldfjnvlsjkdfv"
             android:textColor="@color/darkGray"
             android:textSize="15sp"

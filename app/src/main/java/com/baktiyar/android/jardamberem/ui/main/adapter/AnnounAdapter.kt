@@ -58,16 +58,13 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
         val model = data[position]
         when (getItemViewType(position)) {
             ITEM -> {
-                holder.itemView.title.text = model.title
-                val wid = holder.itemView.context.resources.displayMetrics.widthPixels / 2
 
                 if (model.imgPath != null) {
+                    holder.itemView.title.text = model.title
+                    val wid = model.imgPath_height?.toInt()!! / (model.imgPath_width?.toInt()!! / (holder.itemView.context.resources.displayMetrics.widthPixels / 2))
                     Picasso.get().load(model.imgPath).into(holder.itemView.im)
-                    if (model.imgPath_height?.toInt()!! > model.imgPath_width?.toInt()!!) {
-                        holder.itemView.im.layoutParams.height = (wid + Math.abs(model.imgPath_height?.toInt()!! - model.imgPath_width?.toInt()!!)) / 2
-                    } else {
-                        holder.itemView.im.layoutParams.height = 200 * (model.imgPath_width?.toInt()!! / model.imgPath_height?.toInt()!!)
-                    }
+                    holder.itemView.im.layoutParams.height = wid
+
                 } else {
                     holder.itemView.im.layoutParams.height = (holder.itemView.context.resources.displayMetrics.widthPixels / 3)
                 }

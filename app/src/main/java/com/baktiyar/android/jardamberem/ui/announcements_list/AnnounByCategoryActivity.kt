@@ -39,14 +39,22 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
 
         one.setOnClickListener {
             Settings.setSpinnerItemPosition(this, 0)
-            recreate()
+            recreateScreen()
         }
         two.setOnClickListener {
             Settings.setSpinnerItemPosition(this, 1)
-            recreate()
+            recreateScreen()
         }
 
     }
+
+    fun recreateScreen() {
+        finish()
+        overridePendingTransition( 0, 0);
+        startActivity(intent)
+        overridePendingTransition( 0, 0);
+    }
+
 
     fun init() {
         title = intent.getStringExtra(CATEGORY_NAME)
@@ -85,88 +93,6 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
         adapter?.setDataAll(data)
         pro_bar.visibility = View.GONE
     }
-
-
-
-    /*
-    private fun addScrollAdapter(staggeredGridLayoutManager: StaggeredGridLayoutManager) {
-        recview.addOnScrollListener(object : PaginationScrollListener(staggeredGridLayoutManager) {
-            override fun loadMoreItems() {
-                issLoading = true
-                currentPage++
-                loadNextPage()
-            }
-
-            override val totalPageCount: Int
-                get() = TOTAL_PAGES
-            override var isLastPage: Boolean
-                get() = issLastPage
-                set(value) {}
-
-            override var isLoading: Boolean
-                get() = issLoading
-                set(value) {}
-
-        })
-    }
-
-
-
-
-    private fun loadFirstPage() {
-        if (Settings.getSpinnerItemPosition(this) == 1) {
-            presenter?.getDataFirst(limitPage, 0)
-        } else {
-            presenter?.getDataFirst(limitPage, 0)
-        }
-    }
-    private fun loadNextPage() {
-        if (Settings.getSpinnerItemPosition(this) == 1) {
-            presenter?.getDataNext(limitPage, currentPage * limitPage)
-        } else {
-            presenter?.getDataNext(limitPage, currentPage * limitPage)
-        }
-    }
-
-    override fun onAnnounClick(data: Announcements, position: Int) {
-        val intent = Intent(this, DetailedProductActivity::class.java)
-        intent.putExtra(Const.GOODS, data)
-        startActivity(intent)
-    }
-
-
-    override fun onSuccessFirst(data: AnnouncementsPaginated) {
-        val model: List<Announcements> = fetchResults(data)
-        pro_bar.visibility = View.GONE
-        val id = Settings.getCategoryId(this)
-        val filteredList = model.filter { it.category == id }
-        adapter?.addAll(filteredList)
-
-        if (data.next != null) {
-            adapter?.addLoadingFooter()
-        } else
-            issLastPage = true
-    }
-
-    override fun onSuccessNext(data: AnnouncementsPaginated) {
-        adapter?.removeLoadingFooter()
-        issLoading = false
-        pro_bar.visibility = View.GONE
-
-        val model: List<Announcements> = fetchResults(data)
-        val id = Settings.getCategoryId(this)
-        val filteredList = model.filter { it.category == id }
-        adapter?.addAll(filteredList)
-        if (data.next == null) {
-            issLastPage = true
-        } else {
-            adapter?.addLoadingFooter()
-        }
-    }
-
-    private fun fetchResults(response: AnnouncementsPaginated): List<Announcements> {    //3
-        return response.results
-    }*/
 
     override fun onError(message: String) {
 

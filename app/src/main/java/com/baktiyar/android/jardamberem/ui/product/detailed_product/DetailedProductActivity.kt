@@ -11,18 +11,17 @@ import android.provider.Settings.Secure
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.view.MenuItem
 import android.view.View
-import android.widget.ImageView
 import com.baktiyar.android.jardamberem.ApplicationClass
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
 import com.baktiyar.android.jardamberem.ui.full_photo.FullPhotoActivity
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
+import com.baktiyar.android.jardamberem.utils.Const.Companion.ALL_PHOTO_URLS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.GOODS
+import com.baktiyar.android.jardamberem.utils.Const.Companion.INDEX
 import com.baktiyar.android.jardamberem.utils.Settings
-import com.github.chrisbanes.photoview.PhotoViewAttacher
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_dp.*
 import kotlinx.android.synthetic.main.toolbar.*
@@ -33,9 +32,11 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
 
 
     private var mDetailedProductPresenter: DetailedProductPresenter? = null
-    var mProgressBar: ProgressDialog? = null
-    var mProduct: Announcements? = null
-    var isMyProduct: Boolean? = null
+    private var mProgressBar: ProgressDialog? = null
+    private var mProduct: Announcements? = null
+    private var isMyProduct: Boolean? = null
+    private var photoListData: ArrayList<String>? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,18 +56,22 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
 
 
     private fun initPics() {
+        photoListData = ArrayList()
 
         if (mProduct?.imgPath != null) {
             Picasso.get().load(mProduct?.imgPath).fit().centerCrop().into(f_im)
             f_im.setOnClickListener(this)
+            photoListData!!.add(mProduct?.imgPath.toString())
         }
         if (mProduct?.imgPath2 != null) {
             Picasso.get().load(mProduct?.imgPath2).fit().centerCrop().into(s_im)
             s_im.setOnClickListener(this)
+            photoListData!!.add(mProduct?.imgPath2.toString())
         }
         if (mProduct?.imgPath3 != null) {
             t_im.setOnClickListener(this)
             Picasso.get().load(mProduct?.imgPath3).fit().centerCrop().into(t_im)
+            photoListData!!.add(mProduct?.imgPath3.toString())
         }
     }
 
@@ -139,21 +144,22 @@ class DetailedProductActivity : AppCompatActivity(), View.OnClickListener, Detai
             tvPhoneNumberDetailedProduct -> phoneIntent()
 
             f_im -> {
-                    goToFullImageActivity(mProduct?.imgPath.toString())
+                    goToFullImageActivity(0)
             }
             s_im -> {
-                    goToFullImageActivity(mProduct?.imgPath2.toString())
+                    goToFullImageActivity(1)
             }
-
             t_im -> {
-                    goToFullImageActivity(mProduct?.imgPath3.toString())
+                    goToFullImageActivity(2)
             }
         }
     }
 
-    private fun goToFullImageActivity(url: String) {
+
+    private fun goToFullImageActivity(index: Int) {
         val intent = Intent(this@DetailedProductActivity, FullPhotoActivity::class.java)
-        intent.putExtra("im", url)
+        intent.putExtra(INDEX, index)
+        intent.putExtra(ALL_PHOTO_URLS, photoListData)
         startActivity(intent)
     }
 

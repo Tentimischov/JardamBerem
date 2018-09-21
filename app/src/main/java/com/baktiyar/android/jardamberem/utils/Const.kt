@@ -20,7 +20,7 @@ class Const {
         val CAMERA = 1
         val GALLERY = 2
         val CACHE_PATH = "cache"
-        val DIR_PRODUCTS= "products"
+        val DIR_PRODUCTS = "products"
         val IMAGE_URL_EXTRA = "IMAGE_URL_EXTRA"
         val VIEW_INFO_EXTRA = "VIEW_INFO_EXTRA"
         val PROPNAME_SCREENLOCATION_LEFT = "PROPNAME_SCREENLOCATION_LEFT"
@@ -33,13 +33,15 @@ class Const {
         val URGENTS = "URGENTS"
         val ACTION_URGENT = "ACTION_URGENT"
         val ACTION_DETAILED = "ACTION_DETAILED"
-        const val CATEGORY_ID: String="category_id"
-        const val CATEGORY_NAME: String="CATEGORY_NAME"
-        const val ACTIVITY_ID: String="ACTIVITY_ID"
-        const val INFO_DETAILED: String="INFO_DETAILED"
-        const val DETAILED_ACTIVITY: String="DETAILED_ACTIVITY"
+        const val CATEGORY_ID: String = "category_id"
+        const val CATEGORY_NAME: String = "CATEGORY_NAME"
+        const val ACTIVITY_ID: String = "ACTIVITY_ID"
+        const val INFO_DETAILED: String = "INFO_DETAILED"
+        const val DETAILED_ACTIVITY: String = "DETAILED_ACTIVITY"
         const val INFO_ACTIVITY: String = "INFO_ACTIVITY"
         const val HIDE_DRAWER: String = "HIDE_DRAWER"
+        val ALL_PHOTO_URLS: String = "ALL_PHOTO_URLS"
+        val INDEX: String = "INDEX"
         fun hideKeyboard(activity: Activity) {
             val view: View? = activity.window.currentFocus
             val inputMethodManager = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
@@ -84,7 +86,7 @@ class Const {
             context.resources.updateConfiguration(config, context.resources.displayMetrics)
         }
 
-        fun showDeleteProductDialog(context: Context, title: String) : Boolean {
+        fun showDeleteProductDialog(context: Context, title: String): Boolean {
             var ok: Boolean = false
             val dialogClickListener = DialogInterface.OnClickListener { dialog, which ->
                 when (which) {

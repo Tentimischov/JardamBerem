@@ -83,7 +83,7 @@ dependencies {
     implementation 'io.supercharge:shimmerlayout:2.1.0'
 
     //imageview zoom
-    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
+    implementation 'com.bogdwellers:pinchtozoom:0.1'
 
     implementation('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
         transitive = true

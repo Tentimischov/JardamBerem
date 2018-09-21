@@ -16,8 +16,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
-
         <com.joooonho.SelectableRoundedImageView
             android:id="@+id/im"
             android:layout_width="match_parent"

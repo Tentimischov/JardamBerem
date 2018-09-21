@@ -6,12 +6,14 @@ import android.app.ActivityManager
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import android.os.Build
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.graphics.drawable.DrawerArrowDrawable
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
 import android.view.View
@@ -66,11 +68,18 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
                 hideKeyboard(this@BaseActivity)
             }
+
+            override fun setDrawerArrowDrawable(drawable: DrawerArrowDrawable) {
+              // super.setDrawerArrowDrawable(drawable)
+                supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_menu)
+
+            }
+
         }
 
+        toggle.isDrawerSlideAnimationEnabled = false
 
         supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_menu)
-
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
         nav_view.setNavigationItemSelectedListener(this)
