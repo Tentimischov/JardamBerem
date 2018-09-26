@@ -5,36 +5,41 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Parcel
+import android.os.Parcelable
 import android.provider.Settings
+import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
-import android.view.Menu
 import android.view.MenuItem
-import android.view.MotionEvent
 import android.view.View
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Urgent
 import com.baktiyar.android.jardamberem.ui.delete_fragment_dialog.FragDialog
+import com.baktiyar.android.jardamberem.ui.full_photo.ViewPageAdapter
 import com.baktiyar.android.jardamberem.ui.full_photo.FullPhotoActivity
-import com.baktiyar.android.jardamberem.utils.Const
+import com.baktiyar.android.jardamberem.ui.product.detailed_product.FragmentDpImage
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_URGENT
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ALL_PHOTO_URLS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INDEX
-import com.bumptech.glide.Glide
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_dp.*
 import kotlinx.android.synthetic.main.toolbar.*
 
-class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
-
-    override fun onTouchEvent(event: MotionEvent?): Boolean {
-
-        return super.onTouchEvent(event)
+class UrgentDetailedActivity() : AppCompatActivity(), View.OnClickListener, ViewPageAdapter.mClickListener {
+    override fun onClick(position: Int) {
+        goToFullImageActivity(position)
     }
+
+
     private var data: Urgent? = null
     private var isMyProduct: Boolean = false
+    private var imageViewPageAdapter: ViewPageAdapter? = null
 
     private var photoListData: ArrayList<String>? = null
+
+    constructor(parcel: Parcel) : this() {
+        data = parcel.readParcelable(Urgent::class.java.classLoader)
+        isMyProduct = parcel.readByte() != 0.toByte()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,7 +78,6 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
                 tvPhoneNumberDetailedProduct.isEnabled = false
                 tvPhoneNumberDetailedProduct.isFocusable = false
                 tvPhoneNumberDetailedProduct.visibility = View.GONE
-
             }
         }
 
@@ -88,19 +92,22 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
          * * * * *  **/
 
         if (data?.imgPath != null) {
-            Picasso.get().load(data?.imgPath).fit().centerCrop().into(f_im)
             photoListData!!.add(data?.imgPath.toString())
-            f_im.setOnClickListener(this)
         }
         if (data?.imgPath2 != null) {
-            Picasso.get().load(data?.imgPath2).fit().centerCrop().into(s_im)
             photoListData!!.add(data?.imgPath2.toString())
-            s_im.setOnClickListener(this)
         }
         if (data?.imgPath3 != null) {
-            Picasso.get().load(data?.imgPath3).fit().centerCrop().into(t_im)
             photoListData!!.add(data?.imgPath3.toString())
-            t_im.setOnClickListener(this)
+        }
+        if (photoListData?.isEmpty()!!) {
+            image_container.visibility = View.GONE
+        } else {
+            imageViewPageAdapter = ViewPageAdapter(photoListData!!, this, false)
+            viewpager.adapter = imageViewPageAdapter
+            viewpager.currentItem = 0
+
+            tab_layout.setupWithViewPager(viewpager, true)
         }
 
     }
@@ -111,8 +118,6 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
             btDeleteProduct -> {
                 if (isMyProduct) initDialog()
                 else if (data?.phoneNumber?.length == 10) {
-
-
                     tvPhoneNumberDetailedProduct.text = data?.phoneNumber
                     tvPhoneNumberDetailedProduct.isClickable = true
                     tvPhoneNumberDetailedProduct.setOnClickListener(this)
@@ -124,18 +129,6 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             tvPhoneNumberDetailedProduct -> phoneIntent()
-
-            f_im -> {
-                goToFullImageActivity(0)
-            }
-            s_im -> {
-                goToFullImageActivity(1)
-            }
-
-            t_im -> {
-                goToFullImageActivity(2)
-            }
-
         }
     }
 
@@ -186,7 +179,16 @@ class UrgentDetailedActivity : AppCompatActivity(), View.OnClickListener {
 
             initDialog()
         }
-        // onBackPressed()
         return super.onOptionsItemSelected(item)
+    }
+
+    companion object CREATOR : Parcelable.Creator<UrgentDetailedActivity> {
+        override fun createFromParcel(parcel: Parcel): UrgentDetailedActivity {
+            return UrgentDetailedActivity(parcel)
+        }
+
+        override fun newArray(size: Int): Array<UrgentDetailedActivity?> {
+            return arrayOfNulls(size)
+        }
     }
 }

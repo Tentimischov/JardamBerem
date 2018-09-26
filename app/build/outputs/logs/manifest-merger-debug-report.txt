@@ -15,43 +15,43 @@ ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/06e9e4699ed4a585a11c360cefd79f9f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/967ebc67bc34f6f1d020056dbf127a25/AndroidManifest.xml:2:1-14:12
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/d133a157223dc5d9f802a23d8f276f24/AndroidManifest.xml:2:1-17:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6cbbc0adb084763f5eba34871e2b1959/AndroidManifest.xml:17:1-22:12
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/0421bd108c2ceba3a3e744e41922ab7e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/551248d81f787a28e108f7748684adc9/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1776549ebaed9c424aa831c8bb5e1a4b/AndroidManifest.xml:2:1-11:12
-MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/2a4b0212dce13284a9c9a6287a043485/AndroidManifest.xml:2:1-12:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/650144e60c675b0ce30e1bca7f4bed5f/AndroidManifest.xml:2:1-13:12
-MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/b71ab652f9997c837e606563e4eb380c/AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/fe158bc21837f5258ea8d4a17f94bd12/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/ea08629484ed0df2f75cca91f72249ea/AndroidManifest.xml:17:1-22:12
-MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/b6f723774750a6f371c50b3c9ae43b7b/AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/c29311090f393341f932a129326f007e/AndroidManifest.xml:2:1-12:12
-MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/90101aecfb1380a987e80c570917c635/AndroidManifest.xml:2:1-11:12
-MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/90052b213a0d6c91cb2742206067edc1/AndroidManifest.xml:2:1-12:12
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/0d0b3bf8d661f7e795cded1982e907ce/AndroidManifest.xml:2:1-14:12
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:2:1-19:12
-MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/d6f34f9fb55531506f27b019e7b28aa1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/29ca415fb70a7751d566d14b922a16fa/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/da51f7febbb3b6841323a9f0528ede5a/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ed75ca7360b167988445871a2f8e02ea/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/16b906766cfe86348e49338ecb960f91/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/03cbdacfe432e14467a1480ba4807a0b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2f8d659bfd12efb50ae63ec2d6309bad/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/515309d08fd2c6883e340b49372b75a4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9577ca22019404a90c5678e27590c6cf/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/45c5e382f98e078072be97cddf2fa6ad/AndroidManifest.xml:17:1-22:12
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/6839e81264a3a2710b291fd9cb985378/AndroidManifest.xml:45:1-56:12
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/6ee392cc15d28d697c3b3f3eb6e0e120/AndroidManifest.xml:2:1-13:12
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/0e3de2b7b5e35852aa579dd5c872f6bb/AndroidManifest.xml:2:1-13:12
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/de7c44d8ad2a8f4fabd66dabb178dc7e/AndroidManifest.xml:22:1-33:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/844c859a4dbb3e7a75a3d1b67149be2a/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/fe440c566a76176cb4f7c1cf3f61aadc/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dc996666595c1d9dbec34ea8e7ad73fd/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2a7f47786b1051c63a49b5eb418ec87e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/ec4ca8df68ebd39d40e5e895750e7ce6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/3892c8138ba02c1ed05f957866fbadf4/AndroidManifest.xml:2:1-14:12
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/2bcdfdb650b9960391642e5feeb9521b/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ec7e780bb036221178f268c0fd142602/AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/2298363f656717ec3b0f576a28a13507/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/56715446f942c9b487641c5fdd65ded7/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/eea31bf1f7b819c58e609bebc2719359/AndroidManifest.xml:2:1-11:12
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/3afc512d0b2c7576cc2301eb7d74deda/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5e43438e5fa16da49d837e3af07fbdbf/AndroidManifest.xml:2:1-13:12
+MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/03211a36e5cd70bc52e325b937491a79/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/883108f535a2c8f786d75396a6b282f3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/e29010947f1a8fec0cdb69378c105e94/AndroidManifest.xml:17:1-22:12
+MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/f14b6c1176e72b2e0399804240c716fd/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/7c608f1e32f54bfd2bb3b007e1d05b47/AndroidManifest.xml:2:1-12:12
+MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/57651fc08dfad44cc3497ce0b07d621c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/a5490b254025c853815b3995c4cfb759/AndroidManifest.xml:2:1-12:12
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/c36e8ee36b8d909d9e7b1a08d5800c00/AndroidManifest.xml:2:1-14:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:2:1-19:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/98d8c8c1cc5e3be38a02697fa864f1f2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c81a599777a75b79790c305549d36bb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/32671d5ce1f34b4cd1239bb1cb1421f1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8c0236a82305b90c7b44f7b22bb31ccb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/d92108752fb048527ee0936f652e0052/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/96c908f172474ae7799ca8cac3791259/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/12babfc9b0d0a62400b5ef782a209cf4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a178cb64229a4274407a86656af4dcbd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/2d48dde21a9638c72fd4f81faa37a377/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/f4c8ce0327cc583892b5875684e6b4ef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/ac50922f11ae5c30af45aeeb089a8130/AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/a04fa9eb686758e8ebb58aafbcc8d928/AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/cfa0cede80cdc6864185ba7f6656865c/AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/a8484cca5d2edca7e9d6bd6a80c051fd/AndroidManifest.xml:22:1-33:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/231eaab349b9b2f5371e35a9ccf88d90/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/52f6475b9935038a6f8116f056c40b61/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/36d339a0d35abc46fa8991d35d98df04/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/133b78c3e19016ba002b57467cecf35f/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
@@ -71,16 +71,16 @@ INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xm
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:5:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/6839e81264a3a2710b291fd9cb985378/AndroidManifest.xml:52:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/6839e81264a3a2710b291fd9cb985378/AndroidManifest.xml:52:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/6ee392cc15d28d697c3b3f3eb6e0e120/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/6ee392cc15d28d697c3b3f3eb6e0e120/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/0e3de2b7b5e35852aa579dd5c872f6bb/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/0e3de2b7b5e35852aa579dd5c872f6bb/AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/de7c44d8ad2a8f4fabd66dabb178dc7e/AndroidManifest.xml:29:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/de7c44d8ad2a8f4fabd66dabb178dc7e/AndroidManifest.xml:29:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/ac50922f11ae5c30af45aeeb089a8130/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/ac50922f11ae5c30af45aeeb089a8130/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/a04fa9eb686758e8ebb58aafbcc8d928/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/a04fa9eb686758e8ebb58aafbcc8d928/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/cfa0cede80cdc6864185ba7f6656865c/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/cfa0cede80cdc6864185ba7f6656865c/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/a8484cca5d2edca7e9d6bd6a80c051fd/AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/a8484cca5d2edca7e9d6bd6a80c051fd/AndroidManifest.xml:29:5-67
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -109,30 +109,30 @@ ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:1
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:11:22-65
 application
 ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:13:5-94:19
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/967ebc67bc34f6f1d020056dbf127a25/AndroidManifest.xml:12:5-20
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/967ebc67bc34f6f1d020056dbf127a25/AndroidManifest.xml:12:5-20
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/d133a157223dc5d9f802a23d8f276f24/AndroidManifest.xml:11:5-15:19
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/d133a157223dc5d9f802a23d8f276f24/AndroidManifest.xml:11:5-15:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:7:5-12:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1776549ebaed9c424aa831c8bb5e1a4b/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1776549ebaed9c424aa831c8bb5e1a4b/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/650144e60c675b0ce30e1bca7f4bed5f/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/650144e60c675b0ce30e1bca7f4bed5f/AndroidManifest.xml:11:5-20
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/0d0b3bf8d661f7e795cded1982e907ce/AndroidManifest.xml:12:5-20
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/0d0b3bf8d661f7e795cded1982e907ce/AndroidManifest.xml:12:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:11:5-17:19
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:11:5-17:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/da51f7febbb3b6841323a9f0528ede5a/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/da51f7febbb3b6841323a9f0528ede5a/AndroidManifest.xml:9:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/6839e81264a3a2710b291fd9cb985378/AndroidManifest.xml:54:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/6839e81264a3a2710b291fd9cb985378/AndroidManifest.xml:54:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/6ee392cc15d28d697c3b3f3eb6e0e120/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/6ee392cc15d28d697c3b3f3eb6e0e120/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/0e3de2b7b5e35852aa579dd5c872f6bb/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/0e3de2b7b5e35852aa579dd5c872f6bb/AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/de7c44d8ad2a8f4fabd66dabb178dc7e/AndroidManifest.xml:31:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/de7c44d8ad2a8f4fabd66dabb178dc7e/AndroidManifest.xml:31:5-20
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/3892c8138ba02c1ed05f957866fbadf4/AndroidManifest.xml:12:5-20
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/3892c8138ba02c1ed05f957866fbadf4/AndroidManifest.xml:12:5-20
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/2bcdfdb650b9960391642e5feeb9521b/AndroidManifest.xml:11:5-15:19
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/2bcdfdb650b9960391642e5feeb9521b/AndroidManifest.xml:11:5-15:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:7:5-12:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/eea31bf1f7b819c58e609bebc2719359/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/eea31bf1f7b819c58e609bebc2719359/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5e43438e5fa16da49d837e3af07fbdbf/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5e43438e5fa16da49d837e3af07fbdbf/AndroidManifest.xml:11:5-20
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/c36e8ee36b8d909d9e7b1a08d5800c00/AndroidManifest.xml:12:5-20
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/c36e8ee36b8d909d9e7b1a08d5800c00/AndroidManifest.xml:12:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:11:5-17:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:11:5-17:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/32671d5ce1f34b4cd1239bb1cb1421f1/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/32671d5ce1f34b4cd1239bb1cb1421f1/AndroidManifest.xml:9:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/ac50922f11ae5c30af45aeeb089a8130/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/ac50922f11ae5c30af45aeeb089a8130/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/a04fa9eb686758e8ebb58aafbcc8d928/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/a04fa9eb686758e8ebb58aafbcc8d928/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/cfa0cede80cdc6864185ba7f6656865c/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/cfa0cede80cdc6864185ba7f6656865c/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/a8484cca5d2edca7e9d6bd6a80c051fd/AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/a8484cca5d2edca7e9d6bd6a80c051fd/AndroidManifest.xml:31:5-20
 	android:supportsRtl
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
@@ -297,80 +297,80 @@ uses-sdk
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/06e9e4699ed4a585a11c360cefd79f9f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/06e9e4699ed4a585a11c360cefd79f9f/AndroidManifest.xml:20:5-44
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/967ebc67bc34f6f1d020056dbf127a25/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/967ebc67bc34f6f1d020056dbf127a25/AndroidManifest.xml:8:5-10:41
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/d133a157223dc5d9f802a23d8f276f24/AndroidManifest.xml:7:5-9:41
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/d133a157223dc5d9f802a23d8f276f24/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6cbbc0adb084763f5eba34871e2b1959/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6cbbc0adb084763f5eba34871e2b1959/AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/0421bd108c2ceba3a3e744e41922ab7e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/0421bd108c2ceba3a3e744e41922ab7e/AndroidManifest.xml:20:5-44
-MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/551248d81f787a28e108f7748684adc9/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/551248d81f787a28e108f7748684adc9/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1776549ebaed9c424aa831c8bb5e1a4b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1776549ebaed9c424aa831c8bb5e1a4b/AndroidManifest.xml:5:5-7:41
-MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/2a4b0212dce13284a9c9a6287a043485/AndroidManifest.xml:8:5-10:41
-MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/2a4b0212dce13284a9c9a6287a043485/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/650144e60c675b0ce30e1bca7f4bed5f/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/650144e60c675b0ce30e1bca7f4bed5f/AndroidManifest.xml:7:5-9:41
-MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/b71ab652f9997c837e606563e4eb380c/AndroidManifest.xml:8:5-10:41
-MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/b71ab652f9997c837e606563e4eb380c/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/fe158bc21837f5258ea8d4a17f94bd12/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/fe158bc21837f5258ea8d4a17f94bd12/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/ea08629484ed0df2f75cca91f72249ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/ea08629484ed0df2f75cca91f72249ea/AndroidManifest.xml:20:5-44
-MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/b6f723774750a6f371c50b3c9ae43b7b/AndroidManifest.xml:7:5-9:41
-MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/b6f723774750a6f371c50b3c9ae43b7b/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/c29311090f393341f932a129326f007e/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/c29311090f393341f932a129326f007e/AndroidManifest.xml:8:5-10:41
-MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/90101aecfb1380a987e80c570917c635/AndroidManifest.xml:7:5-9:41
-MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/90101aecfb1380a987e80c570917c635/AndroidManifest.xml:7:5-9:41
-MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/90052b213a0d6c91cb2742206067edc1/AndroidManifest.xml:8:5-10:41
-MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/90052b213a0d6c91cb2742206067edc1/AndroidManifest.xml:8:5-10:41
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/0d0b3bf8d661f7e795cded1982e907ce/AndroidManifest.xml:8:5-10:41
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/0d0b3bf8d661f7e795cded1982e907ce/AndroidManifest.xml:8:5-10:41
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/d6f34f9fb55531506f27b019e7b28aa1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/d6f34f9fb55531506f27b019e7b28aa1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/29ca415fb70a7751d566d14b922a16fa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/29ca415fb70a7751d566d14b922a16fa/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/da51f7febbb3b6841323a9f0528ede5a/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/da51f7febbb3b6841323a9f0528ede5a/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ed75ca7360b167988445871a2f8e02ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ed75ca7360b167988445871a2f8e02ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/16b906766cfe86348e49338ecb960f91/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/16b906766cfe86348e49338ecb960f91/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/03cbdacfe432e14467a1480ba4807a0b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/03cbdacfe432e14467a1480ba4807a0b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2f8d659bfd12efb50ae63ec2d6309bad/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2f8d659bfd12efb50ae63ec2d6309bad/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/515309d08fd2c6883e340b49372b75a4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/515309d08fd2c6883e340b49372b75a4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9577ca22019404a90c5678e27590c6cf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9577ca22019404a90c5678e27590c6cf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/45c5e382f98e078072be97cddf2fa6ad/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/45c5e382f98e078072be97cddf2fa6ad/AndroidManifest.xml:20:5-44
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/6839e81264a3a2710b291fd9cb985378/AndroidManifest.xml:50:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/6839e81264a3a2710b291fd9cb985378/AndroidManifest.xml:50:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/6ee392cc15d28d697c3b3f3eb6e0e120/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/6ee392cc15d28d697c3b3f3eb6e0e120/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/0e3de2b7b5e35852aa579dd5c872f6bb/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/0e3de2b7b5e35852aa579dd5c872f6bb/AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/de7c44d8ad2a8f4fabd66dabb178dc7e/AndroidManifest.xml:27:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/de7c44d8ad2a8f4fabd66dabb178dc7e/AndroidManifest.xml:27:5-43
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/844c859a4dbb3e7a75a3d1b67149be2a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/844c859a4dbb3e7a75a3d1b67149be2a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/fe440c566a76176cb4f7c1cf3f61aadc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/fe440c566a76176cb4f7c1cf3f61aadc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dc996666595c1d9dbec34ea8e7ad73fd/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dc996666595c1d9dbec34ea8e7ad73fd/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2a7f47786b1051c63a49b5eb418ec87e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2a7f47786b1051c63a49b5eb418ec87e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/ec4ca8df68ebd39d40e5e895750e7ce6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/ec4ca8df68ebd39d40e5e895750e7ce6/AndroidManifest.xml:20:5-44
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/3892c8138ba02c1ed05f957866fbadf4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/3892c8138ba02c1ed05f957866fbadf4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/2bcdfdb650b9960391642e5feeb9521b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/2bcdfdb650b9960391642e5feeb9521b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ec7e780bb036221178f268c0fd142602/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ec7e780bb036221178f268c0fd142602/AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/2298363f656717ec3b0f576a28a13507/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/2298363f656717ec3b0f576a28a13507/AndroidManifest.xml:20:5-44
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/56715446f942c9b487641c5fdd65ded7/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/56715446f942c9b487641c5fdd65ded7/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/eea31bf1f7b819c58e609bebc2719359/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/eea31bf1f7b819c58e609bebc2719359/AndroidManifest.xml:5:5-7:41
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/3afc512d0b2c7576cc2301eb7d74deda/AndroidManifest.xml:8:5-10:41
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/3afc512d0b2c7576cc2301eb7d74deda/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5e43438e5fa16da49d837e3af07fbdbf/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5e43438e5fa16da49d837e3af07fbdbf/AndroidManifest.xml:7:5-9:41
+MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/03211a36e5cd70bc52e325b937491a79/AndroidManifest.xml:8:5-10:41
+MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/03211a36e5cd70bc52e325b937491a79/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/883108f535a2c8f786d75396a6b282f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/883108f535a2c8f786d75396a6b282f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/e29010947f1a8fec0cdb69378c105e94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/e29010947f1a8fec0cdb69378c105e94/AndroidManifest.xml:20:5-44
+MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/f14b6c1176e72b2e0399804240c716fd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/f14b6c1176e72b2e0399804240c716fd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/7c608f1e32f54bfd2bb3b007e1d05b47/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/7c608f1e32f54bfd2bb3b007e1d05b47/AndroidManifest.xml:8:5-10:41
+MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/57651fc08dfad44cc3497ce0b07d621c/AndroidManifest.xml:7:5-9:41
+MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/57651fc08dfad44cc3497ce0b07d621c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/a5490b254025c853815b3995c4cfb759/AndroidManifest.xml:8:5-10:41
+MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/a5490b254025c853815b3995c4cfb759/AndroidManifest.xml:8:5-10:41
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/c36e8ee36b8d909d9e7b1a08d5800c00/AndroidManifest.xml:8:5-10:41
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/c36e8ee36b8d909d9e7b1a08d5800c00/AndroidManifest.xml:8:5-10:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/98d8c8c1cc5e3be38a02697fa864f1f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/98d8c8c1cc5e3be38a02697fa864f1f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c81a599777a75b79790c305549d36bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c81a599777a75b79790c305549d36bb/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/32671d5ce1f34b4cd1239bb1cb1421f1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/32671d5ce1f34b4cd1239bb1cb1421f1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8c0236a82305b90c7b44f7b22bb31ccb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8c0236a82305b90c7b44f7b22bb31ccb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/d92108752fb048527ee0936f652e0052/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/d92108752fb048527ee0936f652e0052/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/96c908f172474ae7799ca8cac3791259/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/96c908f172474ae7799ca8cac3791259/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/12babfc9b0d0a62400b5ef782a209cf4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/12babfc9b0d0a62400b5ef782a209cf4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a178cb64229a4274407a86656af4dcbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/a178cb64229a4274407a86656af4dcbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/2d48dde21a9638c72fd4f81faa37a377/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/2d48dde21a9638c72fd4f81faa37a377/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/f4c8ce0327cc583892b5875684e6b4ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/f4c8ce0327cc583892b5875684e6b4ef/AndroidManifest.xml:20:5-44
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/ac50922f11ae5c30af45aeeb089a8130/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/ac50922f11ae5c30af45aeeb089a8130/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/a04fa9eb686758e8ebb58aafbcc8d928/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/a04fa9eb686758e8ebb58aafbcc8d928/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/cfa0cede80cdc6864185ba7f6656865c/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/cfa0cede80cdc6864185ba7f6656865c/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/a8484cca5d2edca7e9d6bd6a80c051fd/AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/a8484cca5d2edca7e9d6bd6a80c051fd/AndroidManifest.xml:27:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/231eaab349b9b2f5371e35a9ccf88d90/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/231eaab349b9b2f5371e35a9ccf88d90/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/52f6475b9935038a6f8116f056c40b61/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/52f6475b9935038a6f8116f056c40b61/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/36d339a0d35abc46fa8991d35d98df04/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/36d339a0d35abc46fa8991d35d98df04/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/133b78c3e19016ba002b57467cecf35f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/133b78c3e19016ba002b57467cecf35f/AndroidManifest.xml:20:5-44
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -388,20 +388,20 @@ ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:6
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:65:17-67
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/f34b00592bf06133e1940ddf168030bd/AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/9cd298344de76f32953a742c21c6d8cd/AndroidManifest.xml:9:13-64
 provider#com.crashlytics.android.CrashlyticsInitProvider
-ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:12:9-16:39
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:12:9-16:39
 	android:authorities
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:14:13-75
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:14:13-75
 	android:exported
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:15:13-37
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:15:13-37
 	android:initOrder
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:16:13-36
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6a0a894d6a04f1a361e36f783409508b/AndroidManifest.xml:13:13-75
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/6c38d282e29ce1f12b07165ac763a3f9/AndroidManifest.xml:13:13-75

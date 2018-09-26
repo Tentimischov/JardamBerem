@@ -5,15 +5,17 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.MenuItem
 import com.baktiyar.android.jardamberem.R
-import com.baktiyar.android.jardamberem.utils.Const
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ALL_PHOTO_URLS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INDEX
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_full_photo.*
 import kotlinx.android.synthetic.main.activity_main.*
 
-class FullPhotoActivity : AppCompatActivity() {
-    private var adapter: Adapter? = null
+class FullPhotoActivity : AppCompatActivity(), ViewPageAdapter.mClickListener {
+    override fun onClick(position: Int) {
+
+    }
+
+    private var viewPageAdapter: ViewPageAdapter? = null
     private var index: Int? = null
     private var photoDataList: ArrayList<String>? = null
 
@@ -38,10 +40,9 @@ class FullPhotoActivity : AppCompatActivity() {
         photoDataList = intent.getStringArrayListExtra(ALL_PHOTO_URLS)
         index = intent.getIntExtra(INDEX, 0)
 
-        adapter = Adapter(getFragmentList(), supportFragmentManager)
-        viewpager.adapter = adapter
+        viewPageAdapter = ViewPageAdapter(photoDataList!!, this, true)
+        viewpager.adapter = viewPageAdapter
         viewpager.currentItem = index!!
-        //viewpager.setCurrentItem(index!!, false)
 
 
     }

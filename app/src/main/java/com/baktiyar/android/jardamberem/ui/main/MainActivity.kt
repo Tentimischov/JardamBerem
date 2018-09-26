@@ -42,6 +42,7 @@ import com.baktiyar.android.jardamberem.utils.Const.Companion.URGENTS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.hideKeyboard
 import com.baktiyar.android.jardamberem.utils.Const.Companion.setVisiblityMenuItem
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import com.crashlytics.android.Crashlytics
 import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.activity_main.*
@@ -387,7 +388,6 @@ class MainActivity : BaseActivity(), MainContract.View,
 
     override fun onUrgentSuccess(data: ArrayList<Urgent>) {
         allUrgent = data
-
         urgAdapter?.setUrgData(data)
     }
 

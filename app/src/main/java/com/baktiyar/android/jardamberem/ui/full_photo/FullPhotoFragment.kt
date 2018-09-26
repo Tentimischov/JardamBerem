@@ -2,6 +2,7 @@ package com.baktiyar.android.jardamberem.ui.full_photo
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import com.baktiyar.android.jardamberem.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_full_photo.view.*
 import com.baktiyar.android.jardamberem.R.id.view
+import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import com.bogdwellers.pinchtozoom.ImageMatrixTouchHandler
 
 
@@ -26,12 +28,11 @@ class FullPhotoFragment : Fragment() {
         val v = inflater.inflate(R.layout.fragment_full_photo, container, false)
         Picasso.get().load(pUri).into(v.im)
         v.im.setOnTouchListener(ImageMatrixTouchHandler(v.context))
+        e(id)
+        Log.e("__________", id.toString())
         return v
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
 
     companion object {
         fun newInstance(uri: String): FullPhotoFragment {

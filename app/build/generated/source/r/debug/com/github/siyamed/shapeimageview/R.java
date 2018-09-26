@@ -25,7 +25,7 @@ public final class R {
     public static final class id {
         public static final int bevel = 0x7f0a002d;
         public static final int butt = 0x7f0a0036;
-        public static final int fill = 0x7f0a0070;
+        public static final int fill = 0x7f0a006f;
         public static final int left = 0x7f0a0096;
         public static final int miter = 0x7f0a00a4;
         public static final int right = 0x7f0a00c4;

@@ -882,6 +882,7 @@
     <dimen name="size_18">18sp</dimen>
     <dimen name="size_2">2dp</dimen>
     <dimen name="size_20">20sp</dimen>
+    <dimen name="size_200">200dp</dimen>
     <dimen name="size_220">220dp</dimen>
     <dimen name="size_3">3dp</dimen>
     <dimen name="size_30">30dp</dimen>
@@ -1006,7 +1007,7 @@
     <string name="city_choosen">Регион выбран</string>
     <string name="closeCategory">Одежда</string>
     <string name="clothing">Одежда</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">00e6adc8-42b0-4c78-82d5-2a4ff3e89846</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">70bfe094-46e7-461f-b3d4-fa7146b40d77</string>
     <string name="complain">Пожаловаться</string>
     <string name="delete_product">Удалить</string>
     <string name="description">Описание вашего товара</string>

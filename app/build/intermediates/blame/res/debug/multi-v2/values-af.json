@@ -4,7 +4,7 @@
             "outputFile": "/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
             "map": [
                 {
-                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6cbbc0adb084763f5eba34871e2b1959/res/values-af/values-af.xml",
+                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ec7e780bb036221178f268c0fd142602/res/values-af/values-af.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/45c5e382f98e078072be97cddf2fa6ad/res/values-af/values-af.xml",
+                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/f4c8ce0327cc583892b5875684e6b4ef/res/values-af/values-af.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
