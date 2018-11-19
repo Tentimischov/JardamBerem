@@ -1007,7 +1007,7 @@
     <string name="city_choosen">Регион выбран</string>
     <string name="closeCategory">Одежда</string>
     <string name="clothing">Одежда</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">fa0b8408-f977-4977-956c-7775b3c71403</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">dde06dc6-6585-4cef-ac0b-b73f16eecb1e</string>
     <string name="complain">Пожаловаться</string>
     <string name="delete_product">Удалить</string>
     <string name="description">Описание вашего товара</string>

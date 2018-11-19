@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".ui.full_photo.FullPhotoActivity">
 
     <FrameLayout
@@ -17,7 +18,7 @@
             android:layout_height="wrap_content" />
 
         <include
-            layout="@layout/toolbar"
+            layout="@layout/toolbar_black"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
             android:layout_gravity="top" />
