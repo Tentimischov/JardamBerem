@@ -21,20 +21,19 @@ class ByCategoryAdapter(var data: ArrayList<Announcements>, var mListener: OnIte
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val model = data[position]
-        holder.itemView.title.text = data[position].title
 
         holder.itemView.title.text = model.title
-        val wid = holder.itemView.context.resources.displayMetrics.widthPixels / 2
 
+        holder.itemView.date.text = model.date?.substring(0, 10)
+        holder.itemView.description.text = model.description
         if (model.imgPath != null) {
             Picasso.get().load(model.imgPath).into(holder.itemView.im)
-            if (model.imgPath_height?.toInt()!! > model.imgPath_width?.toInt()!!) {
-                holder.itemView.im.layoutParams.height = (wid + Math.abs(model.imgPath_height?.toInt()!! - model.imgPath_width?.toInt()!!)) / 2
-            } else {
-                holder.itemView.im.layoutParams.height = 200 * (model.imgPath_width?.toInt()!! / model.imgPath_height?.toInt()!!)
-            }
         } else {
             holder.itemView.im.layoutParams.height = (holder.itemView.context.resources.displayMetrics.widthPixels / 3)
+        }
+
+        holder.itemView.call.setOnClickListener {
+            mListener.onCallClick(model.number!!)
         }
 
 
@@ -50,6 +49,7 @@ class ByCategoryAdapter(var data: ArrayList<Announcements>, var mListener: OnIte
 
     interface OnItemClickListener {
         fun onItemClick(data: Announcements)
+        fun onCallClick(number: String)
     }
 
     fun setDataAll(data: ArrayList<Announcements>) {

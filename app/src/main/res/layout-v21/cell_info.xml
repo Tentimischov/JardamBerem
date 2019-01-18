@@ -22,15 +22,6 @@
                 android:paddingTop="@dimen/size_3"
                 android:textColor="@color/black" />
 
-           <!-- <WebView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/info_des"/>-->
-            <!--<TextView
-                android:id="@+id/info_des"
-                style="@style/TextViewCard"
-                android:textSize="@dimen/size_16" />-->
-
             <TextView
                 android:id="@+id/info_date"
                 style="@style/TextViewCard"

@@ -182,7 +182,7 @@
                     android:background="@color/mainText"
                     android:minHeight="@dimen/size_40"
                     android:textColor="@android:color/white"
-                    app:cardBackgroundColor="@color/addButton"
+                    app:cardBackgroundColor="@color/purple"
                     app:cardCornerRadius="5dp"
                     app:cardElevation="2dp"
                     app:elevation="@dimen/pad_10"

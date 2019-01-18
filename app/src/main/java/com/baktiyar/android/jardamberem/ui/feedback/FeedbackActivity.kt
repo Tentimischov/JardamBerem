@@ -59,8 +59,8 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
                 .cornerRadius(dimen(R.dimen.size_5)) // 56 dp
                 .width(dimen(R.dimen.size_220)) // 56 dp
                 .height(dimen(R.dimen.size_35)) // 56 dp
-                .color(ContextCompat.getColor(this, R.color.addButton)) // normal state color
-                .colorPressed(ContextCompat.getColor(this, R.color.addButtonPressed)) // pressed state color
+                .color(ContextCompat.getColor(this, R.color.purple)) // normal state color
+                .colorPressed(ContextCompat.getColor(this, R.color.purpleDark)) // pressed state color
         btnMorph1.morph(circle)
 
         btnMorph1.setOnClickListener {

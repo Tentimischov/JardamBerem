@@ -134,7 +134,7 @@
     <string name="job">Работа</string>
     <string name="other">Другое</string>
     <string name="image">image</string>
-    <string name="urgent_help">Срочная помощь</string>
+    <string name="urgent_help">Срочная помощь!</string>
     <string name="all">Все</string>
     <string name="add">Добавить</string>
     <string name="fail">Не удалось получить данные</string>
@@ -163,6 +163,7 @@
     <string name="category_spinner">категория</string>
     <string name="give_stuff">Отдам штаны</string>
     <string name="info">Информация</string>
+    <string name="call">ПОЗВОНИТЬ</string>
 
     <string name="transition_name">unique transition name</string>
     <string name="retry">Подключитесь к интернету и попробуйте снова</string>

@@ -38,9 +38,8 @@
                 android:singleLine="true"
                 android:ellipsize="end"
                 android:layout_gravity="bottom"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:textStyle="normal"
-                android:fontFamily="@font/open_sans_semibold"
                 android:background="@drawable/down_roun_green_back" />
         </FrameLayout>
     </android.support.v7.widget.CardView>

@@ -23,6 +23,8 @@
     <string name="update_product">Жаңылоо</string>
     <string name="success_add">Кошулду</string>
     <string name="search_product">Издөө</string>
+
+    <string name="call">ЧАЛУУ</string>
     <string name="show_number">Номерди көрсөтүү</string>
     <string name="send">Жөнөтүү</string>
     <string name="news">Жынылыктар</string>
@@ -57,7 +59,7 @@
     <string name="sent">Жиберилди</string>
     <string name="give_help">Берүү</string>
     <string name="need_help">Алуу</string>
-    <string name="urgent_help">Тез жардам</string>
+    <string name="urgent_help">Тез жардам!</string>
     <string name="all">Баары</string>
 
     <string-array name="main_menu_spinner">

@@ -7,6 +7,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.net.ConnectivityManager
+import android.net.Uri
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v4.widget.NestedScrollView
@@ -54,6 +55,7 @@ class MainActivity : BaseActivity(), MainContract.View,
         View.OnClickListener, CategoryAdapter.OnItemClickListener,
         UrgentAdapter.OnUrgClickListener,
         SearchView.OnQueryTextListener, AnnounAdapter.OnItemClickListener {
+
 
     private val TOTAL_PAGES: Int = 100
     private var issLoading = false
@@ -124,7 +126,7 @@ class MainActivity : BaseActivity(), MainContract.View,
     private fun initAnn() {
         announAdapter = AnnounAdapter(ArrayList(), this)
         val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        announ_recyclerview.layoutManager = staggeredGridLayoutManager
+        announ_recyclerview.layoutManager = LinearLayoutManager(this)
         announ_recyclerview.isNestedScrollingEnabled = false
         announ_recyclerview.itemAnimator = DefaultItemAnimator()
         announ_recyclerview.adapter = announAdapter
@@ -401,6 +403,16 @@ class MainActivity : BaseActivity(), MainContract.View,
         intent.putExtra(GOODS, data)
         startActivity(intent)
     }
+
+    override fun onCallClick(number: String) {
+        phoneIntent(number)
+    }
+
+    private fun phoneIntent(number: String) {
+        val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", number, null))
+        startActivity(intent)
+    }
+
 
 
 }

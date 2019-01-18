@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/announcment_no_photo"
+                android:src="@drawable/no_image"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -47,7 +47,6 @@
                 android:layout_marginRight="17dp"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="8dp"
-                android:fontFamily="@font/open_sans_semibold"
                 android:text="Абитуриенты с инвалидностью смогут поступать по квоте в несколько вузов"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/size_18"
@@ -66,7 +65,6 @@
                 android:layout_marginLeft="17dp"
                 android:layout_marginRight="17dp"
                 android:layout_marginStart="17dp"
-                android:fontFamily="@font/open_sans_semibold"
                 android:text="Указанная категория граждан, поступающих в вузы за счет средств федерального бюджета в пределах установленной квоты при успешном преодолении вступительных испытаний, исключена из правила о подаче документов только в один вуз (ч. 3 ст. 71 Федерального закона от 29 декабря 2012 г. № 273-ФЗ «Об образовании в Российской Федерации«).
 
 Таким образом, у детей-инвалидов, инвалидов I и II групп, инвалидов с детства, инвалидов вследствие военной травмы или заболевания, полученных в период прохождения военной службы, появилась возможность подавать документы на обучение в рамках квоты одновременно в пять вузов (п. 52 Порядка приема на обучение по образовательным программам высшего образования – программам бакалавриата, программам специалитета, программам магистратуры).

@@ -15,43 +15,58 @@ ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/9c4412e94411eee69f7b01c3cadf225c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/4f8ebc34f515eb9bfefa0626675f53ea/AndroidManifest.xml:2:1-14:12
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/e724ff71c0dce351f9091c0b63c9fb4d/AndroidManifest.xml:2:1-17:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/82a8f9c443238f7da3bc73c4d83633b0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/4c77007f8e916f5ecbc19ea3854339a5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/669dbda0f2578b63d07f8389a725f847/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fb1b1e31258a55a6dcb86997748a2434/AndroidManifest.xml:2:1-11:12
-MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/7ff13bf9ceed05ea487673d5bae7b3f0/AndroidManifest.xml:2:1-12:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/8d61ff559732fed003c680587345a93e/AndroidManifest.xml:2:1-13:12
-MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/82238664ee5ab1eba4a80b6020a08aa8/AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/8594ca5cca913540b10f2b827deec719/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/8b62d45f64d377c6e26d2268ae474d52/AndroidManifest.xml:17:1-22:12
-MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/7d306522447f1c45f979299bd9725a96/AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/3ab9d4ecf3848409b6ed5bd57ed798cf/AndroidManifest.xml:2:1-12:12
-MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/d0e70dbf24a8beebedf7902a4fdf6e02/AndroidManifest.xml:2:1-11:12
-MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/338886251f959dbca75439368de35a59/AndroidManifest.xml:2:1-12:12
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/d86e181f4141f85352a3eb4ea268df5a/AndroidManifest.xml:2:1-14:12
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:2:1-19:12
-MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/be6b67628ab325e3161a0df9fd70e96d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4635dc1707bf070d394f931959958e68/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/1ddb96a10eaaa4d11ddf15be9e3dc431/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ae22942781ef50604924f1c8c8cc2ac7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/bddbf1865ba6f51851b1142826d6d4b2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/b417ff84fb872a1c2f1831ff75726724/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/4111ea517622e4808d4071199a6c40e9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/16defea846923711108f87df076dfd0b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/da9b74dc4300e02da45acb745f73d771/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0d9282e28591fda0594911d9864e16c6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/8c77cdf5cb35346c506634198f2fc9ed/AndroidManifest.xml:45:1-56:12
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd6f812f711a7b822aa868b541b1ce34/AndroidManifest.xml:2:1-13:12
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1c44b93937ac2d6efe7310db000b4992/AndroidManifest.xml:2:1-13:12
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/506c557daac7da21822d49130ce9a796/AndroidManifest.xml:22:1-33:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/08372b119f51f89e4fbdde4cfd70ffa2/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/0eefb8523f54923ee33f284487e79030/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/40924b4de6f6b444c734715df4a78971/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0754c1632cd850e49d848fbf4e6d0d41/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/031e6c9dd9d5b23028f03b6b1f4fecfc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:2:1-14:12
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/7210bef8af04abb79c31191017742d92/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8ad50b89381d3e783bf7e04759b1da19/AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/00216265c69abf3e81cba79aabf260de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/ff44b14cd7c6ffeec4c9f419ed911cf5/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:2:1-11:12
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/151740d6accec36adc65b241beba0e58/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:2:1-13:12
+MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/d6e3601fd8d5959b3ecc55cb8c64e60c/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b2f46d62dd88aa71fdf40238d6d446b0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/f2c2795e01356f36c5271f9200db7bf2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/3872369fb63d106b829c2eed68c4607c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/b1df718e359f6d987470cdd2cb1d1333/AndroidManifest.xml:2:1-12:12
+MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/e8631994eccbc00a96cce6d19b7f7a3e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/53c4639131d45e43584a4f0392644266/AndroidManifest.xml:2:1-12:12
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/79e7fe6d2afa4ab2c69418c41441f317/AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.firebase:firebase-core:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.6.aar/4f00eac95bc03fb65f2652a8dcf22927/AndroidManifest.xml:2:1-9:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/c6c3c880ec1da5c1563fdd91c2ff3f4b/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.5.aar/6969d47379b0e7bc72c88f864d8741d9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/81c2c1ded477c6ec7f8154b35f5ed1d8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/8931e8d8d261a43663e5593498b65d53/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/ebf75a985bdc0cd3cf19ca1a7310e207/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/4d06b854329334661323dcca4fd206b1/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/2790504802e8e6b18ff88cd61c8b0d9a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5a0043a92b1999f4339f1fabb079fc2a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/49ea908a5c06ecb7727180f27c7a7df6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/667cd519541314d674649afb04df5571/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/43ce81aae68836304d53d3f72ed44121/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/aa447c2df64bd4560090b35369a89d31/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/7c87a958f25d6e9ea255a96d8352de0c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/617d5155bbf11ae2eef51468137ac196/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f5ef80517186672069ef68bfb567485d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/f2425211840b4e2a6372b6f6575e6816/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/77e2e4a05ab76161382f01a57072786a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/01bfa00c74c11d52725f994973ce3c8c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/5fa0ff4adc4ea7cad4b2e241f252bfff/AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.7.aar/05504512e3a853621ec55750eafa992e/AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.6.aar/30e96dabf75480f1bd44b06d6dd93a74/AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:22:1-33:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/11e6fe4c5256e9cccd952f54b31b2874/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5570c7c817439d9280def51ac58330cf/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6fe2949751e1f6e0b4771d4941909cda/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fe41ed69a0ddf41443fc3cbe747dde18/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
@@ -71,20 +86,36 @@ INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xm
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:5:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/8c77cdf5cb35346c506634198f2fc9ed/AndroidManifest.xml:52:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/8c77cdf5cb35346c506634198f2fc9ed/AndroidManifest.xml:52:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd6f812f711a7b822aa868b541b1ce34/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd6f812f711a7b822aa868b541b1ce34/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1c44b93937ac2d6efe7310db000b4992/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1c44b93937ac2d6efe7310db000b4992/AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/506c557daac7da21822d49130ce9a796/AndroidManifest.xml:29:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/506c557daac7da21822d49130ce9a796/AndroidManifest.xml:29:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:23:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/5fa0ff4adc4ea7cad4b2e241f252bfff/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/5fa0ff4adc4ea7cad4b2e241f252bfff/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.7.aar/05504512e3a853621ec55750eafa992e/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.7.aar/05504512e3a853621ec55750eafa992e/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.6.aar/30e96dabf75480f1bd44b06d6dd93a74/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.6.aar/30e96dabf75480f1bd44b06d6dd93a74/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:29:5-67
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -109,30 +140,60 @@ ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:1
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:11:22-65
 application
 ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:13:5-94:19
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/4f8ebc34f515eb9bfefa0626675f53ea/AndroidManifest.xml:12:5-20
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/4f8ebc34f515eb9bfefa0626675f53ea/AndroidManifest.xml:12:5-20
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/e724ff71c0dce351f9091c0b63c9fb4d/AndroidManifest.xml:11:5-15:19
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/e724ff71c0dce351f9091c0b63c9fb4d/AndroidManifest.xml:11:5-15:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:7:5-12:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fb1b1e31258a55a6dcb86997748a2434/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fb1b1e31258a55a6dcb86997748a2434/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/8d61ff559732fed003c680587345a93e/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/8d61ff559732fed003c680587345a93e/AndroidManifest.xml:11:5-20
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/d86e181f4141f85352a3eb4ea268df5a/AndroidManifest.xml:12:5-20
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/d86e181f4141f85352a3eb4ea268df5a/AndroidManifest.xml:12:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:11:5-17:19
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:11:5-17:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/1ddb96a10eaaa4d11ddf15be9e3dc431/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/1ddb96a10eaaa4d11ddf15be9e3dc431/AndroidManifest.xml:9:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/8c77cdf5cb35346c506634198f2fc9ed/AndroidManifest.xml:54:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/8c77cdf5cb35346c506634198f2fc9ed/AndroidManifest.xml:54:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd6f812f711a7b822aa868b541b1ce34/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd6f812f711a7b822aa868b541b1ce34/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1c44b93937ac2d6efe7310db000b4992/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1c44b93937ac2d6efe7310db000b4992/AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/506c557daac7da21822d49130ce9a796/AndroidManifest.xml:31:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/506c557daac7da21822d49130ce9a796/AndroidManifest.xml:31:5-20
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:12:5-20
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:12:5-20
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/7210bef8af04abb79c31191017742d92/AndroidManifest.xml:11:5-15:19
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/7210bef8af04abb79c31191017742d92/AndroidManifest.xml:11:5-15:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:7:5-12:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:11:5-20
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/79e7fe6d2afa4ab2c69418c41441f317/AndroidManifest.xml:12:5-20
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/79e7fe6d2afa4ab2c69418c41441f317/AndroidManifest.xml:12:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.6.aar/4f00eac95bc03fb65f2652a8dcf22927/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.6.aar/4f00eac95bc03fb65f2652a8dcf22927/AndroidManifest.xml:7:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:11:5-17:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/c6c3c880ec1da5c1563fdd91c2ff3f4b/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/c6c3c880ec1da5c1563fdd91c2ff3f4b/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.5.aar/6969d47379b0e7bc72c88f864d8741d9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.5.aar/6969d47379b0e7bc72c88f864d8741d9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/81c2c1ded477c6ec7f8154b35f5ed1d8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/81c2c1ded477c6ec7f8154b35f5ed1d8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/8931e8d8d261a43663e5593498b65d53/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/8931e8d8d261a43663e5593498b65d53/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/ebf75a985bdc0cd3cf19ca1a7310e207/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/ebf75a985bdc0cd3cf19ca1a7310e207/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/4d06b854329334661323dcca4fd206b1/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/4d06b854329334661323dcca4fd206b1/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/2790504802e8e6b18ff88cd61c8b0d9a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/2790504802e8e6b18ff88cd61c8b0d9a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5a0043a92b1999f4339f1fabb079fc2a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5a0043a92b1999f4339f1fabb079fc2a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/43ce81aae68836304d53d3f72ed44121/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/43ce81aae68836304d53d3f72ed44121/AndroidManifest.xml:9:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/5fa0ff4adc4ea7cad4b2e241f252bfff/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/5fa0ff4adc4ea7cad4b2e241f252bfff/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.7.aar/05504512e3a853621ec55750eafa992e/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.7.aar/05504512e3a853621ec55750eafa992e/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.6.aar/30e96dabf75480f1bd44b06d6dd93a74/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.6.aar/30e96dabf75480f1bd44b06d6dd93a74/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:31:5-20
 	android:supportsRtl
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
@@ -140,7 +201,7 @@ MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/t
 	android:uiOptions
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:20:9-53
 	android:icon
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:16:9-36
 	android:allowBackup
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:15:9-35
 	android:theme
@@ -297,80 +358,110 @@ uses-sdk
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/9c4412e94411eee69f7b01c3cadf225c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/9c4412e94411eee69f7b01c3cadf225c/AndroidManifest.xml:20:5-44
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/4f8ebc34f515eb9bfefa0626675f53ea/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/4f8ebc34f515eb9bfefa0626675f53ea/AndroidManifest.xml:8:5-10:41
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/e724ff71c0dce351f9091c0b63c9fb4d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/e724ff71c0dce351f9091c0b63c9fb4d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/82a8f9c443238f7da3bc73c4d83633b0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/82a8f9c443238f7da3bc73c4d83633b0/AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/4c77007f8e916f5ecbc19ea3854339a5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/4c77007f8e916f5ecbc19ea3854339a5/AndroidManifest.xml:20:5-44
-MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/669dbda0f2578b63d07f8389a725f847/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/669dbda0f2578b63d07f8389a725f847/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fb1b1e31258a55a6dcb86997748a2434/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fb1b1e31258a55a6dcb86997748a2434/AndroidManifest.xml:5:5-7:41
-MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/7ff13bf9ceed05ea487673d5bae7b3f0/AndroidManifest.xml:8:5-10:41
-MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/7ff13bf9ceed05ea487673d5bae7b3f0/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/8d61ff559732fed003c680587345a93e/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/8d61ff559732fed003c680587345a93e/AndroidManifest.xml:7:5-9:41
-MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/82238664ee5ab1eba4a80b6020a08aa8/AndroidManifest.xml:8:5-10:41
-MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/82238664ee5ab1eba4a80b6020a08aa8/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/8594ca5cca913540b10f2b827deec719/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/8594ca5cca913540b10f2b827deec719/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/8b62d45f64d377c6e26d2268ae474d52/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/8b62d45f64d377c6e26d2268ae474d52/AndroidManifest.xml:20:5-44
-MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/7d306522447f1c45f979299bd9725a96/AndroidManifest.xml:7:5-9:41
-MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/7d306522447f1c45f979299bd9725a96/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/3ab9d4ecf3848409b6ed5bd57ed798cf/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/3ab9d4ecf3848409b6ed5bd57ed798cf/AndroidManifest.xml:8:5-10:41
-MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/d0e70dbf24a8beebedf7902a4fdf6e02/AndroidManifest.xml:7:5-9:41
-MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/d0e70dbf24a8beebedf7902a4fdf6e02/AndroidManifest.xml:7:5-9:41
-MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/338886251f959dbca75439368de35a59/AndroidManifest.xml:8:5-10:41
-MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/338886251f959dbca75439368de35a59/AndroidManifest.xml:8:5-10:41
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/d86e181f4141f85352a3eb4ea268df5a/AndroidManifest.xml:8:5-10:41
-MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/d86e181f4141f85352a3eb4ea268df5a/AndroidManifest.xml:8:5-10:41
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/be6b67628ab325e3161a0df9fd70e96d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/be6b67628ab325e3161a0df9fd70e96d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4635dc1707bf070d394f931959958e68/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4635dc1707bf070d394f931959958e68/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/1ddb96a10eaaa4d11ddf15be9e3dc431/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/1ddb96a10eaaa4d11ddf15be9e3dc431/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ae22942781ef50604924f1c8c8cc2ac7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ae22942781ef50604924f1c8c8cc2ac7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/bddbf1865ba6f51851b1142826d6d4b2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/bddbf1865ba6f51851b1142826d6d4b2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/b417ff84fb872a1c2f1831ff75726724/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/b417ff84fb872a1c2f1831ff75726724/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/4111ea517622e4808d4071199a6c40e9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/4111ea517622e4808d4071199a6c40e9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/16defea846923711108f87df076dfd0b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/16defea846923711108f87df076dfd0b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/da9b74dc4300e02da45acb745f73d771/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/da9b74dc4300e02da45acb745f73d771/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0d9282e28591fda0594911d9864e16c6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0d9282e28591fda0594911d9864e16c6/AndroidManifest.xml:20:5-44
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/8c77cdf5cb35346c506634198f2fc9ed/AndroidManifest.xml:50:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/8c77cdf5cb35346c506634198f2fc9ed/AndroidManifest.xml:50:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd6f812f711a7b822aa868b541b1ce34/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd6f812f711a7b822aa868b541b1ce34/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1c44b93937ac2d6efe7310db000b4992/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1c44b93937ac2d6efe7310db000b4992/AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/506c557daac7da21822d49130ce9a796/AndroidManifest.xml:27:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/506c557daac7da21822d49130ce9a796/AndroidManifest.xml:27:5-43
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/08372b119f51f89e4fbdde4cfd70ffa2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/08372b119f51f89e4fbdde4cfd70ffa2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/0eefb8523f54923ee33f284487e79030/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/0eefb8523f54923ee33f284487e79030/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/40924b4de6f6b444c734715df4a78971/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/40924b4de6f6b444c734715df4a78971/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0754c1632cd850e49d848fbf4e6d0d41/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0754c1632cd850e49d848fbf4e6d0d41/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/031e6c9dd9d5b23028f03b6b1f4fecfc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/031e6c9dd9d5b23028f03b6b1f4fecfc/AndroidManifest.xml:20:5-44
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:8:5-10:41
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/7210bef8af04abb79c31191017742d92/AndroidManifest.xml:7:5-9:41
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/7210bef8af04abb79c31191017742d92/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8ad50b89381d3e783bf7e04759b1da19/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8ad50b89381d3e783bf7e04759b1da19/AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/00216265c69abf3e81cba79aabf260de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/00216265c69abf3e81cba79aabf260de/AndroidManifest.xml:20:5-44
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/ff44b14cd7c6ffeec4c9f419ed911cf5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/ff44b14cd7c6ffeec4c9f419ed911cf5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:5:5-7:41
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/151740d6accec36adc65b241beba0e58/AndroidManifest.xml:8:5-10:41
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/151740d6accec36adc65b241beba0e58/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:7:5-9:41
+MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/d6e3601fd8d5959b3ecc55cb8c64e60c/AndroidManifest.xml:8:5-10:41
+MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/d6e3601fd8d5959b3ecc55cb8c64e60c/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b2f46d62dd88aa71fdf40238d6d446b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b2f46d62dd88aa71fdf40238d6d446b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/f2c2795e01356f36c5271f9200db7bf2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/f2c2795e01356f36c5271f9200db7bf2/AndroidManifest.xml:20:5-44
+MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/3872369fb63d106b829c2eed68c4607c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.joooonho:selectableroundedimageview:1.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/selectableroundedimageview-1.0.1.aar/3872369fb63d106b829c2eed68c4607c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/b1df718e359f6d987470cdd2cb1d1333/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/b1df718e359f6d987470cdd2cb1d1333/AndroidManifest.xml:8:5-10:41
+MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/e8631994eccbc00a96cce6d19b7f7a3e/AndroidManifest.xml:7:5-9:41
+MERGED from [info.hoang8f:android-segmented:1.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-segmented-1.0.6.aar/e8631994eccbc00a96cce6d19b7f7a3e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/53c4639131d45e43584a4f0392644266/AndroidManifest.xml:8:5-10:41
+MERGED from [com.ethanhua:skeleton:1.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/skeleton-1.1.1.aar/53c4639131d45e43584a4f0392644266/AndroidManifest.xml:8:5-10:41
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/79e7fe6d2afa4ab2c69418c41441f317/AndroidManifest.xml:8:5-10:41
+MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/79e7fe6d2afa4ab2c69418c41441f317/AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.firebase:firebase-core:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.6.aar/4f00eac95bc03fb65f2652a8dcf22927/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.6.aar/4f00eac95bc03fb65f2652a8dcf22927/AndroidManifest.xml:5:5-44
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:7:5-43
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/c6c3c880ec1da5c1563fdd91c2ff3f4b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/c6c3c880ec1da5c1563fdd91c2ff3f4b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.5.aar/6969d47379b0e7bc72c88f864d8741d9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.5.aar/6969d47379b0e7bc72c88f864d8741d9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/81c2c1ded477c6ec7f8154b35f5ed1d8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/81c2c1ded477c6ec7f8154b35f5ed1d8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/8931e8d8d261a43663e5593498b65d53/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/8931e8d8d261a43663e5593498b65d53/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/ebf75a985bdc0cd3cf19ca1a7310e207/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/ebf75a985bdc0cd3cf19ca1a7310e207/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/4d06b854329334661323dcca4fd206b1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/4d06b854329334661323dcca4fd206b1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/2790504802e8e6b18ff88cd61c8b0d9a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/2790504802e8e6b18ff88cd61c8b0d9a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5a0043a92b1999f4339f1fabb079fc2a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5a0043a92b1999f4339f1fabb079fc2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/49ea908a5c06ecb7727180f27c7a7df6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/49ea908a5c06ecb7727180f27c7a7df6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/667cd519541314d674649afb04df5571/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/667cd519541314d674649afb04df5571/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/43ce81aae68836304d53d3f72ed44121/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/43ce81aae68836304d53d3f72ed44121/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/aa447c2df64bd4560090b35369a89d31/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/aa447c2df64bd4560090b35369a89d31/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/7c87a958f25d6e9ea255a96d8352de0c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/7c87a958f25d6e9ea255a96d8352de0c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/617d5155bbf11ae2eef51468137ac196/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/617d5155bbf11ae2eef51468137ac196/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f5ef80517186672069ef68bfb567485d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f5ef80517186672069ef68bfb567485d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/f2425211840b4e2a6372b6f6575e6816/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/f2425211840b4e2a6372b6f6575e6816/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/77e2e4a05ab76161382f01a57072786a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/77e2e4a05ab76161382f01a57072786a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/01bfa00c74c11d52725f994973ce3c8c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/01bfa00c74c11d52725f994973ce3c8c/AndroidManifest.xml:20:5-44
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/5fa0ff4adc4ea7cad4b2e241f252bfff/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/5fa0ff4adc4ea7cad4b2e241f252bfff/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.7.aar/05504512e3a853621ec55750eafa992e/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.7.aar/05504512e3a853621ec55750eafa992e/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.6.aar/30e96dabf75480f1bd44b06d6dd93a74/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/answers-1.4.6.aar/30e96dabf75480f1bd44b06d6dd93a74/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:27:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/11e6fe4c5256e9cccd952f54b31b2874/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/11e6fe4c5256e9cccd952f54b31b2874/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5570c7c817439d9280def51ac58330cf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5570c7c817439d9280def51ac58330cf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6fe2949751e1f6e0b4771d4941909cda/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6fe2949751e1f6e0b4771d4941909cda/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fe41ed69a0ddf41443fc3cbe747dde18/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fe41ed69a0ddf41443fc3cbe747dde18/AndroidManifest.xml:20:5-44
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -388,20 +479,156 @@ ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:6
 	android:name
 		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:65:17-67
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/ec43faad58368da071f7dbc4a32398ee/AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:9:13-64
 provider#com.crashlytics.android.CrashlyticsInitProvider
-ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:12:9-16:39
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:12:9-16:38
 	android:authorities
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:14:13-75
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:14:13-75
 	android:exported
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:15:13-37
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:15:13-37
 	android:initOrder
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:16:13-36
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:16:13-35
 	android:name
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/17b94159a9917daf2d60c1d7eac60710/AndroidManifest.xml:13:13-75
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:13:13-75
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:27:18-89
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/e0836ec00951b36251bb68392e059680/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:54:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/3088d661b8c0eb063263910a793e6ada/AndroidManifest.xml:11:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5a0043a92b1999f4339f1fabb079fc2a/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5a0043a92b1999f4339f1fabb079fc2a/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/5a0043a92b1999f4339f1fabb079fc2a/AndroidManifest.xml:24:13-58

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@android:color/transparent"
     android:layout_marginLeft="5dp"
-    app:cardCornerRadius="4dp"
+    app:cardCornerRadius="@dimen/size_15"
     android:layout_marginBottom="1dp"
     android:layout_marginTop="1dp"
     android:orientation="horizontal"
@@ -33,7 +33,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="0.3"
             android:contentDescription="@string/image"
-            android:padding="2dp"
+            android:padding="3dp"
             android:src="@drawable/app_icon" />
 
         <TextView
@@ -47,7 +47,7 @@
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:padding="2dp"
-            android:textColor="#828282"
+            android:textColor="#12152e"
             android:textSize="16sp"
             tools:text="Еда" />
     </LinearLayout>

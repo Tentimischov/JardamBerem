@@ -6,13 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
-import com.baktiyar.android.jardamberem.utils.RoundedImageView
-import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_vertical_main.view.*
-import android.util.DisplayMetrics
-import android.util.Log
-import android.widget.LinearLayout
 
 
 class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemClickListener?) :
@@ -62,12 +57,18 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
                     val wid = model.imgPath_height?.toDouble()!! / (model.imgPath_width?.toDouble()!!
                             / (holder.itemView.context.resources.displayMetrics.widthPixels / 2).toDouble())
                     Picasso.get().load(model.imgPath).into(holder.itemView.im)
-                    holder.itemView.im.layoutParams.height = wid.toInt()
+                    //holder.itemView.im.layoutParams.height = wid.toInt()
                 } else {
-                    holder.itemView.im.layoutParams.height = (holder.itemView.context.resources.displayMetrics.widthPixels / 3)
+                   // holder.itemView.im.layoutParams.height = (holder.itemView.context.resources.displayMetrics.widthPixels / 3)
                 }
 
                 holder.itemView.title.text = model.title
+                holder.itemView.date.text = model.date?.substring(0, 10)
+                holder.itemView.description.text = model.description
+
+                holder.itemView.call.setOnClickListener {
+                    mListener?.onCallClick(model.number!!)
+                }
                 holder.itemView.setOnClickListener {
                     mListener?.onAnnounClick(data[position])
                 }
@@ -83,6 +84,7 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
 
     interface OnItemClickListener {
         fun onAnnounClick(main: Announcements)
+        fun onCallClick(number: String)
     }
 
 
@@ -130,6 +132,7 @@ class AnnounAdapter(var data: ArrayList<Announcements>, var mListener: OnItemCli
             notifyDataSetChanged()
         }
     }
+
 
 
 }

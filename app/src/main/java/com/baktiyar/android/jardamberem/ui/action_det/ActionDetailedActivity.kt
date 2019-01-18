@@ -34,8 +34,10 @@ class ActionDetailedActivity : AppCompatActivity() {
                 actionData?.imgPath2 != null -> Picasso.get().load(actionData?.imgPath2).into(image)
                 else -> Picasso.get().load(actionData?.imgPath3).into(image)
             }
+            date.text = actionData?.date?.substring(0, 10)
             title_d.text = actionData?.title
             body.text = actionData?.description
+
         }
     }
 

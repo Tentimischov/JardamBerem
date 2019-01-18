@@ -39,7 +39,7 @@
                 android:paddingRight="@dimen/size_8"
                 android:paddingStart="@dimen/size_8"
                 android:textAllCaps="false"
-                android:textColor="@color/lightGreen"
+                android:textColor="@color/purple"
                 android:textSize="@dimen/size_17"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

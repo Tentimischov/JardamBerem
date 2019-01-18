@@ -5,8 +5,8 @@
     <group >
         <item
             android:id="@+id/main_menu"
-            android:icon="@drawable/ic_category"
-            android:title="@string/titleCategories" />
+            android:icon="@drawable/heart_icon"
+            android:title="@string/app_name" />
 
         <item
             android:id="@+id/action_activity"
@@ -29,7 +29,7 @@
             android:title="@string/language" />
         <item
             android:id="@+id/region"
-            android:icon="@drawable/placeholder"
+            android:icon="@drawable/region"
             android:title="@string/region" />
         <item
             android:id="@+id/navItemFeedback"

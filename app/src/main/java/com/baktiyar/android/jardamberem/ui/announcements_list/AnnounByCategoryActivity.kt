@@ -1,9 +1,11 @@
 package com.baktiyar.android.jardamberem.ui.announcements_list
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DefaultItemAnimator
+import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.MenuItem
 import android.view.View
@@ -17,6 +19,7 @@ import kotlinx.android.synthetic.main.activity_announ_list.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.View, ByCategoryAdapter.OnItemClickListener {
+
 
 
     private val TOTAL_PAGES: Int = 10
@@ -50,9 +53,9 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
 
     fun recreateScreen() {
         finish()
-        overridePendingTransition( 0, 0);
+        overridePendingTransition( 0, 0)
         startActivity(intent)
-        overridePendingTransition( 0, 0);
+        overridePendingTransition( 0, 0)
     }
 
 
@@ -62,8 +65,7 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
 
         presenter = AnnounCategoryPresenter(this, applicationContext)
         adapter = ByCategoryAdapter(ArrayList(), this)
-        val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        recview.layoutManager = staggeredGridLayoutManager
+        recview.layoutManager = LinearLayoutManager(this)
         recview.isNestedScrollingEnabled = false
         recview.itemAnimator = DefaultItemAnimator()
         recview.adapter = adapter
@@ -97,4 +99,15 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
     override fun onError(message: String) {
 
     }
+
+    override fun onCallClick(number: String) {
+        phoneIntent(number)
+    }
+
+    private fun phoneIntent(number: String) {
+        val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", number, null))
+        startActivity(intent)
+    }
+
+
 }
