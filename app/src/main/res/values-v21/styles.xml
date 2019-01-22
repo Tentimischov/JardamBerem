@@ -27,5 +27,4 @@
         <item name="android:popupBackground">@drawable/popup_spinner_background</item>
     </style>
 
-
 </resources>

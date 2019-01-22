@@ -1,6 +1,7 @@
 package com.baktiyar.android.jardamberem.ui.all_urgents
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -18,8 +19,8 @@ import android.support.v4.app.ActivityCompat
 
 class AllUrgentsActivity : AppCompatActivity(), AllUrgentsAdapter.OnItemClickListener {
     private var allUrgent: ArrayList<Urgent>? = null
-
     private var adapter: AllUrgentsAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_all_urgent)
@@ -31,6 +32,7 @@ class AllUrgentsActivity : AppCompatActivity(), AllUrgentsAdapter.OnItemClickLis
     fun init() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
         allUrgent = intent.getParcelableArrayListExtra(URGENTS)
         if (allUrgent != null)
             adapter = AllUrgentsAdapter(allUrgent!!, this)
@@ -40,11 +42,9 @@ class AllUrgentsActivity : AppCompatActivity(), AllUrgentsAdapter.OnItemClickLis
     }
 
     override fun onUrgentDetClick(main: Urgent, position: Int) {
-        /*val intent = Intent(this, UrgentDetailedActivity::class.java)
+        val intent = Intent(this, UrgentDetailedActivity::class.java)
         intent.putExtra(ACTION_URGENT, main)
-        startActivity(intent)*/
-        animateIntent(main)
-
+        startActivity(intent)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
@@ -56,26 +56,15 @@ class AllUrgentsActivity : AppCompatActivity(), AllUrgentsAdapter.OnItemClickLis
         return super.onOptionsItemSelected(item)
     }
 
-    fun animateIntent(main: Urgent) {
-
-        // Ordinary Intent for launching a new activity
-        val intent = Intent(this, UrgentDetailedActivity::class.java)
-        intent.putExtra(ACTION_URGENT, main)
-        // Get the transition name from the string
-        val transitionName = getString(R.string.transition_name)
-
-        // Define the view that the animation will start from
-
-        val options =
-
-                ActivityOptionsCompat.makeSceneTransitionAnimation(this,
-                        begin_anim, // Starting view
-                        transitionName    // The String
-                )
-        //Start the Intent
-        ActivityCompat.startActivity(this, intent, options.toBundle())
-
+    override fun onCallClick(number: String) {
+        phoneIntent(number)
     }
+
+    private fun phoneIntent(number: String) {
+        val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", number, null))
+        startActivity(intent)
+    }
+
 
 
 }

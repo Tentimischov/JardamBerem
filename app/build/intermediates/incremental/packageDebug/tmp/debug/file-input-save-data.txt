@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Jan 18 15:30:45 KGT 2019
+#Tue Jan 22 13:03:21 KGT 2019
 1.base=/Users/jeenbek/Desktop/JardamBerem/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

@@ -32,14 +32,14 @@ class LanguageActivity : BaseActivity() {
         setDrawerState(hideNav)
         title = getString(R.string.language)
         picker.visibility = View.VISIBLE
-        val data: Array<String> = arrayOf(getString(R.string.ky_lang), getString(R.string.ru_lang))
+        val data: Array<String> = arrayOf(getString(R.string.ru_lang), getString(R.string.ky_lang))
         picker.minValue = 0
         picker.maxValue = 1
 
         if (Settings.getLanguage(applicationContext) == RUSSIAN) {
-            picker.value = 1
-        } else {
             picker.value = 0
+        } else {
+            picker.value = 1
         }
 
         picker.displayedValues = data
@@ -49,7 +49,7 @@ class LanguageActivity : BaseActivity() {
         done.setOnClickListener {
 
             var restart = false
-            val lang = if (picker.value == 0) KYRGYZ else RUSSIAN
+            val lang = if (picker.value == 0) RUSSIAN else KYRGYZ
 
             if (lang != Settings.getLanguage(baseContext)) {
                 restart = true

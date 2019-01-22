@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/pad_10"
         app:cardPreventCornerOverlap="false"
-        app:cardCornerRadius="@dimen/pad_10">
+        card_view:cardElevation="4dp">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -18,28 +21,28 @@
 
             <com.joooonho.SelectableRoundedImageView
                 android:id="@+id/action_image"
-                android:contentDescription="@string/image"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/image"
                 android:scaleType="centerCrop"
-                app:sriv_right_top_corner_radius="@dimen/size_5"
-                app:sriv_right_bottom_corner_radius="@dimen/size_5"
-                app:sriv_left_top_corner_radius="@dimen/size_5"
+                android:src="@drawable/mountain"
                 app:sriv_left_bottom_corner_radius="@dimen/size_5"
-                android:src="@drawable/mountain" />
+                app:sriv_left_top_corner_radius="@dimen/size_5"
+                app:sriv_right_bottom_corner_radius="@dimen/size_5"
+                app:sriv_right_top_corner_radius="@dimen/size_5" />
 
             <TextView
                 android:id="@+id/action_title"
                 style="@style/TextViewTitle"
-                android:padding="@dimen/size_5"
-                android:textSize="@dimen/size_16"
-                android:singleLine="true"
-                android:textColor="@color/mainText"
-                android:ellipsize="end"
                 android:layout_gravity="bottom"
+                android:background="@drawable/down_roun_green_back"
+                android:ellipsize="end"
+                android:gravity="start"
                 android:maxLines="2"
-                android:textStyle="normal"
-                android:background="@drawable/down_roun_green_back" />
+                android:padding="@dimen/size_5"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/size_16"
+                android:textStyle="normal" />
         </FrameLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

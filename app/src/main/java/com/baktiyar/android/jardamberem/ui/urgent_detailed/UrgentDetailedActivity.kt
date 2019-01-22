@@ -170,11 +170,7 @@ class UrgentDetailedActivity() : AppCompatActivity(), View.OnClickListener, View
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         if (item?.itemId == android.R.id.home) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                finishAfterTransition()
-            } else {
                 onBackPressed()
-            }
         } else if (item?.itemId == R.id.delete) {
 
             initDialog()

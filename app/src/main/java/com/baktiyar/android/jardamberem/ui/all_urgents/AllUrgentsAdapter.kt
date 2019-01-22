@@ -7,8 +7,7 @@ import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Urgent
 import com.bumptech.glide.Glide
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.cell_all_urgent.view.*
+import kotlinx.android.synthetic.main.cell_vertical_main.view.*
 
 
 class AllUrgentsAdapter(var data: ArrayList<Urgent>, private val mListener: OnItemClickListener) : RecyclerView.Adapter<AllUrgentsAdapter.ViewHolder>() {
@@ -17,7 +16,7 @@ class AllUrgentsAdapter(var data: ArrayList<Urgent>, private val mListener: OnIt
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder{
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.cell_all_urgent, parent, false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.cell_vertical_main, parent, false)
         return ViewHolder(v)
     }
 
@@ -29,13 +28,17 @@ class AllUrgentsAdapter(var data: ArrayList<Urgent>, private val mListener: OnIt
 
         fun bindV(main: Urgent, mListener: OnItemClickListener) {
 
-
             itemView.title.text = main.title
             Glide.with(itemView.context).load(main.imgPath).into(itemView.im)
+            itemView.date.text = main.date.substring(0, 10)
+            itemView.description.text = main.description
+
+            itemView.call.setOnClickListener {
+                mListener.onCallClick(main.phoneNumber)
+            }
             itemView.setOnClickListener {
                 mListener.onUrgentDetClick(main, adapterPosition)
             }
-
         }
 
 
@@ -43,9 +46,12 @@ class AllUrgentsAdapter(var data: ArrayList<Urgent>, private val mListener: OnIt
 
     interface OnItemClickListener {
         fun onUrgentDetClick(main: Urgent, position: Int)
+        fun onCallClick(number: String)
     }
     fun setAnnounData(data: ArrayList<Urgent>) {
         this.data = data
         notifyDataSetChanged()
     }
+
+
 }
