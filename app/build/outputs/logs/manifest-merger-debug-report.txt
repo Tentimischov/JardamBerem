@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#android.support.v4.content.FileProvider
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:59:9-67:20
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:59:9-67:20
 	android:grantUriPermissions
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:63:13-47
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:63:13-47
 	android:authorities
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:61:13-60
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:61:13-60
 	android:exported
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:62:13-37
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:62:13-37
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:60:13-67
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:60:13-67
 manifest
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/031e6c9dd9d5b23028f03b6b1f4fecfc/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:2:1-14:12
 MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/7210bef8af04abb79c31191017742d92/AndroidManifest.xml:2:1-17:12
@@ -22,7 +22,7 @@ MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/jeenbek/.gradle/cac
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/00216265c69abf3e81cba79aabf260de/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/ff44b14cd7c6ffeec4c9f419ed911cf5/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0d2522ba277cae677da47adffa09d0a1/AndroidManifest.xml:2:1-11:12
 MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/151740d6accec36adc65b241beba0e58/AndroidManifest.xml:2:1-12:12
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:2:1-13:12
 MERGED from [id.zelory:compressor:1.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/compressor-1.0.4.aar/d6e3601fd8d5959b3ecc55cb8c64e60c/AndroidManifest.xml:2:1-12:12
@@ -67,25 +67,25 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jeenbek/.gradle/
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5570c7c817439d9280def51ac58330cf/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6fe2949751e1f6e0b4771d4941909cda/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fe41ed69a0ddf41443fc3cbe747dde18/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
 	package
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:3:5-47
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:1-96:12
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.8] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.8.aar/11ac7c09ffa1db22b0e078a2418c6951/AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:22:5-67
@@ -105,9 +105,9 @@ MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/c
 MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:29:5-67
 MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:29:5-67
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:6:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/efe6e7f494319a3aba1eeea49df4e501/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/4f113674b639c8afd6e513164d6a8de8/AndroidManifest.xml:24:5-79
@@ -117,37 +117,37 @@ MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/jeenbek/
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/ef4849f8763d1c4bd7acaa716115a5c9/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:7:5-80
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:7:22-77
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.CAMERA
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:9:5-65
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:9:22-62
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:9:22-62
 uses-permission#android.permission.PERMISSION_CAMERA
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:10:5-76
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:10:5-76
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:10:22-73
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:10:22-73
 uses-permission#android.permission.GET_TASKS
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:11:5-68
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:11:22-65
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:11:22-65
 application
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:13:5-94:19
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:13:5-94:19
 MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:12:5-20
 MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:12:5-20
 MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/7210bef8af04abb79c31191017742d92/AndroidManifest.xml:11:5-15:19
 MERGED from [com.bogdwellers:pinchtozoom:0.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/7210bef8af04abb79c31191017742d92/AndroidManifest.xml:11:5-15:19
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:7:5-12:19
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:7:5-12:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0d2522ba277cae677da47adffa09d0a1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0d2522ba277cae677da47adffa09d0a1/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:11:5-20
 MERGED from [io.supercharge:shimmerlayout:2.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/shimmerlayout-2.1.0.aar/79e7fe6d2afa4ab2c69418c41441f317/AndroidManifest.xml:12:5-20
@@ -195,169 +195,169 @@ MERGED from [com.crashlytics.sdk.android:answers:1.4.6] /Users/jeenbek/.gradle/c
 MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:31:5-20
 MERGED from [io.fabric.sdk.android:fabric:1.4.7] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/fabric-1.4.7.aar/e21f66871e4edb4c61b69d5be0f1a31f/AndroidManifest.xml:31:5-20
 	android:supportsRtl
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:17:9-41
 	android:uiOptions
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:20:9-53
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:20:9-53
 	android:icon
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:16:9-36
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:16:9-36
 	android:allowBackup
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:19:9-40
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:14:9-41
 activity#com.baktiyar.android.jardamberem.utils.AgreementActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:21:9-29:20
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:21:9-29:20
 	android:screenOrientation
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:23:13-49
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:23:13-49
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:22:13-52
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:22:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:24:13-28:29
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:25:17-69
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:25:25-66
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:27:17-77
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:27:27-74
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:27:27-74
 activity#com.baktiyar.android.jardamberem.ui.categories.CategoriesActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:30:9-33:52
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:30:9-33:52
 	android:screenOrientation
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:33:13-49
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:33:13-49
 	android:label
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:32:13-52
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:32:13-52
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:31:13-61
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:31:13-61
 activity#com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:34:9-42:20
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:34:9-42:20
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:34:19-66
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:34:19-66
 intent-filter#action:name:android.intent.action.SEARCH
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:35:13-37:29
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:35:13-37:29
 action#android.intent.action.SEARCH
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:36:17-71
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:36:17-71
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:36:25-68
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:36:25-68
 meta-data#android.app.searchable
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:39:13-41:54
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:39:13-41:54
 	android:resource
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:41:17-51
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:41:17-51
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:40:17-54
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:40:17-54
 activity#com.baktiyar.android.jardamberem.ui.product.feed_products.ProductsActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:43:9-45:52
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:43:9-45:52
 	android:screenOrientation
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:45:13-49
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:45:13-49
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:44:13-70
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:44:13-70
 activity#com.baktiyar.android.jardamberem.ui.product.post_product.NewProductActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:46:9-49:52
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:46:9-49:52
 	android:screenOrientation
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:49:13-49
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:49:13-49
 	android:label
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:48:13-48
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:48:13-48
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:47:13-71
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:47:13-71
 activity#com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:50:9-52:52
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:50:9-52:52
 	android:screenOrientation
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:52:13-49
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:52:13-49
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:51:13-80
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:51:13-80
 activity#com.baktiyar.android.jardamberem.ui.product.post_product.PhotoPickActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:53:9-79
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:53:9-79
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:53:19-76
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:53:19-76
 activity#com.baktiyar.android.jardamberem.ui.BaseActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:54:9-53
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:54:9-53
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:54:19-50
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:54:19-50
 activity#com.baktiyar.android.jardamberem.ui.feedback.FeedbackActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:55:9-57:52
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:55:9-57:52
 	android:label
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:57:13-49
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:57:13-49
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:56:13-57
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:56:13-57
 activity#com.baktiyar.android.jardamberem.ui.news.NewsActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:69:9-58
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:69:9-58
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:69:19-55
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:69:19-55
 activity#com.baktiyar.android.jardamberem.ui.appInfo.AppInfoActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:70:9-64
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:70:9-64
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:70:19-61
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:70:19-61
 activity#com.baktiyar.android.jardamberem.ui.partners.PartnersInfoActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:71:9-70
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:71:9-70
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:71:19-67
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:71:19-67
 meta-data#preloaded_fonts
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:73:9-75:57
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:73:9-75:57
 	android:resource
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:75:13-54
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:75:13-54
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:74:13-43
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:74:13-43
 activity#com.baktiyar.android.jardamberem.ui.city.ChooseCityActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:77:9-64
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:77:9-64
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:77:19-61
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:77:19-61
 activity#com.baktiyar.android.jardamberem.ui.main.MainActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:78:9-58
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:78:9-58
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:78:19-55
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:78:19-55
 activity#com.baktiyar.android.jardamberem.ui.lang.LanguageActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:79:9-62
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:79:9-62
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:79:19-59
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:79:19-59
 activity#com.baktiyar.android.jardamberem.ui.action.ActionActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:80:9-62
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:80:9-62
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:80:19-59
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:80:19-59
 activity#com.baktiyar.android.jardamberem.ui.info.InfoActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:81:9-58
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:81:9-58
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:81:19-55
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:81:19-55
 activity#com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:82:9-71
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:82:9-71
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:82:19-68
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:82:19-68
 activity#com.baktiyar.android.jardamberem.ui.action_det.ActionDetailedActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:83:9-74
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:83:9-74
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:83:19-71
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:83:19-71
 activity#com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailedActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:84:9-79
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:84:9-79
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:84:19-76
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:84:19-76
 activity#com.baktiyar.android.jardamberem.ui.forum.ForumActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:85:9-60
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:85:9-60
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:85:19-57
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:85:19-57
 activity#com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:86:9-84
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:86:9-84
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:86:19-81
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:86:19-81
 activity#com.baktiyar.android.jardamberem.ui.info_d.DetailedInfoActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:87:9-68
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:87:9-68
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:87:19-65
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:87:19-65
 meta-data#io.fabric.ApiKey
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:89:9-91:72
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:89:9-91:72
 	android:value
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:91:13-69
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:91:13-69
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:90:13-44
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:90:13-44
 activity#com.baktiyar.android.jardamberem.ui.full_photo.FullPhotoActivity
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:93:9-78
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:93:9-78
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:93:19-66
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:93:19-66
 uses-sdk
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/031e6c9dd9d5b23028f03b6b1f4fecfc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/031e6c9dd9d5b23028f03b6b1f4fecfc/AndroidManifest.xml:20:5-44
 MERGED from [com.github.dmytrodanylyk:android-morphing-button:98a4986e56] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/android-morphing-button-98a4986e56.aar/921cebc19b49af7ac2bfa6f32c770c74/AndroidManifest.xml:8:5-10:41
@@ -372,8 +372,8 @@ MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/ca
 MERGED from [com.android.support:exifinterface:27.1.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/00216265c69abf3e81cba79aabf260de/AndroidManifest.xml:20:5-44
 MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/ff44b14cd7c6ffeec4c9f419ed911cf5/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/ff44b14cd7c6ffeec4c9f419ed911cf5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/1368749283c007bb013e2e890a54cc2a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0d2522ba277cae677da47adffa09d0a1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0d2522ba277cae677da47adffa09d0a1/AndroidManifest.xml:5:5-7:41
 MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/151740d6accec36adc65b241beba0e58/AndroidManifest.xml:8:5-10:41
 MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/expandablelayout-2.9.2.aar/151740d6accec36adc65b241beba0e58/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/d1d1d977fe70ea9456138c20bec94294/AndroidManifest.xml:7:5-9:41
@@ -462,22 +462,22 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6fe2949751e1f6e0b4771d4941909cda/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fe41ed69a0ddf41443fc3cbe747dde18/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fe41ed69a0ddf41443fc3cbe747dde18/AndroidManifest.xml:20:5-44
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:64:13-66:57
+ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:64:13-66:57
 	android:resource
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:66:17-54
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:66:17-54
 	android:name
-		ADDED from /Users/jeenbek/Desktop/JardamBerem/app/src/main/AndroidManifest.xml:65:17-67
+		ADDED from /Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/AndroidManifest.xml:65:17-67
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] /Users/jeenbek/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/c1443ce1244e27a68ec2f1ad2c5bd64a/AndroidManifest.xml:8:9-11:40
 	android:authorities

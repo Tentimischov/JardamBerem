@@ -23,7 +23,6 @@ class DetailedInfoActivity : AppCompatActivity() {
         val  mimeType: String = "text/html"
         val  encoding: String = "UTF-8"
         data = intent.getParcelableExtra(INFO_DETAILED)
-        title_d.text = data?.title
         body.loadDataWithBaseURL("", data?.description!!, mimeType, encoding, "")
     }
 

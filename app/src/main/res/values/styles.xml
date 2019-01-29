@@ -35,8 +35,8 @@
 
     <style name="TextViewCard">
         <item name="android:textSize">@dimen/sixteen_dp_text_size</item>
-        <item name="android:paddingRight">@dimen/size_3</item>
-        <item name="android:paddingLeft">@dimen/size_3</item>
+        <item name="android:paddingRight">@dimen/size_8</item>
+        <item name="android:paddingLeft">@dimen/size_8</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/mainText</item>

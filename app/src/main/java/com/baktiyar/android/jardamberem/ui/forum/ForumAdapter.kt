@@ -62,6 +62,7 @@ class ForumAdapter(var data: ArrayList<Forum>, var listener: MClickListener) :
             ITEM -> {
                 holder.itemView.forum_user.text = model.nickName
                 holder.itemView.forum_body.text = model.comment
+                holder.itemView.date.text = model.date?.substring(0, 10)
                 if (getAndroidId(holder.itemView.context) == model.userImeiCode) {
                     holder.itemView.delete.visibility = View.VISIBLE
                 }

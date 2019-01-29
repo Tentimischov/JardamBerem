@@ -30,10 +30,11 @@
         <item
             android:id="@+id/region"
             android:icon="@drawable/region"
+
             android:title="@string/region" />
         <item
             android:id="@+id/navItemFeedback"
-            android:icon="@drawable/chat"
+            android:icon="@drawable/feedback"
             android:title="@string/feedbacks" />
         <item
             android:id="@+id/navItemAppInfo"

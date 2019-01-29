@@ -11,7 +11,7 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/pad_10"
+        app:cardCornerRadius="@dimen/size_2"
         app:cardPreventCornerOverlap="false"
         card_view:cardElevation="4dp">
 
@@ -26,20 +26,26 @@
                 android:contentDescription="@string/image"
                 android:scaleType="centerCrop"
                 android:src="@drawable/mountain"
-                app:sriv_left_bottom_corner_radius="@dimen/size_5"
-                app:sriv_left_top_corner_radius="@dimen/size_5"
-                app:sriv_right_bottom_corner_radius="@dimen/size_5"
-                app:sriv_right_top_corner_radius="@dimen/size_5" />
+                app:sriv_left_bottom_corner_radius="@dimen/size_2"
+                app:sriv_left_top_corner_radius="@dimen/size_2"
+                app:sriv_right_bottom_corner_radius="@dimen/size_2"
+                app:sriv_right_top_corner_radius="@dimen/size_2" />
 
             <TextView
                 android:id="@+id/action_title"
                 style="@style/TextViewTitle"
                 android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/size_2"
                 android:background="@drawable/down_roun_green_back"
                 android:ellipsize="end"
+                android:paddingStart="@dimen/size_12"
+                android:paddingEnd="@dimen/size_12"
+                android:paddingTop="@dimen/size_8"
+                android:paddingBottom="@dimen/size_8"
                 android:gravity="start"
+                android:lineSpacingExtra="@dimen/size_5"
                 android:maxLines="2"
-                android:padding="@dimen/size_5"
+                android:text="lskdfjnvlskjdfnjklvsdfv"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/size_16"
                 android:textStyle="normal" />

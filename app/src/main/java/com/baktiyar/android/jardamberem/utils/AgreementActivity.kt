@@ -3,7 +3,6 @@ package com.baktiyar.android.jardamberem.utils
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.ui.lang.LanguageActivity
 import com.baktiyar.android.jardamberem.ui.main.MainActivity

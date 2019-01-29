@@ -10,24 +10,33 @@
         android:layout_height="wrap_content"
         card_view:elevation="@dimen/size_5">
 
-        <android.support.v7.widget.LinearLayoutCompat
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_marginBottom="@dimen/size_8"
+            android:orientation="horizontal">
+
 
             <TextView
                 android:id="@+id/info_title"
+                android:layout_weight="0.2"
                 style="@style/TextViewCard"
-                android:paddingTop="@dimen/size_3"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/size_5"
                 android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/info_date"
+                android:layout_weight="0.5"
                 style="@style/TextViewCard"
+                android:textSize="@dimen/size_14"
+                android:layout_marginRight="@dimen/size_2"
+                android:textColor="@color/hintGray"
                 android:gravity="end"
                 android:textAlignment="textEnd" />
 
-        </android.support.v7.widget.LinearLayoutCompat>
+
+        </LinearLayout>
     </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>

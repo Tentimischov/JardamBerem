@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Info
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import kotlinx.android.synthetic.main.cell_info.view.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -67,7 +68,7 @@ class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?
 
 
                 holder.itemView.info_title.text = model.title
-                holder.itemView.info_date.text = output1
+                holder.itemView.info_date.text = stringDate
                 holder.itemView.setOnClickListener {
                     mListener?.onInfoClick(data[position])
                 }
