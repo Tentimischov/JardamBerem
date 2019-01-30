@@ -4,15 +4,11 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.support.design.widget.BottomSheetBehavior
-import android.support.v4.content.ContextCompat
 import android.support.v4.widget.NestedScrollView
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.view.animation.LinearInterpolator
 import android.view.animation.OvershootInterpolator
-import android.widget.FrameLayout
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Forum
 import com.baktiyar.android.jardamberem.model.ForumPaginated
@@ -20,30 +16,14 @@ import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.action.PaginationScrollListenerAction
 import com.baktiyar.android.jardamberem.ui.feedback.FeedbackActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
-import com.dd.morphingbutton.MorphingButton
-import kotlinx.android.synthetic.main.activity_feedback.*
 import kotlinx.android.synthetic.main.activity_forum.*
-import org.jetbrains.anko.dimen
 import org.jetbrains.anko.toast
 
 
 class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickListener {
-    override fun onDeleteSuccess(message: String, position: Int) {
-        adapter?.deleteForum(position)
-    }
-
-    override fun onDeleteError(message: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun onForumDelete(id: Int, position: Int) {
-        presenter?.deleteForum(id, position)
-    }
 
     private var adapter: ForumAdapter? = null
-
     private var presenter: ForumPresenter? = null
-    private val mHandler = Handler()
     private var visibleCard: Boolean = true
     private val TOTAL_PAGES: Int = 100
     private var issLoading = false
@@ -72,12 +52,6 @@ class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickLis
         initAdapter()
     }
 
-    override fun onSendSuccess() {
-        toast(getString(R.string.sent))
-
-    }
-
-
     private fun initCardBut() {
 
         scroll.setOnScrollChangeListener { _: NestedScrollView?, _: Int, scrollY: Int, _: Int, oldScrollY: Int ->
@@ -95,6 +69,17 @@ class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickLis
 
 
     }
+
+    fun initAdapter() {
+        adapter = ForumAdapter(ArrayList(), this)
+        val layoutManager = LinearLayoutManager(this)
+        forum_rec.layoutManager = layoutManager
+        forum_rec.adapter = adapter
+        forum_rec.isNestedScrollingEnabled = false
+        addScrollAdapter(layoutManager)
+        loadFirstPage()
+    }
+
 
     fun hideFabWithObjectAnimator() {
         val scaleSet = AnimatorSet()
@@ -123,19 +108,9 @@ class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickLis
     }
 
     override fun onError(message: String) {
+        toast(message)
         pro_bar.visibility = View.GONE
         issLastPage = true
-    }
-
-
-    fun initAdapter() {
-        adapter = ForumAdapter(ArrayList(), this)
-        val layoutManager = LinearLayoutManager(this)
-        forum_rec.layoutManager = layoutManager
-        forum_rec.adapter = adapter
-        forum_rec.isNestedScrollingEnabled = false
-        addScrollAdapter(layoutManager)
-        loadFirstPage()
     }
 
     override fun onForumFirstSuccess(data: ForumPaginated) {
@@ -151,7 +126,8 @@ class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickLis
         }
     }
 
- override fun onForumNextSuccess(data: ForumPaginated) {
+
+    override fun onForumNextSuccess(data: ForumPaginated) {
         adapter?.removeLoadingFooter()
         issLoading = false
         pro_bar.visibility = View.GONE
@@ -165,7 +141,6 @@ class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickLis
             adapter?.addLoadingFooter()
         }
     }
-
 
     private fun addScrollAdapter(layoutManager: LinearLayoutManager) {
         forum_rec.addOnScrollListener(object : PaginationScrollListenerAction(layoutManager) {
@@ -192,13 +167,31 @@ class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickLis
         presenter?.getForumFirst(limitPage, 0)
     }
 
+
+    override fun onSendSuccess() {
+        toast(getString(R.string.sent))
+
+    }
+
     private fun loadNextPage() {
         presenter?.getForumNext(limitPage, currentPage * limitPage)
     }
 
-
     private fun fetchResults(response: ForumPaginated?): List<Forum> {    //3
         return response?.results!!
+    }
+
+
+    override fun onDeleteSuccess(message: String, position: Int) {
+        adapter?.deleteForum(position)
+    }
+
+    override fun onDeleteError(message: String) {
+        toast(getString(R.string.fail))
+    }
+
+    override fun onForumDelete(id: Int, position: Int) {
+        presenter?.deleteForum(id, position)
     }
 
 }

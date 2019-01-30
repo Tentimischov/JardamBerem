@@ -55,16 +55,12 @@ class ActionAdapter(var data: ArrayList<ActionData>, var mListener: OnItemClickL
         when (getItemViewType(position)) {
             ITEM -> {
                 holder.itemView.action_title.text = model.title
-
-                var ok = true
-
+                
                 if (model.imgPath != null) {
-                    ok = false
                     Picasso.get().load(model.imgPath).into(holder.itemView.action_image)
-                } else if (model.imgPath2 != null && ok) {
-                    ok = false
+                } else if (model.imgPath2 != null) {
                     Picasso.get().load(model.imgPath2).into(holder.itemView.action_image)
-                } else if (model.imgPath3 != null && ok) {
+                } else if (model.imgPath3 != null) {
                     Picasso.get().load(model.imgPath3).into(holder.itemView.action_image)
                 }
 

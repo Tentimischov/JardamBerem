@@ -1058,7 +1058,6 @@ drawable ic_search_24dp
 drawable img_close
 drawable img_food
 drawable img_job
-drawable img_no_photo
 drawable img_other
 drawable info
 drawable info_2
@@ -1103,6 +1102,7 @@ drawable spinner_ab_unfocused
 drawable spinner_background
 drawable tab_selector
 drawable time
+drawable toolbar_shadow
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable urgent_dot
@@ -1149,6 +1149,7 @@ id add
 id addCardView
 id addForum
 id addTextView
+id add_feedback
 id adjust_height
 id adjust_width
 id agreementRadioButton
@@ -1167,10 +1168,8 @@ id bevel
 id blocking
 id body
 id bottom
-id btAddFeedBack
 id btAddNewProduct
 id btDeleteProduct
-id btnMorph1
 id butt
 id buttonPanel
 id button_content_text
@@ -1641,6 +1640,7 @@ string email
 string error_empty
 string error_sending_data
 string fail
+string fail_send
 string feedback_hint_str
 string feedbacks
 string fill_description

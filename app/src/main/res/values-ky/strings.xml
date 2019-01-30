@@ -62,6 +62,7 @@
     <string name="urgent_help">Тез жардам!</string>
     <string name="all">Баары</string>
 
+
     <string-array name="main_menu_spinner">
         <item>@string/give_help</item>
         <item>@string/need_help</item>
@@ -92,6 +93,7 @@
     <string name="sos">sos</string>
     <string name="image">image</string>
     <string name="fail">Малымат алуга мүмкүн эмес</string>
+    <string name="fail_send">Малымат жиберүүгө мүмкүн эмес</string>
     <string name="phone_number">0(XXX)-YY-YY-YY</string>
     <string name="error_empty">Баарын толтурунуз</string>
     <string name="give_stuff">Отдам штаны</string>

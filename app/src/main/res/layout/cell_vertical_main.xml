@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="@dimen/size_8"
     android:layout_marginRight="@dimen/size_8"
-    android:layout_marginTop="@dimen/size_5"
+    android:layout_marginTop="@dimen/size_8"
     app:cardPreventCornerOverlap="false"
     app:cardCornerRadius="@dimen/size_3"
     card_view:cardCornerRadius="@dimen/size_3"

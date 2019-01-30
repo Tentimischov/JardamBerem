@@ -2,14 +2,11 @@ package com.baktiyar.android.jardamberem.ui.feedback
 
 import android.annotation.SuppressLint
 import android.app.ProgressDialog
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.provider.Settings
-import android.support.v4.content.ContextCompat
 import android.text.TextUtils
-import android.view.View
 import com.baktiyar.android.jardamberem.ApplicationClass
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Feedback
@@ -18,19 +15,15 @@ import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.forum.ForumActivity
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
-import com.dd.morphingbutton.MorphingButton
+import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import kotlinx.android.synthetic.main.activity_feedback.*
-import org.jetbrains.anko.dimen
 import org.jetbrains.anko.toast
 
 
-class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickListener {
+class FeedbackActivity : BaseActivity(), FeedbackContract.View {
 
-
-    private val mHandler = Handler()
     private var mFeedbackPresenter: FeedbackPresenter? = null
     private var mFeedback: Feedback? = null
-    private var mProgressBar: ProgressDialog? = null
     private var actvityId: Int? = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,79 +38,14 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
         getIntentId()
         initUi()
         initPresenter()
-        btAddFeedBack.setOnClickListener(this)
     }
 
-    @SuppressLint("HardwareIds")
-    private fun getAndroidId(): String {
-        return Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)
-    }
+
 
     fun initLoading() {
-        val circle = MorphingButton.Params.create()
-                .duration(0)
-                .cornerRadius(dimen(R.dimen.size_5)) // 56 dp
-                .width(dimen(R.dimen.size_220)) // 56 dp
-                .height(dimen(R.dimen.size_35)) // 56 dp
-                .color(ContextCompat.getColor(this, R.color.purple)) // normal state color
-                .colorPressed(ContextCompat.getColor(this, R.color.purpleDark)) // pressed state color
-        btnMorph1.morph(circle)
-
-        btnMorph1.setOnClickListener {
-
+        add_feedback.setOnClickListener {
             initFeedBack()
             sendData(mFeedback!!)
-        }
-    }
-
-    override fun onSuccessForum() {
-        successLoadingButton()
-        mHandler.postDelayed(goForumActivity, 1100)
-    }
-
-    fun successLoadingButton() {
-        val circle = MorphingButton.Params.create()
-                .duration(500)
-                .cornerRadius(dimen(R.dimen.size_45))
-                .width(dimen(R.dimen.size_45))
-                .height(dimen(R.dimen.size_45))
-                .color(ContextCompat.getColor(this, android.R.color.holo_green_light)) // normal state color
-                .colorPressed(ContextCompat.getColor(this, android.R.color.holo_green_light)) // pressed state color
-                .icon(R.drawable.done_loading)
-        btnMorph1.morph(circle)
-    }
-
-
-    private val goForumActivity = Runnable {
-        startActivity(Intent(this, ForumActivity::class.java))
-        finish()
-    }
-    private val goMainActivity = Runnable {
-        startActivity(Intent(this, MainActivity::class.java))
-        finish()
-    }
-
-    override fun onFail(message: String) {
-        failLoadingButton()
-    }
-
-    fun failLoadingButton() {
-        val circle = MorphingButton.Params.create()
-                .duration(500)
-                .cornerRadius(dimen(R.dimen.size_45))
-                .width(dimen(R.dimen.size_45))
-                .height(dimen(R.dimen.size_45))
-                .color(ContextCompat.getColor(this, android.R.color.holo_red_light))
-                .colorPressed(ContextCompat.getColor(this, android.R.color.holo_red_dark))
-                .icon(R.drawable.error_loading)
-
-        btnMorph1.morph(circle)
-    }
-
-    fun initUi() {
-        if (actvityId == 2) {
-            etFeedbackEmail.hint = getString(R.string.forum_hint)
-
         }
     }
 
@@ -125,15 +53,44 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
         actvityId = intent.getIntExtra(ACTIVITY_ID, 1)
     }
 
-    private fun initFeedBack() {
-        val review: String = etFeedbackReview.text.toString()
-        val email: String = etFeedbackEmail.text.toString()
-        mFeedback = Feedback(review, email)
+    fun initUi() {
+        if (actvityId == 2) {
+            etFeedbackEmail.hint = getString(R.string.forum_hint)
+        }
     }
 
     private fun initPresenter() {
         val app = this.applicationContext as ApplicationClass
         mFeedbackPresenter = FeedbackPresenter(this, app.service!!, this)
+    }
+
+    override fun onSuccessForum() {
+        startForumActivity()
+    }
+
+    private fun startForumActivity() {
+        startActivity(Intent(this, ForumActivity::class.java))
+        finish()
+    }
+
+    private fun startMainActivity() {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
+    }
+
+    override fun onSuccess() {
+        toast("Отзыв принят")
+        startMainActivity()
+    }
+
+    override fun onFail(message: String) {
+        toast(message)
+    }
+
+    private fun initFeedBack() {
+        val review: String = etFeedbackReview.text.toString()
+        val email: String = etFeedbackEmail.text.toString()
+        mFeedback = Feedback(review, email)
     }
 
     private fun sendData(feedback: Feedback) {
@@ -157,34 +114,14 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View, View.OnClickList
         return TextUtils.isEmpty(etFeedbackEmail.text.toString()) || TextUtils.isEmpty(etFeedbackReview.text.toString())
     }
 
-    override fun onClick(v: View?) {
-        when (v) {
-
-            btAddFeedBack -> {
-                initFeedBack()
-                sendData(mFeedback!!)
-            }
-        }
-    }
-
-
     override fun showProgress() {
-        /*if (mProgressBar == null) {
-            mProgressBar = ProgressDialog(this)
-            mProgressBar!!.setTitle(R.string.loading)
-            mProgressBar!!.show()
-        }*/
     }
 
     override fun hideProgress() {
-        /*if (mProgressBar != null && mProgressBar!!.isShowing) mProgressBar!!.dismiss()
-        mProgressBar = null*/
     }
-
-    override fun onSuccess() {
-        successLoadingButton()
-        mHandler.postDelayed(goMainActivity, 1100)
+    @SuppressLint("HardwareIds")
+    private fun getAndroidId(): String {
+        return Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)
     }
-
 
 }

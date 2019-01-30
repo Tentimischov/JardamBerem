@@ -60,13 +60,6 @@ class InfoAdapter(var data: ArrayList<Info>, var mListener: OnItemClickListener?
             ITEM -> {
                 val stringDate =  model.date?.substring(0, 10)
 
-                val inputFormatter1 = SimpleDateFormat("yyyy-MM-dd", Locale(Settings.getLanguage(holder.itemView.context)))
-                val date1 = inputFormatter1.parse(stringDate)
-
-                val outputFormatter1 = SimpleDateFormat("d MMMM, yyyy",  Locale(Settings.getLanguage(holder.itemView.context)))
-                val output1 = outputFormatter1.format(date1)
-
-
                 holder.itemView.info_title.text = model.title
                 holder.itemView.info_date.text = stringDate
                 holder.itemView.setOnClickListener {

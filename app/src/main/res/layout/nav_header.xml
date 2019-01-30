@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:paddingBottom="@dimen/text_sz"
+    android:layout_marginTop="@dimen/size_12"
     android:paddingLeft="@dimen/text_sz"
     android:paddingRight="@dimen/text_sz"
     android:paddingTop="32dp">

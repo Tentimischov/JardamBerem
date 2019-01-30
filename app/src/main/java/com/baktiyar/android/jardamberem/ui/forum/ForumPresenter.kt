@@ -1,6 +1,7 @@
 package com.baktiyar.android.jardamberem.ui.forum
 
 import com.baktiyar.android.jardamberem.ApplicationClass
+import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Forum
 import com.baktiyar.android.jardamberem.model.ForumPaginated
 import okhttp3.ResponseBody
@@ -12,7 +13,7 @@ class ForumPresenter(var v: ForumContract.View) : ForumContract.Presenter {
     override fun deleteForum(id: Int, position: Int) {
         ApplicationClass.INSTANCE?.service?.deletForum(id)?.enqueue(object : Callback<ResponseBody> {
             override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
-                v.onDeleteError(t?.message!!)
+                v.onDeleteError(ApplicationClass.INSTANCE?.getString(R.string.fail)!!)
             }
 
             override fun onResponse(call: Call<ResponseBody>?, response: Response<ResponseBody>?) {
@@ -27,7 +28,7 @@ class ForumPresenter(var v: ForumContract.View) : ForumContract.Presenter {
         ApplicationClass.INSTANCE?.service?.getForum(limit, offset)
                 ?.enqueue(object : Callback<ForumPaginated> {
                     override fun onFailure(call: Call<ForumPaginated>?, t: Throwable?) {
-                        v.onError(t?.message!!)
+                        v.onError(ApplicationClass.INSTANCE?.getString(R.string.fail)!!)
                     }
 
                     override fun onResponse(call: Call<ForumPaginated>?, response: Response<ForumPaginated>?) {

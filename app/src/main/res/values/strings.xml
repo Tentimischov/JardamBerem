@@ -138,6 +138,8 @@
     <string name="all">Все</string>
     <string name="add">Добавить</string>
     <string name="fail">Не удалось получить данные</string>
+    <string name="fail_send">Не удалось отправить данные</string>
+
 
     <string-array name="main_menu_spinner">
         <item>@string/give_help</item>
