@@ -20,6 +20,8 @@ import kotlinx.android.synthetic.main.activity_forum.*
 import org.jetbrains.anko.toast
 
 
+
+
 class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickListener {
 
     private var adapter: ForumAdapter? = null

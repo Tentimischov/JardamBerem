@@ -155,7 +155,6 @@ class DetailedProductActivity() : AppCompatActivity(), View.OnClickListener, Det
 
 
     private fun initPresenter() {
-        val app = this.applicationContext as ApplicationClass
         mDetailedProductPresenter = DetailedProductPresenter(this)
     }
 
