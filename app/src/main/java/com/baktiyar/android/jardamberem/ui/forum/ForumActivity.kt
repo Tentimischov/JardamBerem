@@ -56,7 +56,7 @@ class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickLis
 
     private fun initCardBut() {
 
-        scroll.setOnScrollChangeListener { _: NestedScrollView?, _: Int, scrollY: Int, _: Int, oldScrollY: Int ->
+       /*scroll.setOnScrollChangeListener { _: NestedScrollView?, _: Int, scrollY: Int, _: Int, oldScrollY: Int ->
             if (scrollY >= oldScrollY && visibleCard) {
                 hideFabWithObjectAnimator()
                 addForum.isClickable = false
@@ -67,7 +67,7 @@ class ForumActivity : BaseActivity(), ForumContract.View, ForumAdapter.MClickLis
                 showFabWithObjectAnimator()
                 addForum.isClickable = true
             }
-        }
+        }*/
 
 
     }

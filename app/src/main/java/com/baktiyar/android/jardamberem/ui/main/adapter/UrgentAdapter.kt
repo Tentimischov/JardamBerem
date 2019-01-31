@@ -39,13 +39,13 @@ class UrgentAdapter(var data: ArrayList<Urgent>, var mClickListener: OnUrgClickL
             Picasso.get().load(main.imgPath).into(itemView.icon)
             Glide.with(itemView.context).load(main.imgPath).into(itemView.icon)
             itemView.setOnClickListener {
-                mClickListener.onUrgClick(main)
+                mClickListener.onUrgentItemClick(main)
             }
         }
 
 
     }
     interface OnUrgClickListener {
-        fun onUrgClick(main: Urgent)
+        fun onUrgentItemClick(main: Urgent)
     }
 }

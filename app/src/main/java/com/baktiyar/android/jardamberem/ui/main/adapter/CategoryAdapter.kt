@@ -1,15 +1,11 @@
 package com.baktiyar.android.jardamberem.ui.main.adapter
 
-import android.support.v4.content.ContextCompat
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.AllCategory
-import com.baktiyar.android.jardamberem.utils.Settings
-import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_category_main.view.*
 
@@ -35,7 +31,7 @@ class CategoryAdapter(var data: ArrayList<AllCategory>, private val mListener: O
             itemView.ca_title.text = main.category_name
             Picasso.get().load(main.category_imgPath).into(itemView.ca_icon)
             itemView.setOnClickListener {
-                mListener.onCaClick(main, adapterPosition)
+                mListener.onCategoryItemClick(main, adapterPosition)
             }
 
 
@@ -53,7 +49,7 @@ class CategoryAdapter(var data: ArrayList<AllCategory>, private val mListener: O
     }
 
     interface OnItemClickListener {
-        fun onCaClick(main: AllCategory, position: Int)
+        fun onCategoryItemClick(main: AllCategory, position: Int)
 
     }
 

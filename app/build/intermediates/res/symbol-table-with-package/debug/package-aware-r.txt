@@ -888,6 +888,7 @@ dimen size_45
 dimen size_5
 dimen size_50
 dimen size_55
+dimen size_65
 dimen size_78
 dimen size_8
 dimen text_sz

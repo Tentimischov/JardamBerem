@@ -4281,20 +4281,21 @@ public final class R {
     public static final int size_5=0x7f0700c9;
     public static final int size_50=0x7f0700ca;
     public static final int size_55=0x7f0700cb;
-    public static final int size_78=0x7f0700cc;
-    public static final int size_8=0x7f0700cd;
-    public static final int text_sz=0x7f0700ce;
-    public static final int textview_height=0x7f0700cf;
-    public static final int textview_width=0x7f0700d0;
-    public static final int title_size=0x7f0700d1;
-    public static final int tooltip_corner_radius=0x7f0700d2;
-    public static final int tooltip_horizontal_padding=0x7f0700d3;
-    public static final int tooltip_margin=0x7f0700d4;
-    public static final int tooltip_precise_anchor_extra_offset=0x7f0700d5;
-    public static final int tooltip_precise_anchor_threshold=0x7f0700d6;
-    public static final int tooltip_vertical_padding=0x7f0700d7;
-    public static final int tooltip_y_offset_non_touch=0x7f0700d8;
-    public static final int tooltip_y_offset_touch=0x7f0700d9;
+    public static final int size_65=0x7f0700cc;
+    public static final int size_78=0x7f0700cd;
+    public static final int size_8=0x7f0700ce;
+    public static final int text_sz=0x7f0700cf;
+    public static final int textview_height=0x7f0700d0;
+    public static final int textview_width=0x7f0700d1;
+    public static final int title_size=0x7f0700d2;
+    public static final int tooltip_corner_radius=0x7f0700d3;
+    public static final int tooltip_horizontal_padding=0x7f0700d4;
+    public static final int tooltip_margin=0x7f0700d5;
+    public static final int tooltip_precise_anchor_extra_offset=0x7f0700d6;
+    public static final int tooltip_precise_anchor_threshold=0x7f0700d7;
+    public static final int tooltip_vertical_padding=0x7f0700d8;
+    public static final int tooltip_y_offset_non_touch=0x7f0700d9;
+    public static final int tooltip_y_offset_touch=0x7f0700da;
   }
   public static final class drawable {
     public static final int abc_ab_share_pack_mtrl_alpha=0x7f080006;
