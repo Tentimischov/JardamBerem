@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jeenbek/Desktop/oldpro/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml",
+            "outputFile": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml",
             "map": [
                 {
                     "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/8d1779843cf66ad6b6ba0561377e37ec/res/values-b+sr+Latn/values.xml",

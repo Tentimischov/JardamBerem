@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
-            android:background="@drawable/down_roun_background"
+            android:background="@drawable/down_round_background"
             android:gravity="start"
             android:textSize="13sp"
             android:padding="3dp"

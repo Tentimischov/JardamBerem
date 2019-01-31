@@ -40,7 +40,7 @@
                 style="@style/TextViewTitle"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/size_2"
-                android:background="@drawable/down_roun_green_back"
+                android:background="@drawable/down_round_green_back"
                 android:ellipsize="end"
                 android:gravity="start"
                 android:lineSpacingExtra="@dimen/size_5"

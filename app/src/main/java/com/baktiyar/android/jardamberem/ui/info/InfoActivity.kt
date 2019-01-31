@@ -63,11 +63,11 @@ class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapter.OnItemClickL
                 get() = TOTAL_PAGES
             override var isLastPage: Boolean
                 get() = issLastPage
-                set(value) {}
+                set(_) {}
 
             override var isLoading: Boolean
                 get() = issLoading
-                set(value) {}
+                set(_) {}
 
         })
     }

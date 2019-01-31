@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jeenbek/Desktop/oldpro/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
+            "outputFile": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
             "map": [
                 {
                     "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/01bfa00c74c11d52725f994973ce3c8c/res/values-ky/values-ky.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeenbek/Desktop/oldpro/JardamBerem/app/src/main/res/values-ky/strings.xml",
+                    "source": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/values-ky/strings.xml",
                     "from": {
                         "startLines": "130,135,65,34,30,9,7,18,17,105,62,107,2,26,52,81,101,50,11,49,4,36,91,21,40,104,79,97,20,94,95,80,33,72,70,71,73,35,3,42,57,59,98,13,41,15,16,14,93,53,37,6,46,48,32,87,39,60,29,76,44,126,99,106,38,5,31,96,77,78,90,19,45,142,43,103,55,47,24,28,58,27,92,74,56,23,86,51,69,85,83,82,84,89,12,100,54,22,61,102,127,88,75",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
