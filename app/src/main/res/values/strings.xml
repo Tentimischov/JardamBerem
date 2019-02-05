@@ -32,7 +32,7 @@
     <string name="no">Нет</string>
     <string name="pick_photo_from_camera">Камера</string>
     <string name="pick_photo_from_gallery">Галерея</string>
-    <string name="email">Ваш е-mail или телефонный номер</string>
+    <string name="email">E-mail</string>
     <string name="feedback_hint_str">Ваш запрос или отзыв...</string>
     <string name="check_email">Напишите правильно почтовый адрес</string>
     <string name="delete_product">Удалить</string>

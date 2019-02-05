@@ -7,16 +7,12 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
 import android.provider.Settings.Secure
-import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import android.view.View
-import com.baktiyar.android.jardamberem.ApplicationClass
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
 import com.baktiyar.android.jardamberem.ui.full_photo.ViewPageAdapter
@@ -26,7 +22,6 @@ import com.baktiyar.android.jardamberem.utils.Const.Companion.ALL_PHOTO_URLS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.GOODS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INDEX
 import com.baktiyar.android.jardamberem.utils.Settings
-import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import kotlinx.android.synthetic.main.activity_dp.*
 import kotlinx.android.synthetic.main.toolbar.*
 import org.jetbrains.anko.toast

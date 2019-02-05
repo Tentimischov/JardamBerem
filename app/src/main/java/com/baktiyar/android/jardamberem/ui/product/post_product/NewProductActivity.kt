@@ -9,23 +9,26 @@ import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings.Secure
-import android.support.v4.content.ContextCompat
 import android.text.TextUtils
 import android.view.View
 import android.widget.ArrayAdapter
-import com.baktiyar.android.jardamberem.ApplicationClass
-import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.R
+import com.baktiyar.android.jardamberem.model.AllCategory
 import com.baktiyar.android.jardamberem.model.PostProduct
 import com.baktiyar.android.jardamberem.model.PostUrgentProduct
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
 import com.baktiyar.android.jardamberem.ui.product.post_product.adapter.ImageAdapter
+import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.baktiyar.android.jardamberem.utils.toToast
 import kotlinx.android.synthetic.main.activity_add.*
 import org.jetbrains.anko.toast
 import java.util.*
+import kotlin.collections.ArrayList
 
 class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.OnClickListener, ImageAdapter.OnItemClickListener {
+
+
     private var progressBar: ProgressDialog? = null
 
     private var mCategoryList: Array<String>? = null
@@ -35,6 +38,7 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
     private var mImagePaths: ArrayList<String>? = null
     private var cityData: List<String>? = null
     private var categoryData: MutableList<String>? = null
+    private lateinit var categoryArrayList: ArrayList<AllCategory>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,11 +50,10 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
     }
 
     private fun init() {
+        initPresenter()
         getDataFromSettings()
         initArray()
         initSpinner()
-        initPresenter()
-        //initViewPager()
         f_im.setOnClickListener(this)
         s_im.setOnClickListener(this)
         t_im.setOnClickListener(this)
@@ -59,6 +62,7 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
 
 
     private fun getDataFromSettings() {
+        mPresenter?.getCategory()
         cityData = Settings.getCityNameArray(this).split(",")
         categoryData = Settings.getCategory(this).split(",").toMutableList()
         categoryData?.add(getString(R.string.urgent_help))
@@ -70,7 +74,20 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
         val title: String = etTitleNewProduct.text.toString()
         val description: String = etDescriptionNewProduct.text.toString()
         val phoneNumber: String = etPhoneNumberNewProduct.text.toString()
-        val idCategory: Int = spinnerCategory.selectedItemPosition
+        var idCategory: Int = spinnerCategory.selectedItemPosition
+        var isUrgent: Boolean = false
+
+        if (categoryData!![idCategory] == getString(R.string.urgent_help)) {
+            isUrgent = true
+        } else if (idCategory != 0) {
+            for (i in 0 until categoryArrayList.size) {
+                if (categoryArrayList[i].category_name == categoryData!![idCategory]) {
+                    idCategory = categoryArrayList[i].id
+                    break
+                }
+            }
+        }
+
         val idCity: Int = spinnerCity.selectedItemPosition.inc()
         val imeiUserCode: String = getAndroidId()
 
@@ -96,7 +113,7 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
             etPhoneNumberNewProduct.error = getString(R.string.error_empty)
             ok = false
         }
-        if (ok && categoryData!![idCategory] == getString(R.string.urgent_help)) {
+        if (ok && isUrgent) {
             val mProduct = PostUrgentProduct(title, description, phoneNumber, imeiUserCode,null, null, null)
             mPresenter?.sendUrgentProduct(mProduct, mImagePaths)
         }
@@ -114,14 +131,8 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
         mCityList = cityData?.toTypedArray()
     }
 
-    /*
-    private fun initViewPager(){
-        viewPagerOfImage.adapter = ImageAdapter(this, arrayListOf(""), this)
-        indicator.setViewPager(viewPagerOfImage)
-    }*/
     private fun initPresenter() {
-        val app = this.applicationContext as ApplicationClass
-        mPresenter = NewProductPresenter(this, app.service!!, this)
+        mPresenter = NewProductPresenter(this, this)
     }
 
     private fun initSpinner() {
@@ -182,11 +193,11 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
         }
     }
 
-    override fun onFail(message: String) {
+    override fun onPostProductError(message: String) {
         toast(message)
     }
 
-    override fun onSuccess() {
+    override fun onPostProductSuccess() {
         toast(R.string.success_add)
         startActivity(Intent(this, MainActivity::class.java))
         finish()
@@ -199,6 +210,11 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
             super.attachBaseContext(newBase)
         }
     }
+    override fun onCategorySuccess(data: ArrayList<AllCategory>) {
+        categoryArrayList = data
+    }
 
-
+    override fun onCategoryError(message: String) {
+        message.toToast()
+    }
 }

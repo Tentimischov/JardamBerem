@@ -3,16 +3,18 @@ package com.baktiyar.android.jardamberem.ui.product.post_product
 
 import android.content.Context
 import android.util.Log
-import okhttp3.ResponseBody
-import retrofit2.Call
-import com.baktiyar.android.jardamberem.utils.ForumService
-import retrofit2.Callback
-import retrofit2.Response
+import com.baktiyar.android.jardamberem.R
+import com.baktiyar.android.jardamberem.StartApplication
+import com.baktiyar.android.jardamberem.model.CategoryPaginated
 import com.baktiyar.android.jardamberem.model.PostProduct
 import com.baktiyar.android.jardamberem.model.PostUrgentProduct
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import okhttp3.ResponseBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.io.File
 
 
@@ -20,8 +22,27 @@ import java.io.File
  * Created by admin on 09.03.2018.
  */
 class NewProductPresenter(var context: Context,
-                          var mService: ForumService?,
                           var mView: NewProductContract.View?) : NewProductContract.Presenter {
+
+    private val noInternetError = StartApplication.INSTANCE.getString(R.string.no_internet)
+
+    override fun getCategory() {
+        StartApplication.INSTANCE.service.getCategory().enqueue(object : Callback<CategoryPaginated> {
+            override fun onFailure(call: Call<CategoryPaginated>, t: Throwable) {
+                mView?.onCategoryError(noInternetError)
+            }
+
+            override fun onResponse(call: Call<CategoryPaginated>, response: Response<CategoryPaginated>) {
+                if (response.isSuccessful && response.body()?.results?.isNotEmpty()!!) {
+                    mView?.onCategorySuccess(response.body()?.results!!)
+                } else {
+                    mView?.onCategoryError(noInternetError)
+                }
+            }
+
+        })
+    }
+
     override fun sendUrgentProduct(item: PostUrgentProduct, paths: ArrayList<String>?) {
         mView!!.showProgress()
         val bodyBuilder = MultipartBody.Builder()
@@ -33,7 +54,7 @@ class NewProductPresenter(var context: Context,
         bodyBuilder.addFormDataPart("userImeiCode", item.userImeiCode)
 
 
-        if (paths==null) {
+        if (paths == null) {
         } else if (paths.size > 0) {
 
             var file = File(paths[0])
@@ -53,19 +74,19 @@ class NewProductPresenter(var context: Context,
 
         val requestBody = bodyBuilder.build()
 
-        mService!!.sendUrgentProduct(requestBody).enqueue(
+        StartApplication.INSTANCE.service.sendUrgentProduct(requestBody).enqueue(
                 object : Callback<ResponseBody> {
                     override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
-                        mView!!.onFail(t!!.message.toString())
+                        mView!!.onPostProductError(t!!.message.toString())
                         Log.e("_____", t.message)
                         mView!!.hideProgress()
                     }
 
                     override fun onResponse(call: Call<ResponseBody>?, response: Response<ResponseBody>?) {
                         if (response!!.isSuccessful) {
-                            mView!!.onSuccess()
+                            mView!!.onPostProductSuccess()
                         } else {
-                            mView!!.onFail(response.message())
+                            mView!!.onPostProductError(response.message())
                         }
                         mView!!.hideProgress()
                     }
@@ -86,7 +107,7 @@ class NewProductPresenter(var context: Context,
         bodyBuilder.addFormDataPart("userImeiCode", item.userImeiCode)
 
 
-        if (paths==null) {
+        if (paths == null) {
         } else if (paths.size > 0) {
 
             var file = File(paths[0])
@@ -106,26 +127,24 @@ class NewProductPresenter(var context: Context,
 
         val requestBody = bodyBuilder.build()
 
-        mService!!.sendProduct(item.category, requestBody).enqueue(
+        StartApplication.INSTANCE.service.sendProduct(item.category, requestBody).enqueue(
                 object : Callback<ResponseBody> {
                     override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
-                        mView!!.onFail(t!!.message.toString())
+                        mView!!.onPostProductError(t!!.message.toString())
                         Log.e("_____", t.message)
                         mView!!.hideProgress()
                     }
 
                     override fun onResponse(call: Call<ResponseBody>?, response: Response<ResponseBody>?) {
                         if (response!!.isSuccessful) {
-                            mView!!.onSuccess()
+                            mView!!.onPostProductSuccess()
                         } else {
-                            mView!!.onFail(response.message())
+                            mView!!.onPostProductError(response.message())
                         }
                         mView!!.hideProgress()
                     }
                 })
     }
-
-
 
 
 }

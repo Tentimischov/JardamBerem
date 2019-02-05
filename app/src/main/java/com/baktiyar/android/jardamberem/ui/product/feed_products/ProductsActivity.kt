@@ -5,16 +5,14 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
-import com.baktiyar.android.jardamberem.ApplicationClass
+import com.baktiyar.android.jardamberem.StartApplication
 import com.baktiyar.android.jardamberem.R
-import com.baktiyar.android.jardamberem.ui.categories.CategoriesActivity.Companion.CATEGORY_NAME
 import com.baktiyar.android.jardamberem.ui.product.feed_products.adapter.ViewPagerAdapter
 import com.baktiyar.android.jardamberem.utils.HelpStatus
 import kotlinx.android.synthetic.main.activity_tabs.*
-import kotlinx.android.synthetic.main.toolbar.view.*
 
 class ProductsActivity : AppCompatActivity() {
-    lateinit var app: ApplicationClass
+    lateinit var app: StartApplication
     lateinit var adapter: ViewPagerAdapter
     lateinit var toolbar: Toolbar
     companion object {
@@ -26,7 +24,7 @@ class ProductsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tabs)
 
-        app = application as ApplicationClass
+        app = application as StartApplication
         initToolbar()
 
         initViewPager()

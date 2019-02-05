@@ -1,8 +1,7 @@
 package com.baktiyar.android.jardamberem.ui.info
 
-import com.baktiyar.android.jardamberem.ApplicationClass
+import com.baktiyar.android.jardamberem.StartApplication
 import com.baktiyar.android.jardamberem.R
-import com.baktiyar.android.jardamberem.model.Info
 import com.baktiyar.android.jardamberem.model.InfoPaginated
 import retrofit2.Call
 import retrofit2.Callback
@@ -10,9 +9,9 @@ import retrofit2.Response
 
 class InfoPresenter(var v: InfoContract.View) : InfoContract.Presenter {
     override fun getInfoNext(limit: Int?, offset: Int?) {
-        ApplicationClass.INSTANCE?.service?.getInfo(limit, offset)?.enqueue(object : Callback<InfoPaginated> {
+        StartApplication.INSTANCE?.service?.getInfo(limit, offset)?.enqueue(object : Callback<InfoPaginated> {
             override fun onFailure(call: Call<InfoPaginated>?, t: Throwable?) {
-                v.onError(ApplicationClass.INSTANCE?.getString(R.string.fail)!!)
+                v.onError(StartApplication.INSTANCE?.getString(R.string.fail)!!)
             }
 
             override fun onResponse(call: Call<InfoPaginated>?, response: Response<InfoPaginated>?) {
@@ -23,9 +22,9 @@ class InfoPresenter(var v: InfoContract.View) : InfoContract.Presenter {
     }
 
     override fun getInfoFirst(limit: Int?, offset: Int?) {
-        ApplicationClass.INSTANCE?.service?.getInfo(limit, offset)?.enqueue(object : Callback<InfoPaginated> {
+        StartApplication.INSTANCE?.service?.getInfo(limit, offset)?.enqueue(object : Callback<InfoPaginated> {
             override fun onFailure(call: Call<InfoPaginated>?, t: Throwable?) {
-                v.onError(ApplicationClass.INSTANCE?.getString(R.string.fail)!!)
+                v.onError(StartApplication.INSTANCE?.getString(R.string.fail)!!)
             }
 
             override fun onResponse(call: Call<InfoPaginated>?, response: Response<InfoPaginated>?) {

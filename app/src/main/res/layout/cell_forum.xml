@@ -39,6 +39,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/purple"
                 android:textSize="@dimen/size_17"
+                android:maxLength="32"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -4,13 +4,13 @@ import android.app.Application
 import com.baktiyar.android.jardamberem.utils.ApiClient
 import com.baktiyar.android.jardamberem.utils.ForumService
 
-class ApplicationClass : Application() {
+class StartApplication : Application() {
     companion object {
-        @Volatile var INSTANCE: ApplicationClass? = null
+        @Volatile lateinit var INSTANCE: StartApplication
     }
     private val URL = "http://138.68.166.31:9000/"
 
-    var service: ForumService? = null
+    lateinit var service: ForumService
 
     override fun onCreate() {
         super.onCreate()

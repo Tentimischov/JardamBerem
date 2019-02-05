@@ -1,13 +1,11 @@
 package com.baktiyar.android.jardamberem.ui.feedback
 
 import android.annotation.SuppressLint
-import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.provider.Settings
 import android.text.TextUtils
-import com.baktiyar.android.jardamberem.ApplicationClass
+import com.baktiyar.android.jardamberem.StartApplication
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Feedback
 import com.baktiyar.android.jardamberem.model.Forum
@@ -15,7 +13,6 @@ import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.forum.ForumActivity
 import com.baktiyar.android.jardamberem.ui.main.MainActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
-import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import kotlinx.android.synthetic.main.activity_feedback.*
 import org.jetbrains.anko.toast
 
@@ -60,7 +57,7 @@ class FeedbackActivity : BaseActivity(), FeedbackContract.View {
     }
 
     private fun initPresenter() {
-        val app = this.applicationContext as ApplicationClass
+        val app = this.applicationContext as StartApplication
         mFeedbackPresenter = FeedbackPresenter(this, app.service!!, this)
     }
 

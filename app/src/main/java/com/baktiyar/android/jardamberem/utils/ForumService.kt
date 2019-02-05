@@ -79,7 +79,7 @@ interface ForumService {
                   @Query("title") title: String): Call<AnnouncementsPaginated>
 
     @DELETE("forum/{id_of_forum}/")
-    fun deletForum(@Path("id_of_forum") id: Int): Call<ResponseBody>
+    fun deleteForum(@Path("id_of_forum") id: Int): Call<ResponseBody>
 
 
 

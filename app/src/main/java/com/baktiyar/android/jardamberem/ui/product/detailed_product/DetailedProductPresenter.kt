@@ -1,6 +1,6 @@
 package com.baktiyar.android.jardamberem.ui.product.detailed_product
 
-import com.baktiyar.android.jardamberem.ApplicationClass
+import com.baktiyar.android.jardamberem.StartApplication
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -14,7 +14,7 @@ class DetailedProductPresenter(var mView: DetailedProductContract.View) : Detail
 
     override fun deleteAnnoun(id: Int) {
         mView.showProgress()
-        ApplicationClass.INSTANCE?.service?.deleteAnnouncement(id)?.enqueue(object : Callback<ResponseBody> {
+        StartApplication.INSTANCE?.service?.deleteAnnouncement(id)?.enqueue(object : Callback<ResponseBody> {
 
             override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
                 mView.onFail(t!!.message.toString())
