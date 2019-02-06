@@ -29,6 +29,8 @@ import com.baktiyar.android.jardamberem.ui.main.adapter.AnnouncementAdapter
 import com.baktiyar.android.jardamberem.ui.main.adapter.CategoryAdapter
 import com.baktiyar.android.jardamberem.ui.main.adapter.PaginationScrollListener
 import com.baktiyar.android.jardamberem.ui.main.adapter.UrgentAdapter
+import com.baktiyar.android.jardamberem.ui.main.fragment.MainAnnouncementFragment
+import com.baktiyar.android.jardamberem.ui.main.fragment.MainViewPagerAdapter
 import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
 import com.baktiyar.android.jardamberem.ui.product.post_product.NewProductActivity
 import com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity
@@ -53,8 +55,7 @@ class MainActivity : BaseActivity(),
         MainContract.View,
         View.OnClickListener,
         CategoryAdapter.OnItemClickListener,
-        UrgentAdapter.OnUrgClickListener,
-        AnnouncementAdapter.OnItemClickListener {
+        UrgentAdapter.OnUrgClickListener{
 
     private val TOTAL_PAGES: Int = 100
     private var issLoading = false
@@ -85,12 +86,23 @@ class MainActivity : BaseActivity(),
         initClick()
         initCategory()
         initUrgent()
-        initAnnouncement()
+      //  initAnnouncement()
+        initAnnouncementFragment()
 
         mPresenter?.getCategory(Settings.getCityId(this))
 
         mPresenter?.getUrgent(1000, 0)
 
+    }
+
+    private fun initAnnouncementFragment() {
+        val viewPagerAdapter = MainViewPagerAdapter(supportFragmentManager)
+        val giveFragment = MainAnnouncementFragment.newInstance(true)
+        val takeFragment = MainAnnouncementFragment.newInstance(false)
+        viewPagerAdapter.addFragment(giveFragment)
+        viewPagerAdapter.addFragment(takeFragment)
+        view_pager.adapter = viewPagerAdapter
+        tab_layout.setupWithViewPager(view_pager)
     }
 
 
@@ -107,16 +119,16 @@ class MainActivity : BaseActivity(),
         action_spinner.onItemSelectedListener = Const.Companion.SpinnerActivity(this, this@MainActivity)
     }
 
-    private fun initAnnouncement() {
+   /* private fun initAnnouncement() {
         announcementAdapter = AnnouncementAdapter(ArrayList(), this)
         val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        announ_recyclerview.layoutManager = LinearLayoutManager(this)
+        *//*announ_recyclerview.layoutManager = LinearLayoutManager(this)
         announ_recyclerview.isNestedScrollingEnabled = false
         announ_recyclerview.itemAnimator = DefaultItemAnimator()
-        announ_recyclerview.adapter = announcementAdapter
-        addScrollAdapter(staggeredGridLayoutManager)
+        announ_recyclerview.adapter = announcementAdapter*//*
+       addScrollAdapter(staggeredGridLayoutManager)
         loadFirstPage()
-    }
+    }*/
 
 
     //Menu Toolbar Items
@@ -169,7 +181,7 @@ class MainActivity : BaseActivity(),
         return true
     }
 
-    private fun addScrollAdapter(staggeredGridLayoutManager: StaggeredGridLayoutManager) {
+   /* private fun addScrollAdapter(staggeredGridLayoutManager: StaggeredGridLayoutManager) {
         announ_recyclerview.addOnScrollListener(object : PaginationScrollListener(staggeredGridLayoutManager) {
             override fun loadMoreItems() {
                 issLoading = true
@@ -188,7 +200,7 @@ class MainActivity : BaseActivity(),
                 set(value) {}
 
         })
-    }
+    }*/
 
     private fun loadFirstPage() {
         announcementAdapter?.clearList()
@@ -308,7 +320,7 @@ class MainActivity : BaseActivity(),
         issLastPage = true
     }
 
-    override fun onAnnouncementItemClick(data: Announcements) {
+  /*  override fun onAnnouncementItemClick(data: Announcements) {
         val intent = Intent(this, DetailedProductActivity::class.java)
         intent.putExtra(GOODS, data)
         startActivity(intent)
@@ -321,7 +333,7 @@ class MainActivity : BaseActivity(),
     private fun phoneIntent(number: String) {
         val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", number, null))
         startActivity(intent)
-    }
+    }*/
 
 
 

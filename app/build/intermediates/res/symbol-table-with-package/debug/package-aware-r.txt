@@ -1317,6 +1317,7 @@ id pro_bar
 id progress_circular
 id progress_horizontal
 id radio
+id rec_view
 id recview
 id refreshLayoutProductsList
 id region
@@ -1417,6 +1418,7 @@ id urgent
 id useLogo
 id view
 id view_offset_helper
+id view_pager
 id viewpager
 id visible
 id wide
@@ -1511,6 +1513,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_dialog
 layout fragment_full_photo
+layout fragment_main_announcement
 layout fragment_products
 layout horizontal
 layout item_category_spinner

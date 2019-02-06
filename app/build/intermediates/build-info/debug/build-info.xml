@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.2.0"
-    timestamp="1548936569727"
+    timestamp="1549450154933"
     token="-2348100770358703516"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -98,7 +98,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1548936569727"
+        timestamp="1549450154933"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
