@@ -668,12 +668,12 @@
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/01bfa00c74c11d52725f994973ce3c8c/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/drawable_place_holder_image.jpg.flat",
-        "source": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/drawable/place_holder_image.jpg"
-    },
-    {
         "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xhdpi_region.png.flat",
         "source": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/generated/res/pngs/debug/drawable-xhdpi/region.png"
+    },
+    {
+        "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/drawable_place_holder_image.jpg.flat",
+        "source": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/drawable/place_holder_image.jpg"
     },
     {
         "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xhdpi_internet.png.flat",
@@ -2572,16 +2572,16 @@
         "source": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_region.png.flat",
+        "source": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/generated/res/pngs/debug/drawable-xxxhdpi/region.png"
+    },
+    {
         "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_add_photo.png.flat",
         "source": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_add_photo.png"
     },
     {
         "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8ad50b89381d3e783bf7e04759b1da19/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
-        "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_region.png.flat",
-        "source": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/generated/res/pngs/debug/drawable-xxxhdpi/region.png"
     },
     {
         "merged": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/res/merged/debug/mipmap-xhdpi_jardam_berem_logo_ic_round.png.flat",

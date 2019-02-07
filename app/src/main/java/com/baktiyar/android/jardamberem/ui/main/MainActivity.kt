@@ -3,47 +3,36 @@ package com.baktiyar.android.jardamberem.ui.main
 import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
-import android.graphics.PorterDuff
-import android.net.Uri
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
+import android.support.design.widget.TabLayout
+import android.support.v4.app.Fragment
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.SearchView
-import android.support.v7.widget.StaggeredGridLayoutManager
-import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.ArrayAdapter
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.AllCategory
-import com.baktiyar.android.jardamberem.model.Announcements
-import com.baktiyar.android.jardamberem.model.AnnouncementsPaginated
 import com.baktiyar.android.jardamberem.model.Urgent
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.ConstantsJava
 import com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity
 import com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity
-import com.baktiyar.android.jardamberem.ui.main.adapter.AnnouncementAdapter
 import com.baktiyar.android.jardamberem.ui.main.adapter.CategoryAdapter
-import com.baktiyar.android.jardamberem.ui.main.adapter.PaginationScrollListener
 import com.baktiyar.android.jardamberem.ui.main.adapter.UrgentAdapter
 import com.baktiyar.android.jardamberem.ui.main.fragment.MainAnnouncementFragment
-import com.baktiyar.android.jardamberem.ui.main.fragment.MainViewPagerAdapter
-import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
 import com.baktiyar.android.jardamberem.ui.product.post_product.NewProductActivity
 import com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity
 import com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailedActivity
-import com.baktiyar.android.jardamberem.utils.Const
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_URGENT
 import com.baktiyar.android.jardamberem.utils.Const.Companion.CATEGORY_ID
 import com.baktiyar.android.jardamberem.utils.Const.Companion.CATEGORY_NAME
-import com.baktiyar.android.jardamberem.utils.Const.Companion.GOODS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.URGENTS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.hideKeyboard
 import com.baktiyar.android.jardamberem.utils.Const.Companion.setVisiblityMenuItem
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.baktiyar.android.jardamberem.utils.toToast
 import com.crashlytics.android.Crashlytics
 import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.activity_main.*
@@ -55,15 +44,8 @@ class MainActivity : BaseActivity(),
         MainContract.View,
         View.OnClickListener,
         CategoryAdapter.OnItemClickListener,
-        UrgentAdapter.OnUrgClickListener{
+        UrgentAdapter.OnUrgClickListener {
 
-    private val TOTAL_PAGES: Int = 100
-    private var issLoading = false
-    private var issLastPage = false
-    private var limitPage = 100
-    private val PAGE_START = 1
-    private var currentPage = PAGE_START
-    private var announcementAdapter: AnnouncementAdapter? = null
     private var caAdapter: CategoryAdapter? = null
     private var urgAdapter: UrgentAdapter? = null
     private var mPresenter: MainPresenter? = null
@@ -75,9 +57,8 @@ class MainActivity : BaseActivity(),
         super.onCreate(savedInstanceState)
         Fabric.with(this, Crashlytics());
         setContentView(R.layout.activity_main)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
+        title = getString(R.string.app_name)
         init()
-        initSpinner()
 
     }
 
@@ -86,52 +67,49 @@ class MainActivity : BaseActivity(),
         initClick()
         initCategory()
         initUrgent()
-      //  initAnnouncement()
         initAnnouncementFragment()
 
         mPresenter?.getCategory(Settings.getCityId(this))
-
         mPresenter?.getUrgent(1000, 0)
 
     }
 
+
+
     private fun initAnnouncementFragment() {
-        val viewPagerAdapter = MainViewPagerAdapter(supportFragmentManager)
-        val giveFragment = MainAnnouncementFragment.newInstance(true)
-        val takeFragment = MainAnnouncementFragment.newInstance(false)
-        viewPagerAdapter.addFragment(giveFragment)
-        viewPagerAdapter.addFragment(takeFragment)
-        view_pager.adapter = viewPagerAdapter
-        tab_layout.setupWithViewPager(view_pager)
+        tab_layout.addTab(tab_layout.newTab().setText(R.string.give_help))
+        tab_layout.addTab(tab_layout.newTab().setText(R.string.need_help))
+        val ft = supportFragmentManager.beginTransaction()
+
+        ft.replace(R.id.frame_layout, MainAnnouncementFragment.newInstance(true))
+        ft.commit()
+
+        tab_layout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+            }
+
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                if (tab?.position == 0) {
+                    switchFragment(MainAnnouncementFragment.newInstance(true))
+                } else {
+                    switchFragment(MainAnnouncementFragment.newInstance(false))
+                }
+            }
+
+        })
+
     }
 
+    fun switchFragment(fragment: Fragment) {
+        val ft = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.frame_layout, fragment)
+        ft.commit()
 
-    private fun initSpinner() {
-        val adapter = ArrayAdapter.createFromResource(this,
-                R.array.main_menu_spinner,
-                android.R.layout.simple_spinner_item)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        action_spinner.adapter = adapter
-        action_spinner.background.setColorFilter(ContextCompat.getColor(this, R.color.red), PorterDuff.Mode.SRC_ATOP);
-        action_spinner.gravity = Gravity.CENTER
-        action_spinner.setPopupBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.border))
-        action_spinner.setSelection(Settings.getSpinnerItemPosition(this))
-        action_spinner.onItemSelectedListener = Const.Companion.SpinnerActivity(this, this@MainActivity)
     }
 
-   /* private fun initAnnouncement() {
-        announcementAdapter = AnnouncementAdapter(ArrayList(), this)
-        val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        *//*announ_recyclerview.layoutManager = LinearLayoutManager(this)
-        announ_recyclerview.isNestedScrollingEnabled = false
-        announ_recyclerview.itemAnimator = DefaultItemAnimator()
-        announ_recyclerview.adapter = announcementAdapter*//*
-       addScrollAdapter(staggeredGridLayoutManager)
-        loadFirstPage()
-    }*/
-
-
-    //Menu Toolbar Items
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
         val menuInflater = menuInflater
@@ -165,61 +143,25 @@ class MainActivity : BaseActivity(),
 
         search?.setOnActionExpandListener(object : MenuItem.OnActionExpandListener {
             override fun onMenuItemActionExpand(menuItem: MenuItem): Boolean {
-                setVisiblityMenuItem(menu, search!!, false)
+                setVisiblityMenuItem(menu, search, false)
                 addCardView.visibility = View.GONE
                 return true
             }
 
             override fun onMenuItemActionCollapse(menuItem: MenuItem): Boolean {
-                setVisiblityMenuItem(menu, search!!, true)
+                setVisiblityMenuItem(menu, search, true)
                 addCardView.visibility = View.VISIBLE
                 return true
             }
         })
 
-
         return true
     }
 
-   /* private fun addScrollAdapter(staggeredGridLayoutManager: StaggeredGridLayoutManager) {
-        announ_recyclerview.addOnScrollListener(object : PaginationScrollListener(staggeredGridLayoutManager) {
-            override fun loadMoreItems() {
-                issLoading = true
-                currentPage++
-                loadNextPage()
-            }
-
-            override val totalPageCount: Int
-                get() = TOTAL_PAGES
-            override var isLastPage: Boolean
-                get() = issLastPage
-                set(value) {}
-
-            override var isLoading: Boolean
-                get() = issLoading
-                set(value) {}
-
-        })
-    }*/
-
-    private fun loadFirstPage() {
-        announcementAdapter?.clearList()
-        if (Settings.getSpinnerItemPosition(this) == 1) {
-            mPresenter?.getAnnounFirst(limitPage, 0)
-        } else {
-            mPresenter?.getAnnounFirstIsNeededFalse(limitPage, 0)
-        }
+    private fun initClick() {
+        addCardView.setOnClickListener(this)
+        all.setOnClickListener(this)
     }
-
-
-    private fun loadNextPage() {
-        if (Settings.getSpinnerItemPosition(this) == 1) {
-            mPresenter?.getAnnounNext(limitPage, currentPage * limitPage)
-        } else {
-            mPresenter?.getAnnounNextIsNeededFalse(limitPage, currentPage * limitPage)
-        }
-    }
-
 
     override fun onClick(v: View?) {
         if (v?.id == R.id.addCardView) {
@@ -230,36 +172,6 @@ class MainActivity : BaseActivity(),
             intent.putExtra(URGENTS, allUrgent)
             startActivity(intent)
         }
-    }
-
-    private fun initClick() {
-        addCardView.setOnClickListener(this)
-        all.setOnClickListener(this)
-    }
-
-    override fun onAnnounFirstSuccess(data: AnnouncementsPaginated) {
-        pro_bar.visibility = View.GONE
-        announcementAdapter?.addAll(fetchResults(data))
-        if (data.next != null) {
-            announcementAdapter?.addLoadingFooter()
-        } else {
-            issLastPage = true
-        }
-    }
-
-    override fun onAnnounNextSuccess(data: AnnouncementsPaginated) {
-        announcementAdapter?.removeLoadingFooter()
-        issLoading = false
-        announcementAdapter?.addAll(fetchResults(data))
-        if (data.next != null) {
-            announcementAdapter?.addLoadingFooter()
-        } else {
-            issLastPage = true
-        }
-    }
-
-    private fun fetchResults(response: AnnouncementsPaginated): List<Announcements> {
-        return response.results
     }
 
     private fun initCategory() {
@@ -316,25 +228,8 @@ class MainActivity : BaseActivity(),
     }
 
     override fun onError(message: String) {
-        pro_bar.visibility = View.GONE
-        issLastPage = true
+        message.toToast()
     }
-
-  /*  override fun onAnnouncementItemClick(data: Announcements) {
-        val intent = Intent(this, DetailedProductActivity::class.java)
-        intent.putExtra(GOODS, data)
-        startActivity(intent)
-    }
-
-    override fun onCallClick(number: String) {
-        phoneIntent(number)
-    }
-
-    private fun phoneIntent(number: String) {
-        val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", number, null))
-        startActivity(intent)
-    }*/
-
 
 
 }

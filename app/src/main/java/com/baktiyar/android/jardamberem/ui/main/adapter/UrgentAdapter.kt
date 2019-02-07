@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Urgent
+import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_horizontal_main.view.*

@@ -5,7 +5,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +14,8 @@ import com.baktiyar.android.jardamberem.model.Announcements
 import com.baktiyar.android.jardamberem.model.AnnouncementsPaginated
 import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
 import com.baktiyar.android.jardamberem.utils.Const
+import com.baktiyar.android.jardamberem.utils.toToast
+import kotlinx.android.synthetic.main.activity_forum.*
 import kotlinx.android.synthetic.main.fragment_main_announcement.view.*
 
 class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClickListener, MainAnnouncementContract.View {
@@ -26,12 +27,14 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
     private val limit: Int = 10
     private var offset: Int = 0
     private var hasNextPage: Boolean = true
+    private lateinit var mView: View
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         data = arrayListOf()
         isGive = arguments?.getBoolean(POSITION)!!
         presenter = MainAnnouncementPresenter(this)
         adapter = MainAnnouncementAdapter(arrayListOf(), this)
+
 
         if (isGive)
             presenter.getAnnouncementIsNeededFalse(limit, offset)
@@ -42,8 +45,14 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        mView = view
+
+        mView.pro_bar.visibility = View.VISIBLE
+        mView.rec_view.visibility = View.GONE
+
         view.rec_view.isNestedScrollingEnabled = false
         view.rec_view.adapter = adapter
+
         view.rec_view.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrollStateChanged(recyclerView: RecyclerView?, newState: Int) {
                 if (data != null && view.rec_view.layoutManager.itemCount <= data!!.size && hasNextPage) {
@@ -86,20 +95,25 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
 
     override fun onAnnouncementIsNeededSuccess(data: AnnouncementsPaginated) {
         setData(data)
-        if (data.next == null) hasNextPage = false
-    }
-
-    private fun setData(data: AnnouncementsPaginated) {
-        this.data?.addAll(data.results)
-        adapter.addAnnouncementData(data.results)
-        if (data.next == null) hasNextPage = false
     }
 
     override fun onAnnouncementIsNeededFalseSuccess(data: AnnouncementsPaginated) {
         setData(data)
     }
 
+    private fun setData(data: AnnouncementsPaginated) {
+
+        mView.pro_bar.visibility = View.GONE
+        mView.rec_view.visibility = View.VISIBLE
+
+        this.data?.addAll(data.results)
+        adapter.addAnnouncementData(data.results)
+        if (data.next == null) hasNextPage = false
+    }
+
     override fun onAnnouncementError(message: String) {
+        pro_bar.visibility = View.GONE
+        message.toToast()
     }
 
 }

@@ -25,15 +25,10 @@ import kotlinx.android.synthetic.main.activity_dp.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class UrgentDetailedActivity() : AppCompatActivity(), View.OnClickListener, ViewPageAdapter.mClickListener {
-    override fun onClick(position: Int) {
-        goToFullImageActivity(position)
-    }
-
 
     private var data: Urgent? = null
     private var isMyProduct: Boolean = false
     private var imageViewPageAdapter: ViewPageAdapter? = null
-
     private var photoListData: ArrayList<String>? = null
 
     constructor(parcel: Parcel) : this() {
@@ -46,7 +41,6 @@ class UrgentDetailedActivity() : AppCompatActivity(), View.OnClickListener, View
         setContentView(R.layout.activity_dp)
         title = getString(R.string.urgent_help)
         init()
-
     }
 
     fun init() {
@@ -62,13 +56,12 @@ class UrgentDetailedActivity() : AppCompatActivity(), View.OnClickListener, View
             button_content_text.text = getString(R.string.delete_product)
             tvPhoneNumberDetailedProduct.visibility = View.VISIBLE
             tvPhoneNumberDetailedProduct.text = data?.phoneNumber
-
-
         } else {
             button_content_text.text = getString(R.string.show_number)
-
-            if (data?.phoneNumber?.length == 10) {
+            if (data?.phoneNumber?.length!! == 10 ) {
                 tvPhoneNumberDetailedProduct.text = data?.phoneNumber?.substring(0, 3) + "XX XX XX"
+            } else if(data?.phoneNumber?.length!! >= 13) {
+                tvPhoneNumberDetailedProduct.text = data?.phoneNumber?.substring(0, 3) + "Y XXX XX XX XX"
             } else {
                 button_content_text.text = getString(R.string.no_number)
                 button_content_text.isClickable = false
@@ -117,7 +110,8 @@ class UrgentDetailedActivity() : AppCompatActivity(), View.OnClickListener, View
         when (v) {
             btDeleteProduct -> {
                 if (isMyProduct) initDialog()
-                else if (data?.phoneNumber?.length == 10) {
+                else if (data?.phoneNumber?.length!! >= 10) {
+
                     tvPhoneNumberDetailedProduct.text = data?.phoneNumber
                     tvPhoneNumberDetailedProduct.isClickable = true
                     tvPhoneNumberDetailedProduct.setOnClickListener(this)
@@ -187,4 +181,10 @@ class UrgentDetailedActivity() : AppCompatActivity(), View.OnClickListener, View
             return arrayOfNulls(size)
         }
     }
+
+    override fun onClick(position: Int) {
+        goToFullImageActivity(position)
+    }
+
+
 }

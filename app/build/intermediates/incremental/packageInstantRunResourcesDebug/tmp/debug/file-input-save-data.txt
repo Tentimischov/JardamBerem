@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Thu Jan 31 14:05:57 KGT 2019
+#Thu Feb 07 15:29:44 KGT 2019
 0.baseType=DIRECTORY
-0.base=/Users/jeenbek/Desktop/oldpro/JardamBerem/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+0.base=/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 0.path=crashlytics-build.properties
 0.set=ASSET
 count=1

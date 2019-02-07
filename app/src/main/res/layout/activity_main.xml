@@ -14,75 +14,31 @@
         android:focusable="true"
         android:focusableInTouchMode="true">
 
-
-        <android.support.design.widget.CoordinatorLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <android.support.design.widget.AppBarLayout
-                android:id="@+id/appBar"
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_gravity="top"
+                android:background="@android:color/transparent"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                app:theme="@style/CollapsingToolbarTheme" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="-3dp"
-                android:layout_marginRight="-3dp"
-                android:layout_marginBottom="@dimen/size_5"
-                android:background="@null"
-                app:elevation="0dp">
-
-
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?android:attr/actionBarSize"
-                    android:layout_gravity="center"
-                    android:background="@android:color/transparent"
-                    android:gravity="center"
-                    app:layout_scrollFlags="scroll|enterAlways"
-                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-                    app:theme="@style/CollapsingToolbarTheme">
-
-                    <Spinner
-                        android:id="@+id/action_spinner"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/size_16"
-                        android:layout_marginLeft="@dimen/size_16"
-                        android:layout_marginEnd="@dimen/size_16"
-                        android:layout_marginRight="@dimen/size_16"
-                        android:dropDownWidth="40000dp"
-                        android:dropDownSelector="@drawable/spinner_ab_unfocused"
-                        android:gravity="center"
-                        android:paddingStart="@dimen/size_16"
-                        android:paddingLeft="@dimen/size_16"
-                        android:paddingEnd="@dimen/size_16"
-                        android:paddingRight="@dimen/size_16"
-                        android:popupBackground="@drawable/popup_spinner_background"
-                        android:textAlignment="center" />
-
-                </android.support.v7.widget.Toolbar>
-
-                <android.support.design.widget.TabLayout
-                    android:id="@+id/tab_layout"
-                    app:tabIndicatorColor="@color/purpleDark"
-                    app:tabTextColor="@color/purpleDark"
-                    app:tabSelectedTextColor="@color/purpleDark"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/recview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:paddingBottom="@dimen/size_5"
-                    app:layout_scrollFlags="scroll|enterAlways" />
-
-            </android.support.design.widget.AppBarLayout>
+                app:tabIndicatorColor="@color/purpleDark"
+                app:tabSelectedTextColor="@color/purpleDark"
+                app:tabTextColor="@color/purpleDark" />
 
             <android.support.v4.widget.NestedScrollView
-                android:id="@+id/scroll"
+                android:id="@+id/scroll_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -91,6 +47,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/size_5"
+                        app:layout_scrollFlags="scroll|enterAlways" />
 
 
                     <LinearLayout
@@ -172,36 +137,15 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <ProgressBar
-                        android:id="@+id/pro_bar"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    <FrameLayout
+                        android:id="@+id/frame_layout"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/white"
-                        android:indeterminate="true"
-                        android:indeterminateTint="#1a09d6" />
-
-                    <com.baktiyar.android.jardamberem.ui.main.fragment.WrapContentViewPager
-                        android:id="@+id/view_pager"
-                        android:layout_width="match_parent"
-                        android:layout_height="1000dp" />
-
-                    <!--  <android.support.v7.widget.RecyclerView
-                          android:id="@+id/announ_recyclerview"
-                          android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:layout_marginEnd="@dimen/size_3"
-                          android:layout_marginRight="@dimen/size_3"
-                          android:layout_marginBottom="@dimen/size_3"
-                          android:clipToPadding="false"
-                          android:paddingTop="@dimen/pad_10"
-                          android:paddingBottom="@dimen/size_65" />-->
+                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
             </android.support.v4.widget.NestedScrollView>
 
-
-        </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
 
 
         <RelativeLayout

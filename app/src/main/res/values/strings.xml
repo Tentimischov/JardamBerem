@@ -32,8 +32,8 @@
     <string name="no">Нет</string>
     <string name="pick_photo_from_camera">Камера</string>
     <string name="pick_photo_from_gallery">Галерея</string>
-    <string name="email">E-mail</string>
-    <string name="feedback_hint_str">Ваш запрос или отзыв...</string>
+    <string name="email">Ваше имя или е-mail</string>
+    <string name="feedback_hint_str">Ваш запрос или отзыв…</string>
     <string name="check_email">Напишите правильно почтовый адрес</string>
     <string name="delete_product">Удалить</string>
 
@@ -41,15 +41,15 @@
     <!-- Test string words-->
     <string name="testProductName">Джинсы</string>
     <string name="testProductDescription">Отдам даром джинсы. Синие. 44 размер. Носил всего 2 раза.</string>
-    <string name="testProductPhoneNumber">0(554)-46-20-04</string>
+    <string name="testProductPhoneNumber">0(554)–46–20–04</string>
     <string name="testProductDate">30/05/2018</string>
     <string name="success_delete">Товар удален</string>
     <string name="update_product">Обновить</string>
-    <string name="loading">Загружается...</string>
+    <string name="loading">Загружается…</string>
     <string name="success_add">Добавлено</string>
     <string name="search_product">Поиск</string>
     <string name="show_number">Показать номер</string>
-    <string name="wrong_response">Что-то пошло не так...</string>
+    <string name="wrong_response">Что-то пошло не так…</string>
     <string name="there_is_nothing">Пока ничего нет</string>
     <string name="send">Отправить</string>
 
@@ -121,7 +121,7 @@
 </string>
     <string name="complain">Пожаловаться</string>
     <string name="give_help">Отдам даром</string>
-    <string name="need_help">Приму даром</string>
+    <string name="need_help">Нужна помощь</string>
     <string name="sos">sos</string>
     <string name="news">Новости</string>
     <string name="action">Акции</string>
