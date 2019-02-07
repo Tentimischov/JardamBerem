@@ -10,8 +10,9 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class ForumPresenter(var v: ForumContract.View) : ForumContract.Presenter {
+    private val errorMessage: String = StartApplication.INSTANCE.getString(R.string.no_internet)
     override fun deleteForum(id: Int, position: Int) {
-        StartApplication.INSTANCE?.service?.deleteForum(id)?.enqueue(object : Callback<ResponseBody> {
+        StartApplication.INSTANCE.service.deleteForum(id).enqueue(object : Callback<ResponseBody> {
             override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
                 v.onDeleteError(StartApplication.INSTANCE?.getString(R.string.fail)!!)
             }
@@ -24,43 +25,26 @@ class ForumPresenter(var v: ForumContract.View) : ForumContract.Presenter {
         })
     }
 
-    override fun getForumFirst(limit: Int, offset: Int) {
-        StartApplication.INSTANCE?.service?.getForum(limit, offset)
-                ?.enqueue(object : Callback<ForumPaginated> {
+    override fun getForum(limit: Int, offset: Int) {
+        StartApplication.INSTANCE.service.getForum(limit, offset)
+                .enqueue(object : Callback<ForumPaginated> {
                     override fun onFailure(call: Call<ForumPaginated>?, t: Throwable?) {
-                        v.onError(StartApplication.INSTANCE?.getString(R.string.fail)!!)
+                        v.onForumError(errorMessage)
                     }
 
                     override fun onResponse(call: Call<ForumPaginated>?, response: Response<ForumPaginated>?) {
                         if (response?.isSuccessful!!) {
-                            v.onForumFirstSuccess(response.body()!!)
-                        }
-                    }
-
-                })
-
-    }
-
-    override fun getForumNext(limit: Int, offset: Int) {
-        StartApplication.INSTANCE?.service?.getForum(limit, offset)
-                ?.enqueue(object : Callback<ForumPaginated> {
-                    override fun onFailure(call: Call<ForumPaginated>?, t: Throwable?) {
-                        v.onError(t?.message!!)
-                    }
-
-                    override fun onResponse(call: Call<ForumPaginated>?, response: Response<ForumPaginated>?) {
-                        if (response?.isSuccessful!!) {
-                            v.onForumNextSuccess(response.body()!!)
+                            v.onForumSuccess(response.body()!!)
                         }
                     }
 
                 })
     }
 
-    override fun sendFroum(data: Forum) {
-        StartApplication.INSTANCE?.service?.sendForum(data)?.enqueue(object : Callback<ResponseBody> {
+    override fun sendForum(data: Forum) {
+        StartApplication.INSTANCE.service.sendForum(data).enqueue(object : Callback<ResponseBody> {
             override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
-                v.onError(t?.message!!)
+                v.onForumError(errorMessage)
             }
 
             override fun onResponse(call: Call<ResponseBody>?, response: Response<ResponseBody>?) {

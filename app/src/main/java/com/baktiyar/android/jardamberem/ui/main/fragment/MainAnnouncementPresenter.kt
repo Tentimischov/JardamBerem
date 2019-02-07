@@ -18,7 +18,6 @@ class MainAnnouncementPresenter(val v: MainAnnouncementContract.View) : MainAnno
             override fun onResponse(call: Call<AnnouncementsPaginated>, response: Response<AnnouncementsPaginated>) {
                 if (response.isSuccessful && response.body()?.results?.isNotEmpty()!!) {
                     v.onAnnouncementIsNeededSuccess(response.body()!!)
-
                 }
             }
 

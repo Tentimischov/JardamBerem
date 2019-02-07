@@ -26,35 +26,18 @@ class CategoryAdapter(var data: ArrayList<AllCategory>, private val mListener: O
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindV(main: AllCategory, mListener: OnItemClickListener) {
-
-
             itemView.ca_title.text = main.category_name
             Picasso.get().load(main.category_imgPath).into(itemView.ca_icon)
             itemView.setOnClickListener {
                 mListener.onCategoryItemClick(main, adapterPosition)
             }
-
-
-            /* if (adapterPosition == Settings.getCategoryId(itemView.context).minus(1)) {
-              //   itemView.ca_icon.setColorFilter(ContextCompat.getColor(itemView.context, R.color.tintHil), android.graphics.PorterDuff.Mode.MULTIPLY)
-                 itemView.ca_title.setTextColor(ContextCompat.getColor(itemView.context, R.color.tintHil))
-             }
-             else {
-              ///   itemView.ca_icon.clearColorFilter()
-                 itemView.ca_title.setTextColor(ContextCompat.getColor(itemView.context, R.color.ca_icon_color))
-             }*/
         }
-
 
     }
 
     interface OnItemClickListener {
         fun onCategoryItemClick(main: AllCategory, position: Int)
 
-    }
-
-    fun setSelectedCard() {
-        notifyDataSetChanged()
     }
 
     fun setCategoryData(data: ArrayList<AllCategory>) {

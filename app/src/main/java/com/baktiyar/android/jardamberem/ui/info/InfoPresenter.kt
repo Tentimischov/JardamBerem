@@ -8,27 +8,13 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class InfoPresenter(var v: InfoContract.View) : InfoContract.Presenter {
-    override fun getInfoNext(limit: Int?, offset: Int?) {
-        StartApplication.INSTANCE?.service?.getInfo(limit, offset)?.enqueue(object : Callback<InfoPaginated> {
+    override fun getInfo(limit: Int?, offset: Int?) {
+        StartApplication.INSTANCE.service.getInfo(limit, offset).enqueue(object : Callback<InfoPaginated> {
             override fun onFailure(call: Call<InfoPaginated>?, t: Throwable?) {
                 v.onError(StartApplication.INSTANCE?.getString(R.string.fail)!!)
             }
-
             override fun onResponse(call: Call<InfoPaginated>?, response: Response<InfoPaginated>?) {
-                v.onSuccessNext(response?.body()!!)
-            }
-
-        })
-    }
-
-    override fun getInfoFirst(limit: Int?, offset: Int?) {
-        StartApplication.INSTANCE?.service?.getInfo(limit, offset)?.enqueue(object : Callback<InfoPaginated> {
-            override fun onFailure(call: Call<InfoPaginated>?, t: Throwable?) {
-                v.onError(StartApplication.INSTANCE?.getString(R.string.fail)!!)
-            }
-
-            override fun onResponse(call: Call<InfoPaginated>?, response: Response<InfoPaginated>?) {
-               if (response?.isSuccessful!!) v.onSuccessFirst(response.body()!!)
+               if (response?.isSuccessful!!) v.onSuccessInfo(response.body()!!)
             }
 
         })

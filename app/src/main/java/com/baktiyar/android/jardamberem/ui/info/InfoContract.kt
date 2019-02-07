@@ -6,12 +6,10 @@ import com.baktiyar.android.jardamberem.model.InfoPaginated
 interface InfoContract {
 
     interface View {
-        fun onSuccessFirst(data: InfoPaginated)
-        fun onSuccessNext(data: InfoPaginated)
+        fun onSuccessInfo(data: InfoPaginated)
         fun onError(message: String)
     }
     interface Presenter {
-        fun getInfoFirst(limit: Int?, offset: Int?)
-        fun getInfoNext(limit: Int?, offset: Int?)
+        fun getInfo(limit: Int?, offset: Int?)
     }
 }

@@ -11,7 +11,10 @@ import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_horizontal_main.view.*
 
-class UrgentAdapter(var data: ArrayList<Urgent>, var mClickListener: OnUrgClickListener) : RecyclerView.Adapter<UrgentAdapter.ViewHolder>() {
+class UrgentAdapter(var data: ArrayList<Urgent>,
+                    var mClickListener: OnUrgClickListener
+                    ) : RecyclerView.Adapter<UrgentAdapter.ViewHolder>() {
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindV(data[position], mClickListener)
     }

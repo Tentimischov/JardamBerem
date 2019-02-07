@@ -8,7 +8,7 @@ import retrofit2.Response
 
 class SearchPresenter(var v: SearchContract.View): SearchContract.Presenter {
     override fun getSearch(cityId: Int?, title: String?) {
-        StartApplication.INSTANCE?.service?.getSearch(cityId!!, title!!)?.enqueue(object : Callback<AnnouncementsPaginated> {
+        StartApplication.INSTANCE.service.getSearch(cityId!!, title!!).enqueue(object : Callback<AnnouncementsPaginated> {
             override fun onFailure(call: Call<AnnouncementsPaginated>?, t: Throwable?) {
                 v.onError(t?.message)
             }

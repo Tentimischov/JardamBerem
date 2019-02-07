@@ -2,34 +2,25 @@ package com.baktiyar.android.jardamberem.ui.info
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Info
 import com.baktiyar.android.jardamberem.model.InfoPaginated
 import com.baktiyar.android.jardamberem.ui.BaseActivity
-import com.baktiyar.android.jardamberem.ui.action.PaginationScrollListenerAction
 import com.baktiyar.android.jardamberem.ui.info_d.DetailedInfoActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INFO_DETAILED
+import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import kotlinx.android.synthetic.main.activity_action.*
 
 class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapter.OnItemClickListener {
-    override fun onInfoClick(info: Info) {
-        val intent = Intent(this, DetailedInfoActivity::class.java)
-        intent.putExtra(INFO_DETAILED, info)
-        startActivity(intent)
-    }
-
 
     var presenter: InfoPresenter? = null
     var adapter: InfoAdapter? = null
-    private val TOTAL_PAGES: Int = 10
-    private var issLoading = false
-    private var issLastPage = false
     private var limitPage = 10
-    private val PAGE_START = 1
-    private var currentPage = PAGE_START
-
+    private var offset: Int = 0
+    private var hasNextPage: Boolean = true
+    private var data: ArrayList<Info>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,82 +28,56 @@ class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapter.OnItemClickL
         title = getString(R.string.helpful_info)
 
         init()
-
-
     }
 
     fun init() {
         presenter = InfoPresenter(this)
         adapter = InfoAdapter(ArrayList(), this)
-        val layoutManager = LinearLayoutManager(this)
-        action_recycler.layoutManager = layoutManager
+        presenter?.getInfo(limitPage, offset)
+        offset += limitPage
+
         action_recycler.adapter = adapter
-        addScrollAdapter(layoutManager)
-        loadFirstPage()
-    }
 
-    private fun addScrollAdapter(layoutManager: LinearLayoutManager) {
-        action_recycler.addOnScrollListener(object : PaginationScrollListenerAction(layoutManager) {
-            override fun loadMoreItems() {
-                issLoading = true
-                currentPage++
-                loadNextPage()
+        action_recycler.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrollStateChanged(recyclerView: RecyclerView?, newState: Int) {
+                if (data != null && action_recycler.layoutManager.itemCount <= data!!.size && hasNextPage) {
+                    presenter?.getInfo(limitPage, offset)
+                    offset += limitPage
+                }
+                super.onScrollStateChanged(recyclerView, newState)
             }
-
-            override val totalPageCount: Int
-                get() = TOTAL_PAGES
-            override var isLastPage: Boolean
-                get() = issLastPage
-                set(_) {}
-
-            override var isLoading: Boolean
-                get() = issLoading
-                set(_) {}
-
+            override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
+                if (hasNextPage) {
+                    presenter?.getInfo(limitPage, offset)
+                    offset += limitPage
+                }
+                super.onScrolled(recyclerView, dx, dy)
+            }
         })
+
     }
 
-    private fun loadFirstPage() {
-        presenter?.getInfoFirst(limitPage, 0)
-    }
-
-    private fun loadNextPage() {
-        presenter?.getInfoNext(limitPage, currentPage * limitPage)
-    }
-
-    override fun onSuccessFirst(data: InfoPaginated) {
-        val model: List<Info> = fetchResults(data)
-        pro_bar.visibility = View.GONE
-        adapter?.addAll(model)
-
-        if (data?.next != null) {
-            adapter?.addLoadingFooter()
-        } else
-            issLastPage = true
-    }
-
-    override fun onSuccessNext(data: InfoPaginated) {
-        adapter?.removeLoadingFooter()
-        issLoading = false
-        pro_bar.visibility = View.GONE
-
-        val model: List<Info> = fetchResults(data)
-        adapter?.addAll(model)
-        if (data?.next == null) {
-            issLastPage = true
-        } else {
-            adapter?.addLoadingFooter()
-        }
-    }
-
-    private fun fetchResults(response: InfoPaginated?): List<Info> {    //3
-        return response?.results!!
-    }
 
     override fun onError(message: String) {
         pro_bar.visibility = View.GONE
         super.onError(message)
     }
 
+    override fun onSuccessInfo(data: InfoPaginated) {
+        pro_bar.visibility = View.GONE
+        action_recycler.visibility = View.VISIBLE
+
+        this.data?.addAll(data.results)
+        adapter?.addInfoData(data.results)
+        if (data.next == null) {
+            hasNextPage = false
+        }
+    }
+
+    override fun onInfoClick(info: Info) {
+        val intent = Intent(this, DetailedInfoActivity::class.java)
+        intent.putExtra(INFO_DETAILED, info)
+        startActivity(intent)
+    }
 
 }

@@ -1,25 +1,25 @@
 package com.baktiyar.android.jardamberem.ui.search
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.StaggeredGridLayoutManager
-import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
-import com.baktiyar.android.jardamberem.ui.main.adapter.AnnounAdapterNoPaginated
+import com.baktiyar.android.jardamberem.ui.main.fragment.MainAnnouncementAdapter
 import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
 import com.baktiyar.android.jardamberem.utils.Const
 import com.baktiyar.android.jardamberem.utils.Settings
 import kotlinx.android.synthetic.main.activity_action.*
 import kotlinx.android.synthetic.main.toolbar.*
 
-class SearchResultsActivity : AppCompatActivity(), SearchContract.View, AnnounAdapterNoPaginated.OnAnnounClickNoPage {
+class SearchResultsActivity : AppCompatActivity(), SearchContract.View, MainAnnouncementAdapter.OnItemClickListener {
 
-    var adapter: AnnounAdapterNoPaginated? = null
+    private lateinit var presenter: SearchPresenter
+    var adapter: MainAnnouncementAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_action)
@@ -29,7 +29,7 @@ class SearchResultsActivity : AppCompatActivity(), SearchContract.View, AnnounAd
 
     fun init() {
         initToolbar()
-        val presenter = SearchPresenter(this)
+        presenter = SearchPresenter(this)
         presenter.getSearch(Settings.getCityId(this), intent.getStringExtra("SEARCH_QUERY"))
         initAdapter()
     }
@@ -48,30 +48,40 @@ class SearchResultsActivity : AppCompatActivity(), SearchContract.View, AnnounAd
         return super.onOptionsItemSelected(item)
     }
     fun initAdapter() {
-        adapter = AnnounAdapterNoPaginated(ArrayList(), this)
-        val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        action_recycler.layoutManager = staggeredGridLayoutManager
-        action_recycler.isNestedScrollingEnabled = false
-        action_recycler.itemAnimator = DefaultItemAnimator()
+        adapter = MainAnnouncementAdapter(ArrayList(), this)
         action_recycler.adapter = adapter
-    }
-
-    override fun onAnClick(data: Announcements) {
-        val intent = Intent(this, DetailedProductActivity::class.java)
-        intent.putExtra(Const.GOODS, data)
-        startActivity(intent)
     }
 
 
     override fun onSuccess(data: ArrayList<Announcements>) {
-        adapter?.setAnData(data)
+        setData(data)
         pro_bar.visibility = View.GONE
         if (data.isEmpty())
             empty.visibility = View.VISIBLE
     }
+    private fun setData(data: ArrayList<Announcements>) {
+        pro_bar.visibility = View.GONE
+        action_recycler.visibility = View.VISIBLE
+        adapter?.addAnnouncementData(data)
+    }
 
     override fun onError(message: String?) {
         pro_bar.visibility = View.GONE
+    }
+
+    override fun onAnnouncementItemClick(data: Announcements) {
+        val intent = Intent(applicationContext, DetailedProductActivity::class.java)
+        intent.putExtra(Const.GOODS, data)
+        startActivity(intent)
+    }
+
+    override fun onCallClick(number: String) {
+        phoneIntent(number)
+    }
+
+    private fun phoneIntent(number: String) {
+        val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", number, null))
+        startActivity(intent)
     }
 
 }

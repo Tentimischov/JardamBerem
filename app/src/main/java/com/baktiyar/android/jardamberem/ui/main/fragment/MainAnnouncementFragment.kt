@@ -63,7 +63,17 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
                 }
                 super.onScrollStateChanged(recyclerView, newState)
             }
+            override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
+                if (hasNextPage) {
+                    if (isGive)
+                        presenter.getAnnouncementIsNeededFalse(limit, offset)
+                    else
+                        presenter.getAnnouncementIsNeeded(limit, offset)
+                }
+                super.onScrolled(recyclerView, dx, dy)
+            }
         })
+
         super.onViewCreated(view, savedInstanceState)
     }
 
