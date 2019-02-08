@@ -1141,7 +1141,6 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_recycler
-id action_spinner
 id action_text
 id action_title
 id actions
@@ -1243,6 +1242,7 @@ id forum_body
 id forum_rec
 id forum_user
 id frameLayout3
+id frame_layout
 id ghost_view
 id gone
 id groups
@@ -1317,6 +1317,7 @@ id pro_bar
 id progress_circular
 id progress_horizontal
 id radio
+id rec_view
 id recview
 id refreshLayoutProductsList
 id region
@@ -1335,6 +1336,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scroll_view
 id scrollable
 id search
 id search_badge
@@ -1511,6 +1513,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_dialog
 layout fragment_full_photo
+layout fragment_main_announcement
 layout fragment_products
 layout horizontal
 layout item_category_spinner

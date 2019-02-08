@@ -1,4 +1,4 @@
-#Tue Feb 05 16:28:54 KGT 2019
+#Thu Feb 07 19:30:43 KGT 2019
 base.0=/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/transforms/dexMerger/release/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -29,15 +29,15 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int bevel = 0x7f0a0031;
-        public static final int butt = 0x7f0a0037;
-        public static final int fill = 0x7f0a0074;
+        public static final int bevel = 0x7f0a0030;
+        public static final int butt = 0x7f0a0036;
+        public static final int fill = 0x7f0a0073;
         public static final int left = 0x7f0a009e;
         public static final int miter = 0x7f0a00ad;
-        public static final int right = 0x7f0a00cd;
-        public static final int round = 0x7f0a00d0;
-        public static final int square = 0x7f0a00f7;
-        public static final int stroke = 0x7f0a00fe;
+        public static final int right = 0x7f0a00ce;
+        public static final int round = 0x7f0a00d1;
+        public static final int square = 0x7f0a00f9;
+        public static final int stroke = 0x7f0a0100;
     }
     public static final class raw {
         private raw() {}

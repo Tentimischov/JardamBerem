@@ -55,6 +55,7 @@
                         android:layout_height="wrap_content"
                         android:background="@null"
                         android:paddingBottom="@dimen/size_5"
+                        android:layout_marginTop="@dimen/size_5"
                         app:layout_scrollFlags="scroll|enterAlways" />
 
 
@@ -104,7 +105,7 @@
                                 android:gravity="end"
                                 android:onClick="allUrgents"
                                 android:text="@string/all"
-                                android:textColor="@color/purple"
+                                android:textColor="@color/darkGray"
                                 android:textSize="12sp"
                                 android:textStyle="bold"
                                 app:layout_constraintBottom_toBottomOf="parent"

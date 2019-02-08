@@ -92,13 +92,13 @@
     <string name="complain">Арыз калтыруу</string>
     <string name="sos">sos</string>
     <string name="image">image</string>
-    <string name="fail">Малымат алуга мүмкүн эмес</string>
+    <string name="fail">Маалымат алуга мүмкүн эмес</string>
     <string name="fail_send">Малымат жиберүүгө мүмкүн эмес</string>
     <string name="phone_number">0(XXX)-YY-YY-YY</string>
     <string name="error_empty">Баарын толтурунуз</string>
     <string name="give_stuff">Отдам штаны</string>
     <string name="not_found">Табылган жок</string>
-    <string name="title_one_str">Сын-пикир калтырыныз</string>
+    <string name="title_one_str">Сын-пикир калтырыңыз</string>
     <string name="check_to_delete">Товарды өчүрүү</string>
     <string name="we_connect_to_you">Байланыш е-mail же номер</string>
     <string name="request_setting_permissions">You have disabled some permissions, please enable them in settings</string>

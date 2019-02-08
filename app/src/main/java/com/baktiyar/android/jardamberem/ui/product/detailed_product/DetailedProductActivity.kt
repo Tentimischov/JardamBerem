@@ -92,7 +92,7 @@ class DetailedProductActivity() : AppCompatActivity(), View.OnClickListener, Det
         supportActionBar!!.setDisplayShowTitleEnabled(true)
     }
 
-    fun getCategoryText(): String {
+    private fun getCategoryText(): String {
         val categories = Settings.getCategory(this).split(",")
         if (categories.size > mProduct?.category!!+1)
             return categories[mProduct?.category!!]
