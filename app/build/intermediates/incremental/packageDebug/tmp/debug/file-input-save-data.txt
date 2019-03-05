@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Fri Feb 08 15:52:44 KGT 2019
-1.base=/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/transforms/dexMerger/debug/0
+#Tue Mar 05 15:33:57 KGT 2019
+1.base=/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
 count=2
-1.set=DEX
-0.path=crashlytics-build.properties
-0.set=ASSET
-0.base=/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
-1.path=classes.dex
+1.set=ASSET
+0.path=classes.dex
+0.set=DEX
+0.base=/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/transforms/dexMerger/debug/0
+1.path=crashlytics-build.properties

@@ -8,7 +8,7 @@ import retrofit2.Response
 
 class UrgentDetailedPresenter(var v: UrgentDetailedContract.View) : UrgentDetailedContract.Presenter {
     override fun deleteUrgent(id: Int) {
-        StartApplication.INSTANCE?.service?.deletUrgent(id)?.enqueue(object : Callback<ResponseBody> {
+        StartApplication.INSTANCE?.service?.deleteUrgent(id)?.enqueue(object : Callback<ResponseBody> {
             override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
                 v.onError(t?.message!!)
             }

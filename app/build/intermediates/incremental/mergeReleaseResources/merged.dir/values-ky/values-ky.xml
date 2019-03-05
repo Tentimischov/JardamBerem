@@ -93,7 +93,7 @@
     <string name="email">E-mail</string>
     <string name="error_empty">Баарын толтурунуз</string>
     <string name="error_sending_data">Маалымат жөнөтүлгөн жок</string>
-    <string name="fail">Малымат алуга мүмкүн эмес</string>
+    <string name="fail">Маалымат алуга мүмкүн эмес</string>
     <string name="fail_send">Малымат жиберүүгө мүмкүн эмес</string>
     <string name="feedback_hint_str">Сын-пикир калтырыныз</string>
     <string name="feedbacks">Пикирлер</string>
@@ -161,7 +161,7 @@
     <string name="testProductPhoneNumber">0(554)–46–20–04</string>
     <string name="there_is_nothing">Азырынча эч-нерсе жок</string>
     <string name="titleCategories">Башкы меню</string>
-    <string name="title_one_str">Сын-пикир калтырыныз</string>
+    <string name="title_one_str">Сын-пикир калтырыңыз</string>
     <string name="transition_name">unique transition name</string>
     <string name="update_product">Жаңылоо</string>
     <string name="urgent_help">Тез жардам!</string>

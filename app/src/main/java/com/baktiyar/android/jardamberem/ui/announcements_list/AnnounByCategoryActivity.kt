@@ -15,22 +15,14 @@ import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProd
 import com.baktiyar.android.jardamberem.utils.Const
 import com.baktiyar.android.jardamberem.utils.Const.Companion.CATEGORY_NAME
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.baktiyar.android.jardamberem.utils.e
 import kotlinx.android.synthetic.main.activity_announ_list.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.View, ByCategoryAdapter.OnItemClickListener {
 
-
-
-    private val TOTAL_PAGES: Int = 10
     private var presenter: AnnounCategoryPresenter? = null
-    private var issLoading = false
-    private var issLastPage = false
-    private var limitPage = 10
-    private val PAGE_START = 1
-    private var currentPage = PAGE_START
     private var adapter: ByCategoryAdapter? = null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,16 +34,20 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
 
         one.setOnClickListener {
             Settings.setSpinnerItemPosition(this, 0)
+            var id = Settings.getSpinnerItemPosition(this)
+            e(id)
             recreateScreen()
         }
         two.setOnClickListener {
             Settings.setSpinnerItemPosition(this, 1)
+            var id = Settings.getSpinnerItemPosition(this)
+            e(id)
             recreateScreen()
         }
 
     }
 
-    fun recreateScreen() {
+    private fun recreateScreen() {
         finish()
         overridePendingTransition( 0, 0)
         startActivity(intent)
@@ -69,9 +65,7 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
         recview.isNestedScrollingEnabled = false
         recview.itemAnimator = DefaultItemAnimator()
         recview.adapter = adapter
-      //  addScrollAdapter(staggeredGridLayoutManager)
 
-        //loadFirstPage()
         presenter?.getDataFirst(100, 0)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

@@ -30,7 +30,7 @@ class SearchResultsActivity : AppCompatActivity(), SearchContract.View, MainAnno
     fun init() {
         initToolbar()
         presenter = SearchPresenter(this)
-        presenter.getSearch(Settings.getCityId(this), intent.getStringExtra("SEARCH_QUERY"))
+        presenter.getSearch(intent.getStringExtra("SEARCH_QUERY"))
         initAdapter()
     }
 

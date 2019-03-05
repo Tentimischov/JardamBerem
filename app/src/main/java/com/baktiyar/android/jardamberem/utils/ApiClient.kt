@@ -1,6 +1,5 @@
 package com.baktiyar.android.jardamberem.utils
 
-import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
@@ -13,11 +12,11 @@ import java.util.concurrent.TimeUnit
 object ApiClient {
     val REQUEST_TIME = 60L
 
-    fun initRetrofit(url: String, context: Context): ForumService {
+    fun initRetrofit(url: String): ForumService {
         return Retrofit.Builder()
                 .baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create(initGson()))
-                .client(getClient(context)).build()
+                .client(getClient()).build()
                 .create(ForumService::class.java)
     }
 
@@ -25,7 +24,7 @@ object ApiClient {
         return GsonBuilder().create()
     }
 
-    private fun getClient(context: Context): OkHttpClient {
+    private fun getClient(): OkHttpClient {
         val interceptor = HttpLoggingInterceptor()
         interceptor.level = HttpLoggingInterceptor.Level.BODY
 

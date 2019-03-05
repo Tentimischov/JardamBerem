@@ -24,7 +24,7 @@ interface ForumService {
     fun deleteAnnouncement(@Path("id_of_announcement") id: Int): Call<ResponseBody>
 
     @DELETE("history/{id_of_history}/")
-    fun deletUrgent(@Path("id_of_history") id: Int): Call<ResponseBody>
+    fun deleteUrgent(@Path("id_of_history") id: Int): Call<ResponseBody>
 
 
 
@@ -59,10 +59,10 @@ interface ForumService {
     fun getUrgent(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<UrgentPaginated>
 
     @GET("api/categories/{id_of_category}/announcements/?")
-    fun getAnnounByCategory(@Path("id_of_category") categoryId: Int,
-                            @Query("limit") limit: Int,
-                            @Query("offset") offset: Int,
-                            @Query("isNeeded") isNeeded : Boolean): Call<AnnouncementsPaginated>
+    fun getAnnouncementByCategory(@Path("id_of_category") categoryId: Int,
+                                  @Query("limit") limit: Int,
+                                  @Query("offset") offset: Int,
+                                  @Query("isNeeded") isNeeded : Boolean): Call<AnnouncementsPaginated>
 
     @GET("charity_event")
     fun getActionData(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<ActionDataPaginated>
@@ -74,9 +74,8 @@ interface ForumService {
     @POST("forum/")
     fun sendForum(@Body forum: Forum): Call<ResponseBody>
 
-    @GET("allannouncements/")
-    fun getSearch(@Query("??city") city: Int,
-                  @Query("title") title: String): Call<AnnouncementsPaginated>
+    @GET("announcements?")
+    fun getSearch(@Query("search") search: String): Call<AnnouncementsPaginated>
 
     @DELETE("forum/{id_of_forum}/")
     fun deleteForum(@Path("id_of_forum") id: Int): Call<ResponseBody>

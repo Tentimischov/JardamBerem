@@ -28,10 +28,6 @@ import org.jetbrains.anko.toast
 
 
 class DetailedProductActivity() : AppCompatActivity(), View.OnClickListener, DetailedProductContract.View, ViewPageAdapter.mClickListener {
-    override fun onClick(position: Int) {
-        goToFullImageActivity(position)
-    }
-
 
     private var mDetailedProductPresenter: DetailedProductPresenter? = null
     private var mProgressBar: ProgressDialog? = null
@@ -94,14 +90,14 @@ class DetailedProductActivity() : AppCompatActivity(), View.OnClickListener, Det
 
     private fun getCategoryText(): String {
         val categories = Settings.getCategory(this).split(",")
-        if (categories.size > mProduct?.category!!+1)
-            return categories[mProduct?.category!!]
+        if (mProduct?.category!! != null)
+            return mProduct?.category!!.category_name
         return getString(R.string.all)
     }
 
     private fun initUi() {
         val cities = Settings.getCityNameArray(this).split(",")
-        city.text = cities[mProduct?.city!! - 1]
+        city.text = mProduct?.city!!.city_name
         if (mProduct!!.userImeiCode == getAndroidId()) {
             isMyProduct = true
             button_content_text.text = getString(R.string.delete_product)
@@ -216,7 +212,9 @@ class DetailedProductActivity() : AppCompatActivity(), View.OnClickListener, Det
         startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
-
+    override fun onClick(position: Int) {
+        goToFullImageActivity(position)
+    }
 
 }
 
