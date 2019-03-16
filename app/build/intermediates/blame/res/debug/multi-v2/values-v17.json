@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\khydyr_u\\Desktop\\JardamBerem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "C:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\SFW\\AndroidStudio\\portable-home\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\5bb689bbc32fd33f6dff85cdaff0716e\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\src\\main\\res\\values-v17\\styles.xml",
+                    "from": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "57,638",
+                        "endLines": "10,19",
+                        "endColumns": "12,12",
+                        "endOffsets": "632,1209"
+                    },
+                    "to": {
+                        "startLines": "2,59",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,3498",
+                        "endLines": "10,67",
+                        "endColumns": "12,12",
+                        "endOffsets": "622,4061"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\best_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\2cdf3fb3da569d0538e29a4b8c4e1d26\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -20,25 +39,6 @@
                         "endLines": "13,17,20,23,26,30,34,37,40,43,47,50,54,58",
                         "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
                         "endOffsets": "795,1023,1181,1331,1503,1731,1973,2144,2318,2487,2760,2960,3164,3493"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\khydyr_u\\Desktop\\JardamBerem\\app\\src\\main\\res\\values-v17\\styles.xml",
-                    "from": {
-                        "startLines": "2,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,627",
-                        "endLines": "10,19",
-                        "endColumns": "12,12",
-                        "endOffsets": "622,1190"
-                    },
-                    "to": {
-                        "startLines": "2,59",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,3498",
-                        "endLines": "10,67",
-                        "endColumns": "12,12",
-                        "endOffsets": "622,4061"
                     }
                 }
             ]
