@@ -104,6 +104,7 @@
     <string name="request_setting_permissions">You have disabled some permissions, please enable them in settings</string>
     <string name="detailed_product">Көбүрөк</string>
     <string name="agreeClickRadioButton">Макул</string>
+    <string name="no_publication">жарнама жок</string>
     <string name="onCheckRadioButton">Please press agree</string>
     <string name="app_info"> Жардам берем — смартфондор үчүн тиркеме, ал Кыргызстан тургундарына оор
 жагдайларда адамдардын жардам сураган билдирүүсүн жөнөтүүгө жана тамак –аш,

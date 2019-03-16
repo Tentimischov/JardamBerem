@@ -3,7 +3,9 @@ package com.baktiyar.android.jardamberem.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Category(var id: Int, var category_name: String, var category_imgPath: String) : Parcelable {
+data class Category(var id: Int,
+                    var category_name: String,
+                    var category_imgPath: String) : Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readInt(),
             parcel.readString(),

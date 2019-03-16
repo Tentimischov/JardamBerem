@@ -14,6 +14,7 @@ import com.baktiyar.android.jardamberem.model.Announcements
 import com.baktiyar.android.jardamberem.model.AnnouncementsPaginated
 import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
 import com.baktiyar.android.jardamberem.utils.Const
+import com.baktiyar.android.jardamberem.utils.e
 import com.baktiyar.android.jardamberem.utils.toToast
 import kotlinx.android.synthetic.main.activity_forum.*
 import kotlinx.android.synthetic.main.fragment_main_announcement.view.*
@@ -23,7 +24,7 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
     private var data: ArrayList<Announcements>? = null
     private lateinit var presenter: MainAnnouncementPresenter
     private lateinit var adapter: MainAnnouncementAdapter
-    private var isGive: Boolean = false
+    private var isNeeded: Boolean = false
     private val limit: Int = 10
     private var offset: Int = 0
     private var hasNextPage: Boolean = true
@@ -31,15 +32,11 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         data = arrayListOf()
-        isGive = arguments?.getBoolean(POSITION)!!
+        isNeeded = arguments?.getBoolean(IS_NEEDED)!!
         presenter = MainAnnouncementPresenter(this)
         adapter = MainAnnouncementAdapter(arrayListOf(), this)
 
-
-        if (isGive)
-            presenter.getAnnouncementIsNeededFalse(limit, offset)
-        else
-            presenter.getAnnouncementIsNeeded(limit, offset)
+        presenter.getAnnouncement(limit, offset, isNeeded)
 
         return inflater.inflate(R.layout.fragment_main_announcement, container, false)
     }
@@ -56,19 +53,13 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
         view.rec_view.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrollStateChanged(recyclerView: RecyclerView?, newState: Int) {
                 if (data != null && view.rec_view.layoutManager.itemCount <= data!!.size && hasNextPage) {
-                    if (isGive)
-                        presenter.getAnnouncementIsNeededFalse(limit, offset)
-                    else
-                        presenter.getAnnouncementIsNeeded(limit, offset)
+                    presenter.getAnnouncement(limit, offset, isNeeded)
                 }
                 super.onScrollStateChanged(recyclerView, newState)
             }
             override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
                 if (hasNextPage) {
-                    if (isGive)
-                        presenter.getAnnouncementIsNeededFalse(limit, offset)
-                    else
-                        presenter.getAnnouncementIsNeeded(limit, offset)
+                        presenter.getAnnouncement(limit, offset, isNeeded)
                 }
                 super.onScrolled(recyclerView, dx, dy)
             }
@@ -78,12 +69,13 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
     }
 
     companion object {
-        val POSITION: String = "POSITION"
-        fun newInstance(position: Boolean): MainAnnouncementFragment {
+        val IS_NEEDED: String = "IS_NEEDED"
+        fun newInstance(isNeeded: Boolean): MainAnnouncementFragment {
             val fragment = MainAnnouncementFragment()
             val args = Bundle()
-            args.putBoolean(POSITION, position)
+            args.putBoolean(IS_NEEDED, isNeeded)
             fragment.arguments = args
+            e(isNeeded)
             return fragment
         }
     }
@@ -103,16 +95,11 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
         startActivity(intent)
     }
 
-    override fun onAnnouncementIsNeededSuccess(data: AnnouncementsPaginated) {
-        setData(data)
-    }
-
-    override fun onAnnouncementIsNeededFalseSuccess(data: AnnouncementsPaginated) {
+    override fun onAnnouncementSuccess(data: AnnouncementsPaginated) {
         setData(data)
     }
 
     private fun setData(data: AnnouncementsPaginated) {
-
         mView.pro_bar.visibility = View.GONE
         mView.rec_view.visibility = View.VISIBLE
 

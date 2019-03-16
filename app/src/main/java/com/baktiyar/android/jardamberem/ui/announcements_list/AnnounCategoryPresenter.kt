@@ -11,7 +11,10 @@ import retrofit2.Response
 
 class AnnounCategoryPresenter(var v: AnnounCategoryContract.View, var context: Context) : AnnounCategoryContract.Presenter {
     override fun getDataFirst(limit: Int, offset: Int) {
-        StartApplication.INSTANCE.service.getAnnouncementByCategory(Settings.getCategoryId(context), limit, offset, Settings.getSpinnerItemPosition(context) != 0).enqueue(object : Callback<AnnouncementsPaginated> {
+        StartApplication.INSTANCE.service.getAnnouncementByCategory(Settings.getCategoryId(),
+                limit,
+                offset,
+                Settings.getSpinnerItemPosition() != 0).enqueue(object : Callback<AnnouncementsPaginated> {
             override fun onFailure(call: Call<AnnouncementsPaginated>?, t: Throwable?) {
                 v.onError(t?.message!!)
             }

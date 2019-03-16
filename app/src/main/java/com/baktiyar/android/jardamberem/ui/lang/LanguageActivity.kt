@@ -36,7 +36,7 @@ class LanguageActivity : BaseActivity() {
         picker.minValue = 0
         picker.maxValue = 1
 
-        if (Settings.getLanguage(applicationContext) == RUSSIAN) {
+        if (Settings.getLanguage() == RUSSIAN) {
             picker.value = 0
         } else {
             picker.value = 1
@@ -51,7 +51,7 @@ class LanguageActivity : BaseActivity() {
             var restart = false
             val lang = if (picker.value == 0) RUSSIAN else KYRGYZ
 
-            if (lang != Settings.getLanguage(baseContext)) {
+            if (lang != Settings.getLanguage()) {
                 restart = true
             }
 
@@ -59,7 +59,7 @@ class LanguageActivity : BaseActivity() {
             val locale = Locale(if (lang == KYRGYZ) KYRGYZ else RUSSIAN)
             Locale.setDefault(locale)
             ConstantsJava.setLocale1(baseContext, locale)
-            Settings.setLanguage(baseContext, lang)
+            Settings.setLanguage(lang)
 
             toast(getString(R.string.lang_choosen))
             if (!hideNav) {

@@ -21,7 +21,7 @@ class AgreementActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
 
 
-        isAgreed = Settings.getAgreement(this)
+        isAgreed = Settings.getAgreement()
 
 
         if (isAgreed as Boolean) {
@@ -31,7 +31,7 @@ class AgreementActivity : AppCompatActivity() {
         agreementRadioButton.setOnClickListener {
             isAgreed = true
 
-            Settings.setAgreement(this, isAgreed)
+            Settings.setAgreement(isAgreed)
             val toLanguage = Intent(this, LanguageActivity::class.java)
             toLanguage.putExtra(HIDE_DRAWER, false)
             startActivity(toLanguage)

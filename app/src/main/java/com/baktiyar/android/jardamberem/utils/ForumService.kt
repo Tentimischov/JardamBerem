@@ -17,7 +17,7 @@ interface ForumService {
                     @Body file: RequestBody): Call<ResponseBody>
 
     @POST("history/")
-    fun sendUrgentProduct(@Body file: RequestBody) : Call<ResponseBody>
+    fun sendUrgentProduct(@Body file: RequestBody): Call<ResponseBody>
 
 
     @DELETE("allannouncements/{id_of_announcement}/")
@@ -25,8 +25,6 @@ interface ForumService {
 
     @DELETE("history/{id_of_history}/")
     fun deleteUrgent(@Path("id_of_history") id: Int): Call<ResponseBody>
-
-
 
 
     @POST("review/")
@@ -62,7 +60,7 @@ interface ForumService {
     fun getAnnouncementByCategory(@Path("id_of_category") categoryId: Int,
                                   @Query("limit") limit: Int,
                                   @Query("offset") offset: Int,
-                                  @Query("isNeeded") isNeeded : Boolean): Call<AnnouncementsPaginated>
+                                  @Query("isNeeded") isNeeded: Boolean): Call<AnnouncementsPaginated>
 
     @GET("charity_event")
     fun getActionData(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<ActionDataPaginated>
@@ -80,6 +78,11 @@ interface ForumService {
     @DELETE("forum/{id_of_forum}/")
     fun deleteForum(@Path("id_of_forum") id: Int): Call<ResponseBody>
 
+    @GET("announcements?")
+    fun getAnnouncememnt(@Query("limit") limit: Int,
+                         @Query("offset") offset: Int,
+                         @Query("isNeeded") isNeeded: Boolean,
+                         @Query("city_id") cityId: Int) : Call<AnnouncementsPaginated>
 
 
 }

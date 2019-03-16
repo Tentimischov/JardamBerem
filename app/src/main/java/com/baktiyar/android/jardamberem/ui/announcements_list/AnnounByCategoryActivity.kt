@@ -29,18 +29,18 @@ class AnnounByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.Vie
         setContentView(R.layout.activity_announ_list)
 
         init()
-        if (Settings.getSpinnerItemPosition(this) == 1)
+        if (Settings.getSpinnerItemPosition() == 1)
             two.isChecked = true
 
         one.setOnClickListener {
-            Settings.setSpinnerItemPosition(this, 0)
-            var id = Settings.getSpinnerItemPosition(this)
+            Settings.setSpinnerItemPosition(0)
+            var id = Settings.getSpinnerItemPosition()
             e(id)
             recreateScreen()
         }
         two.setOnClickListener {
-            Settings.setSpinnerItemPosition(this, 1)
-            var id = Settings.getSpinnerItemPosition(this)
+            Settings.setSpinnerItemPosition(1)
+            var id = Settings.getSpinnerItemPosition()
             e(id)
             recreateScreen()
         }

@@ -181,6 +181,7 @@
     <string name="no_number">Номер телефона не указан</string>
     <string name="wrong_number_format">не правильный формат номера</string>
     <string name="recent">Недавнее</string>
+    <string name="no_publication">нет публикации</string>
 
 
 </resources>

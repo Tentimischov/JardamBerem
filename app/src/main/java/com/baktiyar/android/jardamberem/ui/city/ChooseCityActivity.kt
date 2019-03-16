@@ -42,7 +42,7 @@ class ChooseCityActivity : BaseActivity(), CityContact.View {
             if (isError!! && cityId != null) {
                 toast(getString(R.string.retry))
             } else {
-                Settings.setCityId(applicationContext, cityModel!![picker.value].id)
+                Settings.setCityId(cityModel!![picker.value].id)
                 toast(getString(R.string.city_choosen))
                 if (!hideNav) {
                     startActivity(Intent(this, MainActivity::class.java))
@@ -81,7 +81,7 @@ class ChooseCityActivity : BaseActivity(), CityContact.View {
     private fun initCityPicker() {
         picker.minValue = 0
         picker.maxValue = data?.size?.minus(1)!!
-        picker.value = Settings.getCityId(applicationContext) - 1
+        picker.value = Settings.getCityId() - 1
         picker.displayedValues = data
         picker.descendantFocusability = ViewGroup.FOCUS_BLOCK_DESCENDANTS
     }
@@ -104,7 +104,7 @@ class ChooseCityActivity : BaseActivity(), CityContact.View {
             stringBuilder.append(data[i].city_name + ",")
         if (data.size > 0)
             stringBuilder.append(data[data.size - 1].city_name)
-        Settings.setCityNameArray(this, stringBuilder.toString())
+        Settings.setCityNameArray(stringBuilder.toString())
 
         //save cityId array as string
         val stringCityId = StringBuilder()
@@ -112,15 +112,15 @@ class ChooseCityActivity : BaseActivity(), CityContact.View {
             stringCityId.append("${data[i].id},")
         if (data.size > 0)
             stringCityId.append(data[data.size - 1].id)
-        Settings.setCityIdArray(this, stringCityId.toString())
+        Settings.setCityIdArray(stringCityId.toString())
 
     }
 
     override fun onError(message: String) {
         isError = true
-        this.data = Settings.getCityNameArray(this).split(",").toTypedArray()
-        if (Settings.getCityIdArray(this) != null)
-            cityId = Settings.getCityIdArray(this).split(",").toTypedArray()
+        this.data = Settings.getCityNameArray().split(",").toTypedArray()
+        if (Settings.getCityIdArray() != null)
+            cityId = Settings.getCityIdArray().split(",").toTypedArray()
         initCityPicker()
 
     }

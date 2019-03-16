@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jeenbek/Desktop/lastupdate/JardamBerem/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "C:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8ad50b89381d3e783bf7e04759b1da19/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\best_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\04947a7d2dcdc679806eedf4ee156a9d\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeenbek/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/f2425211840b4e2a6372b6f6575e6816/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\best_\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\37ee4ce5d916e00a321229e6f57c68cf\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

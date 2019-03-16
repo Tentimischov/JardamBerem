@@ -45,7 +45,7 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     lateinit var toggle: ActionBarDrawerToggle
 
     override fun setContentView(layoutResID: Int) {
-        ConstantsJava.setLocale1(baseContext, Locale(Settings.getLanguage(baseContext)))
+        ConstantsJava.setLocale1(baseContext, Locale(Settings.getLanguage()))
         super.setContentView(layoutResID)
         drawer_layout = findViewById(R.id.drawer_layout)
         nav_view = findViewById(R.id.nav_view)
@@ -152,7 +152,7 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
     override fun attachBaseContext(newBase: Context) {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N_MR1) {
-            super.attachBaseContext(MyContextWrapper.wrap(newBase, Settings.getLanguage(newBase)))
+            super.attachBaseContext(MyContextWrapper.wrap(newBase, Settings.getLanguage()))
         } else {
             super.attachBaseContext(newBase)
         }

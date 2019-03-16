@@ -89,14 +89,14 @@ class DetailedProductActivity() : AppCompatActivity(), View.OnClickListener, Det
     }
 
     private fun getCategoryText(): String {
-        val categories = Settings.getCategory(this).split(",")
+        val categories = Settings.getCategory().split(",")
         if (mProduct?.category!! != null)
             return mProduct?.category!!.category_name
         return getString(R.string.all)
     }
 
     private fun initUi() {
-        val cities = Settings.getCityNameArray(this).split(",")
+        val cities = Settings.getCityNameArray().split(",")
         city.text = mProduct?.city!!.city_name
         if (mProduct!!.userImeiCode == getAndroidId()) {
             isMyProduct = true

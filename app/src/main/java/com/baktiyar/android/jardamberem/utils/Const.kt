@@ -68,8 +68,8 @@ class Const {
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
 
-                if (position != Settings.getSpinnerItemPosition(context)) {
-                    Settings.setSpinnerItemPosition(context, position)
+                if (position != Settings.getSpinnerItemPosition()) {
+                    Settings.setSpinnerItemPosition( position)
                     RecreateActivity(appCompatActivity)
                 }
             }

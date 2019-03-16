@@ -42,10 +42,10 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Settings.setLocale(applicationContext, Locale(Settings.getLanguage(applicationContext)))
+        Settings.setLocale(Locale(Settings.getLanguage()))
         setContentView(R.layout.activity_add)
         title = getString(R.string.add_product)
-        mCityId = Settings.getCityId(this)
+        mCityId = Settings.getCityId()
         init()
     }
 
@@ -63,8 +63,8 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
 
     private fun getDataFromSettings() {
         mPresenter?.getCategory()
-        cityData = Settings.getCityNameArray(this).split(",")
-        categoryData = Settings.getCategory(this).split(",").toMutableList()
+        cityData = Settings.getCityNameArray().split(",")
+        categoryData = Settings.getCategory().split(",").toMutableList()
         categoryData?.add(getString(R.string.urgent_help))
     }
 
@@ -205,7 +205,7 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
 
     override fun attachBaseContext(newBase: Context) {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N_MR1) {
-            super.attachBaseContext(MyContextWrapper.wrap(newBase, Settings.getLanguage(newBase.applicationContext)))
+            super.attachBaseContext(MyContextWrapper.wrap(newBase, Settings.getLanguage()))
         } else {
             super.attachBaseContext(newBase)
         }

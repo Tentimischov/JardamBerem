@@ -53,7 +53,7 @@ class MainActivity : BaseActivity(),
     private var allUrgent: ArrayList<Urgent>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        ConstantsJava.setLocale(baseContext, Locale(Settings.getLanguage(baseContext)))
+        ConstantsJava.setLocale(baseContext, Locale(Settings.getLanguage()))
         super.onCreate(savedInstanceState)
         Fabric.with(this, Crashlytics());
         setContentView(R.layout.activity_main)
@@ -69,7 +69,7 @@ class MainActivity : BaseActivity(),
         initUrgent()
         initAnnouncementFragment()
 
-        mPresenter?.getCategory(Settings.getCityId(this))
+        mPresenter?.getCategory(Settings.getCityId())
         mPresenter?.getUrgent(1000, 0)
 
     }
@@ -81,7 +81,7 @@ class MainActivity : BaseActivity(),
         tab_layout.addTab(tab_layout.newTab().setText(R.string.need_help))
         val ft = supportFragmentManager.beginTransaction()
 
-        ft.replace(R.id.frame_layout, MainAnnouncementFragment.newInstance(true))
+        ft.replace(R.id.frame_layout, MainAnnouncementFragment.newInstance(false))
         ft.commit()
 
         tab_layout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
@@ -91,9 +91,9 @@ class MainActivity : BaseActivity(),
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 if (tab?.position == 0) {
-                    switchFragment(MainAnnouncementFragment.newInstance(true))
-                } else {
                     switchFragment(MainAnnouncementFragment.newInstance(false))
+                } else {
+                    switchFragment(MainAnnouncementFragment.newInstance(true))
                 }
             }
 
@@ -196,7 +196,7 @@ class MainActivity : BaseActivity(),
     }
 
     override fun onCategoryItemClick(data: AllCategory, position: Int) {
-        Settings.setCategoryId(this, data.id)
+        Settings.setCategoryId(data.id)
         if (data.category_name != getString(R.string.all)) {
             val intent = Intent(this, AnnounByCategoryActivity::class.java)
             intent.putExtra(CATEGORY_ID, position)
@@ -217,7 +217,7 @@ class MainActivity : BaseActivity(),
         if (data.size > 0)
             stringBuilder.append(data[data.size - 1].category_name)
 
-        Settings.setCategory(this, stringBuilder.toString())
+        Settings.setCategory(stringBuilder.toString())
     }
 
     override fun onUrgentSuccess(data: ArrayList<Urgent>) {
