@@ -182,6 +182,8 @@
     <string name="wrong_number_format">не правильный формат номера</string>
     <string name="recent">Недавнее</string>
     <string name="no_publication">нет публикации</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="your_message">Ваше сообщение</string>
 
 
 </resources>

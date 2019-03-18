@@ -8,6 +8,7 @@ import com.baktiyar.android.jardamberem.StartApplication
 import com.baktiyar.android.jardamberem.model.CategoryPaginated
 import com.baktiyar.android.jardamberem.model.PostProduct
 import com.baktiyar.android.jardamberem.model.PostUrgentProduct
+import com.baktiyar.android.jardamberem.utils.e
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
@@ -98,8 +99,9 @@ class NewProductPresenter(var context: Context,
         val bodyBuilder = MultipartBody.Builder()
         bodyBuilder.setType(MultipartBody.FORM)
 
-        bodyBuilder.addFormDataPart("city", item.city.toString())
-        bodyBuilder.addFormDataPart("category", item.category.toString())
+        e(city.toString() + " " + item.category.toString())
+        bodyBuilder.addFormDataPart("city", city.toString())
+        bodyBuilder.addFormDataPart("category", categoryId.toString())
         bodyBuilder.addFormDataPart("isNeeded", item.isNeeded.toString())
         bodyBuilder.addFormDataPart("title", item.title)
         bodyBuilder.addFormDataPart("description", item.description)
@@ -131,7 +133,6 @@ class NewProductPresenter(var context: Context,
                 object : Callback<ResponseBody> {
                     override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
                         mView!!.onPostProductError(t!!.message.toString())
-                        Log.e("_____", t.message)
                         mView!!.hideProgress()
                     }
 

@@ -142,4 +142,7 @@
 
 
     <string name="recent">Жакынкы</string>
+
+    <string name="your_name">Сиздин атыңыз</string>
+    <string name="your_message">Сиздин пикириңиз</string>
 </resources>

@@ -9,7 +9,6 @@ interface MainAnnouncementContract {
     }
     interface Presenter {
         fun getAnnouncement(limit: Int, offset: Int, isNeeded: Boolean)
-
     }
 
 }

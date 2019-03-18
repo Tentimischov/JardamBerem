@@ -22,6 +22,7 @@ import com.baktiyar.android.jardamberem.utils.Const.Companion.ALL_PHOTO_URLS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.GOODS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INDEX
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.baktiyar.android.jardamberem.utils.e
 import kotlinx.android.synthetic.main.activity_dp.*
 import kotlinx.android.synthetic.main.toolbar.*
 import org.jetbrains.anko.toast
@@ -89,15 +90,12 @@ class DetailedProductActivity() : AppCompatActivity(), View.OnClickListener, Det
     }
 
     private fun getCategoryText(): String {
-        val categories = Settings.getCategory().split(",")
-        if (mProduct?.category!! != null)
-            return mProduct?.category!!.category_name
-        return getString(R.string.all)
+        return Settings.getCategory(mProduct?.category.toString())
     }
 
     private fun initUi() {
         val cities = Settings.getCityNameArray().split(",")
-        city.text = mProduct?.city!!.city_name
+        city.text = mProduct?.city!!.toString()
         if (mProduct!!.userImeiCode == getAndroidId()) {
             isMyProduct = true
             button_content_text.text = getString(R.string.delete_product)

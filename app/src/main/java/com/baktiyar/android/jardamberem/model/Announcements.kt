@@ -4,8 +4,8 @@ import android.os.Parcel
 import android.os.Parcelable
 
 class Announcements(var id: Int?,
-                    var city: City?,
-                    var category: Category?,
+                    var city: Int?,
+                    var category: Int?,
                     var isNeeded: Boolean?,
                     var title: String?,
                     var description: String?,
@@ -23,8 +23,8 @@ class Announcements(var id: Int?,
                     var date: String?) : Parcelable{
     constructor(parcel: Parcel) : this(
             parcel.readValue(Int::class.java.classLoader) as? Int,
-            parcel.readParcelable(City::class.java.classLoader),
-            parcel.readParcelable(Category::class.java.classLoader),
+            parcel.readInt(),
+            parcel.readInt(),
             parcel.readValue(Boolean::class.java.classLoader) as? Boolean,
             parcel.readString(),
             parcel.readString(),
@@ -44,8 +44,8 @@ class Announcements(var id: Int?,
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeValue(id)
-        parcel.writeParcelable(city, flags)
-        parcel.writeParcelable(category, flags)
+        parcel.writeInt(city!!)
+        parcel.writeInt(category!!)
         parcel.writeValue(isNeeded)
         parcel.writeString(title)
         parcel.writeString(description)

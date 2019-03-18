@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Sat Mar 16 14:16:20 ALMT 2019
+1.base=C\:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\build\\intermediates\\merged_assets\\release\\mergeReleaseAssets\\out
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=classes.dex
+0.set=DEX
+0.base=C\:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+1.path=crashlytics-build.properties

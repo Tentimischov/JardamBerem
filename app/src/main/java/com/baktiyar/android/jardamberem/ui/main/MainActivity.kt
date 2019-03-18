@@ -18,7 +18,7 @@ import com.baktiyar.android.jardamberem.model.Urgent
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.ConstantsJava
 import com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity
-import com.baktiyar.android.jardamberem.ui.announcements_list.AnnounByCategoryActivity
+import com.baktiyar.android.jardamberem.ui.announcements_list.AnnouncementByCategoryActivity
 import com.baktiyar.android.jardamberem.ui.main.adapter.CategoryAdapter
 import com.baktiyar.android.jardamberem.ui.main.adapter.UrgentAdapter
 import com.baktiyar.android.jardamberem.ui.main.fragment.MainAnnouncementFragment
@@ -32,6 +32,7 @@ import com.baktiyar.android.jardamberem.utils.Const.Companion.URGENTS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.hideKeyboard
 import com.baktiyar.android.jardamberem.utils.Const.Companion.setVisiblityMenuItem
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.baktiyar.android.jardamberem.utils.e
 import com.baktiyar.android.jardamberem.utils.toToast
 import com.crashlytics.android.Crashlytics
 import io.fabric.sdk.android.Fabric
@@ -198,7 +199,7 @@ class MainActivity : BaseActivity(),
     override fun onCategoryItemClick(data: AllCategory, position: Int) {
         Settings.setCategoryId(data.id)
         if (data.category_name != getString(R.string.all)) {
-            val intent = Intent(this, AnnounByCategoryActivity::class.java)
+            val intent = Intent(this, AnnouncementByCategoryActivity::class.java)
             intent.putExtra(CATEGORY_ID, position)
             intent.putExtra(CATEGORY_NAME, data.category_name)
             startActivity(intent)
@@ -218,6 +219,10 @@ class MainActivity : BaseActivity(),
             stringBuilder.append(data[data.size - 1].category_name)
 
         Settings.setCategory(stringBuilder.toString())
+
+        for (i in 0 until data.size) {
+            Settings.setCategory(data[i].id.toString(), data[i].category_name)
+        }
     }
 
     override fun onUrgentSuccess(data: ArrayList<Urgent>) {

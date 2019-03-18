@@ -20,6 +20,7 @@ import com.baktiyar.android.jardamberem.ui.main.MainActivity
 import com.baktiyar.android.jardamberem.ui.product.post_product.adapter.ImageAdapter
 import com.baktiyar.android.jardamberem.utils.MyContextWrapper
 import com.baktiyar.android.jardamberem.utils.Settings
+import com.baktiyar.android.jardamberem.utils.e
 import com.baktiyar.android.jardamberem.utils.toToast
 import kotlinx.android.synthetic.main.activity_add.*
 import org.jetbrains.anko.toast
@@ -118,6 +119,7 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
             mPresenter?.sendUrgentProduct(mProduct, mImagePaths)
         }
         else if (ok) {
+            e("$idCategory this is post product")
             val mProduct = PostProduct(idCity, idCategory, isNeeded, title, description, phoneNumber, imeiUserCode, null, null, null)
             mPresenter!!.sendProduct(idCategory, idCity, mProduct, mImagePaths)
         }

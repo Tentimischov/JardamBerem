@@ -12,6 +12,8 @@ import com.google.gson.Gson;
 
 import java.util.Locale;
 
+import static com.baktiyar.android.jardamberem.utils.UtilsKt.e;
+
 
 public class Settings {
     private static final String RUSSIAN = "ru";
@@ -101,6 +103,14 @@ public class Settings {
     public static void setCategory(String s) {
         getEditor().putString(CATEGORY, s).commit();
     }
+    public static void setCategory(String mKey, String value) {
+        getEditor().putString(mKey, value).apply();
+    }
+
+    public static String getCategory(String mKey) {
+        return getString(mKey, "no category");
+    }
+
     public static String getCategory() {
         return getString(CATEGORY, CATEGORY_DEF);
     }

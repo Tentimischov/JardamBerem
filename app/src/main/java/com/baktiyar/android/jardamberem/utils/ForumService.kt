@@ -60,7 +60,8 @@ interface ForumService {
     fun getAnnouncementByCategory(@Path("id_of_category") categoryId: Int,
                                   @Query("limit") limit: Int,
                                   @Query("offset") offset: Int,
-                                  @Query("isNeeded") isNeeded: Boolean): Call<AnnouncementsPaginated>
+                                  @Query("isNeeded") isNeeded: Boolean,
+                                  @Query("city_id") cityId: Int): Call<AnnouncementsPaginated>
 
     @GET("charity_event")
     fun getActionData(@Query("limit") limit: Int, @Query("offset") offset: Int): Call<ActionDataPaginated>
@@ -79,10 +80,12 @@ interface ForumService {
     fun deleteForum(@Path("id_of_forum") id: Int): Call<ResponseBody>
 
     @GET("announcements?")
-    fun getAnnouncememnt(@Query("limit") limit: Int,
-                         @Query("offset") offset: Int,
-                         @Query("isNeeded") isNeeded: Boolean,
-                         @Query("city_id") cityId: Int) : Call<AnnouncementsPaginated>
+    fun getAnnouncement(@Query("limit") limit: Int,
+                        @Query("offset") offset: Int,
+                        @Query("isNeeded") isNeeded: Boolean,
+                        @Query("city_id") cityId: Int) : Call<AnnouncementsPaginated>
+
+
 
 
 }

@@ -1059,7 +1059,7 @@
     <string name="city_choosen">Регион выбран</string>
     <string name="closeCategory">Одежда</string>
     <string name="clothing">Одежда</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">92723cd3-334d-46e2-babf-f9a52c3315a6</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">c97d0ab8-d113-4f0f-ae3f-b750a3917a88</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -1231,6 +1231,8 @@
     <string name="wrong_number_format">не правильный формат номера</string>
     <string name="wrong_response">Что-то пошло не так…</string>
     <string name="yes">Да</string>
+    <string name="your_message">Ваше сообщение</string>
+    <string name="your_name">Ваше имя</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

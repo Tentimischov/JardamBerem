@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context=".ui.announcements_list.AnnounByCategoryActivity">
+    tools:context=".ui.announcements_list.AnnouncementByCategoryActivity">
 
     <include
         android:id="@+id/include4"
