@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".ui.announcements_list.AnnouncementByCategoryActivity">
 
     <include
@@ -14,66 +15,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <info.hoang8f.android.segmented.SegmentedGroup
-        android:id="@+id/segmented_group"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include4"
-        app:sc_border_width="1dp"
-        app:sc_corner_radius="5dp"
-        app:sc_tint_color="@color/purple">
-
-        <RadioButton
-            android:id="@+id/one"
-            style="@style/RadioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:checked="true"
-            android:text="@string/give_help" />
-
-        <RadioButton
-            android:id="@+id/two"
-            style="@style/RadioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:text="@string/need_help" />
-
-
-    </info.hoang8f.android.segmented.SegmentedGroup>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recview"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/all_announcement_tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginRight="@dimen/size_5"
-        android:layout_marginEnd="@dimen/size_5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/segmented_group"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ProgressBar
-        android:id="@+id/pro_bar"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="168dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginRight="168dp"
-        android:layout_marginStart="168dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recview" />
+        app:tabIndicatorColor="@color/purpleDark"
+        app:tabSelectedTextColor="@color/purpleDark"
+        app:tabTextColor="@color/purpleDark" />
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/all_announcement_list_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

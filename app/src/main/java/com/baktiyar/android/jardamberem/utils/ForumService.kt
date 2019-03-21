@@ -11,7 +11,6 @@ interface ForumService {
     @GET("api/categories/{categoryId}/announcements")
     fun getProductByCategory(@Path("categoryId") id: Int): Call<List<Product>>
 
-
     @POST("api/categories/{id_of_category}/announcements/")
     fun sendProduct(@Path("id_of_category") id: Int,
                     @Body file: RequestBody): Call<ResponseBody>
@@ -29,20 +28,6 @@ interface ForumService {
 
     @POST("review/")
     fun sendFeedback(@Body feedback: Feedback): Call<ResponseBody>
-
-    @POST
-    fun sendComplainOnUser(productId: Int, androidId: Int): Call<ResponseBody>
-
-    @GET("allannouncements/IsNeeded")
-    fun getAnnouncements(@Query("limit") limit: Int,
-                         @Query("offset") offset: Int):
-            Call<AnnouncementsPaginated>
-
-    @GET("allannouncements/IsNeededFalse")
-    fun getAnnouncementsIsNeededFalse(@Query("limit") limit: Int,
-                                      @Query("offset") offset: Int):
-            Call<AnnouncementsPaginated>
-
 
     @GET("api/categories/")
     fun getCategory(): Call<CategoryPaginated>
@@ -73,7 +58,7 @@ interface ForumService {
     @POST("forum/")
     fun sendForum(@Body forum: Forum): Call<ResponseBody>
 
-    @GET("announcements?")
+    @GET("announcement?")
     fun getSearch(@Query("search") search: String): Call<AnnouncementsPaginated>
 
     @DELETE("forum/{id_of_forum}/")

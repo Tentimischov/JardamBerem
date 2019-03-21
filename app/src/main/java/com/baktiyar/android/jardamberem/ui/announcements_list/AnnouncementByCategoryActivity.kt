@@ -1,71 +1,31 @@
 package com.baktiyar.android.jardamberem.ui.announcements_list
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
-import android.view.View
 import com.baktiyar.android.jardamberem.R
-import com.baktiyar.android.jardamberem.model.Announcements
-import com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity
-import com.baktiyar.android.jardamberem.utils.Const
+import com.baktiyar.android.jardamberem.ui.main.fragment.ViewPagerAdapter
 import com.baktiyar.android.jardamberem.utils.Const.Companion.CATEGORY_NAME
-import com.baktiyar.android.jardamberem.utils.Settings
-import com.baktiyar.android.jardamberem.utils.e
 import kotlinx.android.synthetic.main.activity_announ_list.*
 import kotlinx.android.synthetic.main.toolbar.*
 
-class AnnouncementByCategoryActivity : AppCompatActivity(), AnnounCategoryContract.View, ByCategoryAdapter.OnItemClickListener {
-
-    private var presenterBy: AnnouncementByCategoryPresenter? = null
-    private var adapter: ByCategoryAdapter? = null
+class AnnouncementByCategoryActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_announ_list)
 
         init()
-        if (Settings.getSpinnerItemPosition() == 1)
-            two.isChecked = true
 
-        one.setOnClickListener {
-            Settings.setSpinnerItemPosition(0)
-            var id = Settings.getSpinnerItemPosition()
-            e(id)
-            recreateScreen()
-        }
-        two.setOnClickListener {
-            Settings.setSpinnerItemPosition(1)
-            var id = Settings.getSpinnerItemPosition()
-            e(id)
-            recreateScreen()
-        }
-
+        val giveHelp = AnnouncementFragment.newInstance(false)
+        val needHelp = AnnouncementFragment.newInstance(true)
+        all_announcement_list_viewpager.adapter = ViewPagerAdapter(supportFragmentManager, arrayOf(giveHelp, needHelp))
+        all_announcement_tab_layout.setupWithViewPager(all_announcement_list_viewpager)
     }
-
-    private fun recreateScreen() {
-        finish()
-        overridePendingTransition( 0, 0)
-        startActivity(intent)
-        overridePendingTransition( 0, 0)
-    }
-
 
     fun init() {
         title = intent.getStringExtra(CATEGORY_NAME)
 
-
-        presenterBy = AnnouncementByCategoryPresenter(this)
-        adapter = ByCategoryAdapter(ArrayList(), this)
-        recview.layoutManager = LinearLayoutManager(this)
-        recview.isNestedScrollingEnabled = false
-        recview.itemAnimator = DefaultItemAnimator()
-        recview.adapter = adapter
-
-        presenterBy?.getAnnouncementByCategory(100, 0)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
@@ -77,30 +37,4 @@ class AnnouncementByCategoryActivity : AppCompatActivity(), AnnounCategoryContra
         }
         return super.onOptionsItemSelected(item)
     }
-
-    override fun onItemClick(data: Announcements) {
-        val intent = Intent(this, DetailedProductActivity::class.java)
-        intent.putExtra(Const.GOODS, data)
-        startActivity(intent)
-    }
-
-    override fun onAnnouncementSuccess(data: ArrayList<Announcements>) {
-        adapter?.setDataAll(data)
-        pro_bar.visibility = View.GONE
-    }
-
-    override fun onError(message: String) {
-
-    }
-
-    override fun onCallClick(number: String) {
-        phoneIntent(number)
-    }
-
-    private fun phoneIntent(number: String) {
-        val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", number, null))
-        startActivity(intent)
-    }
-
-
 }

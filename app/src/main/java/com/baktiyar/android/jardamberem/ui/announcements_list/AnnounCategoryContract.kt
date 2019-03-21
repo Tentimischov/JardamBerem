@@ -5,10 +5,10 @@ import com.baktiyar.android.jardamberem.model.AnnouncementsPaginated
 
 interface AnnounCategoryContract {
     interface View {
-        fun onAnnouncementSuccess(data: ArrayList<Announcements>)
+        fun onAnnouncementSuccess(data: AnnouncementsPaginated)
         fun onError(message: String)
     }
     interface Presenter {
-        fun getAnnouncementByCategory(limit: Int, offset: Int)
+        fun getAnnouncementByCategory(limit: Int, offset: Int, isNeeded: Boolean)
     }
 }

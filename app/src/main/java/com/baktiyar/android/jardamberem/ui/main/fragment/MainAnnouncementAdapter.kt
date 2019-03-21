@@ -37,7 +37,6 @@ class MainAnnouncementAdapter(
                     .load(R.drawable.no_image)
                     .into(holder.itemView.im)
         }
-        e("this is picture number $position and url ${model.imgPath} and title ${model.title}")
 
         holder.itemView.title.text = model.title
         holder.itemView.date.text = model.date?.substring(0, 10)

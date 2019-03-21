@@ -9,18 +9,18 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class AnnouncementByCategoryPresenter(var v: AnnounCategoryContract.View) : AnnounCategoryContract.Presenter {
-    override fun getAnnouncementByCategory(limit: Int, offset: Int) {
+    override fun getAnnouncementByCategory(limit: Int, offset: Int, isNeeded: Boolean) {
         StartApplication.INSTANCE.service.getAnnouncementByCategory(Settings.getCategoryId(),
                 limit,
                 offset,
-                Settings.getSpinnerItemPosition() != 0,
+                isNeeded,
                 Settings.getCityId()).enqueue(object : Callback<AnnouncementsPaginated> {
             override fun onFailure(call: Call<AnnouncementsPaginated>?, t: Throwable?) {
                 v.onError(t?.message!!)
             }
 
             override fun onResponse(call: Call<AnnouncementsPaginated>?, response: Response<AnnouncementsPaginated>?) {
-                if (response?.isSuccessful!!) v.onAnnouncementSuccess(response.body()!!.results)
+                if (response?.isSuccessful!!) v.onAnnouncementSuccess(response.body()!!)
                 else v.onError(response.message())
             }
 

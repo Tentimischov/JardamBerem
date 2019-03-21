@@ -1141,6 +1141,8 @@ id adjust_width
 id agreementRadioButton
 id alertTitle
 id all
+id all_announcement_list_viewpager
+id all_announcement_tab_layout
 id all_rec
 id always
 id announ_recyclerview

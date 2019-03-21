@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="___" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="http" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -17,8 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70118eff-0083-4fc1-9cf0-9db4a8cf0eda" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/FragmentActivityComunicator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/ViewPagerAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -51,8 +50,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/android/gms/base/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/android/gms/base/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/firebase/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/firebase/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/viewpagerindicator/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/viewpagerindicator/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
@@ -72,7 +69,14 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/ui/main/round_courner/RoundCornersTransformation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$integer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$mipmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$mipmap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$style.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$styleable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baktiyar/android/jardamberem/R$xml.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/bogdwellers/pinchtozoom/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/bogdwellers/pinchtozoom/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/bumptech/glide/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/bumptech/glide/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dd/morphingbutton/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dd/morphingbutton/R$id.class" afterDir="false" />
@@ -82,8 +86,7 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/viewpagerindicator/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/viewpagerindicator/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/crashlytics-build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out/crashlytics-build.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_main_announcement.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_main_announcement.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_announ_list.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_announ_list.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterDir="false" />
@@ -101,7 +104,14 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/android/support/v7/appcompat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/android/support/v7/appcompat/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/android/support/v7/recyclerview/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/android/support/v7/recyclerview/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$id.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/ui/main/round_courner/RoundCornersTransformation.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$integer.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$integer.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$menu.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$menu.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$mipmap.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$mipmap.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$style.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$style.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$styleable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$styleable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$xml.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/baktiyar/android/jardamberem/R$xml.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/bogdwellers/pinchtozoom/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/bogdwellers/pinchtozoom/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/bumptech/glide/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/bumptech/glide/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/dd/morphingbutton/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/dd/morphingbutton/R$id.dex" afterDir="false" />
@@ -110,7 +120,13 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/google/firebase/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/google/firebase/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/viewpagerindicator/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/viewpagerindicator/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/BaseActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/BaseActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/MainActivity$initAnnouncementFragment$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract$Presenter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract$Presenter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract$View.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract$View.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity$onCreate$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity$onCreate$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter$getAnnouncementByCategory$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter$getAnnouncementByCategory$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/MainActivity$onCreateOptionsMenu$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/MainActivity$onCreateOptionsMenu$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/MainActivity$onCreateOptionsMenu$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/MainActivity$onCreateOptionsMenu$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/MainActivity.dex" afterDir="false" />
@@ -118,13 +134,12 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter$onBindViewHolder$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter$onBindViewHolder$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter$onBindViewHolder$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter$onBindViewHolder$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment$Companion.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment$Companion.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment$onViewCreated$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment$onViewCreated$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/product/detailed_product/adapter/DetailedImageAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/product/detailed_product/adapter/DetailedImageAdapter.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsActivity.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsFragment.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/product/post_product/adapter/ImageAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/product/post_product/adapter/ImageAdapter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/urgent_detailed/UrgentDetailedActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/ui/urgent_detailed/UrgentDetailedActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/utils/ForumService.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/82/com/baktiyar/android/jardamberem/utils/ForumService.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
@@ -139,19 +154,27 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.s" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
@@ -202,7 +225,13 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/BaseActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/BaseActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/MainActivity$initAnnouncementFragment$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract$Presenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract$Presenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract$View.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract$View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity$onCreate$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity$onCreate$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter$getAnnouncementByCategory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter$getAnnouncementByCategory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/MainActivity$onCreateOptionsMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/MainActivity$onCreateOptionsMenu$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/MainActivity$onCreateOptionsMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/MainActivity$onCreateOptionsMenu$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/MainActivity.class" afterDir="false" />
@@ -210,20 +239,19 @@
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter$onBindViewHolder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter$onBindViewHolder$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter$onBindViewHolder$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter$onBindViewHolder$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment$onViewCreated$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment$onViewCreated$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/product/detailed_product/adapter/DetailedImageAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/product/detailed_product/adapter/DetailedImageAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsFragment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/product/post_product/adapter/ImageAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/product/post_product/adapter/ImageAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/urgent_detailed/UrgentDetailedActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/ui/urgent_detailed/UrgentDetailedActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/utils/ForumService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/baktiyar/android/jardamberem/utils/ForumService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/round_courner/RoundCornersTransformation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_announcement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_announcement.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_announ_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_announ_list.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -249,87 +277,26 @@
       <file leaf-file-name="MainAnnouncementPresenter.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementPresenter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="38" />
+            <state relative-caret-position="119">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt">
+      <file leaf-file-name="AnnouncementFragment.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-              <folding>
-                <element signature="e#3321#3349#0" expanded="true" />
-                <element signature="e#7346#7369#0" expanded="true" />
-                <element signature="e#7830#7865#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="249">
+              <caret line="104" column="70" selection-start-line="104" selection-start-column="70" selection-end-line="104" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewPagerAdapter.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/ViewPagerAdapter.kt">
+      <file leaf-file-name="AnnouncementByCategoryActivity.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="e#59#298#0" expanded="true" />
-                <element signature="e#713#768#1" expanded="true" />
-                <element signature="e#774#829#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="142" column="63" selection-start-line="142" selection-start-column="63" selection-end-line="142" selection-end-column="63" />
-              <folding>
-                <element signature="e#1926#1966#0" expanded="true" />
-                <element signature="e#2559#2574#0" expanded="true" />
-                <element signature="e#2494#2509#0" expanded="true" />
-                <element signature="e#4008#4029#0" expanded="true" />
-                <element signature="e#5208#5221#0" expanded="true" />
-                <element signature="e#6239#6254#0" expanded="true" />
-                <element signature="e#6677#6693#0" expanded="true" />
-                <element signature="e#7326#7342#0" expanded="true" />
-                <element signature="e#7434#7450#0" expanded="true" />
-                <element signature="e#7901#7917#0" expanded="true" />
-                <element signature="e#7960#7976#0" expanded="true" />
-                <element signature="e#8018#8033#0" expanded="true" />
-                <element signature="e#8078#8093#0" expanded="true" />
-                <element signature="e#8182#8197#0" expanded="true" />
-                <element signature="e#8227#8240#0" expanded="true" />
-                <element signature="e#8362#8378#0" expanded="true" />
-                <element signature="e#8417#8433#0" expanded="true" />
-                <element signature="e#8753#8768#0" expanded="true" />
-                <element signature="e#8863#8882#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainAnnouncementFragment.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainAnnouncementAdapter.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            <state relative-caret-position="85">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -340,8 +307,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -355,6 +322,7 @@
       <find>categ</find>
       <find>oncate</find>
       <find>offset</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -2793,8 +2761,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/forum/ForumPresenter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_forum.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/forum/ForumActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/forum/ForumAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/info/InfoActivity.kt" />
@@ -2816,15 +2782,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/StartApplication.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementContract.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementCategoryPresenter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounByCategoryActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_feedback.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-ky/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/product/post_product/NewProductPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/model/Announcements.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/product/post_product/NewProductActivity.kt" />
@@ -2841,9 +2803,15 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/FragmentActivityComunicator.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_announcement.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_announ_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementFragment.kt" />
       </list>
     </option>
   </component>
@@ -2894,7 +2862,7 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="jardamberem" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="categories" type="462c0819:PsiDirectoryNode" />
+              <item name="announcements_list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JardamBerem" type="1abcf292:AndroidViewProjectNode" />
@@ -2929,7 +2897,7 @@
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="new&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/product/post_product/NewProductActivity.kt&#10;forumser&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt&#10;mainac&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt&#10;mainactivi&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt&#10;forum&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt&#10;cell&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/cell_vertical_main.xml&#10;info&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/info/InfoActivity.kt&#10;acmain&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/activity_main.xml&#10;annoufr&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;mainfra&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;mainfr&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;mainfragm&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;feed&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/activity_feedback.xml&#10;ьфшта&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;strings&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/values/strings.xml&#10;strings.&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/values/strings.xml&#10;string&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/values-ky/strings.xml&#10;applica&#9;null&#9;null&#10;actfeed&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/activity_feedback.xml&#10;cellforum&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/cell_forum.xml" />
+    <property name="SearchEverywhereHistoryKey" value="mainac&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt&#10;acmain&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/res/layout/activity_main.xml&#10;forums&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt&#10;mainada&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.kt&#10;new&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/product/post_product/NewProductActivity.kt&#10;forumser&#9;FILE&#9;file://C:/Users/best_/Desktop/jeenbek/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt&#10;mainactivi&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt&#10;forum&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt&#10;cell&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/cell_vertical_main.xml&#10;info&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/info/InfoActivity.kt&#10;annoufr&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;mainfra&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;mainfr&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;mainfragm&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;feed&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/activity_feedback.xml&#10;ьфшта&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt&#10;strings&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/values/strings.xml&#10;strings.&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/values/strings.xml&#10;string&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/values-ky/strings.xml&#10;applica&#9;null&#9;null&#10;actfeed&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/activity_feedback.xml&#10;cellforum&#9;FILE&#9;file:///Users/jeenbek/Desktop/lastupdate/JardamBerem/app/src/main/res/layout/cell_forum.xml" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -3116,27 +3084,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/search/SearchContract.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/search/SearchResultsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/search/SearchPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/model/Category.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -3221,20 +3168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.10.0/e99b7b608968f16b07104b93e62cb90701174d0/okhttp-3.10.0-sources.jar!/okhttp3/RequestBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -3256,13 +3189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainContract.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -3274,13 +3200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -3407,98 +3326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cell_vertical_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#479#494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_announcement.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/ViewPagerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#59#298#0" expanded="true" />
-            <element signature="e#713#768#1" expanded="true" />
-            <element signature="e#774#829#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="142" column="63" selection-start-line="142" selection-start-column="63" selection-end-line="142" selection-end-column="63" />
-          <folding>
-            <element signature="e#1926#1966#0" expanded="true" />
-            <element signature="e#2559#2574#0" expanded="true" />
-            <element signature="e#2494#2509#0" expanded="true" />
-            <element signature="e#4008#4029#0" expanded="true" />
-            <element signature="e#5208#5221#0" expanded="true" />
-            <element signature="e#6239#6254#0" expanded="true" />
-            <element signature="e#6677#6693#0" expanded="true" />
-            <element signature="e#7326#7342#0" expanded="true" />
-            <element signature="e#7434#7450#0" expanded="true" />
-            <element signature="e#7901#7917#0" expanded="true" />
-            <element signature="e#7960#7976#0" expanded="true" />
-            <element signature="e#8018#8033#0" expanded="true" />
-            <element signature="e#8078#8093#0" expanded="true" />
-            <element signature="e#8182#8197#0" expanded="true" />
-            <element signature="e#8227#8240#0" expanded="true" />
-            <element signature="e#8362#8378#0" expanded="true" />
-            <element signature="e#8417#8433#0" expanded="true" />
-            <element signature="e#8753#8768#0" expanded="true" />
-            <element signature="e#8863#8882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-          <folding>
-            <element signature="e#3321#3349#0" expanded="true" />
-            <element signature="e#7346#7369#0" expanded="true" />
-            <element signature="e#7830#7865#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/product/feed_products/ProductsActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -3523,10 +3350,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/place_holder_image.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cell_vertical_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/ViewPagerAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#59#298#0" expanded="true" />
+            <element signature="e#713#768#1" expanded="true" />
+            <element signature="e#774#829#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/utils/ForumService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnounCategoryContract.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3094">
+          <caret line="220" column="5" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/main/fragment/MainAnnouncementFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_announcement.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_announ_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementByCategoryActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/baktiyar/android/jardamberem/ui/announcements_list/AnnouncementFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="104" column="70" selection-start-line="104" selection-start-column="70" selection-end-line="104" selection-end-column="70" />
         </state>
       </provider>
     </entry>
