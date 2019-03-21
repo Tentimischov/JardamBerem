@@ -45,7 +45,8 @@ dependencies {
     implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
 
     //glide
-    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 
     //image compressor
     implementation 'id.zelory:compressor:1.0.4'
@@ -70,7 +71,6 @@ dependencies {
 
     //rounded image
     implementation 'com.joooonho:selectableroundedimageview:1.0.1'
-    implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
 
     //segmented button
     implementation 'info.hoang8f:android-segmented:1.0.6'

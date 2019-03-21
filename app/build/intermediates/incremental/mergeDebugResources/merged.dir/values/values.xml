@@ -154,24 +154,6 @@
         <flag name="groups" value="32"/>
     </attr>
     <attr format="color" name="selectedColor"/>
-    <attr name="siArrowPosition">
-        <enum name="left" value="0"/>
-        <enum name="right" value="1"/>
-    </attr>
-    <attr name="siBorderType">
-        <enum name="stroke" value="0"/>
-        <enum name="fill" value="1"/>
-    </attr>
-    <attr name="siStrokeCap">
-        <enum name="butt" value="0"/>
-        <enum name="round" value="1"/>
-        <enum name="square" value="2"/>
-    </attr>
-    <attr name="siStrokeJoin">
-        <enum name="bevel" value="0"/>
-        <enum name="miter" value="1"/>
-        <enum name="round" value="2"/>
-    </attr>
     <attr format="dimension" name="strokeWidth"/>
     <attr format="string" name="title"/>
     <attr format="color" name="unselectedColor"/>
@@ -643,7 +625,6 @@
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="SegmentedGroup"><attr format="dimension" name="sc_corner_radius"/><attr format="dimension" name="sc_border_width"/><attr format="color" name="sc_tint_color"/><attr format="color" name="sc_checked_text_color"/></declare-styleable>
     <declare-styleable name="SelectableRoundedImageView"><attr format="dimension" name="sriv_left_top_corner_radius"/><attr format="dimension" name="sriv_right_top_corner_radius"/><attr format="dimension" name="sriv_left_bottom_corner_radius"/><attr format="dimension" name="sriv_right_bottom_corner_radius"/><attr format="dimension" name="sriv_border_width"/><attr format="color" name="sriv_border_color"/><attr format="boolean" name="sriv_oval"/><attr name="android:scaleType"/></declare-styleable>
-    <declare-styleable name="ShaderImageView"><attr format="boolean" name="siSquare"/><attr format="color" name="siBorderColor"/><attr format="dimension" name="siBorderWidth"/><attr format="float" name="siBorderAlpha"/><attr format="integer|reference" name="siForeground"/><attr format="dimension" name="siRadius"/><attr name="siArrowPosition"/><attr format="dimension" name="siTriangleHeight"/><attr format="integer|reference" name="siShape"/><attr name="siBorderType"/><attr name="siStrokeCap"/><attr name="siStrokeJoin"/><attr format="dimension" name="siStrokeMiter"/></declare-styleable>
     <declare-styleable name="ShimmerLayout"><attr format="color|reference" name="shimmer_color"/><attr format="integer|reference" name="shimmer_animation_duration"/><attr format="boolean|reference" name="shimmer_auto_start"/><attr format="integer|reference" name="shimmer_angle"/><attr format="float|reference" name="shimmer_mask_width"/><attr format="float|reference" name="shimmer_gradient_center_color_width"/><attr format="boolean|reference" name="shimmer_reverse_animation"/></declare-styleable>
     <declare-styleable name="SignInButton"><attr format="reference" name="buttonSize">
 <enum name="standard" value="0"/>
@@ -964,6 +945,7 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="ghost_view" type="id"/>
+    <item name="glide_custom_view_target_tag" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
@@ -1059,7 +1041,7 @@
     <string name="city_choosen">Регион выбран</string>
     <string name="closeCategory">Одежда</string>
     <string name="clothing">Одежда</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">c97d0ab8-d113-4f0f-ae3f-b750a3917a88</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">951bb02f-bdd1-4c92-9a98-d26595318cf3</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>

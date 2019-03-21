@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
+import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_vertical_main.view.*
 
@@ -27,7 +28,9 @@ class ByCategoryAdapter(var data: ArrayList<Announcements>, var mListener: OnIte
         holder.itemView.date.text = model.date?.substring(0, 10)
         holder.itemView.description.text = model.description
         if (model.imgPath != null) {
-            Picasso.get().load(model.imgPath).into(holder.itemView.im)
+            Glide.with(holder.itemView.context)
+                    .load(model.imgPath)
+                    .into(holder.itemView.im)
         } else {
             holder.itemView.im.layoutParams.height = (holder.itemView.context.resources.displayMetrics.widthPixels / 3)
         }

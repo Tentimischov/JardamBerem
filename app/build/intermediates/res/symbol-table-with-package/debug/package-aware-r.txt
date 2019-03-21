@@ -386,19 +386,6 @@ attr showAsAction
 attr showDividers
 attr showText
 attr showTitle
-attr siArrowPosition
-attr siBorderAlpha
-attr siBorderColor
-attr siBorderType
-attr siBorderWidth
-attr siForeground
-attr siRadius
-attr siShape
-attr siSquare
-attr siStrokeCap
-attr siStrokeJoin
-attr siStrokeMiter
-attr siTriangleHeight
 attr singleChoiceItemLayout
 attr snap
 attr spanCount
@@ -1164,13 +1151,11 @@ id auto
 id barrier
 id begin_anim
 id beginning
-id bevel
 id blocking
 id body
 id bottom
 id btAddNewProduct
 id btDeleteProduct
-id butt
 id buttonPanel
 id button_content_text
 id ca_cell
@@ -1244,6 +1229,7 @@ id forum_user
 id frameLayout3
 id frame_layout
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id groups
 id guideline
@@ -1289,7 +1275,6 @@ id menuItemAddProduct
 id message
 id middle
 id mini
-id miter
 id multiply
 id navItemAppInfo
 id navItemFeedback
@@ -1325,7 +1310,6 @@ id relativeLayout
 id right
 id right_icon
 id right_side
-id round
 id rvCoodsList
 id s_im
 id save_image_matrix
@@ -1365,14 +1349,12 @@ id spinnerCity
 id split_action_bar
 id spread
 id spread_inside
-id square
 id src_atop
 id src_in
 id src_over
 id standard
 id start
 id status_bar_latest_event_content
-id stroke
 id styleInp
 id submenuarrow
 id submit_area
@@ -1560,12 +1542,6 @@ mipmap jardam_berem_logo_ic
 mipmap jardam_berem_logo_ic_background
 mipmap jardam_berem_logo_ic_foreground
 mipmap jardam_berem_logo_ic_round
-raw imgview_diamond
-raw imgview_heart
-raw imgview_hexagon
-raw imgview_octogon
-raw imgview_pentagon
-raw imgview_star
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2195,7 +2171,6 @@ styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable SegmentedGroup sc_border_width sc_checked_text_color sc_corner_radius sc_tint_color
 styleable SelectableRoundedImageView android_scaleType sriv_border_color sriv_border_width sriv_left_bottom_corner_radius sriv_left_top_corner_radius sriv_oval sriv_right_bottom_corner_radius sriv_right_top_corner_radius
-styleable ShaderImageView siArrowPosition siBorderAlpha siBorderColor siBorderType siBorderWidth siForeground siRadius siShape siSquare siStrokeCap siStrokeJoin siStrokeMiter siTriangleHeight
 styleable ShimmerLayout shimmer_angle shimmer_animation_duration shimmer_auto_start shimmer_color shimmer_gradient_center_color_width shimmer_mask_width shimmer_reverse_animation
 styleable SignInButton buttonSize colorScheme scopeUris
 styleable SnackbarLayout android_maxWidth elevation maxActionInlineWidth

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
+import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_vertical_main.view.*
 
@@ -26,7 +27,10 @@ class MainAnnouncementAdapter(
         val model = data[position]
 
         if (model.imgPath != null) {
-            Picasso.get().load(model.imgPath).into(holder.itemView.im)
+            Glide.with(holder.itemView.context)
+                    .load(model.imgPath)
+                    .override(150)
+                    .into(holder.itemView.im)
         }
 
         holder.itemView.title.text = model.title
