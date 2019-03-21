@@ -4,7 +4,6 @@ import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
@@ -21,7 +20,9 @@ import com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity
 import com.baktiyar.android.jardamberem.ui.announcements_list.AnnouncementByCategoryActivity
 import com.baktiyar.android.jardamberem.ui.main.adapter.CategoryAdapter
 import com.baktiyar.android.jardamberem.ui.main.adapter.UrgentAdapter
+import com.baktiyar.android.jardamberem.ui.main.fragment.FragmentActivityComunicator
 import com.baktiyar.android.jardamberem.ui.main.fragment.MainAnnouncementFragment
+import com.baktiyar.android.jardamberem.ui.main.fragment.ViewPagerAdapter
 import com.baktiyar.android.jardamberem.ui.product.post_product.NewProductActivity
 import com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity
 import com.baktiyar.android.jardamberem.ui.urgent_detailed.UrgentDetailedActivity
@@ -32,7 +33,6 @@ import com.baktiyar.android.jardamberem.utils.Const.Companion.URGENTS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.hideKeyboard
 import com.baktiyar.android.jardamberem.utils.Const.Companion.setVisiblityMenuItem
 import com.baktiyar.android.jardamberem.utils.Settings
-import com.baktiyar.android.jardamberem.utils.e
 import com.baktiyar.android.jardamberem.utils.toToast
 import com.crashlytics.android.Crashlytics
 import io.fabric.sdk.android.Fabric
@@ -45,7 +45,14 @@ class MainActivity : BaseActivity(),
         MainContract.View,
         View.OnClickListener,
         CategoryAdapter.OnItemClickListener,
-        UrgentAdapter.OnUrgClickListener {
+        UrgentAdapter.OnUrgClickListener,
+        FragmentActivityComunicator {
+
+    override fun passDataToActivity(count: Int) {
+        val params = android.widget.LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.WRAP_CONTENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT)
+        params.height = count * 350
+        viewpager_main.layoutParams = params
+    }
 
     private var caAdapter: CategoryAdapter? = null
     private var urgAdapter: UrgentAdapter? = null
@@ -76,36 +83,12 @@ class MainActivity : BaseActivity(),
     }
 
 
-
     private fun initAnnouncementFragment() {
-        tab_layout.addTab(tab_layout.newTab().setText(R.string.give_help))
-        tab_layout.addTab(tab_layout.newTab().setText(R.string.need_help))
-        val ft = supportFragmentManager.beginTransaction()
-
-        ft.replace(R.id.frame_layout, MainAnnouncementFragment.newInstance(false))
-        ft.commit()
-
-        tab_layout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-            override fun onTabReselected(tab: TabLayout.Tab?) {}
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {}
-
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                if (tab?.position == 0) {
-                    switchFragment(MainAnnouncementFragment.newInstance(false))
-                } else {
-                    switchFragment(MainAnnouncementFragment.newInstance(true))
-                }
-            }
-
-        })
-
-    }
-
-    fun switchFragment(fragment: Fragment) {
-        val ft = supportFragmentManager.beginTransaction()
-        ft.replace(R.id.frame_layout, fragment)
-        ft.commit()
+        val f = MainAnnouncementFragment.newInstance(false)
+        val t = MainAnnouncementFragment.newInstance(true)
+        val fragments = arrayOf<Fragment>(f, t)
+        viewpager_main.adapter = ViewPagerAdapter(supportFragmentManager, fragments)
+        tab_layout.setupWithViewPager(viewpager_main)
 
     }
 

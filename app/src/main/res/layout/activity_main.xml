@@ -53,9 +53,9 @@
                         android:id="@+id/recview"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_5"
                         android:background="@null"
                         android:paddingBottom="@dimen/size_5"
-                        android:layout_marginTop="@dimen/size_5"
                         app:layout_scrollFlags="scroll|enterAlways" />
 
 
@@ -103,7 +103,6 @@
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:gravity="end"
-                                android:onClick="allUrgents"
                                 android:text="@string/all"
                                 android:textColor="@color/darkGray"
                                 android:textSize="12sp"
@@ -138,10 +137,10 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <FrameLayout
-                        android:id="@+id/frame_layout"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
 
                 </LinearLayout>
             </android.support.v4.widget.NestedScrollView>
@@ -182,6 +181,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/size_5"
+                android:contentDescription="@string/about_app"
                 android:src="@drawable/plus_white" />
         </RelativeLayout>
 

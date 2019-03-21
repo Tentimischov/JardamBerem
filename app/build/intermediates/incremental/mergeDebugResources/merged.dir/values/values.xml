@@ -900,7 +900,7 @@
     <dimen name="radio_button_stroke_border">1dp</dimen>
     <dimen name="sixteen_dp_text_size">16dp</dimen>
     <dimen name="size_100">100dp</dimen>
-    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_12">12sp</dimen>
     <dimen name="size_120">120dp</dimen>
     <dimen name="size_125">125dp</dimen>
     <dimen name="size_14">14sp</dimen>
@@ -1041,7 +1041,7 @@
     <string name="city_choosen">Регион выбран</string>
     <string name="closeCategory">Одежда</string>
     <string name="clothing">Одежда</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">951bb02f-bdd1-4c92-9a98-d26595318cf3</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">1f498490-addd-4648-8c5e-e82c5a1c4952</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>

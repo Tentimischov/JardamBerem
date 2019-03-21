@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
+import com.baktiyar.android.jardamberem.utils.e
 import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_vertical_main.view.*
@@ -31,7 +32,12 @@ class MainAnnouncementAdapter(
                     .load(model.imgPath)
                     .override(150)
                     .into(holder.itemView.im)
+        } else {
+            Glide.with(holder.itemView.context)
+                    .load(R.drawable.no_image)
+                    .into(holder.itemView.im)
         }
+        e("this is picture number $position and url ${model.imgPath} and title ${model.title}")
 
         holder.itemView.title.text = model.title
         holder.itemView.date.text = model.date?.substring(0, 10)

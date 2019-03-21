@@ -1071,7 +1071,6 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable picture
-drawable place_holder_image
 drawable place_holder_plus
 drawable plus
 drawable plus_white
@@ -1227,7 +1226,6 @@ id forum_body
 id forum_rec
 id forum_user
 id frameLayout3
-id frame_layout
 id ghost_view
 id glide_custom_view_target_tag
 id gone
@@ -1402,6 +1400,7 @@ id useLogo
 id view
 id view_offset_helper
 id viewpager
+id viewpager_main
 id visible
 id wide
 id withText

@@ -18,7 +18,7 @@
     <dimen name="cardCorner">3dp</dimen>
 
     <dimen name="size_5">5dp</dimen>
-    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_12">12sp</dimen>
     <dimen name="size_100">100dp</dimen>
     <dimen name="size_30">30dp</dimen>
     <dimen name="size_32">32dp</dimen>
