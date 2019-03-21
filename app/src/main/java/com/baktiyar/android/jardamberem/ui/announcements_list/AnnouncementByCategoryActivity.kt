@@ -25,7 +25,6 @@ class AnnouncementByCategoryActivity : AppCompatActivity() {
 
     fun init() {
         title = intent.getStringExtra(CATEGORY_NAME)
-
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 

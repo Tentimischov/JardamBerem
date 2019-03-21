@@ -103,8 +103,9 @@ class DetailedProductActivity() : AppCompatActivity(), View.OnClickListener, Det
         } else {
             isMyProduct = false
             button_content_text.text = getString(R.string.show_number)
-            if (mProduct?.number?.length != null && mProduct?.number?.length!! > 3)
-            tvPhoneNumberDetailedProduct.text = mProduct?.number?.substring(0, 3) + "XX XX XX"
+            if (mProduct?.number?.length != null && mProduct?.number?.length!! > 3) {
+                tvPhoneNumberDetailedProduct.text = mProduct?.number?.substring(0, 3).toString() + """XX XX XX"""
+            }
         }
 
         btDeleteProduct.setOnClickListener(this)

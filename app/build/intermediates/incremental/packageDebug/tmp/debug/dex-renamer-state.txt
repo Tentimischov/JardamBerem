@@ -1,4 +1,4 @@
-#Thu Mar 21 19:30:21 ALMT 2019
+#Thu Mar 21 22:56:11 ALMT 2019
 base.0=C\:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

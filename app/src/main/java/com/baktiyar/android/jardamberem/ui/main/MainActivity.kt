@@ -11,6 +11,7 @@ import android.support.v7.widget.SearchView
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.LinearLayout
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.AllCategory
 import com.baktiyar.android.jardamberem.model.Urgent
@@ -20,7 +21,6 @@ import com.baktiyar.android.jardamberem.ui.all_urgents.AllUrgentsActivity
 import com.baktiyar.android.jardamberem.ui.announcements_list.AnnouncementByCategoryActivity
 import com.baktiyar.android.jardamberem.ui.main.adapter.CategoryAdapter
 import com.baktiyar.android.jardamberem.ui.main.adapter.UrgentAdapter
-import com.baktiyar.android.jardamberem.ui.main.fragment.FragmentActivityComunicator
 import com.baktiyar.android.jardamberem.ui.main.fragment.MainAnnouncementFragment
 import com.baktiyar.android.jardamberem.ui.main.fragment.ViewPagerAdapter
 import com.baktiyar.android.jardamberem.ui.product.post_product.NewProductActivity
@@ -39,14 +39,18 @@ import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.collections.ArrayList
+import android.R.attr.data
+import android.support.design.widget.CoordinatorLayout
+import android.util.TypedValue
+
+
 
 
 class MainActivity : BaseActivity(),
         MainContract.View,
         View.OnClickListener,
         CategoryAdapter.OnItemClickListener,
-        UrgentAdapter.OnUrgClickListener,
-        FragmentActivityComunicator {
+        UrgentAdapter.OnUrgClickListener {
 
 
 
@@ -75,6 +79,8 @@ class MainActivity : BaseActivity(),
 
         mPresenter?.getCategory(Settings.getCityId())
         mPresenter?.getUrgent(1000, 0)
+
+        scroll_view.isFillViewport = true
 
     }
 
@@ -211,13 +217,6 @@ class MainActivity : BaseActivity(),
 
     override fun onError(message: String) {
         message.toToast()
-    }
-
-
-    override fun passDataToActivity(count: Int) {
-        val params = android.widget.LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.WRAP_CONTENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT)
-        params.height = count * 450
-        viewpager_main.layoutParams = params
     }
 }
 

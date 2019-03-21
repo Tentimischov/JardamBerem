@@ -31,7 +31,6 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
     private var offset: Int = 0
     private var hasNextPage: Boolean = true
     private lateinit var mView: View
-    private var activityComunicator: FragmentActivityComunicator? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         data = arrayListOf()
@@ -44,21 +43,15 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
         return inflater.inflate(R.layout.fragment_main_announcement, container, false)
     }
 
-    override fun onAttach(context: Context?) {
-        super.onAttach(context)
-        activityComunicator = context!! as FragmentActivityComunicator
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         mView = view
 
         mView.pro_bar.visibility = View.VISIBLE
         mView.rec_view.visibility = View.GONE
 
-        view.rec_view.isNestedScrollingEnabled = false
+        view.rec_view.isNestedScrollingEnabled = true
         view.rec_view.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
         view.rec_view.adapter = adapter
-        view.rec_view.setHasFixedSize(true)
 
 
         view.rec_view.addOnScrollListener(object : RecyclerView.OnScrollListener() {
@@ -109,7 +102,6 @@ class MainAnnouncementFragment : Fragment(), MainAnnouncementAdapter.OnItemClick
     }
 
     override fun onAnnouncementSuccess(data: AnnouncementsPaginated) {
-        activityComunicator?.passDataToActivity(data.count)
         setData(data)
     }
 
