@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.AllCategory
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.cell_category_main.view.*
 
 class CategoryAdapter(var data: ArrayList<AllCategory>, private val mListener: OnItemClickListener) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
@@ -27,7 +27,7 @@ class CategoryAdapter(var data: ArrayList<AllCategory>, private val mListener: O
 
         fun bindV(main: AllCategory, mListener: OnItemClickListener) {
             itemView.ca_title.text = main.category_name
-            Picasso.get().load(main.category_imgPath).into(itemView.ca_icon)
+            Glide.with(itemView.context).load(main.category_imgPath).into(itemView.ca_icon)
             itemView.setOnClickListener {
                 mListener.onCategoryItemClick(main, adapterPosition)
             }

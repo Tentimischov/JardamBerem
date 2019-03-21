@@ -18,10 +18,6 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
 
-
-/**
- * Created by admin on 09.03.2018.
- */
 class NewProductPresenter(var context: Context,
                           var mView: NewProductContract.View?) : NewProductContract.Presenter {
 
@@ -99,7 +95,6 @@ class NewProductPresenter(var context: Context,
         val bodyBuilder = MultipartBody.Builder()
         bodyBuilder.setType(MultipartBody.FORM)
 
-        e(city.toString() + " " + item.category.toString())
         bodyBuilder.addFormDataPart("city", city.toString())
         bodyBuilder.addFormDataPart("category", categoryId.toString())
         bodyBuilder.addFormDataPart("isNeeded", item.isNeeded.toString())

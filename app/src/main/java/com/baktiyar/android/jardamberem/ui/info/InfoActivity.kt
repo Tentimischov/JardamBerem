@@ -10,7 +10,6 @@ import com.baktiyar.android.jardamberem.model.InfoPaginated
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.info_d.DetailedInfoActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INFO_DETAILED
-import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import kotlinx.android.synthetic.main.activity_action.*
 
 class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapter.OnItemClickListener {
@@ -46,6 +45,7 @@ class InfoActivity : BaseActivity(), InfoContract.View, InfoAdapter.OnItemClickL
                 }
                 super.onScrollStateChanged(recyclerView, newState)
             }
+
             override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
                 if (hasNextPage) {
                     presenter?.getInfo(limitPage, offset)

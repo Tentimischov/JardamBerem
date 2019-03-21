@@ -6,20 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Urgent
-import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import com.bumptech.glide.Glide
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_horizontal_main.view.*
 
 class UrgentAdapter(var data: ArrayList<Urgent>,
                     var mClickListener: OnUrgClickListener
-                    ) : RecyclerView.Adapter<UrgentAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<UrgentAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindV(data[position], mClickListener)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder{
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.cell_horizontal_main, parent, false)
         return ViewHolder(v)
     }
@@ -40,7 +38,6 @@ class UrgentAdapter(var data: ArrayList<Urgent>,
         fun bindV(main: Urgent, mClickListener: OnUrgClickListener) {
             itemView.cell_hor.preventCornerOverlap = false
             itemView.title.text = main.title
-            Picasso.get().load(main.imgPath).into(itemView.icon)
             Glide.with(itemView.context).load(main.imgPath).into(itemView.icon)
             itemView.setOnClickListener {
                 mClickListener.onUrgentItemClick(main)
@@ -49,6 +46,7 @@ class UrgentAdapter(var data: ArrayList<Urgent>,
 
 
     }
+
     interface OnUrgClickListener {
         fun onUrgentItemClick(main: Urgent)
     }

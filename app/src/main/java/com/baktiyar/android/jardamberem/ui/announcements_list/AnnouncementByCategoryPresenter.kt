@@ -1,6 +1,5 @@
 package com.baktiyar.android.jardamberem.ui.announcements_list
 
-import android.content.Context
 import com.baktiyar.android.jardamberem.StartApplication
 import com.baktiyar.android.jardamberem.model.AnnouncementsPaginated
 import com.baktiyar.android.jardamberem.utils.Settings
@@ -8,7 +7,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class AnnouncementByCategoryPresenter(var v: AnnounCategoryContract.View) : AnnounCategoryContract.Presenter {
+class AnnouncementByCategoryPresenter(var v: AnnouncementByCategoryContract.View) : AnnouncementByCategoryContract.Presenter {
     override fun getAnnouncementByCategory(limit: Int, offset: Int, isNeeded: Boolean) {
         StartApplication.INSTANCE.service.getAnnouncementByCategory(Settings.getCategoryId(),
                 limit,

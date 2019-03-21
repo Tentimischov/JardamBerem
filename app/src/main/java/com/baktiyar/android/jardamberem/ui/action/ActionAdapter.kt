@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.ActionData
 import com.bumptech.glide.Glide
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_action.view.*
 
 class ActionAdapter(var data: ArrayList<ActionData>, var mListener: OnItemClickListener?) :
@@ -57,11 +56,11 @@ class ActionAdapter(var data: ArrayList<ActionData>, var mListener: OnItemClickL
                 holder.itemView.action_title.text = model.title
                 
                 if (model.imgPath != null) {
-                    Picasso.get().load(model.imgPath).into(holder.itemView.action_image)
+                    Glide.with(holder.itemView.context).load(model.imgPath).into(holder.itemView.action_image)
                 } else if (model.imgPath2 != null) {
-                    Picasso.get().load(model.imgPath2).into(holder.itemView.action_image)
+                    Glide.with(holder.itemView.context).load(model.imgPath2).into(holder.itemView.action_image)
                 } else if (model.imgPath3 != null) {
-                    Picasso.get().load(model.imgPath3).into(holder.itemView.action_image)
+                    Glide.with(holder.itemView.context).load(model.imgPath3).into(holder.itemView.action_image)
                 }
 
                 holder.itemView.setOnClickListener {

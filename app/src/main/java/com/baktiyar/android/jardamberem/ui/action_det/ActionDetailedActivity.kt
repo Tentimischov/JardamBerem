@@ -6,7 +6,7 @@ import android.view.MenuItem
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.ActionData
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_DETAILED
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_action_d.*
 import kotlinx.android.synthetic.main.toolbar.*
 
@@ -30,9 +30,9 @@ class ActionDetailedActivity : AppCompatActivity() {
     private fun setData() {
         if (intent.extras != null) {
             when {
-                actionData?.imgPath != null -> Picasso.get().load(actionData?.imgPath).into(image)
-                actionData?.imgPath2 != null -> Picasso.get().load(actionData?.imgPath2).into(image)
-                else -> Picasso.get().load(actionData?.imgPath3).into(image)
+                actionData?.imgPath != null -> Glide.with(this).load(actionData?.imgPath).into(image)
+                actionData?.imgPath2 != null -> Glide.with(this).load(actionData?.imgPath2).into(image)
+                else -> Glide.with(this).load(actionData?.imgPath3).into(image)
             }
             date.text = actionData?.date?.substring(0, 10)
             title_d.text = actionData?.title

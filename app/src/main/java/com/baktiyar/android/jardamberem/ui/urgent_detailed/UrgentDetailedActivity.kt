@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
 import android.provider.Settings
-import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import android.view.View
@@ -17,7 +16,6 @@ import com.baktiyar.android.jardamberem.model.Urgent
 import com.baktiyar.android.jardamberem.ui.delete_fragment_dialog.FragDialog
 import com.baktiyar.android.jardamberem.ui.full_photo.ViewPageAdapter
 import com.baktiyar.android.jardamberem.ui.full_photo.FullPhotoActivity
-import com.baktiyar.android.jardamberem.ui.product.detailed_product.FragmentDpImage
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTION_URGENT
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ALL_PHOTO_URLS
 import com.baktiyar.android.jardamberem.utils.Const.Companion.INDEX

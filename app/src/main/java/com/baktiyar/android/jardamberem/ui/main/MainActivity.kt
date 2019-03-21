@@ -216,7 +216,7 @@ class MainActivity : BaseActivity(),
 
     override fun passDataToActivity(count: Int) {
         val params = android.widget.LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.WRAP_CONTENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT)
-        params.height = count * 350
+        params.height = count * 450
         viewpager_main.layoutParams = params
     }
 }

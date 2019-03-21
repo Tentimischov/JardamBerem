@@ -1252,7 +1252,6 @@ id info_title
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id ivGoodImage
 id ivImageDetailedProduct
 id ivImageNewProduct
 id jobCategoryView
@@ -1389,7 +1388,6 @@ id transition_transform
 id triangle
 id tvDateDetailedProduct
 id tvDescriptionDetailedProduct
-id tvGoodName
 id tvPhoneNumberDetailedProduct
 id tvTitleDetailedProduct
 id two
@@ -1502,7 +1500,6 @@ layout horizontal
 layout item_category_spinner
 layout item_detailed_image
 layout item_image
-layout item_product
 layout layout_default_item_skeleton
 layout layout_shimmer
 layout nav_header

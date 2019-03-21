@@ -10,7 +10,6 @@ import com.baktiyar.android.jardamberem.model.ForumPaginated
 import com.baktiyar.android.jardamberem.ui.BaseActivity
 import com.baktiyar.android.jardamberem.ui.feedback.FeedbackActivity
 import com.baktiyar.android.jardamberem.utils.Const.Companion.ACTIVITY_ID
-import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import kotlinx.android.synthetic.main.activity_forum.*
 import org.jetbrains.anko.toast
 

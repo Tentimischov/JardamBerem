@@ -5,9 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
-import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import com.bogdwellers.pinchtozoom.ImageMatrixTouchHandler
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_full_photo.view.*
 
 
@@ -22,7 +21,7 @@ class ViewPageAdapter(var data: ArrayList<String>, var mClick: mClickListener, p
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val view = LayoutInflater.from(container.context).inflate(R.layout.fragment_full_photo, container, false)
-        Picasso.get().load(data[position]).into(view.im)
+        Glide.with(container.context).load(data[position]).into(view.im)
         if (zoomable)
             view.im.setOnTouchListener(ImageMatrixTouchHandler(view.getContext()))
 

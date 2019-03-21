@@ -27,10 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.categories.CategoriesActivity"
-            android:label="@string/titleCategories"
-            android:screenOrientation="portrait" />
         <activity android:name=".ui.search.SearchResultsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -41,16 +37,12 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name=".ui.product.feed_products.ProductsActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.product.post_product.NewProductActivity"
             android:label="@string/add_product"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.product.detailed_product.DetailedProductActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.product.post_product.PhotoPickActivity" />
         <activity android:name=".ui.BaseActivity" />
         <activity
             android:name=".ui.feedback.FeedbackActivity"

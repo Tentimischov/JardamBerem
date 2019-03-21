@@ -119,7 +119,6 @@ class NewProductActivity : PhotoPickActivity(), NewProductContract.View, View.On
             mPresenter?.sendUrgentProduct(mProduct, mImagePaths)
         }
         else if (ok) {
-            e("$idCategory this is post product")
             val mProduct = PostProduct(idCity, idCategory, isNeeded, title, description, phoneNumber, imeiUserCode, null, null, null)
             mPresenter!!.sendProduct(idCategory, idCity, mProduct, mImagePaths)
         }

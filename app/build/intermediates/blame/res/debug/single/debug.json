@@ -2088,10 +2088,6 @@
         "source": "C:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\src\\main\\res\\mipmap-mdpi\\jardam_berem_logo_ic_foreground.png"
     },
     {
-        "merged": "C:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_product.xml.flat",
-        "source": "C:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\src\\main\\res\\layout\\item_product.xml"
-    },
-    {
         "merged": "C:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_icon.xml.flat",
         "source": "C:\\Users\\best_\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f7300608e55d318bf7e3b19612aff6cc\\res\\layout\\design_layout_tab_icon.xml"
     },

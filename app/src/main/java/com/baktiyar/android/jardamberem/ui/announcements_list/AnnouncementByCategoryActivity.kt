@@ -17,8 +17,8 @@ class AnnouncementByCategoryActivity : AppCompatActivity() {
 
         init()
 
-        val giveHelp = AnnouncementFragment.newInstance(false)
-        val needHelp = AnnouncementFragment.newInstance(true)
+        val giveHelp = AnnouncementByCategoryFragment.newInstance(false)
+        val needHelp = AnnouncementByCategoryFragment.newInstance(true)
         all_announcement_list_viewpager.adapter = ViewPagerAdapter(supportFragmentManager, arrayOf(giveHelp, needHelp))
         all_announcement_tab_layout.setupWithViewPager(all_announcement_list_viewpager)
     }

@@ -15,7 +15,6 @@ class MainAnnouncementPresenter(val v: MainAnnouncementContract.View) : MainAnno
         StartApplication.INSTANCE.service.getAnnouncement(limit, offset, isNeeded, getCityId()).enqueue(object : Callback<AnnouncementsPaginated> {
             override fun onFailure(call: Call<AnnouncementsPaginated>, t: Throwable) {
                 v.onAnnouncementError(errorMessage)
-                e(t.localizedMessage)
             }
 
             override fun onResponse(call: Call<AnnouncementsPaginated>, response: Response<AnnouncementsPaginated>) {

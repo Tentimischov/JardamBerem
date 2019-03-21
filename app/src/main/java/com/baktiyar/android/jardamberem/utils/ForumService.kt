@@ -8,9 +8,6 @@ import retrofit2.http.*
 
 interface ForumService {
 
-    @GET("api/categories/{categoryId}/announcements")
-    fun getProductByCategory(@Path("categoryId") id: Int): Call<List<Product>>
-
     @POST("api/categories/{id_of_category}/announcements/")
     fun sendProduct(@Path("id_of_category") id: Int,
                     @Body file: RequestBody): Call<ResponseBody>

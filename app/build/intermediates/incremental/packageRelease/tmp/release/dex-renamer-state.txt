@@ -1,4 +1,0 @@
-#Tue Mar 19 01:35:57 ALMT 2019
-base.0=C\:\\Users\\best_\\Desktop\\jeenbek\\JardamBerem\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
-path.0=classes.dex
-renamed.0=classes.dex

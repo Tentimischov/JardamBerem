@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.StartApplication
 import com.baktiyar.android.jardamberem.model.Forum
-import com.baktiyar.android.jardamberem.utils.Utils.Companion.e
 import kotlinx.android.synthetic.main.cell_forum.view.*
 
 
@@ -36,7 +35,6 @@ class ForumAdapter(var data: ArrayList<Forum>, var listener: OnForumClickListene
 
         if (USER_IMEI_CODE == model.userImeiCode) {
             holder.itemView.delete.visibility = View.VISIBLE
-            e("${model.nickName} ${model.userImeiCode} ${getAndroidId(holder.itemView.context)} ${position}")
         } else {
             holder.itemView.delete.visibility = View.GONE
         }

@@ -8,7 +8,6 @@ import com.baktiyar.android.jardamberem.R
 import com.baktiyar.android.jardamberem.model.Announcements
 import com.baktiyar.android.jardamberem.utils.e
 import com.bumptech.glide.Glide
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cell_vertical_main.view.*
 
 class MainAnnouncementAdapter(
@@ -21,7 +20,7 @@ class MainAnnouncementAdapter(
 
     override fun getItemCount(): Int {
         return if (data.isEmpty()) 0
-                else data.size
+        else data.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -54,8 +53,6 @@ class MainAnnouncementAdapter(
         this.data.addAll(data)
         notifyDataSetChanged()
     }
-
-
     class ViewHolder(v: View) : RecyclerView.ViewHolder(v)
 
     interface OnItemClickListener {

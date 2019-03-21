@@ -37,10 +37,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.baktiyar.android.jardamberem.ui.categories.CategoriesActivity"
-            android:label="@string/titleCategories"
-            android:screenOrientation="portrait" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.search.SearchResultsActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -51,16 +47,12 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name="com.baktiyar.android.jardamberem.ui.product.feed_products.ProductsActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.baktiyar.android.jardamberem.ui.product.post_product.NewProductActivity"
             android:label="@string/add_product"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.baktiyar.android.jardamberem.ui.product.detailed_product.DetailedProductActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.baktiyar.android.jardamberem.ui.product.post_product.PhotoPickActivity" />
         <activity android:name="com.baktiyar.android.jardamberem.ui.BaseActivity" />
         <activity
             android:name="com.baktiyar.android.jardamberem.ui.feedback.FeedbackActivity"
@@ -102,10 +94,6 @@
 
         <activity android:name="com.baktiyar.android.jardamberem.ui.full_photo.FullPhotoActivity" />
 
-        <provider
-            android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.baktiyar.android.jardamberem.com.squareup.picasso"
-            android:exported="false" />
         <provider
             android:name="com.crashlytics.android.CrashlyticsInitProvider"
             android:authorities="com.baktiyar.android.jardamberem.crashlyticsinitprovider"
